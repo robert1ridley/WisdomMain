@@ -1,0 +1,35 @@
+@media screen and (max-width: 775px) {
+  a.navbar-brand {
+  padding: 0px;
+  }
+
+  .navbar img {
+    height: 40px;
+    margin-top: 5px;
+  }
+}
+  
+  .navbar .container {
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+}
+
+nav.navbar.navbar-default {
+  margin-bottom: 0px;
+}
+
+.navbar, .navbar a {
+  font-weight: 300 !important;
+  font-size: 16px;
+}
+
+.navbar-right {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar-right .dropdown-menu a {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
