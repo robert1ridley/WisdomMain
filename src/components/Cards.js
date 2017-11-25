@@ -6,7 +6,7 @@ import PopModal from './PopModal';
 export default class Cards extends React.Component {
   render () {
 
-    var data = this.props.language === true? staffdata.chinese: staffdata.english
+    var data = this.props.language === "zh"? staffdata.chinese: staffdata.english
 
     var allCards = data.map(oneCard =>
       <Col md={3} sm={6} xs={6} key={oneCard.id}>

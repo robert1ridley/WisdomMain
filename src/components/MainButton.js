@@ -24,7 +24,7 @@ export default class MainButton extends React.Component {
           className="wiggle-me"
           onMouseEnter={this.toggleHover} 
           onMouseLeave={this.toggleHover} 
-          style={buttonStyle}>{this.props.language === true? this.props.buttonText.chinese: this.props.buttonText.english}
+          style={buttonStyle}>{this.props.language === "zh"? this.props.buttonText.chinese: this.props.buttonText.english}
         </Button>
       </div>
     )

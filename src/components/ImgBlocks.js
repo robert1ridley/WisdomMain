@@ -3,12 +3,10 @@ import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import MainButton from './MainButton';
 
-import imgblockdata from '../data/imgblockdata';
-
 export default class ImgBlocks extends React.Component {
   render () {
 
-    var data = this.props.language === true? imgblockdata.chinese: imgblockdata.english;
+    var data = this.props.language === "zh"? this.props.data.chinese: this.props.data.english;
     var blocks = data.map(block =>
       <div className="wow fadeInRight" key = {block.id}>
         <Columns       

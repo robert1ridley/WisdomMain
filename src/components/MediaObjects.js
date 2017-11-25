@@ -1,11 +1,10 @@
 import React from 'react';
 import { Media } from 'react-bootstrap';
-import basicintrodata from '../data/basicintrodata';
 import { Link } from 'react-router-dom';
 
 export default class MediaObjects extends React.Component {
   render () {
-    var data = this.props.language === true? basicintrodata.chinese: basicintrodata.english
+    var data = this.props.language === "zh"? this.props.data.chinese: this.props.data.english
     const MediaObjects = data.map(MediaObject =>
       <SingleMedia 
       image={MediaObject.imgUrl}

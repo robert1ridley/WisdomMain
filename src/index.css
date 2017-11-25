@@ -56,6 +56,10 @@ a:hover, a:focus, div.media-body:hover, div.media-body:hover {
   text-decoration: none;
 }
 
+a:link, a:visited, a:hover, a:active {
+  color: rgb(119, 119, 119);
+}
+
 div.media-body {
   color: black;
 }

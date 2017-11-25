@@ -23,7 +23,7 @@ const placeholders = {
 
 export default class ContactForm extends React.Component {  
   render () {
-    var data = this.props.language === true? placeholders.chinese: placeholders.english;
+    var data = this.props.language === "zh"? placeholders.chinese: placeholders.english;
     return (
       <form>
         <FormGroup bsSize="large">

@@ -42,7 +42,7 @@ export default class PopModal extends React.Component {
           onMouseEnter={this.mouseIn} 
           onMouseLeave={this.mouseOut}
           onClick={this.open} 
-          style={buttonStyle}>{this.props.language === true? this.props.buttonText.chinese: this.props.buttonText.english}
+          style={buttonStyle}>{this.props.language === "zh"? this.props.buttonText.chinese: this.props.buttonText.english}
         </Button>
         <Modal show={this.state.showModal} onHide={this.close}>
           <Modal.Body>

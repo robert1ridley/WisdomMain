@@ -3,8 +3,6 @@ import backgroundImage from '../images/background1.png';
 import Intro from './Intro';
 import Cards from './Cards';
 
-//data imports
-import staffintrodata from '../data/staffintrodata';
 
 export default class Staff extends React.Component {
   render () {
@@ -13,7 +11,7 @@ export default class Staff extends React.Component {
         <div className="container">
           <Intro 
             language={this.props.language}
-            data={staffintrodata}
+            data={this.props.data}
             color={{color:'white'}}
           />
           <Cards language={this.props.language}/>
