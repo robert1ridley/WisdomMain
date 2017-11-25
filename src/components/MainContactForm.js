@@ -20,7 +20,7 @@ const placeholders = {
     }
 }
 
-export default class ContactForm extends React.Component {  
+export default class MainContactForm extends React.Component {  
   render () {
     var data = this.props.language === "zh"? placeholders.chinese: placeholders.english;
     return (
@@ -36,9 +36,6 @@ export default class ContactForm extends React.Component {
         </FormGroup>
         <Button type="submit" className="form-submit">
           {data.send}
-        </Button>
-        <Button className="form-close" onClick={this.props.close}>
-          {data.close}
         </Button>
       </form>
     )

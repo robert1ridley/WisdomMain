@@ -16,7 +16,8 @@ class SiteNav extends React.Component {
         key={heading.id} 
         eventKey={heading.id}>
         <Link to={heading.link}>
-          <span className={heading.icon}/> {heading.head}
+          {/* <span className={heading.icon}/> {heading.head} */}
+          {heading.head}
         </Link>
       </NavItem>
     )

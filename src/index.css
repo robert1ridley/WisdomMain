@@ -7,7 +7,6 @@
 
 body {
   font-family: "Lato",sans-serif;
-  /* background-color: #fff3cd; */
 }
 
 .central-info {
@@ -106,6 +105,40 @@ div.media-body {
 .form-submit {
   background-color: rgb(57, 182, 179);
   color: white;
+}
+
+.circle {
+  width:80px;
+  line-height: 80px;
+  border-radius:40px;
+  color:#fff;
+  text-align:center;
+  background:rgb(57, 182, 179);
+}
+
+.lower-margin {
+  margin-bottom: 30px;
+}
+
+.media-height {
+  min-height: 100%;
+}
+
+.vert-align {
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 100%;
+}
+
+.block {
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.circle-child {
+  font-size:30px;
+  vertical-align: middle;
+  width: 100%;
 }
 
 /* animations */

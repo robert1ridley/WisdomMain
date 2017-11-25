@@ -26,7 +26,7 @@ export default class CarouselImages extends React.Component {
     )
 
     return (
-      <Carousel>
+      <Carousel className="wow fadeIn">
         {imageData}
     </Carousel>
     )
