@@ -121,6 +121,10 @@ div.media-body {
   margin: 0 auto;
 }
 
+.upper-margin {
+  margin-top: 30px;
+}
+
 .lower-margin {
   margin-bottom: 30px;
 }
@@ -152,6 +156,12 @@ div.media-body {
   vertical-align: middle;
   width: 100%;
 }
+
+.center-img {
+  margin: 0 auto;
+  width: 100%;
+}
+
 
 /* animations */
 @-ms-keyframes wiggle{0%{-ms-transform:rotate(3deg);}50%{-ms-transform:rotate(-3deg);}100%{-ms-transform:rotate(3deg);}}
