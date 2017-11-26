@@ -1,5 +1,5 @@
 import React from 'react';
-import BaiduMap from '../components/BaiduMap';
+// import BaiduMap from '../components/BaiduMap';
 import SiteNav from '../components/SiteNav';
 import MainContactForm from '../components/MainContactForm';
 import ContactList from '../components/ContactList';
@@ -12,7 +12,7 @@ class Contact extends React.Component {
     return (
       <div>
         <SiteNav />
-        <BaiduMap language={this.props.language}/>
+        {/* <BaiduMap language={this.props.language}/> */}
         <div className="container big-lower-margin wow fadeIn">
           <div className="text-center central-info">
             <h1 className="big-head">{this.props.language === "zh"? "联系我们": "Contact us"}</h1>
