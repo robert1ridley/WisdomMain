@@ -15,6 +15,7 @@ import CarouselImages from '../components/CarouselImages';
 import Intro from '../components/Intro';
 import ImgBlocks from '../components/ImgBlocks';
 import MediaObjects from '../components/MediaObjects';
+import ScrollTo from '../components/ScrollTo';
 
 class Home extends React.Component {
   render() {
@@ -48,6 +49,7 @@ class Home extends React.Component {
             language={this.props.language}
           />
         </div>
+        <ScrollTo />
       </div>
     )
   }

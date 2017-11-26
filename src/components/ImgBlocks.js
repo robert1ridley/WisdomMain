@@ -13,6 +13,7 @@ export default class ImgBlocks extends React.Component {
           id = {block.id}
           icon = {block.icon}
           text = {block.text}
+          link = {block.link}
         />
       </div>
     )
@@ -23,7 +24,7 @@ export default class ImgBlocks extends React.Component {
             {blocks}
           </Row>
           <div className="text-center">
-            <Link to="/">
+            <Link to="/about">
               <MainButton
                 language = {this.props.language}
                 buttonText = {{chinese:"学习更多", english: "Learn more"}}
@@ -51,10 +52,10 @@ class Columns extends React.Component {
   
   render () {
     var linkStyle = this.state.hover === true? {backgroundColor: '#39b6b3', color: 'white'}: {backgroundColor: 'white', color: 'black'};
-
+    console.log(this.props)
     return (
       <Col md={4} sm={6} xs={12}>
-        <Link to="/">
+        <Link to={this.props.link}>
           <div className="card full-card wiggle-me" onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover} style={linkStyle}>
             <div className={this.props.icon} style={styles.icon}/>
             <div className="card-block">
