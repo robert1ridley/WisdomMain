@@ -16,7 +16,7 @@ class Contact extends React.Component {
           </div>
           <Row>
             <Col md={4}>
-              <ContactList />
+              <ContactList language={this.props.language}/>
             </Col>
             <Col md={8}>
               <MainContactForm language={this.props.language}/>

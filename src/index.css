@@ -121,13 +121,16 @@ div.media-body {
 }
 
 .media-height {
-  min-height: 100%;
+  min-height: 80px;
+  position: relative;
 }
 
 .vert-align {
-  margin-top: 20px;
-  margin-left: 20px;
-  height: 100%;
+  margin-left: 30px;
+  /* height: 40px; */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .block {
