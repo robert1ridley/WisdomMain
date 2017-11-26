@@ -17,7 +17,7 @@ class About extends React.Component {
       <div>
         <SiteNav />
         <div className="container upper-margin">
-          {/* <Well className="wow fadeInLeft big-lower-margin"> */}
+          {/* <Well className="wow fadeInLeft big-lower-margin">
             <ParagraphsIntro 
               language={this.props.language}
               data={aboutdatabasic}
@@ -27,8 +27,8 @@ class About extends React.Component {
               className="center-img lower-margin"
               responsive 
             />
-          {/* </Well> */}
-          {/* <Well className="wow fadeInLeft "> */}
+          </Well>
+          <Well className="wow fadeInLeft ">
             <ParagraphsIntro 
               className="upper-margin"
               language={this.props.language}
@@ -39,7 +39,7 @@ class About extends React.Component {
               className="center-img"
               responsive 
             />
-          {/* </Well> */}
+          </Well> */}
         </div>
         <SocialShare language={this.props.language}/>
         <ScrollTo />
