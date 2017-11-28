@@ -1,5 +1,5 @@
 import React from 'react';
-import backgroundImage2 from '../images/background2.png';
+import backgroundImage2 from '../images/background2.jpg';
 import Intro from '../components/Intro';
 import SocialShareBlock from '../components/SocialShareBlock';
 import sharingdata from '../data/sharingdata';

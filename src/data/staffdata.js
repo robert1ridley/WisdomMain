@@ -1,4 +1,4 @@
-import image1 from '../images/profile1.png'
+import image1 from '../images/profile1.jpg'
 
 const staffdata = {
   chinese: [

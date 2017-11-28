@@ -1,5 +1,5 @@
 import React from 'react';
-import backgroundImage from '../images/background1.png';
+import backgroundImage from '../images/background1.jpg';
 import Intro from './Intro';
 import Cards from './Cards';
 
