@@ -4,6 +4,7 @@ import { Image, Well } from 'react-bootstrap';
 import SocialShare from '../components/SocialShare';
 import ParagraphsIntro from '../components/ParagraphsIntro';
 import ScrollTo from '../components/ScrollTo';
+import Footer from '../components/Footer';
 
 import aboutdatabasic from '../data/about/aboutdatabasic';
 
@@ -43,6 +44,7 @@ class About extends React.Component {
         </div>
         <SocialShare language={this.props.language}/>
         <ScrollTo />
+        <Footer />
       </div>
     )
   }

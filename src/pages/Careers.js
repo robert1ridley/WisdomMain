@@ -4,6 +4,7 @@ import SocialShare from '../components/SocialShare';
 
 //component imports
 import SiteNav from '../components/SiteNav';
+import Footer from '../components/Footer';
 
 class Careers extends React.Component {
   
@@ -13,6 +14,7 @@ class Careers extends React.Component {
         <SiteNav />
         <h1>Careers</h1>
         <SocialShare language={this.props.language}/>
+        <Footer />
       </div>
     )
   }

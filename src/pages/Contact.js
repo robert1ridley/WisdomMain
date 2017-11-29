@@ -4,6 +4,7 @@ import SiteNav from '../components/SiteNav';
 import MainContactForm from '../components/MainContactForm';
 import ContactList from '../components/ContactList';
 import SocialShare from '../components/SocialShare';
+import Footer from '../components/Footer';
 import {connect} from 'react-redux';
 import { Row, Col } from 'react-bootstrap';
 
@@ -27,6 +28,7 @@ class Contact extends React.Component {
           </Row>
         </div>
         <SocialShare language={this.props.language}/>
+        <Footer />
       </div>
     )
   }

@@ -162,6 +162,7 @@ div.media-body {
 .wiggle-me:hover{-ms-animation:wiggle .3s 2;-moz-animation:wiggle .3s 2;-webkit-animation:wiggle .3s 2;animation:wiggle .3s 2;}
 
 
+/* clap text in image block text */
 .clampMe {
   position: relative;
   height: 4em; 
@@ -192,4 +193,13 @@ div.media-body {
   .clampMe:after {
     display: none;
   }
+}
+
+#footer {
+  position: relative;
+  /* background: #292929; */
+  padding: 38px 0 36px;
+  text-align: center;
+  color: white;
+  font: 'Lato';
 }

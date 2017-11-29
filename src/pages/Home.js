@@ -18,6 +18,7 @@ import MediaObjects from '../components/MediaObjects';
 import SocialShare from '../components/SocialShare';
 // import BaiduMap from '../components/BaiduMap';
 import ScrollTo from '../components/ScrollTo';
+import Footer from '../components/Footer';
 
 class Home extends React.Component {
   render() {
@@ -54,6 +55,7 @@ class Home extends React.Component {
         <SocialShare language={this.props.language}/>
         {/* <BaiduMap language={this.props.language}/> */}
         <ScrollTo />
+        <Footer />
       </div>
     )
   }

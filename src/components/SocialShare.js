@@ -23,7 +23,7 @@ export default class SocialShare extends React.Component {
 
 const styles = {
   background: {
-    background: 'url(' + backgroundImage2 + ') no-repeat center center',
+    background: 'url(' + backgroundImage2 + ') no-repeat center center fixed',
     minHeight: 565
   }
 }

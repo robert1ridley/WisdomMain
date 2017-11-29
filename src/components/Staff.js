@@ -23,7 +23,7 @@ export default class Staff extends React.Component {
 
 const styles = {
   background: {
-    background: 'url(' + backgroundImage + ') no-repeat center center',
+    background: 'url(' + backgroundImage + ') no-repeat center center fixed',
     minHeight: 565
   }
 }

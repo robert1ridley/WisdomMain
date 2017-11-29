@@ -1,9 +1,10 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import SocialShare from '../components/SocialShare';
 
 //component imports
 import SiteNav from '../components/SiteNav';
+import SocialShare from '../components/SocialShare';
+import Footer from '../components/Footer';
 
 class News extends React.Component {
   
@@ -13,6 +14,7 @@ class News extends React.Component {
         <SiteNav />
         <h1>News</h1>
         <SocialShare language={this.props.language}/>
+        <Footer />
       </div>
     )
   }
