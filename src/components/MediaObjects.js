@@ -52,7 +52,7 @@ class SingleMedia extends React.Component {
         >
           <Link to="/">
             <Media.Left>
-              <img src={this.props.image} alt={this.props.header} className="media-img"/>
+              <img src={this.props.image} alt={this.props.header} />
             </Media.Left>
             <Media.Body style={textStyle}>
               <Media.Heading className="medium-head">{this.props.header}</Media.Heading>
