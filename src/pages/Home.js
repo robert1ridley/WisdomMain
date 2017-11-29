@@ -54,8 +54,8 @@ class Home extends React.Component {
         </div>
         <SocialShare language={this.props.language}/>
         {/* <BaiduMap language={this.props.language}/> */}
-        <ScrollTo />
         <Footer />
+        <ScrollTo />
       </div>
     )
   }

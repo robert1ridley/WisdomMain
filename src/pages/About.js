@@ -43,8 +43,8 @@ class About extends React.Component {
           </Well> */}
         </div>
         <SocialShare language={this.props.language}/>
-        <ScrollTo />
         <Footer />
+        <ScrollTo />
       </div>
     )
   }
