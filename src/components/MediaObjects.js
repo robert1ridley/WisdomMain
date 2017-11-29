@@ -1,5 +1,5 @@
 import React from 'react';
-import { Media } from 'react-bootstrap';
+import { Media, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 export default class MediaObjects extends React.Component {
@@ -8,7 +8,6 @@ export default class MediaObjects extends React.Component {
     const MediaObjects = data.map(MediaObject =>
       <SingleMedia 
       image={MediaObject.imgUrl}
-      class="wow fadeInLeft"
       header={MediaObject.head}
       text={MediaObject.text}
       key={MediaObject.id}
@@ -16,7 +15,9 @@ export default class MediaObjects extends React.Component {
     )
     return (
       <div className="central-info">
-        {MediaObjects}
+        <Row>
+          {MediaObjects}
+        </Row>
       </div>
     )
   }
@@ -44,23 +45,29 @@ class SingleMedia extends React.Component {
     var textStyle = this.state.hover === true? {color: 'white'}: {color: 'black'};
 
     return (
-        <Media 
-          className={this.props.class}
-          onMouseEnter={this.toggleHover} 
-          onMouseLeave={this.toggleHover} 
-          style={linkStyle}
-        >
-          <Link to="/">
-            <Media.Left>
-              <img src={this.props.image} alt={this.props.header} />
-            </Media.Left>
-            <Media.Body style={textStyle}>
-              <Media.Heading className="medium-head">{this.props.header}</Media.Heading>
-              <p className="medium-body">{this.props.text}</p>
-            </Media.Body>
-          </Link>
-        </Media>
+      <Col md={4} sm={4} xs={12} key={this.props.key} className="lower-margin">
+        <Link to="/">
+          <div className="card wow fadeInLeft" 
+            onMouseEnter={this.toggleHover} 
+            onMouseLeave={this.toggleHover}
+            style={linkStyle}
+          >
+            <img className="img-fluid" src={this.props.image} alt={this.props.image} style={styles.image} />
+            <div className="card-body text-center">
+              <h4 className="card-title">{this.props.header}</h4>
+              <p className="card-text">{this.props.text}</p>
+            </div>
+          </div>
+        </Link>
+      </Col>
     )
   }
 }
+
+const styles = {
+  image: {
+    width: '100%'
+  }
+}
+
 
