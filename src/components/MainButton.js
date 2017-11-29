@@ -18,7 +18,7 @@ export default class MainButton extends React.Component {
   render () {
     var buttonStyle = !this.state.hover === true? styles.regButton: styles.hoverButton;
     return (
-      <div className="wow bounceInUp">
+      <div>
         <Button 
           className="wiggle-me"
           onMouseEnter={this.toggleHover} 

@@ -160,3 +160,36 @@ div.media-body {
 @-webkit-keyframes wiggle{0%{-webkit-transform:rotate(3deg);}50%{-webkit-transform:rotate(-3deg);}100%{-webkit-transform:rotate(3deg);}}
 @keyframes wiggle{0%{transform:rotate(3deg);}50%{transform:rotate(-3deg);}100%{transform:rotate(3deg);}}
 .wiggle-me:hover{-ms-animation:wiggle .3s 2;-moz-animation:wiggle .3s 2;-webkit-animation:wiggle .3s 2;animation:wiggle .3s 2;}
+
+
+.clampMe {
+  position: relative;
+  height: 4em; 
+  overflow: hidden;
+}
+
+.clampMe:after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 60px; /* Just use multiples of the line-height */
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 80%);
+}
+
+/* Now add in code for the browsers that support -webkit-line-clamp and overwrite the non-supportive stuff */
+@supports (-webkit-line-clamp: 2) {
+  .clampMe {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+  }
+  
+  .clampMe:after {
+    display: none;
+  }
+}

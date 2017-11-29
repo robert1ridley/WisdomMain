@@ -8,7 +8,7 @@ export default class ImgBlocks extends React.Component {
 
     var data = this.props.language === "zh"? this.props.data.chinese: this.props.data.english;
     var blocks = data.map(block =>
-      <div className="wow fadeInRight" key = {block.id}>
+      <div key = {block.id}>
         <Columns       
           id = {block.id}
           icon = {block.icon}
@@ -19,7 +19,7 @@ export default class ImgBlocks extends React.Component {
     )
 
     return (
-        <div style={styles.row}>
+        <div style={styles.row} className="wow fadeInRight">
           <Row>
             {blocks}
           </Row>

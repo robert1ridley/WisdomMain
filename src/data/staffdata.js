@@ -25,7 +25,7 @@ const staffdata = {
 
     {
       name: "森林",
-      role: "产品开发",
+      role: "金融",
       imageUrl: image1,
       id: 4
     }
@@ -56,7 +56,7 @@ const staffdata = {
 
     {
       name: "Sen Lin",
-      role: "Product Development",
+      role: "Finance",
       imageUrl: image1,
       id: 4
     }

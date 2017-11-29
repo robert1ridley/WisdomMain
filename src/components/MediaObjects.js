@@ -55,7 +55,7 @@ class SingleMedia extends React.Component {
             <img className="img-fluid" src={this.props.image} alt={this.props.image} style={styles.image} />
             <div className="card-body text-center">
               <h4 className="card-title">{this.props.header}</h4>
-              <p className="card-text">{this.props.text}</p>
+              <p className="card-text clampMe">{this.props.text}</p>
             </div>
           </div>
         </Link>
