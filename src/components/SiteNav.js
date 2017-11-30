@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {switchLanguage} from '../actions/index';
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem, Image } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, MenuItem, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import headers from '../data/headersdata';
 import '../styles/sitenav.css';

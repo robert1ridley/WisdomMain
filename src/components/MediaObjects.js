@@ -1,5 +1,5 @@
 import React from 'react';
-import { Media, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 export default class MediaObjects extends React.Component {
@@ -42,7 +42,6 @@ class SingleMedia extends React.Component {
     var linkStyle = this.state.hover === true? 
       {backgroundColor: '#39b6b3', color: 'white', padding: 10}: 
       {backgroundColor: 'white', color: 'black', padding: 10};
-    var textStyle = this.state.hover === true? {color: 'white'}: {color: 'black'};
 
     return (
       <Col md={4} sm={4} xs={12} key={this.props.key} className="lower-margin">

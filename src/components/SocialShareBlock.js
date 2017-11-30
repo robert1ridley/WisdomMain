@@ -39,7 +39,7 @@ class SocialItem extends React.Component {
             onMouseLeave={this.toggleHover}
             style={buttonStyle}
           >
-            <a className="white" href="#">
+            <a className="white" href="/">
               <div style={styles.fill}>
                 <i className={this.props.img} aria-hidden="true"></i>
               </div>
