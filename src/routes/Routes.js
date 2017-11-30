@@ -1,4 +1,7 @@
 import React from 'react';
+import SiteNav from '../components/SiteNav';
+import Footer from '../components/Footer';
+import ScrollTo from '../components/ScrollTo';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import News from '../pages/News';
@@ -13,16 +16,19 @@ export default () => (
   <BrowserRouter>
       <div>
         <Route component={ScrollToTop} />
-          <Switch>
-            <Route path="/" exact component={Home}/>
-            <Route path="/about" exact component={About}/>
-            <Route path="/news" exact component={News}/>
-            <Route path="/plans" exact component={Plans}/>
-            <Route path="/achievements" exact component={Achievements}/>
-            <Route path="/careers" exact component={Careers}/>
-            <Route path="/contact" exact component={Contact}/>
-            <Route path="*" exact component={NotFound}/>
-          </Switch>
+        <SiteNav />
+        <Switch>
+          <Route path="/" exact component={Home}/>
+          <Route path="/about" exact component={About}/>
+          <Route path="/news" exact component={News}/>
+          <Route path="/plans" exact component={Plans}/>
+          <Route path="/achievements" exact component={Achievements}/>
+          <Route path="/careers" exact component={Careers}/>
+          <Route path="/contact" exact component={Contact}/>
+          <Route path="*" exact component={NotFound}/>
+        </Switch>
+        <Footer />
+        <ScrollTo />
       </div>
   </BrowserRouter>
 )

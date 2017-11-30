@@ -1,10 +1,8 @@
 import React from 'react';
 // import BaiduMap from '../components/BaiduMap';
-import SiteNav from '../components/SiteNav';
 import MainContactForm from '../components/MainContactForm';
 import ContactList from '../components/ContactList';
 import SocialShare from '../components/SocialShare';
-import Footer from '../components/Footer';
 import {connect} from 'react-redux';
 import { Row, Col } from 'react-bootstrap';
 
@@ -12,7 +10,6 @@ class Contact extends React.Component {
   render() {
     return (
       <div>
-        <SiteNav />
         {/* <BaiduMap language={this.props.language}/> */}
         <div className="container big-lower-margin wow fadeIn">
           <div className="text-center central-info">
@@ -28,7 +25,6 @@ class Contact extends React.Component {
           </Row>
         </div>
         <SocialShare language={this.props.language}/>
-        <Footer />
       </div>
     )
   }

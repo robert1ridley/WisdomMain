@@ -3,20 +3,13 @@ import {connect} from 'react-redux';
 import { Image, Well } from 'react-bootstrap';
 import SocialShare from '../components/SocialShare';
 import ParagraphsIntro from '../components/ParagraphsIntro';
-import ScrollTo from '../components/ScrollTo';
-import Footer from '../components/Footer';
-
 import aboutdatabasic from '../data/about/aboutdatabasic';
-
-//component imports
-import SiteNav from '../components/SiteNav';
 
 class About extends React.Component {
   
   render() {
     return (
       <div>
-        <SiteNav />
         <div className="container upper-margin">
           {/* <Well className="wow fadeInLeft big-lower-margin">
             <ParagraphsIntro 
@@ -43,8 +36,6 @@ class About extends React.Component {
           </Well> */}
         </div>
         <SocialShare language={this.props.language}/>
-        <Footer />
-        <ScrollTo />
       </div>
     )
   }

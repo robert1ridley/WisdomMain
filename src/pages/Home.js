@@ -9,7 +9,6 @@ import basicintrodata from '../data/basicintrodata';
 import newsintrodata from '../data/newsintrodata';
 
 //component imports
-import SiteNav from '../components/SiteNav';
 import Staff from '../components/Staff';
 import CarouselImages from '../components/CarouselImages';
 import Intro from '../components/Intro';
@@ -17,14 +16,11 @@ import ImgBlocks from '../components/ImgBlocks';
 import MediaObjects from '../components/MediaObjects';
 import SocialShare from '../components/SocialShare';
 // import BaiduMap from '../components/BaiduMap';
-import ScrollTo from '../components/ScrollTo';
-import Footer from '../components/Footer';
 
 class Home extends React.Component {
   render() {
     return (
       <div>
-        <SiteNav />
         <CarouselImages />
         <div className="container">
           <Intro 
@@ -54,8 +50,6 @@ class Home extends React.Component {
         </div>
         <SocialShare language={this.props.language}/>
         {/* <BaiduMap language={this.props.language}/> */}
-        <Footer />
-        <ScrollTo />
       </div>
     )
   }
