@@ -7,8 +7,8 @@ export default class Footer extends React.Component {
   render () {
     return (
       <div className="wow fadeInRight">
-        <div className="container" style={{padding: 40}}>
-          <h1 className="big-head text-center">我们的客户包括</h1>
+        {/* <div className="container" style={{padding: 40}}>
+          <h1 className="big-head text-center lower-margin">我们的客户包括</h1>
           <Image className="center-img" src={footer} responsive/>
         </div>
         <div id="footer">
@@ -51,7 +51,7 @@ export default class Footer extends React.Component {
               </Col>
             </Row>
           </div>
-        </div>
+        </div> */}
       </div>
     )
   }
