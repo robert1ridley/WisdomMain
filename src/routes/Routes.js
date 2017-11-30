@@ -1,5 +1,6 @@
 import React from 'react';
 import SiteNav from '../components/SiteNav';
+import SocialShare from '../components/SocialShare';
 import Footer from '../components/Footer';
 import ScrollTo from '../components/ScrollTo';
 import Home from '../pages/Home';
@@ -27,6 +28,7 @@ export default () => (
           <Route path="/contact" exact component={Contact}/>
           <Route path="*" exact component={NotFound}/>
         </Switch>
+        <SocialShare />
         <Footer />
         <ScrollTo />
       </div>

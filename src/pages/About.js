@@ -1,7 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import { Image, Well } from 'react-bootstrap';
-import SocialShare from '../components/SocialShare';
 import ParagraphsIntro from '../components/ParagraphsIntro';
 import aboutdatabasic from '../data/about/aboutdatabasic';
 
@@ -35,7 +34,6 @@ class About extends React.Component {
             />
           </Well> */}
         </div>
-        <SocialShare language={this.props.language}/>
       </div>
     )
   }

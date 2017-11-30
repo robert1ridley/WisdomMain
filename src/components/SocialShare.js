@@ -1,10 +1,11 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import backgroundImage2 from '../images/background2.jpg';
 import Intro from '../components/Intro';
 import SocialShareBlock from '../components/SocialShareBlock';
 import sharingdata from '../data/sharingdata';
 
-export default class SocialShare extends React.Component {
+class SocialShare extends React.Component {
   render () {
     return (
       <div style={styles.background}>
@@ -27,3 +28,12 @@ const styles = {
     minHeight: 565
   }
 }
+
+function mapStateToProps(state) {
+  console.log(state.language)
+  return {
+      language: state.language
+  };
+}
+
+export default connect(mapStateToProps)(SocialShare);

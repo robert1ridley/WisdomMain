@@ -14,7 +14,6 @@ import CarouselImages from '../components/CarouselImages';
 import Intro from '../components/Intro';
 import ImgBlocks from '../components/ImgBlocks';
 import MediaObjects from '../components/MediaObjects';
-import SocialShare from '../components/SocialShare';
 // import BaiduMap from '../components/BaiduMap';
 
 class Home extends React.Component {
@@ -48,7 +47,6 @@ class Home extends React.Component {
             language={this.props.language}
           />
         </div>
-        <SocialShare language={this.props.language}/>
         {/* <BaiduMap language={this.props.language}/> */}
       </div>
     )

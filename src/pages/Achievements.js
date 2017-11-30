@@ -1,6 +1,5 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import SocialShare from '../components/SocialShare';
 
 class Achievements extends React.Component {
   
@@ -8,7 +7,6 @@ class Achievements extends React.Component {
     return (
       <div>
         <h1>Achievements</h1>
-        <SocialShare language={this.props.language}/>
       </div>
     )
   }

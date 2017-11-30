@@ -2,7 +2,6 @@ import React from 'react';
 // import BaiduMap from '../components/BaiduMap';
 import MainContactForm from '../components/MainContactForm';
 import ContactList from '../components/ContactList';
-import SocialShare from '../components/SocialShare';
 import {connect} from 'react-redux';
 import { Row, Col } from 'react-bootstrap';
 
@@ -24,7 +23,6 @@ class Contact extends React.Component {
             </Col>
           </Row>
         </div>
-        <SocialShare language={this.props.language}/>
       </div>
     )
   }
