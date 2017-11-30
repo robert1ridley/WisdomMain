@@ -1,0 +1,13 @@
+#footer {
+  position: relative;
+  background: #292929;
+  padding: 38px 0 36px;
+  text-align: center;
+  color: white;
+  font: 'Lato';
+}
+
+.footer-head {
+  color: #ff5800;
+  text-transform: uppercase;
+}

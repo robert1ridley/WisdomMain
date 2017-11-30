@@ -47,7 +47,7 @@ class SingleMedia extends React.Component {
     return (
       <Col md={4} sm={4} xs={12} key={this.props.key} className="lower-margin">
         <Link to="/">
-          <div className="card wow fadeInLeft" 
+          <div className="card wow fadeInLeft rounded-card" 
             onMouseEnter={this.toggleHover} 
             onMouseLeave={this.toggleHover}
             style={linkStyle}

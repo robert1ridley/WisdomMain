@@ -19,7 +19,7 @@ export default class CarouselImages extends React.Component {
         <Carousel.Item key={imageDatum.id}>
           <div className="wrapper">
             <div className="img-wrapper">
-              <img width="100%" alt="900x500" src={imageDatum.image} />
+              <img width="100%" src={imageDatum.image} />
             </div>
           </div>
         </Carousel.Item>
