@@ -139,6 +139,11 @@ div.media-body {
   margin-bottom: 30px;
 }
 
+.both-margin {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .big-lower-margin {
   margin-bottom: 80px;
 }
@@ -210,4 +215,20 @@ div.media-body {
   .clampMe:after {
     display: none;
   }
+}
+
+/* SubNav styles */
+.nav-pills .active a {
+  background-color: rgb(57, 182, 179) !important;
+}
+
+.center-div {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+
+.green-back {
+  background-color: rgb(57, 182, 179);
 }

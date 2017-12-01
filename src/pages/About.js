@@ -1,6 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import { Image, Well } from 'react-bootstrap';
+
+import Subnav from '../components/Subnav';
 import ParagraphsIntro from '../components/ParagraphsIntro';
 import aboutdatabasic from '../data/about/aboutdatabasic';
 
@@ -9,8 +11,13 @@ class About extends React.Component {
   render() {
     return (
       <div>
-        <div className="container upper-margin">
-          {/* <Well className="wow fadeInLeft big-lower-margin">
+        <div className="green-back" style={{paddingBottom: 30}}>
+          <div className="container">
+            <Subnav language={this.props.language}/>
+          </div>
+        </div>
+        <div className="container both-margin">
+          <div className="wow fadeInLeft big-lower-margin rounded-card" style={{padding:20}}>
             <ParagraphsIntro 
               language={this.props.language}
               data={aboutdatabasic}
@@ -20,19 +27,7 @@ class About extends React.Component {
               className="center-img lower-margin"
               responsive 
             />
-          </Well>
-          <Well className="wow fadeInLeft ">
-            <ParagraphsIntro 
-              className="upper-margin"
-              language={this.props.language}
-              data={aboutdatabasic}
-            />
-            <Image
-              src={aboutdatabasic.imgUrl}
-              className="center-img"
-              responsive 
-            />
-          </Well> */}
+          </div>
         </div>
       </div>
     )
