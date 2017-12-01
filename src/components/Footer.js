@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Image, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import footer from '../images/footer.jpg';
 import '../styles/footer.css';
 import footerdata from '../data/footerdata';
@@ -11,9 +12,13 @@ class Footer extends React.Component {
     const footerHead = footerAll.pagehead;
     const footerItems = footerAll.footerItems.map((footerItem, idx) => 
       <Col md={2} xs={6} key={idx}>
-        <h4 className="footer-head">{footerItem.header}</h4>
+        <Link to={footerItem.header.link}>
+          <h4 className="footer-head">{footerItem.header.text}</h4>
+        </Link>
           {footerItem.subItems.map((singleSub, index) =>
-            <p key={index}>{singleSub}</p>
+            <Link to={singleSub.link}>
+              <p key={index}>{singleSub.text}</p>
+            </Link>
           )}
       </Col>
   )

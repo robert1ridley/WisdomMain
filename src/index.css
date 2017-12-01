@@ -65,8 +65,12 @@ a:hover, a:focus, div.media-body:hover, div.media-body:hover {
   text-decoration: none;
 }
 
-a:link, a:visited, a:hover, a:active {
+.navbar a:link, .navbar a:visited, .navbar a:hover, .navbar a:active {
   color: rgb(119, 119, 119);
+}
+
+#footer a:link, #footer a:visited, #footer a:hover, #footer a:active {
+  color: white;
 }
 
 div.media-body {

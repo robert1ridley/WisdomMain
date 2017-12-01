@@ -3,49 +3,49 @@ const footerdata = {
     pagehead: {text: "我们的客户包括", link: "/"},
     footerItems:[
       {
-        header: "关于智道",
+        header: {text: "关于智道", link:"/about"},
         subItems: [
-          "公司概况",
-          "企业文化",
-          "组织架构",
-          "资质荣誉",
-          "大事记",
-          "社会责任",
-          "董事长致辞"
+          {text: "公司概况", link:"/about"},
+          {text: "企业文化", link:"/about"},
+          {text: "组织架构", link:"/about"},
+          {text: "资质荣誉", link: "/about"},
+          {text: "大事记", link: "/about"},
+          {text: "社会责任", link: "/about"},
+          {text: "董事长致辞", link: "/about"}
         ]
       },
       {
-        header: "新闻中心",
+        header: {text: "新闻中心", link: "/news"},
         subItems: [
-          "企业新闻",
-          "行业动态"
+          {text: "企业新闻", link: "/news"},
+          {text: "行业动态", link: "/news"}
         ]
       },
       {
-        header: "解决方案",
+        header: {text: "解决方案", link: "/plans"},
         subItems: [
-          "主营业务",
-          "创新与研发",
-          "自主知识产权技术和装置介绍"
+          {text: "主营业务", link:"/plans"},
+          {text: "创新与研发", link:"/plans"},
+          {text: "自主知识产权技术和装置介绍", link:"/plans"}
         ]
       },
       {
-        header: "人力资源",
+        header: {text: "人力资源", link:"/careers"},
         subItems: [
-          "人才招聘",
-          "员工风采"
+          {text: "人才招聘", link: "/careers"},
+          {text: "员工风采", link:"/careers"}
         ]
       },
       {
-        header: "地址",
+        header: {text: "地址", link:"/contact"},
         subItems: [
-          "南京市新模范马路5号科技创新大楼21楼B座"
+          {text: "南京市新模范马路5号科技创新大楼21楼B座", link: "/contact"}
         ]
       },
       {
-        header: "电话",
+        header: {text: "电话", link:"/contact"},
         subItems: [
-          "9400929844738"
+          {text: "9400929844738", link:"/contact"}
         ]
       }
     ]
@@ -54,49 +54,49 @@ const footerdata = {
     pagehead: {text: "Our clients include", link: "/"},
     footerItems:[
       {
-        header: "About us",
+        header: {text: "About us", link: "/about"},
         subItems: [
-          "Company Profile",
-          "Corporate Culture",
-          "Organizational Structure",
-          "Achievements",
-          "Events",
-          "Social Responsibility",
-          "Chairman's Blog"
+         {text: "Company Profile", link: "/about"},
+         {text: "Corporate Culture", link: "/about"},
+         {text: "Organizational Structure", link: "/about"},
+         {text: "Achievements", link: "/about"},
+         {text: "Events", link: "/about"},
+         {text: "Social Responsibility", link: "/about"},
+         {text: "Chairman's Blog", link: "/about"}
         ]
       },
       {
-        header: "Company News",
+        header: {text: "Company News", link: "/news"},
         subItems: [
-          "Industry News",
-          "Industry Trends"
+         {text: "Industry News", link: "/news"},
+         {text: "Industry Trends", link: "/news"}
         ]
       },
       {
-        header: "Solutions",
+        header:{text: "Plans", link: "/plans"}, 
         subItems: [
-          "Main Business",
-          "Research and Development",
-          "Introduction of independent intellectual property technology and equipment"
+         {text: "Main Business", link: "/plans"},
+         {text: "Research and Development", link: "/plans"},
+         {text: "Introduction of independent intellectual property technology and equipment", link: "/plans"}
         ]
       },
       {
-        header: "Careers",
+        header:{text: "Careers", link: "/careers"},
         subItems: [
-          "Talent Recruitment",
-          "Employees"
+         {text: "Talent Recruitment", link: "/careers"},
+         {text: "Employees", link: "/careers"}
         ]
       },
       {
-        header: "Address",
+        header:{text: "Address", link: "/contact"},
         subItems: [
-          "No.5 Xinmofan Road, Nanjing, Nanjing Sci-Tech Center, 21F-B"
+         {text: "No.5 Xinmofan Road, Nanjing, Nanjing Sci-Tech Center, 21F-B", link: "/contact"}
         ]
       },
       {
-        header: "Phone",
+        header:{text: "Phone", link: "/contact"},
         subItems: [
-          "9400929844738"
+         {text: "9400929844738", link: "/contact"}
         ]
       }
     ]
