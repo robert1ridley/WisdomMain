@@ -19,7 +19,7 @@ export default class CarouselImages extends React.Component {
         <Carousel.Item key={imageDatum.id}>
           <div className="wrapper">
             <div className="img-wrapper">
-              <div style={{backgroundImage: 'url(' + imageDatum.image + ')', height: 550, backgroundPosition: 'center'}} />
+              <div className="carousel-div" style={{backgroundImage: 'url(' + imageDatum.image + ')'}} />
             </div>
           </div>
         </Carousel.Item>
@@ -32,3 +32,4 @@ export default class CarouselImages extends React.Component {
     )
   }
 }
+
