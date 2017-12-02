@@ -1,71 +1,61 @@
 import React from 'react';
 import { Button, ButtonGroup } from 'react-bootstrap';
 import Intro from '../components/Intro';
+import ParagraphsIntro from '../components/ParagraphsIntro';
 
 import introdata from '../data/introdata';
+import aboutdatabasic from '../data/about/aboutdatabasic';
 
 export default class Subnav extends React.Component {
+  state = {
+    activeIndex: 0
+  }
+
+  changeActive(activeIndex) {
+    this.setState({ activeIndex })
+  }
   
   render () {
+    const navData = this.props.language === "zh"? aboutdatabasic.chinese: aboutdatabasic.english;
+    const navButtons = navData.map((navButton, index) => 
+      <Button 
+        bsSize="large" 
+        style={this.state.activeIndex===index? styles.activeButton: styles.regularButton} 
+        onClick={() => this.changeActive(index)}
+      >
+        {navButton.head}
+      </Button>
+    )
+
     return (
-      <div className="green-back">
-        <Intro
-          language={this.props.language}
-          data={introdata}
-          color={{color: 'white'}}
-        />
-        <div className="wow fadeIn text-center">
-            <NavButton />
-            <NavButton />
-            <NavButton />
-            <NavButton />
-            <NavButton />
-            <NavButton />
+      <div>
+        <div className="green-back" style={{paddingBottom: 30}}>
+          <div className="container">
+            <Intro
+              language={this.props.language}
+              data={introdata}
+              color={{color: 'white'}}
+            />
+          </div>
+          <div className="wow fadeIn text-center">
+              {navButtons}
+          </div>
         </div>
+        <ParagraphsIntro language={this.props.language} data={navData} index={this.state.activeIndex}/>
       </div>
     )
   }
 }
 
-class NavButton extends React.Component {
-  constructor(props){
-    super(props)
-    
-    this.changeActive = this.changeActive.bind(this);
-    this.state = {
-      active: true
-    }
-  }
-
-  changeActive(selectedKey){
-    this.setState({active: !this.state.active})
-  }
-
-  render() {
-    const buttonStyle = this.state.active===true? styles.activeButton: styles.regularButton;
-
-    return (
-      <Button 
-        bsSize="large" 
-        style={buttonStyle} 
-        onMouseEnter={this.changeActive}
-        onMouseLeave={this.changeActive}
-      >
-        Default
-      </Button>
-    )
-  }
-}
-
 const styles = {
-  activeButton: {
+  regularButton: {
     margin: 10,
     color: 'white',
     backgroundColor: 'rgb(57, 182, 179)',
     border: 'solid 2px white'
   },
 
-  regularButton: {
+  activeButton: {
     margin: 10,
     color: 'rgb(57, 182, 179)',
     backgroundColor: 'white',

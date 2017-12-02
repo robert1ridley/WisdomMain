@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import { Image, Well } from 'react-bootstrap';
 
 import Subnav from '../components/Subnav';
-import ParagraphsIntro from '../components/ParagraphsIntro';
+
 import aboutdatabasic from '../data/about/aboutdatabasic';
 
 class About extends React.Component {
@@ -11,10 +11,10 @@ class About extends React.Component {
   render() {
     return (
       <div>
-        <div className="green-back" style={{paddingBottom: 30}}>
-          <div className="container">
+        {/* <div className="green-back" style={{paddingBottom: 30}}>
+          <div className="container"> */}
             <Subnav language={this.props.language}/>
-          </div>
+          {/* </div>
         </div>
         <div className="container both-margin">
           <div className="wow fadeInLeft big-lower-margin rounded-card" style={{padding:20}}>
@@ -28,7 +28,7 @@ class About extends React.Component {
               responsive 
             />
           </div>
-        </div>
+        </div> */}
       </div>
     )
   }
