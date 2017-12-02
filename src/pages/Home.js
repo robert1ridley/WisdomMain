@@ -1,6 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux';
 
+import '../styles/home.css';
+
 //data imports
 import introdata from '../data/introdata';
 import imgblockdata from '../data/imgblockdata';
