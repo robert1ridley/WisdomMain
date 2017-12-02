@@ -16,7 +16,7 @@ class Footer extends React.Component {
           <h4 className="footer-head">{footerItem.header.text}</h4>
         </Link>
           {footerItem.subItems.map((singleSub, index) =>
-            <Link to={singleSub.link}>
+            <Link to={singleSub.link} key={index}>
               <p key={index}>{singleSub.text}</p>
             </Link>
           )}

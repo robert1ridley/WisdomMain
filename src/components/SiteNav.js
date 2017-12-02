@@ -13,7 +13,7 @@ class SiteNav extends React.Component {
   render() {
     const headings = this.props.language === "zh"? headers.chinese: headers.english;
     const titles = headings.map(heading => 
-      <LinkContainer to={heading.link}>
+      <LinkContainer to={heading.link} key={heading.id}>
         <NavItem eventKey={heading.id}>{heading.head}</NavItem>
       </LinkContainer>
     )

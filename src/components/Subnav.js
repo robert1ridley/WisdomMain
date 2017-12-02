@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, ButtonGroup } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import Intro from '../components/Intro';
 import ParagraphsIntro from '../components/ParagraphsIntro';
 
