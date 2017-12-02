@@ -16,11 +16,16 @@ export default class ParagraphsIntro extends React.Component {
             <h1 className="text-center big-head">{sectionData.head}</h1>
               {paragraphs}
           </div>
-          <Image
-            src={sectionData.imgUrl}
-            className="center-img lower-margin"
-            responsive 
-          />
+          <div>
+            {sectionData.imgUrl.map((image, index) => 
+              <Image
+                key={index}
+                src={image}
+                className="center-img lower-margin"
+                responsive 
+              />
+            )}
+          </div>
         </div>
       </div>
     )

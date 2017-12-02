@@ -11,24 +11,7 @@ class About extends React.Component {
   render() {
     return (
       <div>
-        {/* <div className="green-back" style={{paddingBottom: 30}}>
-          <div className="container"> */}
-            <Subnav language={this.props.language}/>
-          {/* </div>
-        </div>
-        <div className="container both-margin">
-          <div className="wow fadeInLeft big-lower-margin rounded-card" style={{padding:20}}>
-            <ParagraphsIntro 
-              language={this.props.language}
-              data={aboutdatabasic}
-            />
-            <Image
-              src={aboutdatabasic.imgUrl}
-              className="center-img lower-margin"
-              responsive 
-            />
-          </div>
-        </div> */}
+        <Subnav language={this.props.language}/>
       </div>
     )
   }
