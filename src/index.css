@@ -65,19 +65,9 @@ a:hover, a:focus, div.media-body:hover, div.media-body:hover {
   text-decoration: none;
 }
 
-.navbar a:link, .navbar a:visited, .navbar a:hover, .navbar a:active {
-  color: rgb(119, 119, 119);
-}
-
-#footer a:link, #footer a:visited, #footer a:hover, #footer a:active {
-  color: white;
-}
-
 div.media-body {
   color: black;
 }
-
-
 
 /* form styles */
 .form-entry {
@@ -195,11 +185,6 @@ div.media-body {
   .clampMe:after {
     display: none;
   }
-}
-
-/* SubNav styles */
-.nav-pills .active a {
-  background-color: rgb(57, 182, 179) !important;
 }
 
 .center-div {

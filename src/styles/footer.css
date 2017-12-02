@@ -11,3 +11,7 @@
   color: #ff5800;
   text-transform: uppercase;
 }
+
+#footer a:link, #footer a:visited, #footer a:hover, #footer a:active {
+  color: white;
+}
