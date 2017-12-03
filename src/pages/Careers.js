@@ -1,11 +1,11 @@
 import React from 'react';
 import {connect} from 'react-redux';
-
-import ParagraphsIntro from '../components/ParagraphsIntro';
 import Subnav from '../components/Subnav';
-
-import introdata from '../data/introdata';
-import aboutdatabasic from '../data/about/aboutdatabasic';
+import TextCards from '../components/TextCards';
+import ImageReel from '../components/ImageReel';
+import careersheaddata from '../data/careers/careersheaddata';
+import careerslistdata from '../data/careers/careerslistdata';
+import jobsdata from '../data/careers/jobsdata';
 
 class About extends React.Component {
   constructor() {
@@ -19,17 +19,23 @@ class About extends React.Component {
   }
   
   render() {
-    const navData = this.props.language === "zh"? aboutdatabasic.chinese: aboutdatabasic.english;
+    const navData = this.props.language === "zh"? careerslistdata.chinese: careerslistdata.english;
     return (
       <div>
         <Subnav 
           language={this.props.language}
-          intro={introdata}
+          intro={careersheaddata}
           aboutData={navData}
           currentActive={this.state.activeIndex}
           childActive={this.changeActive}
         />
-        <ParagraphsIntro language={this.props.language} data={navData} index={this.state.activeIndex}/>
+        <div className="container">
+          {
+            this.state.activeIndex===0?
+            <TextCards language={this.props.language} data={jobsdata}/>:
+            <ImageReel />
+          }
+        </div>
       </div>
     )
   }

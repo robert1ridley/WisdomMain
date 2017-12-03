@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import ParagraphsIntro from '../components/ParagraphsIntro';
 import Subnav from '../components/Subnav';
 
-import introdata from '../data/introdata';
+import aboutheaddata from '../data/about/aboutheaddata';
 import aboutdatabasic from '../data/about/aboutdatabasic';
 
 class About extends React.Component {
@@ -24,7 +24,7 @@ class About extends React.Component {
       <div>
         <Subnav 
           language={this.props.language}
-          intro={introdata}
+          intro={aboutheaddata}
           aboutData={navData}
           currentActive={this.state.activeIndex}
           childActive={this.changeActive}

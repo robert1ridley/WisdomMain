@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import Intro from '../components/Intro';
-import ParagraphsIntro from '../components/ParagraphsIntro';
 
 export default class Subnav extends React.Component {
 
