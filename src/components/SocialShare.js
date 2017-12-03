@@ -30,7 +30,6 @@ const styles = {
 }
 
 function mapStateToProps(state) {
-  console.log(state.language)
   return {
       language: state.language
   };

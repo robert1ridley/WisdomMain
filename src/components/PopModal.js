@@ -34,7 +34,6 @@ export default class PopModal extends React.Component {
 
   render () {
     var buttonStyle = !this.state.hover === true? styles.regButton: styles.hoverButton;
-   console.log(this.props.language) 
     return (
       <div>
         <Button 

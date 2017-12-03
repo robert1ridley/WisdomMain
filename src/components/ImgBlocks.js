@@ -52,7 +52,6 @@ class Columns extends React.Component {
   
   render () {
     var linkStyle = this.state.hover === true? {backgroundColor: '#39b6b3', color: 'white'}: {backgroundColor: 'white', color: 'black'};
-    console.log(this.props)
     return (
       <Col md={4} sm={6} xs={12}>
         <Link to={this.props.link}>
