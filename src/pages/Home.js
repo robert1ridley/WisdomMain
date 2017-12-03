@@ -22,7 +22,7 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <CarouselImages />
+        <CarouselImages language={this.props.language}/>
         <div className="container">
           <Intro 
             data={introdata}
