@@ -18,6 +18,13 @@
   height: 550px; 
   background-position: center;
   background-size: cover;
+  /*vid*/
+  display: block;
+}
+
+.carousel-div-non {
+  /*vid*/
+  display: none;
 }
 
 @media (max-width: 775px) {

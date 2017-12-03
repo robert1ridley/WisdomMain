@@ -16,6 +16,34 @@ const images = [
   {image: mainCarousel4, blurImage: mainCarousel4tiny, id: 4}
 ]
 
+class ImageDiv extends React.Component {
+  constructor(props){
+    super(props);
+
+    this.componentDidMount = this.componentDidMount.bind(this)
+    this.state = {
+      visible: false
+    }
+  }
+
+  show(){
+    this.setState({visible: true})
+  }
+
+  componentDidMount(){
+    this.show()
+  }
+
+  render(){
+    console.log(this.state)
+    const style = this.state.visible === false? "carousel-div-non": "carousel-div";
+
+    return (
+      <div className={style} style={{backgroundImage: 'url(' + this.props.image + ')'}}/>
+    )
+  }
+}
+
 export default class CarouselImages extends React.Component {
   render () {
 
@@ -23,7 +51,7 @@ export default class CarouselImages extends React.Component {
         <Carousel.Item key={imageDatum.id}>
           <div className="wrapper">
             <div className="img-wrapper" style={{backgroundImage: 'url(' + imageDatum.blurImage + ')'}}>
-              <div className="carousel-div" style={{backgroundImage: 'url(' + imageDatum.image + ')'}}/>
+              <ImageDiv image={imageDatum.image}/>
             </div>
           </div>
         </Carousel.Item>
@@ -36,4 +64,3 @@ export default class CarouselImages extends React.Component {
     )
   }
 }
-
