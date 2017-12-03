@@ -1,9 +1,9 @@
 import React from 'react';
-import { Carousel,  } from 'react-bootstrap';
-import mainCarousel1 from '../images/main1.jpg';
-import mainCarousel2 from '../images/main2.jpg';
-import mainCarousel3 from '../images/main3.jpg';
-import mainCarousel4 from '../images/main4.jpg';
+import { Carousel } from 'react-bootstrap';
+import mainCarousel1 from '../images/carousel/main1.jpg';
+import mainCarousel2 from '../images/carousel/main2.jpg';
+import mainCarousel3 from '../images/carousel/main3.jpg';
+import mainCarousel4 from '../images/carousel/main4.jpg';
 
 const images = [
   {image: mainCarousel1, id: 1},
