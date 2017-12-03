@@ -19,7 +19,7 @@ export default class ImgBlocks extends React.Component {
     )
 
     return (
-        <div style={styles.row} className="wow fadeInRight">
+        <div style={styles.row} className="wow fadeIn">
           <Row>
             {blocks}
           </Row>
