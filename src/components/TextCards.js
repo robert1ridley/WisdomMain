@@ -26,7 +26,7 @@ export default class TextCards extends React.Component {
 class SingleCard extends React.Component {
   render(){
     return (
-      <Col md={4} sm={4} xs={6} className="lower-margin">
+      <Col md={4} sm={6} xs={12} className="lower-margin">
         <div className="card wow fadeInLeft rounded-card" style={styles.padding}>
           <div className="card-body text-center">
             <h4 className="card-title">{this.props.header}</h4>
