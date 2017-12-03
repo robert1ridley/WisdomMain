@@ -47,17 +47,27 @@
 }
 
 .carousel-caption {
-  background-color: #292929;
-  opacity: 0.9;
-  border-radius: 25px;
+  /* background-color: #292929; */
+  /* opacity: 0.9;
+  border-radius: 25px; */
 }
 
 .carousel-caption h3 {
   font-size: 26px;
-  font-weight: 200;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .carousel-caption p {
   font-size: 22px;
   font-weight: 100;
+}
+
+ol.carousel-indicators {
+  margin-bottom: 15px;
+}
+
+.carousel-caption a:link, .carousel-caption a:visited, .carousel-caption a:hover, .carousel-caption a:active {
+  color: white;
 }
