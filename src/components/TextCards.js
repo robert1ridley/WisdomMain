@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, PageHeader } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import PopModal from './PopModal';
 
 export default class TextCards extends React.Component {

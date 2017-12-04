@@ -47,6 +47,7 @@ const styles = {
 
   loading: {
     background: 'url(' + backgroundImagetiny + ') no-repeat center center fixed',
+    filter: 'blur(20px)',
     minHeight: 565
   }
 }
