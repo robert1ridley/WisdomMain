@@ -37,13 +37,13 @@ const styles = {
   regularButton: {
     margin: 10,
     color: 'white',
-    backgroundColor: '#292929',
+    backgroundColor: '#368cbf',
     border: 'solid 2px white'
   },
 
   activeButton: {
     margin: 10,
-    color: '#292929',
+    color: '#368cbf',
     backgroundColor: 'white',
     border: 'solid 2px white'
   }

@@ -40,13 +40,13 @@ a, a:hover, a:focus {
 }
 
 #sidebar {
-    background: rgb(57, 182, 179);
+    background: #368cbf;
     transition: all 0.3s;
 }
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: rgb(57, 182, 179);
+    background: #368cbf;
     color: #fff;
 }
 
@@ -65,30 +65,30 @@ a, a:hover, a:focus {
     display: block;
 }
 #sidebar ul li a:hover, .clicked {
-    color: rgb(57, 182, 179) !important;
+    color: #368cbf !important;
     background: #fff;
 }
 
 .not-clicked {
   color: #fff;
-  background: rgb(57, 182, 179);
+  background: #368cbf;
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
-    background: rgb(57, 182, 179);
+    background: #368cbf;
 }
 #sidebar ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: rgb(57, 182, 179);
+    background: #368cbf;
 }
 
 .toggle-button {
   margin-left: 0px;
   margin-top: 20px !important;
   margin-bottom: 20px !important;
-  background-color: rgb(57, 182, 179);
+  background-color: #368cbf;
   color: white;
 }
 

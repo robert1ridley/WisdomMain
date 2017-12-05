@@ -40,7 +40,7 @@ class SingleMedia extends React.Component {
   render() {
 
     var linkStyle = this.state.hover === true? 
-      {backgroundColor: '#39b6b3', color: 'white', padding: 10}: 
+      {backgroundColor: '#7ebc59', color: 'white', padding: 10}: 
       {backgroundColor: 'white', color: 'black', padding: 10};
 
     return (

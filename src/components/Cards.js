@@ -49,6 +49,6 @@ const styles = {
     width: '100%'
   },
   green: {
-    color: '#39b6b3'
+    color: 'rgb(126, 188, 89)'
   }
 }

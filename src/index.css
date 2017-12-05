@@ -88,7 +88,7 @@ div.media-body {
 }
 
 .form-submit {
-  background-color: rgb(57, 182, 179);
+  background-color: #7ebc59;
   color: white;
 }
 
@@ -98,7 +98,7 @@ div.media-body {
   border-radius:40px;
   color:#fff;
   text-align:center;
-  background:rgb(57, 182, 179);
+  background:#7ebc59;
   margin: 0 auto;
 }
 
@@ -196,5 +196,5 @@ div.media-body {
 }
 
 .green-back {
-  background-color: #292929;
+  background-color: #368cbf;
 }

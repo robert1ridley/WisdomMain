@@ -51,7 +51,7 @@ const styles = {
     paddingBottom: 10,
     fontSize: 24,
     fontWeight: 100,
-    backgroundColor: '#39b6b3',
+    backgroundColor: '#7ebc59',
     color: 'white'
   }
 }

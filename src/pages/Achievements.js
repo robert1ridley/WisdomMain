@@ -34,9 +34,6 @@ class Achievements extends React.Component {
           language={this.props.language}
           currentActive={this.state.activeIndex}
         />
-        <div className="container">
-          {/* stuff */}
-        </div>
       </div>
     )
   }
