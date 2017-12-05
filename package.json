@@ -5,8 +5,10 @@
   "dependencies": {
     "animate.css": "^3.5.2",
     "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
     "compression": "^1.7.1",
     "morgan": "^1.9.0",
+    "nodemailer": "^4.4.0",
     "react": "^16.0.0",
     "react-bootstrap": "^0.31.5",
     "react-dom": "^16.0.0",

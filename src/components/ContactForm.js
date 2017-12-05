@@ -24,15 +24,15 @@ export default class ContactForm extends React.Component {
   render () {
     var data = this.props.language === "zh"? placeholders.chinese: placeholders.english;
     return (
-      <form>
+      <form method="post" action="/consult">
         <FormGroup bsSize="large">
-          <FormControl type="name" placeholder={data.name} className="form-entry" required/>
+          <FormControl type="name" placeholder={data.name} className="form-entry" name="name" required/>
         </FormGroup>
         <FormGroup bsSize="large">
-          <FormControl type="email" placeholder={data.email} className="form-entry" required/>
+          <FormControl type="email" placeholder={data.email} className="form-entry" name="email" required/>
         </FormGroup>
         <FormGroup controlId="formControlsTextarea" bsSize="large">
-          <FormControl componentClass="textarea" placeholder={data.message} rows="6" className="form-entry" required/>
+          <FormControl componentClass="textarea" placeholder={data.message} rows="6" className="form-entry" name="message" required/>
         </FormGroup>
         <Button type="submit" className="form-submit">
           {data.send}
