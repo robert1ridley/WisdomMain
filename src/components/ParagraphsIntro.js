@@ -5,8 +5,8 @@ export default class ParagraphsIntro extends React.Component {
   render () {
 
     const sectionData = this.props.data[this.props.index];
-    const paragraphs = sectionData.text.map(paragraph => 
-      <p className="big-body">{paragraph}</p>
+    const paragraphs = sectionData.text.map((paragraph, index) => 
+      <p key={index} className="big-body">{paragraph}</p>
     )
 
     return (

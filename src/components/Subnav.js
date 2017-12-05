@@ -10,6 +10,7 @@ export default class Subnav extends React.Component {
         bsSize="large" 
         style={this.props.currentActive===index? styles.activeButton: styles.regularButton} 
         onClick={() => this.props.childActive(index)}
+        key={index}
       >
         {navButton.head}
       </Button>
