@@ -9,9 +9,9 @@ import mainCarousel2tiny from '../images/carousel/test/page-1_slide02tiny.jpg';
 import mainCarousel3tiny from '../images/carousel/test/page-1_slide03tiny.jpg';
 
 const images = [
-  {image: mainCarousel1, blurImage: mainCarousel1tiny, id: 1, chinese: "关于智道", english: "About Wisdom", link: "/about"},
-  {image: mainCarousel2, blurImage: mainCarousel2tiny, id: 2, chinese: "工程业绩", english: "Our Projects", link: "/achievements"},
-  {image: mainCarousel3, blurImage: mainCarousel3tiny, id: 3, chinese: "新闻中心", english: "Company News", link: "/news"}
+  {image: mainCarousel1, blurImage: mainCarousel1tiny, id: 1, chinese: {head: "关于智道", body: "关于智道关于智道关于智道"}, english: {head: "About Wisdom", body: "This is some text about our company."}, link: "/about"},
+  {image: mainCarousel2, blurImage: mainCarousel2tiny, id: 2, chinese: {head: "工程业绩", body: "关于智道关于智道关于智道"}, english: {head: "Our Projects", body: "This is some text about our company."}, link: "/achievements"},
+  {image: mainCarousel3, blurImage: mainCarousel3tiny, id: 3, chinese: {head: "新闻中心", body: "关于智道关于智道关于智道"}, english: {head: "Company News", body: "This is some text about our company."}, link: "/news"}
 ]
 
 class ImageDiv extends React.Component {
@@ -40,7 +40,8 @@ class ImageDiv extends React.Component {
       <div className={style} style={{backgroundImage: 'url(' + this.props.image + ')'}}>
         <Carousel.Caption>
           <Link to={this.props.link}>
-            <h3>{this.props.text}</h3>
+            <h3>{this.props.text.head}</h3>
+            <p>{this.props.text.body}</p>
           </Link>
         </Carousel.Caption>
       </div>

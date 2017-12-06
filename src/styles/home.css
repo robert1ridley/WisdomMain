@@ -22,8 +22,8 @@
   width: 100%;
   height: 100%;
   /* background: #368cbf; */
-  background: #7ebc59;
-  opacity: .3;
+  /* background: #7ebc59;
+  opacity: .3; */
 }
 
 .carousel-div {
@@ -58,20 +58,34 @@
   }
 }
 
+.carousel-caption {
+  max-width: 100%;
+  width:100%;
+  padding-bottom: 10px !important;
+  padding-top: 10px !important;
+  background-color: #7ebc59;
+  opacity: 0.8;
+  left: 0 !important;
+  bottom: 0 !important;
+}
+
 .carousel-caption h3 {
-  font-size: 26px;
-  font-weight: 400;
+  /* font-size: 26px;
+  font-weight: 400; */
   margin-top: 10px;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 
 .carousel-caption p {
-  font-size: 22px;
-  font-weight: 100;
+  /* font-size: 22px;
+  font-weight: 100; */
+  margin-bottom: 30px;
 }
 
 ol.carousel-indicators {
-  margin-bottom: 15px;
+  bottom: 10px !important;
+  margin-bottom: 0px;
+  margin-top: 10px;
 }
 
 .carousel-caption a:link, .carousel-caption a:visited, .carousel-caption a:hover, .carousel-caption a:active {
