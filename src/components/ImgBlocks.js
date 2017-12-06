@@ -27,7 +27,7 @@ export default class ImgBlocks extends React.Component {
             <Link to="/about">
               <MainButton
                 language = {this.props.language}
-                buttonText = {{chinese:"学习更多", english: "Learn more"}}
+                buttonText = {{chinese:"了解更多", english: "Learn more"}}
               />
             </Link>
           </div>
