@@ -7,6 +7,8 @@ import careersheaddata from '../data/careers/careersheaddata';
 import careerslistdata from '../data/careers/careerslistdata';
 import jobsdata from '../data/careers/jobsdata';
 
+import background3 from '../images/subnav/background3.jpg';
+
 class About extends React.Component {
   constructor() {
     super();
@@ -28,6 +30,7 @@ class About extends React.Component {
           aboutData={navData}
           currentActive={this.state.activeIndex}
           childActive={this.changeActive}
+          background={styles.subnav}
         />
         <div className="container">
           {
@@ -38,6 +41,14 @@ class About extends React.Component {
         </div>
       </div>
     )
+  }
+}
+
+const styles = {
+  subnav: {
+    paddingBottom: 30, 
+    background: 'url(' + background3 + ') no-repeat center bottom fixed', 
+    backgroundSize: 'cover'
   }
 }
 

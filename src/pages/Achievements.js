@@ -5,6 +5,8 @@ import Sidebar from '../components/Sidebar';
 
 import achievementsdata from '../data/achievements/achievementsdata';
 
+import background14 from '../images/subnav/background14.jpg';
+
 class Achievements extends React.Component {
   constructor() {
     super();
@@ -34,6 +36,7 @@ class Achievements extends React.Component {
           aboutData={navData}
           currentActive={this.state.activeIndex}
           childActive={this.changeActive}
+          background={styles.subnav}
         />
         <Sidebar 
           data={navData}
@@ -44,6 +47,14 @@ class Achievements extends React.Component {
         />
       </div>
     )
+  }
+}
+
+const styles = {
+  subnav: {
+    paddingBottom: 30, 
+    background: 'url(' + background14 + ') no-repeat center bottom fixed', 
+    backgroundSize: 'cover'
   }
 }
 

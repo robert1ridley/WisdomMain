@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import Intro from '../components/Intro';
+// import background1 from '../images/subnav/background1.jpg';
 
 export default class Subnav extends React.Component {
 
@@ -17,7 +18,7 @@ export default class Subnav extends React.Component {
     )
 
     return (
-        <div className="green-back" style={{paddingBottom: 30}}>
+        <div className="green-back" style={this.props.background}>
           <div className="container">
             <Intro
               language={this.props.language}
@@ -37,13 +38,14 @@ const styles = {
   regularButton: {
     margin: 10,
     color: 'white',
-    backgroundColor: '#368cbf',
+    // backgroundColor: '#2c739d',
+    backgroundColor: 'Transparent',
     border: 'solid 2px white'
   },
 
   activeButton: {
     margin: 10,
-    color: '#368cbf',
+    color: '#2c739d',
     backgroundColor: 'white',
     border: 'solid 2px white'
   }
