@@ -6,11 +6,9 @@ export default class Sidebar extends React.Component {
   constructor(props) {
     super(props)
     this.changeActive = this.changeActive.bind(this);
-    this.setIndex = this.setIndex.bind(this);
 
     this.state = {
-        active: true,
-        index: 0
+        active: true
     };
 }
 
@@ -18,19 +16,13 @@ changeActive(){
   this.setState({active: !this.state.active})
 }
 
-setIndex(idx){
-  this.setState({index: idx})
-  console.log(this.state.index)
-}
-
-
   render() {
     const Items = this.props.data[this.props.currentActive].items.map((item, index) => 
       <li key={index}>
         <a 
-          className={this.state.index===index? "clicked": "not-clicked"} 
+          className={this.props.currentSubActive===index? "clicked": "not-clicked"} 
           style={{cursor:"pointer"}} 
-          onClick={() => this.setIndex(index)}>
+          onClick={() => this.props.changeSubActive(index)}>
           {item.articleHead}
         </a>
       </li>
@@ -54,15 +46,15 @@ setIndex(idx){
               <div className="rounded-card" 
                 style={{padding: 25, marginBottom: 40}}>
                 <h3 className="text-center medium-head">
-                  {this.props.data[this.props.currentActive].items[this.state.index].articleHead}
+                  {this.props.data[this.props.currentActive].items[this.props.currentSubActive].articleHead}
                 </h3>
                 <Image 
                   style={{width: "100%"}} 
-                  src={this.props.data[this.props.currentActive].items[this.state.index].articleImage} 
+                  src={this.props.data[this.props.currentActive].items[this.props.currentSubActive].articleImage} 
                   responsive
                 />
                 <p className="medium-body">
-                  {this.props.data[this.props.currentActive].items[this.state.index].articleText}
+                  {this.props.data[this.props.currentActive].items[this.props.currentSubActive].articleText}
                 </p>
               </div>
             </div>

@@ -9,15 +9,21 @@ class Achievements extends React.Component {
   constructor() {
     super();
     this.changeActive = this.changeActive.bind(this);
+    this.changeSubActive = this.changeSubActive.bind(this);
     this.state = { 
-      activeIndex: 0 
+      activeIndex: 0,
+      subActive: 0 
     }
   }
 
   changeActive(active) {
-    this.setState({ activeIndex: active })
+    this.setState({ activeIndex: active, subActive: 0 })
   }
   
+  changeSubActive(subActive) {
+    this.setState({ subActive: subActive })
+  }
+
   render() {
     const navData = this.props.language === "zh"? achievementsdata.chinese.subCategories: achievementsdata.english.subCategories;
     return (
@@ -33,6 +39,8 @@ class Achievements extends React.Component {
           data={navData}
           language={this.props.language}
           currentActive={this.state.activeIndex}
+          currentSubActive={this.state.subActive}
+          changeSubActive={this.changeSubActive}
         />
       </div>
     )
