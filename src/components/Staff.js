@@ -25,7 +25,10 @@ export default class Staff extends React.Component {
 
   render () {
     return (
-      <div style={this.state.visible===false? styles.loading: styles.background}>
+      <div 
+        style={this.state.visible===false? styles.loading: styles.background}
+        className={this.state.visible===false? "background-loading": "background-loaded"}  
+      >
         <div className="container">
           <Intro 
             language={this.props.language}
@@ -41,13 +44,10 @@ export default class Staff extends React.Component {
 
 const styles = {
   background: {
-    background: 'url(' + backgroundImage + ') no-repeat center center fixed',
-    minHeight: 565
+    background: 'url(' + backgroundImage + ')'
   },
 
   loading: {
-    background: 'url(' + backgroundImagetiny + ') no-repeat center center fixed',
-    filter: 'blur(20px)',
-    minHeight: 565
+    background: 'url(' + backgroundImagetiny + ')'
   }
 }

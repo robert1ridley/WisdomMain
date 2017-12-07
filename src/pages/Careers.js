@@ -47,8 +47,7 @@ class About extends React.Component {
 const styles = {
   subnav: {
     paddingBottom: 30, 
-    background: 'url(' + background3 + ') no-repeat center bottom fixed', 
-    backgroundSize: 'cover'
+    background: 'url(' + background3 + ')'
   }
 }
 

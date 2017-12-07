@@ -18,7 +18,9 @@ export default class Subnav extends React.Component {
     )
 
     return (
-        <div className="green-back" style={this.props.background}>
+        <div
+          className={"background-loaded"} 
+          style={this.props.background}>
           <div className="container">
             <Intro
               language={this.props.language}

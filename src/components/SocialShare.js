@@ -26,7 +26,10 @@ class SocialShare extends React.Component {
 
   render () {
     return (
-      <div style={this.state.visible===false? styles.loading: styles.background}>
+      <div 
+        style={this.state.visible===false? styles.loading: styles.background}
+        className={this.state.visible===false? "background-loading": "background-loaded"}
+      >
         <div className="container">
           <Intro 
             data={sharingdata}
@@ -42,13 +45,11 @@ class SocialShare extends React.Component {
 
 const styles = {
   background: {
-    background: 'url(' + backgroundImage2 + ') no-repeat center center fixed',
-    minHeight: 565
+    backgroundImage: 'url(' + backgroundImage2 + ')'
   },
+
   loading: {
-    background: 'url(' + backgroundImage2tiny + ') no-repeat center center fixed',
-    filter: 'blur(20px)',
-    minHeight: 565
+    backgroundImage: 'url(' + backgroundImage2tiny + ')'
   }
 }
 
