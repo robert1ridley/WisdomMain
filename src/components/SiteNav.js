@@ -18,7 +18,7 @@ class SiteNav extends React.Component {
       </LinkContainer>
     )
 
-    const langTitle = this.props.language === "zh"? "中文": "English";
+    const langTitle = this.props.language === "zh"? "中文/Chinese": "English/英语";
 
     return (
       <Navbar collapseOnSelect>

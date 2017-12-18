@@ -1,3 +1,7 @@
 # ignore directories
 /build/
+/node_modules/sendgrid.env
+sendgrid.env
+sendgrid.env
+sendgrid.env
 /node_modules/

@@ -6,10 +6,24 @@ export default class Sidebar extends React.Component {
   constructor(props) {
     super(props)
     this.changeActive = this.changeActive.bind(this);
+    this.calcSize = this.calcSize.bind(this);
 
     this.state = {
-        active: true
+        active: true,
+        windowWidth: window.innerWidth
     };
+}
+
+calcSize(){
+  this.setState({windowWidth: window.innerWidth})
+}
+
+componentDidMount(){
+  window.addEventListener('resize', this.calcSize)
+}
+
+componentWillUnmount(){
+  window.removeEventListener('resize', this.calcSize)
 }
 
 changeActive(){
@@ -17,12 +31,14 @@ changeActive(){
 }
 
   render() {
+    console.log(this.state.windowWidth)
     const Items = this.props.data[this.props.currentActive].items.map((item, index) => 
       <li key={index}>
         <a 
           className={this.props.currentSubActive===index? "clicked": "not-clicked"} 
           style={{cursor:"pointer"}} 
-          onClick={() => this.props.changeSubActive(index)}>
+          onClick={() => this.props.changeSubActive(index)}
+        >
           {item.articleHead}
         </a>
       </li>
@@ -30,7 +46,7 @@ changeActive(){
 
     return (
         <div className="sidebar-wrapper">
-          <nav id="sidebar" className={this.state.active===true?"wow fadeInLeft": "active wow fadeInLeft"}>
+          <nav id="sidebar" className={this.state.active===true?"wow fadeInLeft": "notActive wow fadeInLeft"}>
             <div className="sidebar-header">
               <h3>{this.props.data[this.props.currentActive].head}</h3>
             </div>

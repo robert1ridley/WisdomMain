@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@sendgrid/mail": "^6.1.4",
     "animate.css": "^3.5.2",
     "axios": "^0.17.1",
     "body-parser": "^1.18.2",
