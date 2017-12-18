@@ -35,7 +35,7 @@ app.use(bodyParser.json());
 		//email
 		sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 		const msg = {
-			to: 'robert.ridley@ef.com',
+			to: '',
 			from: `${name} <${email}>`,
 			subject: 'Test',
 			text: message,
