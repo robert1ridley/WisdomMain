@@ -18,7 +18,7 @@ body {
 .big-body {
   font-weight: 100;
   font-size: 24px;
-  margin-top: 40px;
+  margin-top: 40px !important;
 }
 
 .medium-head {
@@ -206,3 +206,42 @@ div.media-body {
 .background-loading {
   filter: blur(20px);
 }
+
+/* NEW */
+.img-container {
+  position: relative;
+  width: 100%;
+}
+
+.caption {
+  position: absolute;
+  background-color: #292929;
+  color: white;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  opacity: 0.8;
+}
+
+.caption p {
+  margin: 0px !important;
+}
+
+/* .mini-tab {
+  borderBottomColor: '#2c739d',
+  borderLeftColor: '#2c739d',
+  borderLeftStyle: 'solid',
+  borderLeftWidth: 4.79688,
+  borderRightColor: '#2c739d',
+  borderTopColor: '#2c739d',
+  // content: " ",
+  display: 'inline',
+  height: 24,
+  marginRight: 8,
+  paddingBottom: 0,
+  paddingLeft: 0,
+  paddingRight: 0,
+  paddingTop: 0,
+  width: 4.79688,
+} */

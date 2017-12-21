@@ -1,7 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux';
 
-import ParagraphsIntro from '../components/ParagraphsIntro';
+// import ParagraphsIntro from '../components/ParagraphsIntro';
+import ParagraphsNew from '../components/ParagraphsNew';
 import Subnav from '../components/Subnav';
 
 import aboutheaddata from '../data/about/aboutheaddata';
@@ -32,7 +33,7 @@ class About extends React.Component {
           childActive={this.changeActive}
           background={styles.subnav}
         />
-        <ParagraphsIntro language={this.props.language} data={navData} index={this.state.activeIndex}/>
+        <ParagraphsNew language={this.props.language} data={navData} index={this.state.activeIndex}/>
       </div>
     )
   }
