@@ -18,7 +18,7 @@ export default class ParagraphsNew extends React.Component {
         {
           <div>
           {paragraph.imgUrl.map((image, index) => 
-              <div className="img-container text-center">
+              <div className="img-container text-center" key={index}>
                 <Image src={image.image} alt="" className="center-img upper-margin" width="100%" responsive/>
               {
                   image.caption===""?<div></div>:
