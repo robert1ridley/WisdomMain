@@ -6,7 +6,7 @@ import ParagraphsNew from '../components/ParagraphsNew';
 import plansdata from '../data/plans/plansdata';
 import plansheaddata from '../data/plans/plansheaddata';
 
-import background11 from '../images/subnav/background11.jpg';
+import background14 from '../images/subnav/background14.jpg';
 
 class Plans extends React.Component {
   constructor() {
@@ -40,7 +40,7 @@ class Plans extends React.Component {
 const styles = {
   subnav: {
     paddingBottom: 30, 
-    background: 'url(' + background11 + ')'
+    background: 'url(' + background14 + ')'
   }
 }
 

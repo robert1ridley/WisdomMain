@@ -8,7 +8,7 @@ import Subnav from '../components/Subnav';
 import aboutheaddata from '../data/about/aboutheaddata';
 import aboutdatabasic from '../data/about/aboutdatabasic';
 
-import background11 from '../images/subnav/background11.jpg';
+import background14 from '../images/subnav/background14.jpg';
 
 class About extends React.Component {
   constructor() {
@@ -42,7 +42,7 @@ class About extends React.Component {
 const styles = {
   subnav: {
     paddingBottom: 30, 
-    background: 'url(' + background11 + ')'
+    background: 'url(' + background14 + ')'
   }
 }
 

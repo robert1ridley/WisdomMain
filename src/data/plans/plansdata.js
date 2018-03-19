@@ -1,3 +1,13 @@
+import plans2 from '../../images/plans/plans2.jpg';
+import plans3 from '../../images/plans/plans3.jpg';
+import plans4 from '../../images/plans/plans4.png';
+import plans5 from '../../images/plans/plans5.png';
+import plans6 from '../../images/plans/plans6.png';
+import plans7 from '../../images/plans/plans7.png';
+import plans8 from '../../images/plans/plans8.jpg';
+import plans9 from '../../images/plans/plans9.jpg';
+import plans10 from '../../images/plans/plans10.png';
+
 const plansdata = {
   chinese:
     [
@@ -28,7 +38,84 @@ const plansdata = {
             imgUrl: []
           }
         ],
-        id: 1
+        id: 2
+      },
+      {
+        head: "建立国际合作交流平台",
+        text:
+        [
+          {
+            subHead: "",
+            subText: [
+              "公司每年举办一次国际大气污染防治及综合利用技术论坛"
+            ],
+            imgUrl: 
+            [
+              {image: plans2, caption: "2014中国•南京首届大气污染防治及综合利用技术论坛"},
+              {image: plans3, caption: "2015 中国·南京第二届大气与水污染综合治理技术国际论坛"},
+              {image: plans4, caption: "绿色发展 共享经济—2016年节能环保精英交流论坛"}
+            ]
+          }
+        ],
+        id: 3
+      },
+      {
+        head: "公司成立了专家委员会",
+        text:
+        [
+          {
+            subHead: "公司专家委员会团队成员：",
+            subText: [
+              "南京理工大学化工学院院长，博士生导师，享受国务院政府特殊津贴，江苏省“333”首批中青年科技领军人才。先后获得国家级教学名师奖、中国青年科技奖、霍英东教育基金会青年教师奖等，是烟气脱硫脱硝、二氧化碳捕集与利用、催化反应技术及其应用等国际前沿领域的知名专家学者。"
+            ],
+            imgUrl: []
+          },
+          {
+            subHead: "Kunlei Liu",
+            subText: [
+              "美国肯塔基大学应用能源研究中心常务副主任、美国碳管理与研究联合机构(CMRG)创始人。兼任美国能源部汞排放/碳排放控制领域项目评议人、伊利诺伊洁净煤研究所燃煤电站CO2管理顾问。长期从事化石能源燃烧烟气污染物排脱除与排放控制技术研究。"
+            ],
+            imgUrl: []
+          },
+          {
+            subHead: "吴元春",
+            subText: [
+              "教授级高级工程师。原扬子石化有限责任公司董事、总经理。扬子石化-巴斯夫有限责任公司董事。"
+            ],
+            imgUrl: []
+          }
+        ],
+        id: 4
+      },
+      {
+        head: "合作与交流",
+        text:
+        [
+          {
+            subHead: "",
+            subText: [
+              "2015年，入选中美绿色合作伙伴计划，并应邀参加了第七轮中美战略与经济对话论坛，在中美双方见证下与美方合作伙伴肯塔基大学应用能源研究中心签订了合作协议。"
+            ],
+            imgUrl: 
+            [
+              {image: plans6, caption: "国家发改委副主任王晓涛、美国副国务卿凯瑟琳，美国肯塔基大学能源应用中心总经理Donald J .Challman "},
+              {image: plans7, caption: "中国气候变化事务特别代表解振华"},
+              {image: plans8, caption: "2015年中美绿色合作伙伴合影"}
+            ]
+          },
+          {
+            subHead: "",
+            subText: [
+              "澳大利亚-中国土壤污染防治和修复研发中心主任陈德立教授访问我司，与我司签订土壤污染防治和修复科技成果产业化，工程规模化合作意向。"
+            ],
+            imgUrl: 
+            [
+              {image: plans9, caption: "陈建国卫宁医药股份董事"},
+              {image: plans10, caption: " 陈德立    澳中研发中心主任 "}
+            ]
+          }
+        ],
+        id: 5
       }
     ],
   english:
@@ -60,6 +147,19 @@ const plansdata = {
           }
         ],
         id: 1
+      },
+      {
+        head: "建立国际合作交流平台",
+        text:
+        [
+          {
+            subHead: "",
+            subText: [
+              "公司每年举办一次国际大气污染防治及综合利用技术论坛"
+            ],
+            imgUrl: [{image: null, caption: ""}]
+          }
+        ]
       }
     ]
 }
