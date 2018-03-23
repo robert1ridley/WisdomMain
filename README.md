@@ -1,5 +1,5 @@
 ## Wisdom Main
-This repository contains the frontend and backend code for Wisdom Engineering's company website. The site, still in production, can be viewed here: [Wisdom Website](wisdom-main.herokuapp.com).
+This repository contains the frontend and backend code for Wisdom Engineering's company website. The site, still in production, can be viewed here: [Wisdom Website](https://wisdom-main.herokuapp.com/).
 
 ## Setting up the project
 To set up the project, first clone the repo.
