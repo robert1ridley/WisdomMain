@@ -5,10 +5,10 @@ This repository contains the frontend and backend code for Wisdom Engineering's 
 To set up the project, first clone the repo.
 You will need either `npm` or `yarn` installed on your machine …
 
-– `cd` into the project
-– run either `npm install` or `yarn install`
-– run `npm start:dev` to run the development server. The project should open up in your browser on `http://localhost:3000/`
-– to create a production build, run `npm run build`
+– `cd` into the project<br />
+– run either `npm install` or `yarn install`<br />
+– run `npm start:dev` to run the development server. The project should open up in your browser on `http://localhost:3000/`<br />
+– to create a production build, run `npm run build`<br />
 – to run the production build on the backend server, run `NODE_ENV=production npm start`
 
 ## Deployment
