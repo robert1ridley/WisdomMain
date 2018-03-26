@@ -1,3 +1,4 @@
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/WisdomEngineering/WisdomMain.png?columns=all)](https://waffle.io/WisdomEngineering/WisdomMain?utm_source=badge)
 ## Wisdom Main
 This repository contains the frontend and backend code for Wisdom Engineering's company website. The site, still in production, can be viewed here: [Wisdom Website](https://wisdom-main.herokuapp.com/).
 
