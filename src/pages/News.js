@@ -39,11 +39,27 @@ class News extends React.Component {
   constructor() {
     super();
     this.changeActive = this.changeActive.bind(this);
-    this.state = { activeIndex: 0 }
+    this.calcSize = this.calcSize.bind(this);
+    this.state = { 
+      activeIndex: 0,
+      windowWidth: window.innerWidth
+    }
   }
 
   changeActive(active) {
     this.setState({ activeIndex: active })
+  }
+
+  calcSize(){
+    this.setState({windowWidth: window.innerWidth})
+  }
+  
+  componentDidMount(){
+    window.addEventListener('resize', this.calcSize)
+  }
+  
+  componentWillUnmount(){
+    window.removeEventListener('resize', this.calcSize)
   }
 
   render() {
@@ -65,6 +81,7 @@ class News extends React.Component {
             loop margin={10} 
             nav
             navText={navButtons}
+            items={this.state.windowWidth < 768 ? 1 : this.state.windowWidth < 1100 ? 2 : 3}
           >
           {
             items.map((item, index) => 
