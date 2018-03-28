@@ -10,7 +10,7 @@ export default class ParagraphsNew extends React.Component {
         <p><strong>{paragraph.subHead}</strong></p>
         {
           paragraph.subText.map((subItem, idx) => 
-          <p>
+          <p key={idx}>
             {subItem}
           </p>
           )
@@ -18,7 +18,7 @@ export default class ParagraphsNew extends React.Component {
         {
           <div>
           {paragraph.imgUrl.map((image, index) => 
-              image.image===null?<div />:
+              image.image===null?<div key={index} />:
               <div className={"img-container text-center"} key={index}>
                 <Image src={image.image} alt="" className="center-img upper-margin" width="100%" responsive/>
               {

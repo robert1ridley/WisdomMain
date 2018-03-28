@@ -1,32 +1,92 @@
 import React from 'react';
 import OwlCarousel from 'react-owl-carousel';
+import { Image } from 'react-bootstrap';
 import {connect} from 'react-redux';
+import Subnav from '../components/Subnav';
+import newsheaddata from '../data/news/newsheaddata';
+import newsdata from '../data/news/newsdata';
+import background14 from '../images/subnav/background14.jpg';
+
+
+const items = [
+  {
+    head: "这是一篇文章", body: "This article is about some stuff the company is doing. I don't know what else to say.", imageURL: "http://lorempixel.com/400/200/business"
+  },
+  {
+    head: "这是一篇文章", body: "This article is about some stuff the company is doing. I don't know what else to say.", imageURL: "http://lorempixel.com/400/200/business"
+  },
+  {
+    head: "这是一篇文章", body: "This article is about some stuff the company is doing. I don't know what else to say.", imageURL: "http://lorempixel.com/400/200/business"
+  },
+  {
+    head: "这是一篇文章", body: "This article is about some stuff the company is doing. I don't know what else to say.", imageURL: "http://lorempixel.com/400/200/business"
+  },
+  {
+    head: "这是一篇文章", body: "This article is about some stuff the company is doing. I don't know what else to say.", imageURL: "http://lorempixel.com/400/200/business"
+  },
+  {
+    head: "这是一篇文章", body: "This article is about some stuff the company is doing. I don't know what else to say.", imageURL: "http://lorempixel.com/400/200/business"
+  },
+  {
+    head: "这是一篇文章", body: "This article is about some stuff the company is doing. I don't know what else to say.", imageURL: "http://lorempixel.com/400/200/business"
+  },
+  {
+    head: "这是一篇文章", body: "This article is about some stuff the company is doing. I don't know what else to say.", imageURL: "http://lorempixel.com/400/200/business"
+  }
+]
 
 class News extends React.Component {
-  
+  constructor() {
+    super();
+    this.changeActive = this.changeActive.bind(this);
+    this.state = { activeIndex: 0 }
+  }
+
+  changeActive(active) {
+    this.setState({ activeIndex: active })
+  }
+
   render() {
+    const navData = this.props.language === "zh"? newsdata.chinese: newsdata.english;
+    const navButtons = this.props.language === "zh"? ["上一页", "下一页"]: ["Prev", "Next"]
     return (
       <div>
-        <h1>News</h1>
-        <OwlCarousel 
-          className="owl-theme"
-          loop margin={10} nav
-        >
-          <div class="item"><h4>1</h4></div>
-            <div class="item"><h4>2</h4></div>
-            <div class="item"><h4>3</h4></div>
-            <div class="item"><h4>4</h4></div>
-            <div class="item"><h4>5</h4></div>
-            <div class="item"><h4>6</h4></div>
-            <div class="item"><h4>7</h4></div>
-            <div class="item"><h4>8</h4></div>
-            <div class="item"><h4>9</h4></div>
-            <div class="item"><h4>10</h4></div>
-            <div class="item"><h4>11</h4></div>
-            <div class="item"><h4>12</h4></div>
-        </OwlCarousel>
+        <Subnav 
+          language={this.props.language}
+          intro={newsheaddata}
+          aboutData={navData}
+          currentActive={this.state.activeIndex}
+          childActive={this.changeActive}
+          background={styles.subnav}
+        />
+        <div className="container" style={{marginTop: 50, marginBottom: 50}}>
+          <OwlCarousel 
+            className="owl-theme"
+            loop margin={10} 
+            nav
+            navText={navButtons}
+          >
+          {
+            items.map((item, index) => 
+              <div className="item" key={index}>
+                <Image src={item.imageURL} alt="image" />
+                <div className="card-body text-center">
+                  <h4 className="card-title">{item.head}</h4>
+                </div>
+              </div>
+            )
+          }
+          </OwlCarousel>
+        </div>
       </div>
     )
+  }
+}
+
+const styles = {
+  subnav: {
+    paddingBottom: 30, 
+    background: 'url(' + background14 + ')'
   }
 }
 
