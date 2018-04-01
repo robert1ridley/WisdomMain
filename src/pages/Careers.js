@@ -21,11 +21,13 @@ class About extends React.Component {
   }
   
   render() {
-    const navData = this.props.language === "zh"? careerslistdata.chinese: careerslistdata.english;
+    const navData = careerslistdata;
+    const { language } = this.props;
+    const { activeIndex } =this.state;
     return (
       <div>
         <Subnav 
-          language={this.props.language}
+          language={language}
           intro={careersheaddata}
           aboutData={navData}
           currentActive={this.state.activeIndex}
@@ -35,7 +37,7 @@ class About extends React.Component {
         <div className="container">
           {
             this.state.activeIndex===0?
-            <TextCards language={this.props.language} data={jobsdata}/>:
+            <TextCards language={language} data={jobsdata}/>:
             <ImageReel />
           }
         </div>
