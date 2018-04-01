@@ -66,6 +66,10 @@ a:hover, a:focus, div.media-body:hover, div.media-body:hover {
   text-decoration: none;
 }
 
+.black-text:hover, .black-text:focus, .black-text {
+  color: black;
+}
+
 div.media-body {
   color: black;
 }

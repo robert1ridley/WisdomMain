@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, Route, Switch } from 'react-router-dom';
 import OwlCarousel from 'react-owl-carousel';
 import { Image } from 'react-bootstrap';
 import {connect} from 'react-redux';
@@ -6,34 +7,7 @@ import Subnav from '../components/Subnav';
 import newsheaddata from '../data/news/newsheaddata';
 import newsdata from '../data/news/newsdata';
 import background14 from '../images/subnav/background14.jpg';
-
-
-const items = [
-  {
-    head: "这是一篇文章", body: "This article is about some stuff the company is doing. I don't know what else to say.", imageURL: "http://lorempixel.com/400/200/business"
-  },
-  {
-    head: "这是一篇文章", body: "This article is about some stuff the company is doing. I don't know what else to say.", imageURL: "http://lorempixel.com/400/200/business"
-  },
-  {
-    head: "这是一篇文章", body: "This article is about some stuff the company is doing. I don't know what else to say.", imageURL: "http://lorempixel.com/400/200/business"
-  },
-  {
-    head: "这是一篇文章", body: "This article is about some stuff the company is doing. I don't know what else to say.", imageURL: "http://lorempixel.com/400/200/business"
-  },
-  {
-    head: "这是一篇文章", body: "This article is about some stuff the company is doing. I don't know what else to say.", imageURL: "http://lorempixel.com/400/200/business"
-  },
-  {
-    head: "这是一篇文章", body: "This article is about some stuff the company is doing. I don't know what else to say.", imageURL: "http://lorempixel.com/400/200/business"
-  },
-  {
-    head: "这是一篇文章", body: "This article is about some stuff the company is doing. I don't know what else to say.", imageURL: "http://lorempixel.com/400/200/business"
-  },
-  {
-    head: "这是一篇文章", body: "This article is about some stuff the company is doing. I don't know what else to say.", imageURL: "http://lorempixel.com/400/200/business"
-  }
-]
+import NewsItem from './NewsItem';
 
 class News extends React.Component {
   constructor() {
@@ -84,17 +58,20 @@ class News extends React.Component {
             items={this.state.windowWidth < 768 ? 1 : this.state.windowWidth < 1100 ? 2 : 3}
           >
           {
-            items.map((item, index) => 
-              <div className="item" key={index}>
-                <Image src={item.imageURL} alt="image" />
-                <div className="card-body text-center">
-                  <h4 className="card-title">{item.head}</h4>
+            navData[this.state.activeIndex].articles.map((item, index) => 
+              <Link to={`/news/${item.id}`} className="black-text" key={index}>
+                <div className="item">
+                  <Image src={item.headImage} alt="image" />
+                  <div className="card-body text-center">
+                    <h4 className="card-title">{item.head}</h4>
+                  </div>
                 </div>
-              </div>
+              </Link>
             )
           }
           </OwlCarousel>
         </div>
+        <Route path={`/news/:id`} component={NewsItem} />
       </div>
     )
   }
