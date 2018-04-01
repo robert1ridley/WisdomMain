@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Route, Switch } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 import OwlCarousel from 'react-owl-carousel';
 import { Image } from 'react-bootstrap';
 import {connect} from 'react-redux';

@@ -14,42 +14,70 @@ const images = [
     blurImage: mainCarousel1tiny, 
     id: 1, 
     head: {
-      zh: "关于智道",
-      en: "About Wisdom"
+      zh: "董事长致辞",
+      en: "Chairman's Speech"
     },
     body: {
-      zh: "关于智道关于智道关于智道",
-      en: "This is some text about our company."
+      zh: "客户成功，才有智道的成功；",
+      en: "Our success depends on the success of customers;"
     },
-    link: "/about"
+    link: "/"
   },
   {
     image: mainCarousel2, 
     blurImage: mainCarousel2tiny, 
     id: 2, 
     head: {
-      zh: "工程业绩",
-      en: "Our Projects"
+      zh: "董事长致辞",
+      en: "Chairman's Speech"
     },
     body: {
-      zh: "关于智道关于智道关于智道",
-      en: "This is some text about our company."
+      zh: "客户的信赖与支持，智道才能稳步、健康的发展；",
+      en: "The trust and support of customers help us grow stably;"
     },
-    link: "/achievements"
+    link: "/"
   },
   {
     image: mainCarousel3, 
     blurImage: mainCarousel3tiny, 
     id: 3, 
     head: {
-      zh: "新闻中心",
-      en: "Company News"
+      zh: "董事长致辞",
+      en: "Chairman's Speech"
     },
     body: {
-      zh: "关于智道关于智道关于智道",
-      en: "This is some text about our company."
+      zh: "优秀的员工和先进的技术，奠定了智道成功的基石；",
+      en: "The foundation of our success is excellent employees and advanced technologies;"
     },
-    link: "/news"
+    link: "/"
+  },
+  {
+    image: mainCarousel1, 
+    blurImage: mainCarousel1tiny, 
+    id: 1, 
+    head: {
+      zh: "董事长致辞",
+      en: "Chairman's Speech"
+    },
+    body: {
+      zh: "现代管理模式和高效执行能力，使智道工程超越客户期望；",
+      en: "We serve customers better with our modern management and efficient performance;"
+    },
+    link: "/"
+  },
+  {
+    image: mainCarousel2, 
+    blurImage: mainCarousel1tiny, 
+    id: 1, 
+    head: {
+      zh: "董事长致辞",
+      en: "Chairman's Speech"
+    },
+    body: {
+      zh: "智道致力于：科技净化环境，与客户共成功！",
+      en: "We devote ourselves to making the world more beautiful through advanced technologies and sharing success with customers."
+    },
+    link: "/"
   }
 ]
 
