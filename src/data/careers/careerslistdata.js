@@ -1,7 +1,7 @@
 const careerslistdata = {
   chinese: [
     {
-      head: "人才招牌",
+      head: "人才招聘",
       id: 1
     },
     {

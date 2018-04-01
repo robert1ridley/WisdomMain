@@ -3,37 +3,33 @@ import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import MainButton from './MainButton';
 
-export default class ImgBlocks extends React.Component {
-  render () {
-
-    var data = this.props.language === "zh"? this.props.data.chinese: this.props.data.english;
-    var blocks = data.map(block =>
-      <div key = {block.id}>
-        <Columns       
-          id = {block.id}
-          icon = {block.icon}
-          text = {block.text}
-          link = {block.link}
-        />
-      </div>
-    )
-
-    return (
-        <div style={styles.row} className="wow fadeIn">
-          <Row>
-            {blocks}
-          </Row>
-          <div className="text-center">
-            <Link to="/about">
-              <MainButton
-                language = {this.props.language}
-                buttonText = {{chinese:"了解更多", english: "Learn more"}}
-              />
-            </Link>
-          </div>
+const ImgBlocks = (props) => {
+  const { data, language } = props;
+  const blocks = data.map(block =>
+    <div key = {block.id}>
+      <Columns       
+        id = {block.id}
+        icon = {block.icon}
+        text = {block.text[language]}
+        link = {block.link}
+      />
+    </div>
+  )
+  return (
+      <div style={styles.row} className="wow fadeIn">
+        <Row>
+          {blocks}
+        </Row>
+        <div className="text-center">
+          <Link to="/about">
+            <MainButton
+              language = {language}
+              buttonText = {{chinese:"了解更多", english: "Learn more"}}
+            />
+          </Link>
         </div>
-    )
-  }
+      </div>
+  )
 }
 
 class Columns extends React.Component {
@@ -78,3 +74,5 @@ const styles = {
     marginBottom: 20
   }
 }
+
+export default ImgBlocks;

@@ -6,12 +6,10 @@ import '../styles/home.css';
 //data imports
 import introdata from '../data/introdata';
 import imgblockdata from '../data/imgblockdata';
-import staffintrodata from '../data/staffintrodata';
 import basicintrodata from '../data/basicintrodata';
 import newsintrodata from '../data/newsintrodata';
 
 //component imports
-import Staff from '../components/Staff';
 import CarouselImages from '../components/CarouselImages';
 import Intro from '../components/Intro';
 import ImgBlocks from '../components/ImgBlocks';
@@ -20,36 +18,33 @@ import MediaObjects from '../components/MediaObjects';
 
 class Home extends React.Component {
   render() {
+    const { language } = this.props
     return (
       <div>
-        <CarouselImages language={this.props.language}/>
+        <CarouselImages language={language}/>
         <div className="container">
-          <Intro 
+          <Intro
             data={introdata}
-            language={this.props.language}
+            language={language}
             color={{color:'black'}}
           />
           <ImgBlocks 
             data={imgblockdata}
-            language={this.props.language}
+            language={language}
           />
         </div>
-        <Staff
-          data={staffintrodata}
-          language={this.props.language}
-        />
         <div className="container">
           <Intro 
             data={newsintrodata}
-            language={this.props.language}
+            language={language}
             color={{color:'black'}}
           />
           <MediaObjects 
             data={basicintrodata}
-            language={this.props.language}
+            language={language}
           />
         </div>
-        {/* <BaiduMap language={this.props.language}/> */}
+        {/* <BaiduMap language={language}/> */}
       </div>
     )
   }

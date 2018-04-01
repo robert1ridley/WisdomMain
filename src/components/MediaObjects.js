@@ -2,25 +2,23 @@ import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-export default class MediaObjects extends React.Component {
-  render () {
-    var data = this.props.language === "zh"? this.props.data.chinese: this.props.data.english
-    const MediaObjects = data.map(MediaObject =>
-      <SingleMedia 
+const MediaObjects = (props) => {
+  const { language, data } = props
+  const MediaObjects = data.map(MediaObject =>
+    <SingleMedia 
       image={MediaObject.imgUrl}
-      header={MediaObject.head}
-      text={MediaObject.text}
+      header={MediaObject.head[language]}
+      text={MediaObject.text[language]}
       key={MediaObject.id}
     />
     )
-    return (
-      <div className="central-info">
-        <Row>
-          {MediaObjects}
-        </Row>
-      </div>
-    )
-  }
+  return (
+    <div className="central-info">
+      <Row>
+        {MediaObjects}
+      </Row>
+    </div>
+  )
 }
 
 class SingleMedia extends React.Component {
@@ -38,11 +36,10 @@ class SingleMedia extends React.Component {
   }
   
   render() {
-
-    var linkStyle = this.state.hover === true? 
+    const linkStyle = this.state.hover === true? 
       {backgroundColor: '#7ebc59', color: 'white', padding: 10}: 
       {backgroundColor: 'white', color: 'black', padding: 10};
-
+    const { image, header, text } = this.props;
     return (
       <Col md={4} sm={6} xs={12} className="lower-margin">
         <Link to="/">
@@ -51,10 +48,10 @@ class SingleMedia extends React.Component {
             onMouseLeave={this.toggleHover}
             style={linkStyle}
           >
-            <img className="img-fluid" src={this.props.image} alt={this.props.image} style={styles.image} />
+            <img className="img-fluid" src={image} alt={image} style={styles.image} />
             <div className="card-body text-center">
-              <h4 className="card-title">{this.props.header}</h4>
-              <p className="card-text clampMe">{this.props.text}</p>
+              <h4 className="card-title">{header}</h4>
+              <p className="card-text clampMe">{text}</p>
             </div>
           </div>
         </Link>
@@ -68,5 +65,7 @@ const styles = {
     width: '100%'
   }
 }
+
+export default MediaObjects;
 
 

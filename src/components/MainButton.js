@@ -16,14 +16,15 @@ export default class MainButton extends React.Component {
   }
 
   render () {
-    var buttonStyle = !this.state.hover === true? styles.regButton: styles.hoverButton;
+    const buttonStyle = !this.state.hover === true? styles.regButton: styles.hoverButton;
+    const { language, buttonText } = this.props;
     return (
       <div>
         <Button 
           className="wiggle-me rounded-card"
           onMouseEnter={this.toggleHover} 
           onMouseLeave={this.toggleHover} 
-          style={buttonStyle}>{this.props.language === "zh"? this.props.buttonText.chinese: this.props.buttonText.english}
+          style={buttonStyle}>{language === "zh"? buttonText.chinese: buttonText.english}
         </Button>
       </div>
     )
