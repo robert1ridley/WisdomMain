@@ -27,11 +27,13 @@ class Achievements extends React.Component {
   }
 
   render() {
-    const navData = this.props.language === "zh"? achievementsdata.chinese.subCategories: achievementsdata.english.subCategories;
+    const { language } = this.props;
+    const navData = achievementsdata.subCategories;
+    console.log(navData);
     return (
       <div>
         <Subnav 
-          language={this.props.language}
+          language={language}
           intro={achievementsdata}
           aboutData={navData}
           currentActive={this.state.activeIndex}
@@ -40,7 +42,7 @@ class Achievements extends React.Component {
         />
         <Sidebar 
           data={navData}
-          language={this.props.language}
+          language={language}
           currentActive={this.state.activeIndex}
           currentSubActive={this.state.subActive}
           changeSubActive={this.changeSubActive}

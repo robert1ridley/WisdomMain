@@ -31,24 +31,24 @@ changeActive(){
 }
 
   render() {
-    console.log(this.state.windowWidth)
-    const Items = this.props.data[this.props.currentActive].items.map((item, index) => 
+    const { data, currentSubActive, changeSubActive, language, currentActive } = this.props;
+    const { active } = this.state;
+    const Items = data[currentActive].items.map((item, index) => 
       <li key={index}>
         <a 
-          className={this.props.currentSubActive===index? "clicked": "not-clicked"} 
+          className={currentSubActive===index? "clicked": "not-clicked"} 
           style={{cursor:"pointer"}} 
-          onClick={() => this.props.changeSubActive(index)}
+          onClick={() => changeSubActive(index)}
         >
-          {item.articleHead}
+          {item.articleHead[language]}
         </a>
       </li>
     )
-
     return (
         <div className="sidebar-wrapper">
-          <nav id="sidebar" className={this.state.active===true?"wow fadeInLeft": "notActive wow fadeInLeft"}>
+          <nav id="sidebar" className={active===true?"wow fadeInLeft": "notActive wow fadeInLeft"}>
             <div className="sidebar-header">
-              <h3>{this.props.data[this.props.currentActive].head}</h3>
+              <h3>{data[currentActive].head[language]}</h3>
             </div>
             <ul className="list-unstyled components">
               {Items}
@@ -62,15 +62,15 @@ changeActive(){
               <div className="rounded-card" 
                 style={{padding: 25, marginBottom: 40}}>
                 <h3 className="text-center medium-head">
-                  {this.props.data[this.props.currentActive].items[this.props.currentSubActive].articleHead}
+                  {data[currentActive].items[currentSubActive].articleHead[language]}
                 </h3>
                 <Image 
                   style={{width: "100%"}} 
-                  src={this.props.data[this.props.currentActive].items[this.props.currentSubActive].articleImage} 
+                  src={data[currentActive].items[currentSubActive].articleImage} 
                   responsive
                 />
                 <p className="medium-body">
-                  {this.props.data[this.props.currentActive].items[this.props.currentSubActive].articleText}
+                  {data[currentActive].items[currentSubActive].articleText[language]}
                 </p>
               </div>
             </div>
