@@ -37,12 +37,13 @@ class News extends React.Component {
   }
 
   render() {
-    const navData = this.props.language === "zh"? newsdata.chinese: newsdata.english;
-    const navButtons = this.props.language === "zh"? ["上一页", "下一页"]: ["Prev", "Next"]
+    const { language } = this.props;
+    const navData = newsdata;
+    const navButtons = language === "zh"? ["上一页", "下一页"]: ["Prev", "Next"];
     return (
       <div>
         <Subnav 
-          language={this.props.language}
+          language={language}
           intro={newsheaddata}
           aboutData={navData}
           currentActive={this.state.activeIndex}
@@ -63,7 +64,7 @@ class News extends React.Component {
                 <div className="item">
                   <Image src={item.headImage} alt="image" />
                   <div className="card-body text-center">
-                    <h4 className="card-title">{item.head}</h4>
+                    <h4 className="card-title">{item.head[language]}</h4>
                   </div>
                 </div>
               </Link>
@@ -80,7 +81,7 @@ class News extends React.Component {
 const styles = {
   subnav: {
     paddingBottom: 30, 
-    background: 'url(' + background14 + ')'
+    background: `url(${background14})`
   }
 }
 
