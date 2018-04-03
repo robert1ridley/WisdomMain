@@ -126,17 +126,6 @@ const aboutdatabasic = {
         id: 2
       },
       {
-        head: "组织架构",
-        text: [
-          {
-            subHead: "",
-            subText: [],
-            imgUrl: [{image: image2, caption: ""}]
-          }
-        ],
-        id: 3
-      },
-      {
         head: "资质荣誉",
         text: [
           {
@@ -285,23 +274,6 @@ const aboutdatabasic = {
         ],
         imgUrl: [{image: null, caption: ""}],
         id: 6
-      },
-      {
-        head: "董事长致辞",
-        text: [
-          {
-            subHead: "",
-            subText: [
-              "客户成功，才有智道的成功；",
-              "客户的信赖与支持，智道才能稳步、健康的发展；",
-              "优秀的员工和先进的技术，奠定了智道成功的基石；",
-              "现代管理模式和高效执行能力，使智道工程超越客户期望；",
-              "智道致力于：科技净化环境，与客户共成功！"
-            ],
-            imgUrl: [{image: null, caption: ""}],
-          }
-        ],
-        id: 7
       }
     ],
   english:
@@ -415,17 +387,6 @@ const aboutdatabasic = {
         ],
         imgUrl: [{image: null, caption: ""}],
         id: 2
-      },
-      {
-        head: "Organizational Structure",
-        text: [
-          {
-            subHead: "",
-            subText: [],
-            imgUrl: [{image: image2, caption: ""}]
-          }
-        ],
-        id: 3
       },
       {
         head: "Achievements",
@@ -575,23 +536,6 @@ const aboutdatabasic = {
         ],
         imgUrl: [{image: null, caption: ""}],
         id: 6
-      },
-      {
-        head: "Chairman's Message",
-        text: [
-          {
-            subHead: "",
-            subText: [
-              "Our success depends on the success of customers;",
-              "The trust and support of customers help us grow stably;",
-              "The foundation of our success is excellent employees and advanced technologies;",
-              "We serve customers better with our modern management and efficient performance;",
-              "We devote ourselves to making the world more beautiful through advanced technologies and sharing success with customers.",
-            ],
-            imgUrl: [{image: null, caption: ""}],
-          }
-        ],
-        id: 7
       }
     ]
 }

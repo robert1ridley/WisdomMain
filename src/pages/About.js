@@ -2,11 +2,13 @@ import React from 'react';
 import {connect} from 'react-redux';
 
 // import ParagraphsIntro from '../components/ParagraphsIntro';
-import ParagraphsNew from '../components/ParagraphsNew';
+// import ParagraphsNew from '../components/ParagraphsNew';
+import ParagraphsNew from '../components/NEW/ParagraphsNew';
 import Subnav from '../components/Subnav';
 
 import aboutheaddata from '../data/about/aboutheaddata';
-import aboutdatabasic from '../data/about/aboutdatabasic';
+// import aboutdatabasic from '../data/about/aboutdatabasic';
+import aboutdatabasic from '../data/NEW/aboutdatabasic';
 
 import background14 from '../images/subnav/background14.jpg';
 
@@ -22,7 +24,7 @@ class About extends React.Component {
   }
   
   render() {
-    const navData = this.props.language === "zh"? aboutdatabasic.chinese: aboutdatabasic.english;
+    const navData = aboutdatabasic;
     return (
       <div>
         <Subnav 
