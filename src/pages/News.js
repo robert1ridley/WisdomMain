@@ -60,7 +60,7 @@ class News extends React.Component {
           >
           {
             navData[this.state.activeIndex].articles.map((item, index) => 
-              <Link to={`/news/${item.id}`} className="black-text" key={index}>
+              <Link to={`/news/${item.id}`} className="black-text" key={item.id}>
                 <div className="item">
                   <Image src={item.headImage} alt="image" />
                   <div className="card-body text-center">

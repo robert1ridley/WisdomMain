@@ -5,6 +5,9 @@ import {connect} from 'react-redux';
 // import ParagraphsNew from '../components/ParagraphsNew';
 import ParagraphsNew from '../components/NEW/ParagraphsNew';
 import Subnav from '../components/Subnav';
+import Timeline from '../components/Timeline';
+
+import '../styles/timeline.css';
 
 import aboutheaddata from '../data/about/aboutheaddata';
 // import aboutdatabasic from '../data/about/aboutdatabasic';
@@ -24,18 +27,24 @@ class About extends React.Component {
   }
   
   render() {
+    const { activeIndex } = this.state;
+    const { language } = this.props;
     const navData = aboutdatabasic;
     return (
       <div>
         <Subnav 
-          language={this.props.language}
+          language={language}
           intro={aboutheaddata}
           aboutData={navData}
-          currentActive={this.state.activeIndex}
+          currentActive={activeIndex}
           childActive={this.changeActive}
           background={styles.subnav}
         />
-        <ParagraphsNew language={this.props.language} data={navData} index={this.state.activeIndex}/>
+        {
+          navData[activeIndex].id !== 3 ? 
+          <ParagraphsNew language={language} data={navData} index={activeIndex}/> :
+          <Timeline language={language} data={navData} index={activeIndex}/>
+        }
       </div>
     )
   }

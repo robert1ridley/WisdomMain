@@ -1,9 +1,11 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import Subnav from '../components/Subnav';
-import ParagraphsNew from '../components/ParagraphsNew';
+// import ParagraphsNew from '../components/ParagraphsNew';
+import ParagraphsNew from '../components/NEW/ParagraphsNew';
 
-import plansdata from '../data/plans/plansdata';
+// import plansdata from '../data/plans/plansdata';
+import plansdata from '../data/NEW/plansdata';
 import plansheaddata from '../data/plans/plansheaddata';
 
 import background14 from '../images/subnav/background14.jpg';
@@ -20,7 +22,7 @@ class Plans extends React.Component {
   }
   
   render() {
-    const navData = this.props.language === "zh"? plansdata.chinese: plansdata.english;
+    const navData = plansdata;
     return (
       <div>
         <Subnav 

@@ -7,7 +7,6 @@ const footerdata = {
         subItems: [
           {text: "公司概况", link:"/about"},
           {text: "企业文化", link:"/about"},
-          {text: "组织架构", link:"/about"},
           {text: "资质荣誉", link: "/about"},
           {text: "大事记", link: "/about"},
           {text: "社会责任", link: "/about"},
@@ -58,7 +57,6 @@ const footerdata = {
         subItems: [
          {text: "Company Profile", link: "/about"},
          {text: "Corporate Culture", link: "/about"},
-         {text: "Organizational Structure", link: "/about"},
          {text: "Achievements", link: "/about"},
          {text: "Events", link: "/about"},
          {text: "Social Responsibility", link: "/about"},

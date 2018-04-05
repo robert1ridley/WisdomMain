@@ -1,6 +1,6 @@
 const careersheaddata = {
   head: {
-    zh: "跟我们工作",
+    zh: "加入我们",
     en: "Working with us"
   },
   body: {

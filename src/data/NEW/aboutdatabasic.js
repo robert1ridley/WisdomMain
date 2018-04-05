@@ -9,7 +9,7 @@ const aboutdatabasic = [
   {
     head: {
       zh: "企业概况",
-      en: "Company Profile"
+      en: "About Jiangsu Wisdom"
     },
     text: [
       {
@@ -20,7 +20,7 @@ const aboutdatabasic = [
         subText: [
           {
             zh: "江苏智道工程技术有限公司是集研发、设计、核心制造、工程总承包为一体，专注于工业企业系统能量综合利用、有效成分回收和净化处理达标排放的国家级高新技术企业，节能环保系统优化解决的专家。",
-            en: "Jiangsu Wisdom Engineering & Technology Co., Ltd. is a high-tech entity integrating R&D, design, manufacturing and engineering, and engineering procurement construction (EPC) and engaged in energy utilization, waste recycling, a purification treatment of gas and liquid systems in various industries. We also provide energy-conserving services such as energy efficiency evaluation and energy management."
+            en: "Jiangsu Wisdom Engineering Technology Co., Ltd. is a state-level high-tech enterprise specializing in R&D, design, core manufacturing, and engineering procurement construction (EPC). As an expert of energy-saving and environmental protection systems, we focus on the comprehensive utilization of energy, effective component recovery and purification treatment in industrial enterprises."
           }
         ],
         imgUrl: [
@@ -41,7 +41,7 @@ const aboutdatabasic = [
         subText: [
           {
             zh: "公司为国家高新技术企业，“智道商标”为江苏省、南京市著名商标，第五批节能服务公司，江苏省民营科技企业，南京市企业技术中心；拥有环境工程设计乙级资质，D类压力容器设计资质，GC1压力管道设计资质；通过ISO9001国际质量体系认证、ISO14001环境管理体系认证、OHSAS18001职业健康安全管理体系认证；拥有有效发明专利6项，实用新型专利13项，企业技术标准5项。",
-            en: "An energy-conserving expert group composed of Chinese and international academicians and experts guarantees that the company provides advanced technology and equipment."
+            en: "Jiangsu Wisdom is a member of the fifth wave of China energy service companies (ESCO) certified by National Development and Reform Commission (NDRC). Recognized as a “Famous Province-City Trademark”, Wisdom is a certified vendor for Sinopec and China National Chemical Corporation. The company also possesses numerous certifications and qualifications including, but not limited to the following:"
           }
         ],
         imgUrl: [
@@ -61,8 +61,49 @@ const aboutdatabasic = [
         },
         subText: [
           {
+            zh: "",
+            en: "• Grade B environmental engineering design of the Ministry of Housing and Urban-Rural Development of the People's Republic of China "
+          },
+          {
+            zh: "",
+            en: "• Class A2 pressure container manufacturing."
+          },
+          {
+            zh: "",
+            en: "• ISO9001 quality management system, "
+          },
+          {
+            zh: "",
+            en: "• ISO140001 environmental management system"
+          },
+          {
+            zh: "",
+            en: "• OHSAS18001 occupational health and safety management system. "
+          },
+          {
+            zh: "",
+            en: "• Credit rating of 3A"
+          },
+        ],
+        imgUrl: [
+          {
+            image: null,
+            caption: {
+              zh: "",
+              en: ""
+            }
+          }
+        ]
+      },
+      {
+        subHead: {
+          zh: "",
+          en: ""
+        },
+        subText: [
+          {
             zh: "公司具有技术优势、创新优势和服务优势的核心竞争力，开发的多项节能环保技术专利成果，国际水平，国内领先，并成功实现了规模产业化，给客户带来了理想的经济效益，同时获得了理想的社会效益。",
-            en: "We have two subsidiaries, Nanjing Haodong Technology Development Co., Ltd. and Yangzhou Gaolida Technology Industry Co., Ltd."
+            en: "Wisdom has an expert committee composed of domestic and foreign academics and corporate experts, providing a strong guarantee for the company's technology and equipment leadership. We have established strategic production, learning and research cooperation with the University of Kentucky, Australia-China Soil Pollution Prevention and Remediation R&D Center, Southeast University, Nanjing University of Science and Technology, Beijing University of Science and Technology, Jiangsu Energy Saving Technology Service Center, Sinopec Nanjing Engineering Company, Qingdao Angong Institute, and many other research institutes."
           }
         ],
         imgUrl: [
@@ -83,7 +124,7 @@ const aboutdatabasic = [
         subText: [
           {
             zh: "公司拥有由国内外院士、专家组成的专家委员会，为公司的技术、装备领先提供了强有力的保证。与美国肯塔基大学、澳中土壤污染防治和修复研发中心、东南大学、南京理工大学、北京科技大学、江苏省节能技术服务中心、中石化南京工程公司、青岛安工院、等科研院所建立了产学研战略合作。",
-            en: "We are a Chinese high-tech enterprise and one of the fifth batch of energy-conserving companies. We have a qualification of Grade B environmental engineering design of the Ministry of Housing and Urban-Rural Development of the People's Republic of China and a qualification of class A2 pressure container manufacturing. We have also been certified by the ISO9001 quality management system, ISO140001 environmental management system and OHSAS18001 occupational health and safety management system. Moreover, we boast a credit rating of 3A and being a member of the Sinopec Resource Market and a network supplier of China National Chemical Corporation."
+            en: "Composed of Chinese and international academicians and corporate experts, Wisdom is committed to clients’ success with advanced, innovative and systematic technical solutions."
           }
         ],
         imgUrl: [
@@ -104,7 +145,7 @@ const aboutdatabasic = [
         subText: [
           {
             zh: "公司设有人力资源行政部、财务部、营销部、设计研究院、采购部、项目管理部。拥有一家控股子公司—南京豪东科技发展有限公司。",
-            en: "By virtue of advantages in technology, innovation and service, we offer customers integrated systematic technical solutions, apparatuses, and EPC services on energy-conserving and environmental protection. "
+            en: ""
           }
         ],
         imgUrl: [
@@ -154,75 +195,75 @@ const aboutdatabasic = [
         },
         subText: [
           {
-            zh: "资质/荣誉",
-            en: "Chinese high-tech enterprise"
+            zh: "• 资质/荣誉",
+            en: "• Chinese high-tech enterprise"
           },
           {
-            zh: "国家高新技术企业 ",
-            en: "Grade B environmental engineering design qualification"
+            zh: "• 国家高新技术企业 ",
+            en: "• Grade B environmental engineering design qualification"
           },
           {
-            zh: "环境工程专项乙级资质 ",
-            en: "Design qualification of level D pressure vessel"
+            zh: "• 环境工程专项乙级资质 ",
+            en: "• Design qualification of level D pressure vessel"
           },
           {
-            zh: "D级压力容器设计资质",
-            en: "Design qualification of level GC1 pressure piping"
+            zh: "• D级压力容器设计资质",
+            en: "• Design qualification of level GC1 pressure piping"
           },
           {
-            zh: "GC1类压力管道设计资质",
-            en: "Graduate workstation of jiangsu province"
+            zh: "• GC1类压力管道设计资质",
+            en: "• Graduate workstation of jiangsu province"
           },
           {
-            zh: "江苏省研究生工作站",
-            en: "Famous trade mark in jiangsu province"
+            zh: "• 江苏省研究生工作站",
+            en: "• Famous trade mark in jiangsu province"
           },
           {
-            zh: "江苏省著名商标",
-            en: "Famous trade mark in nanjing"
+            zh: "• 江苏省著名商标",
+            en: "• Famous trade mark in nanjing"
           },
           {
-            zh: "南京市著名商标",
-            en: "Nanjing enterprise technology center"
+            zh: "• 南京市著名商标",
+            en: "• Nanjing enterprise technology center"
           },
           {
-            zh: "南京市企业技术中心",
-            en: "Qualification of A2 pressure container manufacturing"
+            zh: "• 南京市企业技术中心",
+            en: "• Qualification of A2 pressure container manufacturing"
           },
           {
-            zh: "A2级压力容器制造资质",
-            en: "One of the fifth batch of energy-conserving companies"
+            zh: "• A2级压力容器制造资质",
+            en: "• One of the fifth batch of energy-conserving companies"
           },
           {
-            zh: "国家第五批合同能源管理企业",
-            en: "Member of the Sinopec Resource Market"
+            zh: "• 国家第五批合同能源管理企业",
+            en: "• Member of the Sinopec Resource Market"
           },
           {
-            zh: "中石化市场成员单位",
-            en: "Network supplier of China National Chemical Corporation"
+            zh: "• 中石化市场成员单位",
+            en: "• Network supplier of China National Chemical Corporation"
           },
           {
-            zh: "中国化工集团网络成员单位",
-            en: "Jiangsu private technology enterprise"
+            zh: "• 中国化工集团网络成员单位",
+            en: "• Jiangsu private technology enterprise"
           },
           {
-            zh: "江苏省民营科技企业",
-            en: "AAA credit rating enterprise"
+            zh: "• 江苏省民营科技企业",
+            en: "• AAA credit rating enterprise"
           },
           {
-            zh: "AAA级资信等级企业",
-            en: "Qualification of ISO9001 quality management system"
+            zh: "• AAA级资信等级企业",
+            en: "• Qualification of ISO9001 quality management system"
           },
           {
-            zh: "ISO9001质量管理体系认证",
-            en: "Qualification of ISO14001 environmental management system"
+            zh: "• ISO9001质量管理体系认证",
+            en: "• Qualification of ISO14001 environmental management system"
           },
           {
-            zh: "ISO14001环境管理体系认证",
-            en: "OHSAS18001 occupational health and safety management system"
+            zh: "• ISO14001环境管理体系认证",
+            en: "• OHSAS18001 occupational health and safety management system"
           },
           {
-            zh: "OHSAS18001职业健康安全管理体系认证",
+            zh: "• OHSAS18001职业健康安全管理体系认证",
             en: ""
           }
         ],
@@ -243,68 +284,68 @@ const aboutdatabasic = [
         },
         subText: [
           {
-            zh: "一种SBS生产中回收环己烷溶剂的系统 ",
-            en: "Cyclohexane Recycling System Applied in SBS Manufacturing"
+            zh: "• 一种SBS生产中回收环己烷溶剂的系统 ",
+            en: "• Cyclohexane Recycling System Applied in SBS Manufacturing"
           },
           {
-            zh: "高效冷凝集油分离器",
-            en: "High-Performance Condensing Oil Separator"
+            zh: "• 高效冷凝集油分离器",
+            en: "• High-Performance Condensing Oil Separator"
           },
           {
-            zh: "高效自散热式稳态吸附塔",
-            en: "High-Performance Self-Radiating Absorption Tower"
+            zh: "• 高效自散热式稳态吸附塔",
+            en: "• High-Performance Self-Radiating Absorption Tower"
           },
           {
-            zh: "一种治理低浓度VOCs废气的系统",
-            en: "System Treating Low-Density VOCs Exhaust Gas"
+            zh: "• 一种治理低浓度VOCs废气的系统",
+            en: "• System Treating Low-Density VOCs Exhaust Gas"
           },
           {
-            zh: "一种SBS生产中回收环己烷溶剂的方法及系统",
-            en: "Cyclohexane Recycling Method and System Applied in SBS Manufacturing"
+            zh: "• 一种SBS生产中回收环己烷溶剂的方法及系统",
+            en: "• Cyclohexane Recycling Method and System Applied in SBS Manufacturing"
           },
           {
-            zh: "炼油厂硫磺装置集硫坑内挥发性尾气回收装置",
-            en: "Volatile Tail Gas Recycling Apparatus in Sulphur Collectors of Sulphur Apparatuses in Oil Plants"
+            zh: "• 炼油厂硫磺装置集硫坑内挥发性尾气回收装置",
+            en: "• Volatile Tail Gas Recycling Apparatus in Sulphur Collectors of Sulphur Apparatuses in Oil Plants"
           },
           {
-            zh: "一种治理低浓度VOCs废气的系统和工艺",
-            en: "System and Process Treating Low-Density VOCs Exhaust Gas"
+            zh: "• 一种治理低浓度VOCs废气的系统和工艺",
+            en: "• System and Process Treating Low-Density VOCs Exhaust Gas"
           },
           {
-            zh: "一种炼油厂硫磺装置集硫坑内挥发性尾气回收工艺及装置",
-            en: "Volatile Tail Gas Recycling Process and Apparatus in Sulphur Collectors of Sulphur Apparatuses in Oil Plants"
+            zh: "• 一种炼油厂硫磺装置集硫坑内挥发性尾气回收工艺及装置",
+            en: "• Volatile Tail Gas Recycling Process and Apparatus in Sulphur Collectors of Sulphur Apparatuses in Oil Plants"
           },
           {
-            zh: "一种氨纶干法纺丝介质循环方法及系统",
-            en: "Recycling Method and System of Spandex Dry Spinning"
+            zh: "• 一种氨纶干法纺丝介质循环方法及系统",
+            en: "• Recycling Method and System of Spandex Dry Spinning"
           },
           {
-            zh: "一种串行塔活性碱基超高效脱硫系统",
-            en: "High-Performance Desulfurization System of Serial Active Alkali"
+            zh: "• 一种串行塔活性碱基超高效脱硫系统",
+            en: "• High-Performance Desulfurization System of Serial Active Alkali"
           },
           {
-            zh: "一种串行塔活性碱基超高效脱硫装置",
-            en: "High-Performance Desulfurization Apparatus of Serial Active Alkali"
+            zh: "• 一种串行塔活性碱基超高效脱硫装置",
+            en: "• High-Performance Desulfurization Apparatus of Serial Active Alkali"
           },
           {
-            zh: "一种耐用防露堵组合式烟气余热利用装置",
-            en: "Durable Anti-Leak and Anti-Block Apparatus of Flue gas Waste Heat Utilization"
+            zh: "• 一种耐用防露堵组合式烟气余热利用装置",
+            en: "• Durable Anti-Leak and Anti-Block Apparatus of Flue gas Waste Heat Utilization"
           },
           {
-            zh: "工业炉烟气低温热量利用方法",
-            en: "Utilization Method of Low-Temperature Industrial Furnace Flue gas Heat"
+            zh: "• 工业炉烟气低温热量利用方法",
+            en: "• Utilization Method of Low-Temperature Industrial Furnace Flue gas Heat"
           },
           {
-            zh: "蓄热式跨临界烟气余热回收设备",
-            en: "Regenerative Recycling Apparatus of Transcritical Flue gas Waste Heat"
+            zh: "• 蓄热式跨临界烟气余热回收设备",
+            en: "• Regenerative Recycling Apparatus of Transcritical Flue gas Waste Heat"
           },
           {
-            zh: "一种旋风分离燃烧蓄热管式加热炉",
-            en: "Tubing Heating Furnace with Cyclone Separator and Combustion Heat-Storage"
+            zh: "• 一种旋风分离燃烧蓄热管式加热炉",
+            en: "• Tubing Heating Furnace with Cyclone Separator and Combustion Heat-Storage"
           },
           {
-            zh: "适用于燃料气工况的工业炉窑燃烧烟气余热回收系统",
-            en: "Flue gas Waste Heat Recycling System of Industrial Furnace Combustion Applied in Fuel Gas Working Status"
+            zh: "• 适用于燃料气工况的工业炉窑燃烧烟气余热回收系统",
+            en: "• Flue gas Waste Heat Recycling System of Industrial Furnace Combustion Applied in Fuel Gas Working Status"
           }
         ],
         imgUrl: [
@@ -319,8 +360,118 @@ const aboutdatabasic = [
       }
     ],
     id: 2
+  },
+  {
+    head: {
+      zh: "大事记",
+      en: "Timeline"
+    },
+    text: [
+      {
+        subHead: {
+          zh: "2017年",
+          en: "2017年"
+        },
+        subText: [
+          {
+            zh: "2017年4月， 《石化行业有机废气资源化回收与净化技术研发及产业化》项目获得南京市科学技术进步奖三等奖。",
+            en: "2017年4月， 《石化行业有机废气资源化回收与净化技术研发及产业化》项目获得南京市科学技术进步奖三等奖。"
+          },
+          {
+            zh: "2017年3月，“智道”获得江苏省、南京市著名商标称号。",
+            en: "2017年3月，“智道”获得江苏省、南京市著名商标称号。"
+          }
+        ]
+      },
+
+      {
+        subHead: {
+          zh: "2016年",
+          en: "2016年"
+        },
+        subText: [
+          {
+            zh: "2016年12月，江苏智道工程技术有限公司荣获2016年创业玄武“玄梧金凤奖",
+            en: "2016年12月，江苏智道工程技术有限公司荣获2016年创业玄武“玄梧金凤奖"
+          },
+          {
+            zh: "2016年09月，智道公司获邀参加2016年南京金秋经贸洽谈会及溧水“三城一园”发展商机推介会。",
+            en: "2016年09月，智道公司获邀参加2016年南京金秋经贸洽谈会及溧水“三城一园”发展商机推介会。"
+          },
+          {
+            zh: "2016年08月，公司被南京市节能环保产业协会会员代表大会推举为理事长单位，公司董事长兼总经理李来所先生当选协会理事长。",
+            en: "2016年08月，公司被南京市节能环保产业协会会员代表大会推举为理事长单位，公司董事长兼总经理李来所先生当选协会理事长。"
+          },
+          {
+            zh: "2016年07月，《石化行业有机废气资源化回收与净化技术研发及产业化》项目获得2016年度省科技成果转化专项资金支持",
+            en: "2016年07月，《石化行业有机废气资源化回收与净化技术研发及产业化》项目获得2016年度省科技成果转化专项资金支持"
+          },
+          {
+            zh: "2016年02月，江苏智道工程技术有限公司2015年度总结表彰大会在南京隆重召开。",
+            en: "2016年02月，江苏智道工程技术有限公司2015年度总结表彰大会在南京隆重召开。"
+          },
+          {
+            zh: "2016年01月，江苏智道工程技术有限公司2015年度工作总结管理研讨会在南京成功举办。",
+            en: "2016年01月，江苏智道工程技术有限公司2015年度工作总结管理研讨会在南京成功举办。"
+          }
+        ]
+      },
+      {
+        subHead: {
+          zh: "2015年",
+          en: "2015年"
+        },
+        subText: [
+          {
+            zh: "2015年12月，成功主办2015中国南京第二届大气及水污染综合治理技术国际论坛；顺利通过GC1级压力管道设计资质。",
+            en: "2015年12月，成功主办2015中国南京第二届大气及水污染综合治理技术国际论坛；顺利通过GC1级压力管道设计资质。"
+          },
+          {
+            zh: "2015年11月，获得D类压力容器设计资质。",
+            en: "2015年11月，获得D类压力容器设计资质。"
+          },
+          {
+            zh: "2015年10月，承接的中石化某企业脱硫脱硝项目一次性开车成功，各项指标优于设计。",
+            en: "2015年10月，承接的中石化某企业脱硫脱硝项目一次性开车成功，各项指标优于设计。"
+          },
+          {
+            zh: "2015年09月，公司董事长李来所被评为江苏省产业教授。",
+            en: "2015年09月，公司董事长李来所被评为江苏省产业教授。"
+          },
+          {
+            zh: "2015年08月，智道与南京理工大学获批研究生工作站；获授权发明专利3项。",
+            en: "2015年08月，智道与南京理工大学获批研究生工作站；获授权发明专利3项。"
+          },
+          {
+            zh: "2015年06月，成功入选中美绿色合作伙伴计划。次月受邀参加第七届中美战略经济论坛签字仪式。",
+            en: "2015年06月，成功入选中美绿色合作伙伴计划。次月受邀参加第七届中美战略经济论坛签字仪式。"
+          },
+          {
+            zh: "2015年05月，承接的中石化某企业储运部油气回收项目，一次开车成功，各项排放指标全部达标。",
+            en: "2015年05月，承接的中石化某企业储运部油气回收项目，一次开车成功，各项排放指标全部达标。"
+          }
+        ]
+      }
+    ],
+    id: 3
   }
 ]
+
+
+
+  //         {
+  //           subHead: "2015年",
+  //           subText: [
+  //             "2015年12月，成功主办2015中国南京第二届大气及水污染综合治理技术国际论坛；顺利通过GC1级压力管道设计资质。",
+  //             "2015年11月，获得D类压力容器设计资质。",
+  //             "2015年10月，承接的中石化某企业脱硫脱硝项目一次性开车成功，各项指标优于设计。",
+  //             "2015年09月，公司董事长李来所被评为江苏省产业教授。",
+  //             "2015年08月，智道与南京理工大学获批研究生工作站；获授权发明专利3项。",
+  //             "2015年06月，成功入选中美绿色合作伙伴计划。次月受邀参加第七届中美战略经济论坛签字仪式。",
+  //             "2015年05月，承接的中石化某企业储运部油气回收项目，一次开车成功，各项排放指标全部达标。"
+  //           ],
+  //           imgUrl: [{image: null, caption: ""}]
+  //         }
 
 //OLD
 // 

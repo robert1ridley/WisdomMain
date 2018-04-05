@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import Subnav from '../components/Subnav';
 import TextCards from '../components/TextCards';
-import ImageReel from '../components/ImageReel';
+import InfoCards from '../components/InfoCards';
 import careersheaddata from '../data/careers/careersheaddata';
 import careerslistdata from '../data/careers/careerslistdata';
 import jobsdata from '../data/careers/jobsdata';
@@ -38,7 +38,7 @@ class About extends React.Component {
           {
             this.state.activeIndex===0?
             <TextCards language={language} data={jobsdata}/>:
-            <ImageReel />
+            <InfoCards language={language}/>
           }
         </div>
       </div>
