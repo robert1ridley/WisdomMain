@@ -20,7 +20,7 @@ export default () => (
         <SiteNav />
         <Switch>
           <Route path="/" exact component={Home}/>
-          <Route path="/about" exact component={About}/>
+          <Route path="/about" component={About}/>
           <Route path="/news" component={News}/>
           <Route path="/plans" exact component={Plans}/>
           <Route path="/achievements" exact component={Achievements}/>
@@ -36,6 +36,6 @@ export default () => (
 )
 
 const ScrollToTop = () => {
-  window.scrollTo(0, 0);
+  // window.scrollTo(0, 0);
   return null;
 };

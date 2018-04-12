@@ -26,7 +26,8 @@ class About extends React.Component {
     const { activeIndex } =this.state;
     return (
       <div>
-        <Subnav 
+        <Subnav
+          path="about"
           language={language}
           intro={careersheaddata}
           aboutData={navData}

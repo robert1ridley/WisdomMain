@@ -32,7 +32,8 @@ class Achievements extends React.Component {
     console.log(navData);
     return (
       <div>
-        <Subnav 
+        <Subnav
+          path="achievements"
           language={language}
           intro={achievementsdata}
           aboutData={navData}

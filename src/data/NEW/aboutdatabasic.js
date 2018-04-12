@@ -41,7 +41,7 @@ const aboutdatabasic = [
         subText: [
           {
             zh: "公司为国家高新技术企业，“智道商标”为江苏省、南京市著名商标，第五批节能服务公司，江苏省民营科技企业，南京市企业技术中心；拥有环境工程设计乙级资质，D类压力容器设计资质，GC1压力管道设计资质；通过ISO9001国际质量体系认证、ISO14001环境管理体系认证、OHSAS18001职业健康安全管理体系认证；拥有有效发明专利6项，实用新型专利13项，企业技术标准5项。",
-            en: "Jiangsu Wisdom is a member of the fifth wave of China energy service companies (ESCO) certified by National Development and Reform Commission (NDRC). Recognized as a “Famous Province-City Trademark”, Wisdom is a certified vendor for Sinopec and China National Chemical Corporation. The company also possesses numerous certifications and qualifications including, but not limited to the following:"
+            en: "We are a member of the fifth wave of China energy service companies (ESCO) certified by National Development and Reform Commission (NDRC). Recognized as a “Famous Province-City Trademark”, we are a certified vendor for Sinopec and China National Chemical Corporation. Wisdom also possesses numerous certifications and qualifications including, but not limited to, the following:"
           }
         ],
         imgUrl: [
@@ -62,27 +62,27 @@ const aboutdatabasic = [
         subText: [
           {
             zh: "",
-            en: "• Grade B environmental engineering design of the Ministry of Housing and Urban-Rural Development of the People's Republic of China "
+            en: "• Grade B Environmental Engineering Design Of The Ministry Of Housing And Urban-Rural Development Of The People's Republic Of China "
           },
           {
             zh: "",
-            en: "• Class A2 pressure container manufacturing."
+            en: "• Class A2 Pressure Container Manufacturing."
           },
           {
             zh: "",
-            en: "• ISO9001 quality management system, "
+            en: "• ISO9001 Quality Management System, "
           },
           {
             zh: "",
-            en: "• ISO140001 environmental management system"
+            en: "• ISO140001 Environmental Management System"
           },
           {
             zh: "",
-            en: "• OHSAS18001 occupational health and safety management system. "
+            en: "• OHSAS18001 Occupational Health And Safety Management System."
           },
           {
             zh: "",
-            en: "• Credit rating of 3A"
+            en: "• Credit Rating Of AAA"
           },
         ],
         imgUrl: [
@@ -103,7 +103,7 @@ const aboutdatabasic = [
         subText: [
           {
             zh: "公司具有技术优势、创新优势和服务优势的核心竞争力，开发的多项节能环保技术专利成果，国际水平，国内领先，并成功实现了规模产业化，给客户带来了理想的经济效益，同时获得了理想的社会效益。",
-            en: "Wisdom has an expert committee composed of domestic and foreign academics and corporate experts, providing a strong guarantee for the company's technology and equipment leadership. We have established strategic production, learning and research cooperation with the University of Kentucky, Australia-China Soil Pollution Prevention and Remediation R&D Center, Southeast University, Nanjing University of Science and Technology, Beijing University of Science and Technology, Jiangsu Energy Saving Technology Service Center, Sinopec Nanjing Engineering Company, Qingdao Angong Institute, and many other research institutes."
+            en: "In addition, Jiangsu Wisdom has an expert committee composed of domestic and foreign academics and corporate experts, who provide support for our most advanced solutions. We have established research and production partnerships with the University of Kentucky, Southeast University, Nanjing University of Science and Technology, Beijing University of Science and Technology, Australia-China Soil Pollution Prevention and Remediation R&D Center, Jiangsu Energy Saving Technology Service Center, Sinopec Nanjing Engineering Company, Qingdao Angong Institute, and many other research institutes."
           }
         ],
         imgUrl: [
@@ -124,7 +124,7 @@ const aboutdatabasic = [
         subText: [
           {
             zh: "公司拥有由国内外院士、专家组成的专家委员会，为公司的技术、装备领先提供了强有力的保证。与美国肯塔基大学、澳中土壤污染防治和修复研发中心、东南大学、南京理工大学、北京科技大学、江苏省节能技术服务中心、中石化南京工程公司、青岛安工院、等科研院所建立了产学研战略合作。",
-            en: "Composed of Chinese and international academicians and corporate experts, Wisdom is committed to clients’ success with advanced, innovative and systematic technical solutions."
+            en: "Integrating domestic and international resources, Wisdom is committed to clients’ success with advanced, innovative and systematic technical solutions."
           }
         ],
         imgUrl: [

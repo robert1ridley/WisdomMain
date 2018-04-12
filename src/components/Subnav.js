@@ -1,19 +1,22 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Intro from '../components/Intro';
 // import background1 from '../images/subnav/background1.jpg';
 
 const Subnav = (props) => {
-  const { aboutData, currentActive, childActive, language, background, intro } = props;
+  const { aboutData, currentActive, childActive, language, background, intro, path } = props;
   const navButtons = aboutData.map((navButton, index) => 
-    <Button 
-      bsSize="large" 
-      style={currentActive===index? styles.activeButton: styles.regularButton} 
-      onClick={() => childActive(index)}
-      key={index}
-    >
-      {navButton.head[language]}
-    </Button>
+    <Link to={`/${path}/${navButton.id}`} key={index}>
+      <Button 
+        bsSize="large" 
+        style={currentActive===index? styles.activeButton: styles.regularButton} 
+        onClick={() => childActive(index)}
+        key={index}
+      >
+        {navButton.head[language]}
+      </Button>
+    </Link>
   )
   return (
       <div

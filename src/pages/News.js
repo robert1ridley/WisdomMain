@@ -42,7 +42,8 @@ class News extends React.Component {
     const navButtons = language === "zh"? ["上一页", "下一页"]: ["Prev", "Next"];
     return (
       <div>
-        <Subnav 
+        <Subnav
+          path="news"
           language={language}
           intro={newsheaddata}
           aboutData={navData}
@@ -72,7 +73,7 @@ class News extends React.Component {
           }
           </OwlCarousel>
         </div>
-        <Route path={`/news/:id`} component={NewsItem} />
+        <Route path={`/news/:id`} exact component={NewsItem} />
       </div>
     )
   }

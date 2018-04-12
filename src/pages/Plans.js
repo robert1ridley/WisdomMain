@@ -25,7 +25,8 @@ class Plans extends React.Component {
     const navData = plansdata;
     return (
       <div>
-        <Subnav 
+        <Subnav
+          path="plans"
           language={this.props.language}
           intro={plansheaddata}
           aboutData={navData}

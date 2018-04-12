@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import { Route } from 'react-router-dom';
 
 // import ParagraphsIntro from '../components/ParagraphsIntro';
 // import ParagraphsNew from '../components/ParagraphsNew';
@@ -19,7 +20,9 @@ class About extends React.Component {
   constructor() {
     super();
     this.changeActive = this.changeActive.bind(this);
-    this.state = { activeIndex: 0 }
+    this.state = { 
+      activeIndex: 0
+    }
   }
 
   changeActive(active) {
@@ -32,7 +35,8 @@ class About extends React.Component {
     const navData = aboutdatabasic;
     return (
       <div>
-        <Subnav 
+        <Subnav
+          path="about"
           language={language}
           intro={aboutheaddata}
           aboutData={navData}
@@ -41,9 +45,22 @@ class About extends React.Component {
           background={styles.subnav}
         />
         {
-          navData[activeIndex].id !== 3 ? 
-          <ParagraphsNew language={language} data={navData} index={activeIndex}/> :
-          <Timeline language={language} data={navData} index={activeIndex}/>
+          <Route path={`/about/:id`} exact render={(props) => 
+            navData[activeIndex].id !== 3 ?
+            <ParagraphsNew
+              language={language}
+              data={navData}
+              index={activeIndex}
+              {...props}
+            /> 
+            :
+            <Timeline
+              language={language}
+              data={navData}
+              index={activeIndex}
+              {...props}
+            /> 
+          }/>
         }
       </div>
     )

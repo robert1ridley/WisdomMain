@@ -31,7 +31,6 @@ class Timeline extends React.Component {
     const { language, data, index } = this.props;
     const { smallScreen } = this.state;
     return (
-      <div style={{backgroundColor: "#7ebc59", opacity: 0.5}}>
       <div className="container">
         <ul className="timeline" style={{marginTop: 50}}>
         {
@@ -57,7 +56,6 @@ class Timeline extends React.Component {
         )
         }
         </ul>
-      </div>
       </div>
     )
   }
