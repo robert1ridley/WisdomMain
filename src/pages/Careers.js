@@ -16,6 +16,14 @@ class About extends React.Component {
     this.state = { activeIndex: 0 }
   }
 
+  componentDidMount() {
+    const pageId = Number(this.props.match.params.id);
+    const foundIndex = careerslistdata.findIndex((el) => (el.id === pageId));
+    this.setState({
+      activeIndex: foundIndex
+    })
+  }
+
   changeActive(active) {
     this.setState({ activeIndex: active })
   }
@@ -27,7 +35,7 @@ class About extends React.Component {
     return (
       <div>
         <Subnav
-          path="about"
+          path="careers"
           language={language}
           intro={careersheaddata}
           aboutData={navData}

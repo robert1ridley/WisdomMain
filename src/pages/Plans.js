@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 import {connect} from 'react-redux';
 import Subnav from '../components/Subnav';
 // import ParagraphsNew from '../components/ParagraphsNew';
@@ -14,11 +15,21 @@ class Plans extends React.Component {
   constructor() {
     super();
     this.changeActive = this.changeActive.bind(this);
-    this.state = { activeIndex: 0 }
+    this.state = { 
+      activeIndex: 0 
+    }
   }
 
   changeActive(active) {
     this.setState({ activeIndex: active })
+  }
+
+  componentDidMount() {
+    const pageId = Number(this.props.match.params.id);
+    const foundIndex = plansdata.findIndex((el) => (el.id === pageId));
+    this.setState({
+      activeIndex: foundIndex
+    })
   }
   
   render() {
@@ -34,7 +45,14 @@ class Plans extends React.Component {
           childActive={this.changeActive}
           background={styles.subnav}
         />
-        <ParagraphsNew language={this.props.language} data={navData} index={this.state.activeIndex}/>
+        <Route path={`/plans/:id`} exact render={(props) => 
+          <ParagraphsNew 
+            language={this.props.language} 
+            data={navData} 
+            index={this.state.activeIndex}
+            {...props}
+          />
+        }/>
       </div>
     )
   }

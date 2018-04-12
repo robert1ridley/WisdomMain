@@ -28,6 +28,14 @@ class About extends React.Component {
   changeActive(active) {
     this.setState({ activeIndex: active })
   }
+
+  componentDidMount() {
+    const pageId = this.props.match.params.id;
+    const foundIndex = aboutdatabasic.findIndex((el) => (el.id === pageId));
+    this.setState({
+      activeIndex: foundIndex
+    })
+  }
   
   render() {
     const { activeIndex } = this.state;
@@ -46,7 +54,7 @@ class About extends React.Component {
         />
         {
           <Route path={`/about/:id`} exact render={(props) => 
-            navData[activeIndex].id !== 3 ?
+            navData[activeIndex].id !== 'timeline' ?
             <ParagraphsNew
               language={language}
               data={navData}

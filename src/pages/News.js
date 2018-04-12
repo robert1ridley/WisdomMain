@@ -30,6 +30,11 @@ class News extends React.Component {
   
   componentDidMount(){
     window.addEventListener('resize', this.calcSize)
+    const pageId = this.props.match.params.id;
+    const foundIndex = newsdata.findIndex((el) => (el.id === pageId));
+    this.setState({
+      activeIndex: foundIndex
+    })
   }
   
   componentWillUnmount(){

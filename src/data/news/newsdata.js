@@ -1,5 +1,6 @@
 const newsdata = [
     {
+      id: "enterprise",
       head: {
         zh: "企业新闻",
         en: "Enterprise News"
@@ -224,6 +225,7 @@ const newsdata = [
       ]
     },
     {
+      id: "industry",
       head: {
         zh: "行业动态",
         en: "Industry Dynamics"

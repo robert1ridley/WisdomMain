@@ -18,6 +18,14 @@ class Achievements extends React.Component {
     }
   }
 
+  componentDidMount() {
+    const pageId = Number(this.props.match.params.id);
+    const foundIndex = achievementsdata.subCategories.findIndex((el) => (el.id === pageId));
+    this.setState({
+      activeIndex: foundIndex
+    })
+  }
+
   changeActive(active) {
     this.setState({ activeIndex: active, subActive: 0 })
   }

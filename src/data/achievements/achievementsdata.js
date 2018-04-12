@@ -26,6 +26,7 @@ const achievementsdata = {
     },
     subCategories: [
       {
+        id: 1,
         head: {
           zh: "油气回收、VOCs治理技术",
           en: "Something about VOCs"
@@ -89,6 +90,7 @@ const achievementsdata = {
         ]
       },
       {
+        id: 2,
         head: {
           zh: "脱硫脱硝技术",
           en: "Another Topic"
@@ -152,6 +154,7 @@ const achievementsdata = {
         ]
       },
       {
+        id: 3,
         head: {
           zh: "能量综合利用",
           en: "Final Topic"
