@@ -3,36 +3,33 @@ const footerdata = {
     pagehead: {text: "我们的客户包括", link: "/"},
     footerItems:[
       {
-        header: {text: "关于智道", link:"/about"},
+        header: {text: "关于智道", link:"/about/about-wisdom"},
         subItems: [
-          {text: "公司概况", link:"/about"},
-          {text: "企业文化", link:"/about"},
-          {text: "资质荣誉", link: "/about"},
-          {text: "大事记", link: "/about"},
-          {text: "社会责任", link: "/about"},
-          {text: "董事长致辞", link: "/about"}
+          {text: "公司概况", link:"/about/about-wisdom"},
+          {text: "资质荣誉", link: "/about/aptitude-honor"},
+          {text: "大事记", link: "/about/timeline"},
         ]
       },
       {
-        header: {text: "新闻中心", link: "/news"},
+        header: {text: "新闻中心", link: "/news/enterprise"},
         subItems: [
-          {text: "企业新闻", link: "/news"},
-          {text: "行业动态", link: "/news"}
+          {text: "企业新闻", link: "/news/enterprise"},
+          {text: "行业动态", link: "/news/industry"}
         ]
       },
       {
-        header: {text: "解决方案", link: "/plans"},
+        header: {text: "解决方案", link: "/plans/1"},
         subItems: [
-          {text: "主营业务", link:"/plans"},
-          {text: "创新与研发", link:"/plans"},
-          {text: "自主知识产权技术和装置介绍", link:"/plans"}
+          {text: "主营业务", link:"/plans/1"},
+          {text: "创新与研发", link:"/plans/2"},
+          {text: "自主知识产权技术和装置介绍", link:"/plans/3"}
         ]
       },
       {
-        header: {text: "人力资源", link:"/careers"},
+        header: {text: "人力资源", link:"/careers/jobs"},
         subItems: [
-          {text: "人才招聘", link: "/careers"},
-          {text: "员工风采", link:"/careers"}
+          {text: "人才招聘", link: "/careers/jobs"},
+          {text: "专家", link:"/careers/experts"}
         ]
       },
       {
@@ -55,34 +52,31 @@ const footerdata = {
       {
         header: {text: "About us", link: "/about"},
         subItems: [
-         {text: "Company Profile", link: "/about"},
-         {text: "Corporate Culture", link: "/about"},
-         {text: "Achievements", link: "/about"},
-         {text: "Events", link: "/about"},
-         {text: "Social Responsibility", link: "/about"},
-         {text: "Chairman's Blog", link: "/about"}
+         {text: "About Wisdom", link: "/about/about-wisdom"},
+         {text: "Aptitude Honor", link: "/about/aptitude-honor"},
+         {text: "Timeline", link: "/about/timeline"}
         ]
       },
       {
         header: {text: "Company News", link: "/news"},
         subItems: [
-         {text: "Industry News", link: "/news"},
-         {text: "Industry Trends", link: "/news"}
+         {text: "Enterprise News", link: "/news/enterprise"},
+         {text: "Industry Dynamics", link: "/news/enterprise"}
         ]
       },
       {
         header:{text: "Plans", link: "/plans"}, 
         subItems: [
-         {text: "Main Business", link: "/plans"},
-         {text: "Research and Development", link: "/plans"},
-         {text: "Introduction of independent intellectual property technology and equipment", link: "/plans"}
+         {text: "Main Business", link: "/plans/1"},
+         {text: "Research and Development", link: "/plans/1"},
+         {text: "Technology and Equipment Intellectual Property ", link: "/plans/3"}
         ]
       },
       {
-        header:{text: "Careers", link: "/careers"},
+        header:{text: "Team", link: "/careers"},
         subItems: [
-         {text: "Talent Recruitment", link: "/careers"},
-         {text: "Employees", link: "/careers"}
+         {text: "Jobs", link: "/careers/jobs"},
+         {text: "Experts", link: "/careers/experts"}
         ]
       },
       {

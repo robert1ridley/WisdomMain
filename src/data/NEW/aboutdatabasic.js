@@ -370,16 +370,16 @@ const aboutdatabasic = [
       {
         subHead: {
           zh: "2017年",
-          en: "2017年"
+          en: "2017"
         },
         subText: [
           {
             zh: "2017年4月， 《石化行业有机废气资源化回收与净化技术研发及产业化》项目获得南京市科学技术进步奖三等奖。",
-            en: "2017年4月， 《石化行业有机废气资源化回收与净化技术研发及产业化》项目获得南京市科学技术进步奖三等奖。"
+            en: "In April 2017, The Project Won The Third Prize Of Nanjing Science And Technology Progress Award In The Project Of 'Organic Waste Gas Recovery And Purification Technology Development And Industrialization Of Petrochemical Industry'."
           },
           {
             zh: "2017年3月，“智道”获得江苏省、南京市著名商标称号。",
-            en: "2017年3月，“智道”获得江苏省、南京市著名商标称号。"
+            en: "In March 2017, Wisdom won The Title Of Famous Trademark Of Jiangsu Province And Nanjing City."
           }
         ]
       },
@@ -392,27 +392,27 @@ const aboutdatabasic = [
         subText: [
           {
             zh: "2016年12月，江苏智道工程技术有限公司荣获2016年创业玄武“玄梧金凤奖",
-            en: "2016年12月，江苏智道工程技术有限公司荣获2016年创业玄武“玄梧金凤奖"
+            en: "In December 2016, Jiangsu Zhidao Engineering Technology Co., Ltd. Was Awarded The 'Xuanwu Golden Phoenix Award' In 2016."
           },
           {
             zh: "2016年09月，智道公司获邀参加2016年南京金秋经贸洽谈会及溧水“三城一园”发展商机推介会。",
-            en: "2016年09月，智道公司获邀参加2016年南京金秋经贸洽谈会及溧水“三城一园”发展商机推介会。"
+            en: "In August 2016, The Company Was Promoted To The Chairman Of The General Assembly Of The Energy Conservation And Environmental Protection Industry Association Of Nanjing, And Li, Chairman And General Manager Of The Company."
           },
           {
             zh: "2016年08月，公司被南京市节能环保产业协会会员代表大会推举为理事长单位，公司董事长兼总经理李来所先生当选协会理事长。",
-            en: "2016年08月，公司被南京市节能环保产业协会会员代表大会推举为理事长单位，公司董事长兼总经理李来所先生当选协会理事长。"
+            en: "In July 2016, The Project Of Petrochemical Industry Organic Waste Gas Recovery And Purification Technology Development And Industrialization Was Supported By The Project Of 2016 Provincial Scientific And Technological Achievements Transformation."
           },
           {
             zh: "2016年07月，《石化行业有机废气资源化回收与净化技术研发及产业化》项目获得2016年度省科技成果转化专项资金支持",
-            en: "2016年07月，《石化行业有机废气资源化回收与净化技术研发及产业化》项目获得2016年度省科技成果转化专项资金支持"
+            en: "In February 2016, Jiangsu Zhidao Engineering Technology Co., LTD. 2015 Annual Summary Recognition Conference Was Held In Nanjing."
           },
           {
             zh: "2016年02月，江苏智道工程技术有限公司2015年度总结表彰大会在南京隆重召开。",
-            en: "2016年02月，江苏智道工程技术有限公司2015年度总结表彰大会在南京隆重召开。"
+            en: "In September 2016, Zhidao Company Was Invited To Participate In The 2016 Nanjing Jinqiu Economic And Trade Fair And Lishui 'Three Cities And One Garden' Development Business Opportunities Promotion Seminar."
           },
           {
             zh: "2016年01月，江苏智道工程技术有限公司2015年度工作总结管理研讨会在南京成功举办。",
-            en: "2016年01月，江苏智道工程技术有限公司2015年度工作总结管理研讨会在南京成功举办。"
+            en: "In January 2016, Jiangsu Zhidao Engineering Technology Co., LTD. 2015 Annual Work Summary Management Seminar Was Successfully Held In Nanjing."
           }
         ]
       },
@@ -424,31 +424,31 @@ const aboutdatabasic = [
         subText: [
           {
             zh: "2015年12月，成功主办2015中国南京第二届大气及水污染综合治理技术国际论坛；顺利通过GC1级压力管道设计资质。",
-            en: "2015年12月，成功主办2015中国南京第二届大气及水污染综合治理技术国际论坛；顺利通过GC1级压力管道设计资质。"
+            en: "In December 2015, I Successfully Hosted The Second International BBS Of The Integrated Management Technology Of Air And Water Pollution In Nanjing, China. Through GC1 Pressure Pipeline Design Qualification."
           },
           {
             zh: "2015年11月，获得D类压力容器设计资质。",
-            en: "2015年11月，获得D类压力容器设计资质。"
+            en: "In November 2015, I Obtained The Design Qualification Of Class D Pressure Vessel."
           },
           {
             zh: "2015年10月，承接的中石化某企业脱硫脱硝项目一次性开车成功，各项指标优于设计。",
-            en: "2015年10月，承接的中石化某企业脱硫脱硝项目一次性开车成功，各项指标优于设计。"
+            en: "In October 2015, The Company Undertook A One-Time Driving Success Of Desulfurization And Denitration Of A Company Of Sinopec, Which Was Better Than The Design."
           },
           {
             zh: "2015年09月，公司董事长李来所被评为江苏省产业教授。",
-            en: "2015年09月，公司董事长李来所被评为江苏省产业教授。"
+            en: "In September 2015, Li, Chairman Of The Company, Was Awarded The Jiangsu Province Industry Professor."
           },
           {
             zh: "2015年08月，智道与南京理工大学获批研究生工作站；获授权发明专利3项。",
-            en: "2015年08月，智道与南京理工大学获批研究生工作站；获授权发明专利3项。"
+            en: "In August 2015, Zhidao And Nanjing University Of Technology Received A Batch Of Postgraduate Workstations. Three Patents Authorized To Be Patented."
           },
           {
             zh: "2015年06月，成功入选中美绿色合作伙伴计划。次月受邀参加第七届中美战略经济论坛签字仪式。",
-            en: "2015年06月，成功入选中美绿色合作伙伴计划。次月受邀参加第七届中美战略经济论坛签字仪式。"
+            en: "In June 2015, I Was Successfully Selected As The Sino-Us Green Partner Program. The Following Month Was Invited To Participate In The 7th China-Us Strategic Economic BBS Signing Ceremony. "
           },
           {
             zh: "2015年05月，承接的中石化某企业储运部油气回收项目，一次开车成功，各项排放指标全部达标。",
-            en: "2015年05月，承接的中石化某企业储运部油气回收项目，一次开车成功，各项排放指标全部达标。"
+            en: "In May 2015, The Oil And Gas Recovery Project Of A Sinopec Enterprise Storage And Transportation Department Was Successfully Carried Out, And All The Emission Indexes Reached The Standard."
           }
         ]
       }

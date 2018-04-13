@@ -29,6 +29,20 @@ class News extends React.Component {
   calcSize(){
     this.setState({windowWidth: window.innerWidth})
   }
+
+  componentWillReceiveProps(nextProps) {
+    const pageId = nextProps.match.params.id;
+    if (this.props.match.params.id !== pageId){
+      const foundIndex = newsdata.findIndex((el) => (el.id === pageId));
+      foundIndex<0 ?
+      this.setState ({
+        notFound: true
+      }):
+      this.setState({
+        activeIndex: foundIndex
+      })
+    }
+  }
   
   componentDidMount(){
     window.addEventListener('resize', this.calcSize)

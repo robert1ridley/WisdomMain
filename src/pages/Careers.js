@@ -11,13 +11,27 @@ import jobsdata from '../data/careers/jobsdata';
 
 import background14 from '../images/subnav/background14.jpg';
 
-class About extends React.Component {
+class Careers extends React.Component {
   constructor() {
     super();
     this.changeActive = this.changeActive.bind(this);
     this.state = { 
       activeIndex: 0,
       notFound: false
+    }
+  }
+
+  componentWillReceiveProps(nextProps) {
+    const pageId = nextProps.match.params.id;
+    if (this.props.match.params.id !== pageId){
+      const foundIndex = careerslistdata.findIndex((el) => (el.id === pageId));
+      foundIndex<0 ?
+      this.setState ({
+        notFound: true
+      }):
+      this.setState({
+        activeIndex: foundIndex
+      })
     }
   }
 
@@ -94,4 +108,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(About);
+export default connect(mapStateToProps)(Careers);

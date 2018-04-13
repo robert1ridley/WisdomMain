@@ -31,6 +31,20 @@ class About extends React.Component {
     this.setState({ activeIndex: active })
   }
 
+  componentWillReceiveProps(nextProps) {
+    const pageId = nextProps.match.params.id;
+    if (this.props.match.params.id !== pageId){
+      const foundIndex = aboutdatabasic.findIndex((el) => (el.id === pageId));
+      foundIndex<0 ?
+      this.setState ({
+        notFound: true
+      }):
+      this.setState({
+        activeIndex: foundIndex
+      })
+    }
+  }
+
   componentDidMount() {
     const pageId = this.props.match.params.id;
     const foundIndex = aboutdatabasic.findIndex((el) => (el.id === pageId));

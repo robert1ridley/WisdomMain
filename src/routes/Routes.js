@@ -36,6 +36,6 @@ export default () => (
 )
 
 const ScrollToTop = () => {
-  // window.scrollTo(0, 0);
+  window.scrollTo(0, 0);
   return null;
 };

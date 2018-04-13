@@ -164,6 +164,7 @@ div.media-body {
   position: relative;
   height: 4em; 
   overflow: hidden;
+  line-height: 1.29;
 }
 
 .clampMe:after {

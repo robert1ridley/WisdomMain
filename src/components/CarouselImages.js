@@ -54,7 +54,7 @@ const images = [
   {
     image: mainCarousel1, 
     blurImage: mainCarousel1tiny, 
-    id: 1, 
+    id: 4, 
     head: {
       zh: "董事长致辞",
       en: "Chairman's Speech"
@@ -68,7 +68,7 @@ const images = [
   {
     image: mainCarousel2, 
     blurImage: mainCarousel1tiny, 
-    id: 1, 
+    id: 5, 
     head: {
       zh: "董事长致辞",
       en: "Chairman's Speech"

@@ -26,6 +26,20 @@ class Plans extends React.Component {
     this.setState({ activeIndex: active })
   }
 
+  componentWillReceiveProps(nextProps) {
+    const pageId = Number(nextProps.match.params.id);
+    if (this.props.match.params.id !== pageId){
+      const foundIndex = plansdata.findIndex((el) => (el.id === pageId));
+      foundIndex<0 ?
+      this.setState ({
+        notFound: true
+      }):
+      this.setState({
+        activeIndex: foundIndex
+      })
+    }
+  }
+
   componentDidMount() {
     const pageId = Number(this.props.match.params.id);
     const foundIndex = plansdata.findIndex((el) => (el.id === pageId));
