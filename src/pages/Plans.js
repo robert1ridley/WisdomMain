@@ -2,6 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import {connect} from 'react-redux';
 import Subnav from '../components/Subnav';
+import NotFound from '../pages/NotFound';
 // import ParagraphsNew from '../components/ParagraphsNew';
 import ParagraphsNew from '../components/NEW/ParagraphsNew';
 
@@ -16,7 +17,8 @@ class Plans extends React.Component {
     super();
     this.changeActive = this.changeActive.bind(this);
     this.state = { 
-      activeIndex: 0 
+      activeIndex: 0,
+      notFound: false
     }
   }
 
@@ -27,6 +29,10 @@ class Plans extends React.Component {
   componentDidMount() {
     const pageId = Number(this.props.match.params.id);
     const foundIndex = plansdata.findIndex((el) => (el.id === pageId));
+    foundIndex<0 ?
+      this.setState ({
+        notFound: true
+      }):
     this.setState({
       activeIndex: foundIndex
     })
@@ -34,27 +40,34 @@ class Plans extends React.Component {
   
   render() {
     const navData = plansdata;
-    return (
-      <div>
-        <Subnav
-          path="plans"
-          language={this.props.language}
-          intro={plansheaddata}
-          aboutData={navData}
-          currentActive={this.state.activeIndex}
-          childActive={this.changeActive}
-          background={styles.subnav}
-        />
-        <Route path={`/plans/:id`} exact render={(props) => 
-          <ParagraphsNew 
-            language={this.props.language} 
-            data={navData} 
-            index={this.state.activeIndex}
-            {...props}
+    const { language } = this.props;
+    const { activeIndex, notFound } = this.state;
+    if(notFound){
+      return(<NotFound />)
+    }
+    else{
+      return (
+        <div>
+          <Subnav
+            path="plans"
+            language={language}
+            intro={plansheaddata}
+            aboutData={navData}
+            currentActive={activeIndex}
+            childActive={this.changeActive}
+            background={styles.subnav}
           />
-        }/>
-      </div>
-    )
+          <Route path={`/plans/:id`} exact render={(props) => 
+            <ParagraphsNew 
+              language={language} 
+              data={navData} 
+              index={activeIndex}
+              {...props}
+            />
+          }/>
+        </div>
+      )
+    }
   }
 }
 

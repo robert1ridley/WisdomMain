@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import Subnav from '../components/Subnav';
 import Sidebar from '../components/Sidebar';
+import NotFound from '../pages/NotFound';
 
 import achievementsdata from '../data/achievements/achievementsdata';
 
@@ -14,13 +15,18 @@ class Achievements extends React.Component {
     this.changeSubActive = this.changeSubActive.bind(this);
     this.state = { 
       activeIndex: 0,
-      subActive: 0 
+      subActive: 0,
+      notFound: false
     }
   }
 
   componentDidMount() {
     const pageId = Number(this.props.match.params.id);
     const foundIndex = achievementsdata.subCategories.findIndex((el) => (el.id === pageId));
+    foundIndex<0 ?
+      this.setState ({
+        notFound: true
+      }):
     this.setState({
       activeIndex: foundIndex
     })
@@ -36,28 +42,33 @@ class Achievements extends React.Component {
 
   render() {
     const { language } = this.props;
+    const { activeIndex, subActive, notFound } = this.state;
     const navData = achievementsdata.subCategories;
-    console.log(navData);
-    return (
-      <div>
-        <Subnav
-          path="achievements"
-          language={language}
-          intro={achievementsdata}
-          aboutData={navData}
-          currentActive={this.state.activeIndex}
-          childActive={this.changeActive}
-          background={styles.subnav}
-        />
-        <Sidebar 
-          data={navData}
-          language={language}
-          currentActive={this.state.activeIndex}
-          currentSubActive={this.state.subActive}
-          changeSubActive={this.changeSubActive}
-        />
-      </div>
-    )
+    if(notFound){
+      return(<NotFound />)
+    }
+    else {
+      return (
+        <div>
+          <Subnav
+            path="achievements"
+            language={language}
+            intro={achievementsdata}
+            aboutData={navData}
+            currentActive={activeIndex}
+            childActive={this.changeActive}
+            background={styles.subnav}
+          />
+          <Sidebar 
+            data={navData}
+            language={language}
+            currentActive={activeIndex}
+            currentSubActive={subActive}
+            changeSubActive={this.changeSubActive}
+          />
+        </div>
+      )
+    }
   }
 }
 

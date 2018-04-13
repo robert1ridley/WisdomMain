@@ -3,6 +3,7 @@ import { Link, Route } from 'react-router-dom';
 import OwlCarousel from 'react-owl-carousel';
 import { Image } from 'react-bootstrap';
 import {connect} from 'react-redux';
+import NotFound from '../pages/NotFound';
 import Subnav from '../components/Subnav';
 import newsheaddata from '../data/news/newsheaddata';
 import newsdata from '../data/news/newsdata';
@@ -16,7 +17,8 @@ class News extends React.Component {
     this.calcSize = this.calcSize.bind(this);
     this.state = { 
       activeIndex: 0,
-      windowWidth: window.innerWidth
+      windowWidth: window.innerWidth,
+      notFound: false
     }
   }
 
@@ -32,6 +34,10 @@ class News extends React.Component {
     window.addEventListener('resize', this.calcSize)
     const pageId = this.props.match.params.id;
     const foundIndex = newsdata.findIndex((el) => (el.id === pageId));
+    foundIndex<0 ?
+      this.setState ({
+        notFound: true
+      }):
     this.setState({
       activeIndex: foundIndex
     })
@@ -43,44 +49,50 @@ class News extends React.Component {
 
   render() {
     const { language } = this.props;
+    const { activeIndex, windowWidth, notFound } = this.state;
     const navData = newsdata;
     const navButtons = language === "zh"? ["上一页", "下一页"]: ["Prev", "Next"];
-    return (
-      <div>
-        <Subnav
-          path="news"
-          language={language}
-          intro={newsheaddata}
-          aboutData={navData}
-          currentActive={this.state.activeIndex}
-          childActive={this.changeActive}
-          background={styles.subnav}
-        />
-        <div className="container" style={{marginTop: 50, marginBottom: 50}}>
-          <OwlCarousel 
-            className="owl-theme"
-            loop margin={10} 
-            nav
-            navText={navButtons}
-            items={this.state.windowWidth < 768 ? 1 : this.state.windowWidth < 1100 ? 2 : 3}
-          >
-          {
-            navData[this.state.activeIndex].articles.map((item, index) => 
-              <Link to={`/news/${item.id}`} className="black-text" key={item.id}>
-                <div className="item">
-                  <Image src={item.headImage} alt="image" />
-                  <div className="card-body text-center">
-                    <h4 className="card-title">{item.head[language]}</h4>
+    if(notFound){
+      return(<NotFound />)
+    }
+    else{
+      return (
+        <div>
+          <Subnav
+            path="news"
+            language={language}
+            intro={newsheaddata}
+            aboutData={navData}
+            currentActive={activeIndex}
+            childActive={this.changeActive}
+            background={styles.subnav}
+          />
+          <div className="container" style={{marginTop: 50, marginBottom: 50}}>
+            <OwlCarousel 
+              className="owl-theme"
+              loop margin={10} 
+              nav
+              navText={navButtons}
+              items={windowWidth < 768 ? 1 : windowWidth < 1100 ? 2 : 3}
+            >
+            {
+              navData[activeIndex].articles.map((item, index) => 
+                <Link to={`/news/${item.id}`} className="black-text" key={item.id}>
+                  <div className="item">
+                    <Image src={item.headImage} alt="image" />
+                    <div className="card-body text-center">
+                      <h4 className="card-title">{item.head[language]}</h4>
+                    </div>
                   </div>
-                </div>
-              </Link>
-            )
-          }
-          </OwlCarousel>
+                </Link>
+              )
+            }
+            </OwlCarousel>
+          </div>
+          <Route path={`/news/:id`} exact component={NewsItem} />
         </div>
-        <Route path={`/news/:id`} exact component={NewsItem} />
-      </div>
-    )
+      )
+    }
   }
 }
 

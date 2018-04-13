@@ -7,6 +7,7 @@ import { Route } from 'react-router-dom';
 import ParagraphsNew from '../components/NEW/ParagraphsNew';
 import Subnav from '../components/Subnav';
 import Timeline from '../components/Timeline';
+import NotFound from '../pages/NotFound';
 
 import '../styles/timeline.css';
 
@@ -21,7 +22,8 @@ class About extends React.Component {
     super();
     this.changeActive = this.changeActive.bind(this);
     this.state = { 
-      activeIndex: 0
+      activeIndex: 0,
+      notFound: false
     }
   }
 
@@ -32,46 +34,55 @@ class About extends React.Component {
   componentDidMount() {
     const pageId = this.props.match.params.id;
     const foundIndex = aboutdatabasic.findIndex((el) => (el.id === pageId));
+    foundIndex<0 ?
+      this.setState ({
+        notFound: true
+      }):
     this.setState({
       activeIndex: foundIndex
     })
   }
   
   render() {
-    const { activeIndex } = this.state;
+    const { activeIndex, notFound } = this.state;
     const { language } = this.props;
     const navData = aboutdatabasic;
-    return (
-      <div>
-        <Subnav
-          path="about"
-          language={language}
-          intro={aboutheaddata}
-          aboutData={navData}
-          currentActive={activeIndex}
-          childActive={this.changeActive}
-          background={styles.subnav}
-        />
-        {
-          <Route path={`/about/:id`} exact render={(props) => 
-            navData[activeIndex].id !== 'timeline' ?
-            <ParagraphsNew
-              language={language}
-              data={navData}
-              index={activeIndex}
-              {...props}
-            /> 
-            :
-            <Timeline
-              language={language}
-              data={navData}
-              index={activeIndex}
-              {...props}
-            /> 
-          }/>
-        }
-      </div>
-    )
+    if(notFound){
+      return (<NotFound/>)
+    }
+    else{
+      return (
+        <div>
+          <Subnav
+            path="about"
+            language={language}
+            intro={aboutheaddata}
+            aboutData={navData}
+            currentActive={activeIndex}
+            childActive={this.changeActive}
+            background={styles.subnav}
+          />
+          {
+            <Route path={`/about/:id`} exact render={(props) => 
+              navData[activeIndex].id !== 'timeline' ?
+              <ParagraphsNew
+                language={language}
+                data={navData}
+                index={activeIndex}
+                {...props}
+              /> 
+              :
+              <Timeline
+                language={language}
+                data={navData}
+                index={activeIndex}
+                {...props}
+              /> 
+            }/>
+          }
+        </div>
+      )
+    }
   }
 }
 

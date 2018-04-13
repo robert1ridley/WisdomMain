@@ -1,5 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import { Route } from 'react-router-dom';
+import NotFound from '../pages/NotFound';
 import Subnav from '../components/Subnav';
 import TextCards from '../components/TextCards';
 import InfoCards from '../components/InfoCards';
@@ -13,12 +15,19 @@ class About extends React.Component {
   constructor() {
     super();
     this.changeActive = this.changeActive.bind(this);
-    this.state = { activeIndex: 0 }
+    this.state = { 
+      activeIndex: 0,
+      notFound: false
+    }
   }
 
   componentDidMount() {
-    const pageId = Number(this.props.match.params.id);
+    const pageId = this.props.match.params.id;
     const foundIndex = careerslistdata.findIndex((el) => (el.id === pageId));
+    foundIndex<0 ?
+      this.setState ({
+        notFound: true
+      }):
     this.setState({
       activeIndex: foundIndex
     })
@@ -31,27 +40,43 @@ class About extends React.Component {
   render() {
     const navData = careerslistdata;
     const { language } = this.props;
-    const { activeIndex } =this.state;
-    return (
-      <div>
-        <Subnav
-          path="careers"
-          language={language}
-          intro={careersheaddata}
-          aboutData={navData}
-          currentActive={this.state.activeIndex}
-          childActive={this.changeActive}
-          background={styles.subnav}
-        />
-        <div className="container">
-          {
-            this.state.activeIndex===0?
-            <TextCards language={language} data={jobsdata}/>:
-            <InfoCards language={language}/>
-          }
+    const { activeIndex, notFound } = this.state;
+    if(notFound){
+      return (<NotFound />)
+    }
+    else{
+      return (
+        <div>
+          <Subnav
+            path="careers"
+            language={language}
+            intro={careersheaddata}
+            aboutData={navData}
+            currentActive={activeIndex}
+            childActive={this.changeActive}
+            background={styles.subnav}
+          />
+          <div className="container">
+            {
+              navData[activeIndex].id === 'jobs'?
+              <Route path={`/careers/:id`} exact render={(props) => 
+                <TextCards
+                  language={language}
+                  data={jobsdata}
+                  {...props}
+                />
+              }/>:
+              <Route path={`/careers/:id`} exact render={(props) => 
+                <InfoCards
+                  language={language}
+                  {...props}
+                />
+              }/>
+            }
+          </div>
         </div>
-      </div>
-    )
+      )
+    }
   }
 }
 

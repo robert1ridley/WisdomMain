@@ -4,14 +4,14 @@ const careerslistdata = [
       zh: "人才招聘",
       en: "Career Opportunities"
     },
-    id: 1
+    id: "jobs"
   },
   {
     head: {
       zh: "专家",
       en: "Our Team"
     },
-    id: 2
+    id: "experts"
   }
 ]
 
