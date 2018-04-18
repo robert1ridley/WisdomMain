@@ -1,7 +1,7 @@
 const solutionsheaddata = {
   head: {
-    zh: "关于智道",
-    en: "About Wisdom"
+    zh: "自主知识产权技术和装置介绍",
+    en: "Intellectual Property for Technology and Equipment"
   },
   body: {
     zh: "江苏智道工程技术有限公司是集研发、设计、核心制造、工程总承包为一体，专注于工业企业系统能量综合利用、有效成分回收和净化处理达标排放的国家级高新技术企业，节能环保系统优化解决的专家。",

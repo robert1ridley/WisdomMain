@@ -11,6 +11,7 @@ import solutionsdata from '../data/NEW/solutionsdata';
 import solutionsheaddata from '../data/solutions/solutionsheaddata';
 
 import background14 from '../images/subnav/background14.jpg';
+import SolutionCards from '../components/SolutionCards';
 
 class Solutions extends React.Component {
   constructor() {
@@ -71,13 +72,14 @@ class Solutions extends React.Component {
             childActive={this.changeActive}
             background={styles.subnav}
           />
-          <Route path={`/solutions/:id`} exact render={(props) => 
-            <ParagraphsNew 
-              language={language} 
-              data={navData} 
-              index={activeIndex}
-              {...props}
-            />
+          <Route path={`/solutions/:id`} exact render={(props) =>
+            <div className="container">
+              <SolutionCards
+                language={language}
+                data={navData}
+                activeIndex={activeIndex}
+              />
+            </div>
           }/>
         </div>
       )

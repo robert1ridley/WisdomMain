@@ -6,11 +6,11 @@ const TextCards = (props) => {
   const { data, language } = props;
   const CardObjects = data.map(CardObject =>
     <SingleCard 
-    header={CardObject.head[language]}
-    text={CardObject.text[language]}
-    key={CardObject.id}
-    language={language}
-  />
+      header={CardObject.head[language]}
+      text={CardObject.text[language]}
+      key={CardObject.id}
+      language={language}
+    />
   )
   return (
     <div className="central-info">
