@@ -26,17 +26,19 @@ class SocialShare extends React.Component {
 
   render () {
     return (
-      <div 
-        style={this.state.visible===false? styles.loading: styles.background}
-        className={this.state.visible===false? "background-loading": "background-loaded"}
-      >
-        <div className="container">
-          <Intro 
-            data={sharingdata}
-            language={this.props.language}
-            color={{color:'white'}}
-          />
-          <SocialShareBlock />
+      <div style={{backgroundColor: '#595959'}}>
+        <div 
+          style={this.state.visible===false? styles.loading: styles.background}
+          className={this.state.visible===false? "background-loading": "background-loaded"}
+        >
+          <div className="container">
+            <Intro 
+              data={sharingdata}
+              language={this.props.language}
+              color={{color:'white'}}
+            />
+            <SocialShareBlock />
+          </div>
         </div>
       </div>
     )

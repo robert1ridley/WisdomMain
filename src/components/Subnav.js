@@ -19,6 +19,7 @@ const Subnav = (props) => {
     </Link>
   )
   return (
+    <div style={{backgroundColor: '#595959'}}>
       <div
         className={"background-loaded"} 
         style={background}>
@@ -33,6 +34,7 @@ const Subnav = (props) => {
             {navButtons}
         </div>
       </div>
+    </div>
   )
 }
 
