@@ -1,5 +1,5 @@
 import expert1 from '../../images/experts/expert1.png';
-import placeholder from '../../images/experts/placeholder.png';
+import placeholder from '../../images/experts/placeholder.jpg';
 
 const experts = [
   {
