@@ -68,7 +68,7 @@ const footerdata = {
         header:{text: "Plans", link: "/plans"}, 
         subItems: [
          {text: "Main Business", link: "/plans/1"},
-         {text: "Research and Development", link: "/plans/1"},
+         {text: "Research and Development", link: "/plans/2"},
          {text: "Technology and Equipment Intellectual Property ", link: "/plans/3"}
         ]
       },

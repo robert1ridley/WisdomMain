@@ -9,7 +9,7 @@ const Contact = (props) => {
   const { language } = props;
   return (
     <div>
-      {/* <BaiduMap language={this.props.language}/> */}
+      {/* <BaiduMap language={language}/> */}
       <div className="container big-lower-margin wow fadeIn">
         <div className="text-center central-info">
           <h1 className="big-head">{language === "zh"? "联系我们": "Contact us"}</h1>

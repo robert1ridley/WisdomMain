@@ -42,14 +42,16 @@ const styles = {
     color: 'white',
     // backgroundColor: '#2c739d',
     backgroundColor: 'Transparent',
-    border: 'solid 2px white'
+    border: 'solid 2px white',
+    whiteSpace: 'normal'
   },
 
   activeButton: {
     margin: 10,
     color: '#2c739d',
     backgroundColor: 'white',
-    border: 'solid 2px white'
+    border: 'solid 2px white',
+    whiteSpace: 'normal'
   }
 }
 

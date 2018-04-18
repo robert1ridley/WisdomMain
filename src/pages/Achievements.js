@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 import {connect} from 'react-redux';
 import Subnav from '../components/Subnav';
 import Sidebar from '../components/Sidebar';
@@ -21,7 +22,7 @@ class Achievements extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    const pageId = nextProps.match.params.id;
+    const pageId = Number(nextProps.match.params.id);
     if (this.props.match.params.id !== pageId){
       const foundIndex = achievementsdata.subCategories.findIndex((el) => (el.id === pageId));
       foundIndex<0 ?
@@ -57,6 +58,7 @@ class Achievements extends React.Component {
   render() {
     const { language } = this.props;
     const { activeIndex, subActive, notFound } = this.state;
+    console.log(activeIndex);
     const navData = achievementsdata.subCategories;
     if(notFound){
       return(<NotFound />)
@@ -73,13 +75,16 @@ class Achievements extends React.Component {
             childActive={this.changeActive}
             background={styles.subnav}
           />
-          <Sidebar 
-            data={navData}
-            language={language}
-            currentActive={activeIndex}
-            currentSubActive={subActive}
-            changeSubActive={this.changeSubActive}
-          />
+          <Route path={`/achievements/:id`} render={(props) =>
+            <Sidebar 
+              data={navData}
+              language={language}
+              currentActive={activeIndex}
+              currentSubActive={subActive}
+              changeSubActive={this.changeSubActive}
+              {...props}
+            />
+          }/>
         </div>
       )
     }
