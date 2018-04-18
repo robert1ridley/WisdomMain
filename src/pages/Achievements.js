@@ -22,7 +22,7 @@ class Achievements extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    const pageId = Number(nextProps.match.params.id);
+    const pageId = nextProps.match.params.id;
     if (this.props.match.params.id !== pageId){
       const foundIndex = achievementsdata.subCategories.findIndex((el) => (el.id === pageId));
       foundIndex<0 ?
@@ -36,7 +36,7 @@ class Achievements extends React.Component {
   }
 
   componentDidMount() {
-    const pageId = Number(this.props.match.params.id);
+    const pageId = this.props.match.params.id;
     const foundIndex = achievementsdata.subCategories.findIndex((el) => (el.id === pageId));
     foundIndex<0 ?
       this.setState ({

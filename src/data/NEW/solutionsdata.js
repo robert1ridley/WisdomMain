@@ -1,15 +1,15 @@
-import plans2 from '../../images/plans/plans2.jpg';
-import plans3 from '../../images/plans/plans3.jpg';
-import plans4 from '../../images/plans/plans4.png';
-import plans5 from '../../images/plans/plans5.png';
-import plans6 from '../../images/plans/plans6.png';
-import plans7 from '../../images/plans/plans7.png';
-import plans8 from '../../images/plans/plans8.jpg';
-import plans9 from '../../images/plans/plans9.jpg';
-import plans10 from '../../images/plans/plans10.png';
+import solutions2 from '../../images/solutions/solutions2.jpg';
+import solutions3 from '../../images/solutions/solutions3.jpg';
+import solutions4 from '../../images/solutions/solutions4.png';
+import solutions5 from '../../images/solutions/solutions5.png';
+import solutions6 from '../../images/solutions/solutions6.png';
+import solutions7 from '../../images/solutions/solutions7.png';
+import solutions8 from '../../images/solutions/solutions8.jpg';
+import solutions9 from '../../images/solutions/solutions9.jpg';
+import solutions10 from '../../images/solutions/solutions10.png';
 
 
-const plansdata = [
+const solutionsdata = [
   {
     head: {
       zh: "主营业务",
@@ -77,19 +77,19 @@ const plansdata = [
         ],
         imgUrl: [
           {
-            image: plans2, caption: {
+            image: solutions2, caption: {
               zh: "2014中国•南京首届大气污染防治及综合利用技术论坛",
               en: "2014中国•南京首届大气污染防治及综合利用技术论坛"
             }
           },
           {
-            image: plans3, caption: {
+            image: solutions3, caption: {
               zh: "2015 中国·南京第二届大气与水污染综合治理技术国际论坛",
               en: "2015 中国·南京第二届大气与水污染综合治理技术国际论坛"
             }
           },
           {
-            image: plans4, caption: {
+            image: solutions4, caption: {
               zh: "绿色发展 共享经济—2016年节能环保精英交流论坛",
               en: "绿色发展 共享经济—2016年节能环保精英交流论坛"
             }
@@ -145,9 +145,9 @@ const plansdata = [
   // }
 ]
 
-export default plansdata;
+export default solutionsdata;
 
-// // const plansdata = {
+// // const solutionsdata = {
 // //   chinese:
 // //     [
 // //       {
@@ -190,9 +190,9 @@ export default plansdata;
 //             ],
 //             imgUrl: 
 //             [
-//               // {image: plans2, caption: "2014中国•南京首届大气污染防治及综合利用技术论坛"},
-//               // {image: plans3, caption: "2015 中国·南京第二届大气与水污染综合治理技术国际论坛"},
-//               // {image: plans4, caption: "绿色发展 共享经济—2016年节能环保精英交流论坛"}
+//               // {image: solutions2, caption: "2014中国•南京首届大气污染防治及综合利用技术论坛"},
+//               // {image: solutions3, caption: "2015 中国·南京第二届大气与水污染综合治理技术国际论坛"},
+//               // {image: solutions4, caption: "绿色发展 共享经济—2016年节能环保精英交流论坛"}
 //             ]
 //           }
 //         ],
@@ -237,9 +237,9 @@ export default plansdata;
 //             ],
 //             imgUrl: 
 //             [
-//               {image: plans6, caption: "国家发改委副主任王晓涛、美国副国务卿凯瑟琳，美国肯塔基大学能源应用中心总经理Donald J .Challman "},
-//               {image: plans7, caption: "中国气候变化事务特别代表解振华"},
-//               {image: plans8, caption: "2015年中美绿色合作伙伴合影"}
+//               {image: solutions6, caption: "国家发改委副主任王晓涛、美国副国务卿凯瑟琳，美国肯塔基大学能源应用中心总经理Donald J .Challman "},
+//               {image: solutions7, caption: "中国气候变化事务特别代表解振华"},
+//               {image: solutions8, caption: "2015年中美绿色合作伙伴合影"}
 //             ]
 //           },
 //           {
@@ -249,8 +249,8 @@ export default plansdata;
 //             ],
 //             imgUrl: 
 //             [
-//               {image: plans9, caption: "陈建国卫宁医药股份董事"},
-//               {image: plans10, caption: " 陈德立    澳中研发中心主任 "}
+//               {image: solutions9, caption: "陈建国卫宁医药股份董事"},
+//               {image: solutions10, caption: " 陈德立    澳中研发中心主任 "}
 //             ]
 //           }
 //         ],
@@ -303,4 +303,4 @@ export default plansdata;
 //     ]
 // }
 
-// export default plansdata;
+// export default solutionsdata;

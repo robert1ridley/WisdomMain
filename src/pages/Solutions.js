@@ -7,12 +7,12 @@ import NotFound from '../pages/NotFound';
 import ParagraphsNew from '../components/NEW/ParagraphsNew';
 
 // import plansdata from '../data/plans/plansdata';
-import plansdata from '../data/NEW/plansdata';
-import plansheaddata from '../data/plans/plansheaddata';
+import solutionsdata from '../data/NEW/solutionsdata';
+import solutionsheaddata from '../data/solutions/solutionsheaddata';
 
 import background14 from '../images/subnav/background14.jpg';
 
-class Plans extends React.Component {
+class Solutions extends React.Component {
   constructor() {
     super();
     this.changeActive = this.changeActive.bind(this);
@@ -29,7 +29,7 @@ class Plans extends React.Component {
   componentWillReceiveProps(nextProps) {
     const pageId = Number(nextProps.match.params.id);
     if (this.props.match.params.id !== pageId){
-      const foundIndex = plansdata.findIndex((el) => (el.id === pageId));
+      const foundIndex = solutionsdata.findIndex((el) => (el.id === pageId));
       foundIndex<0 ?
       this.setState ({
         notFound: true
@@ -42,7 +42,7 @@ class Plans extends React.Component {
 
   componentDidMount() {
     const pageId = Number(this.props.match.params.id);
-    const foundIndex = plansdata.findIndex((el) => (el.id === pageId));
+    const foundIndex = solutionsdata.findIndex((el) => (el.id === pageId));
     foundIndex<0 ?
       this.setState ({
         notFound: true
@@ -53,7 +53,7 @@ class Plans extends React.Component {
   }
   
   render() {
-    const navData = plansdata;
+    const navData = solutionsdata;
     const { language } = this.props;
     const { activeIndex, notFound } = this.state;
     if(notFound){
@@ -63,15 +63,15 @@ class Plans extends React.Component {
       return (
         <div>
           <Subnav
-            path="plans"
+            path="solutions"
             language={language}
-            intro={plansheaddata}
+            intro={solutionsheaddata}
             aboutData={navData}
             currentActive={activeIndex}
             childActive={this.changeActive}
             background={styles.subnav}
           />
-          <Route path={`/plans/:id`} exact render={(props) => 
+          <Route path={`/solutions/:id`} exact render={(props) => 
             <ParagraphsNew 
               language={language} 
               data={navData} 
@@ -99,4 +99,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(Plans);
+export default connect(mapStateToProps)(Solutions);

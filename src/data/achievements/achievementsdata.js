@@ -26,7 +26,7 @@ const achievementsdata = {
     },
     subCategories: [
       {
-        id: 1,
+        id: "oil-and-gas-recovery",
         head: {
           zh: "油气回收、VOCs治理技术",
           en: "Oil and gas recovery and VOCs treatment technology"
@@ -90,7 +90,7 @@ const achievementsdata = {
         ]
       },
       {
-        id: 2,
+        id: "desulphurization-and-denitrification",
         head: {
           zh: "脱硫脱硝技术",
           en: "Desulphurization and denitrification technology"
@@ -154,7 +154,7 @@ const achievementsdata = {
         ]
       },
       {
-        id: 3,
+        id: "energy-utilization",
         head: {
           zh: "能量综合利用",
           en: "Comprehensive Energy Utilization"

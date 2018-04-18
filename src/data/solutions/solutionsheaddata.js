@@ -1,4 +1,4 @@
-const plansheaddata = {
+const solutionsheaddata = {
   head: {
     zh: "关于智道",
     en: "About Wisdom"
@@ -9,4 +9,4 @@ const plansheaddata = {
   }
 }
 
-export default plansheaddata;
+export default solutionsheaddata;

@@ -18,11 +18,11 @@ const footerdata = {
         ]
       },
       {
-        header: {text: "解决方案", link: "/plans/1"},
+        header: {text: "解决方案", link: "/solutions/1"},
         subItems: [
-          {text: "主营业务", link:"/plans/1"},
-          {text: "创新与研发", link:"/plans/2"},
-          {text: "自主知识产权技术和装置介绍", link:"/plans/3"}
+          {text: "主营业务", link:"/solutions/1"},
+          {text: "创新与研发", link:"/solutions/2"},
+          {text: "自主知识产权技术和装置介绍", link:"/solutions/3"}
         ]
       },
       {
@@ -65,11 +65,11 @@ const footerdata = {
         ]
       },
       {
-        header:{text: "Plans", link: "/plans"}, 
+        header:{text: "Solutions", link: "/solutions"}, 
         subItems: [
-         {text: "Main Business", link: "/plans/1"},
-         {text: "Research and Development", link: "/plans/2"},
-         {text: "Technology and Equipment Intellectual Property ", link: "/plans/3"}
+         {text: "Main Business", link: "/solutions/1"},
+         {text: "Research and Development", link: "/solutions/2"},
+         {text: "Technology and Equipment Intellectual Property ", link: "/solutions/3"}
         ]
       },
       {

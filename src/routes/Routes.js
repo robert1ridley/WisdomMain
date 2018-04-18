@@ -6,7 +6,7 @@ import ScrollTo from '../components/ScrollTo';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import News from '../pages/News';
-import Plans from '../pages/Plans';
+import Solutions from '../pages/Solutions';
 import Achievements from '../pages/Achievements';
 import Careers from '../pages/Careers';
 import Contact from '../pages/Contact';
@@ -22,7 +22,7 @@ export default () => (
           <Route path="/" exact component={Home}/>
           <Route path="/about/:id" component={About}/>
           <Route path="/news/:id" component={News}/>
-          <Route path="/plans/:id" component={Plans}/>
+          <Route path="/solutions/:id" component={Solutions}/>
           <Route path="/achievements/:id" component={Achievements}/>
           <Route path="/careers/:id" component={Careers}/>
           <Route path="/contact" exact component={Contact}/>
