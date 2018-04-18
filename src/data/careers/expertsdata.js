@@ -33,7 +33,7 @@ const experts = [
         en: "教授级高级工程师，原扬子石化董事、总经理，扬子石化-巴斯夫有限责任公司董事。"
       }
     ],
-    imageUrl: expert1
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXqZ_ircBwvjcjC4xcp6OU4RI_kCBJVQqsmkiDjNDBd_iSoBNJXA"
   },
   {
     name: {
@@ -50,7 +50,7 @@ const experts = [
         en: "长期从事化石能源燃烧烟气污染物排脱除与排放控制技术研究。"
       }
     ],
-    imageUrl: expert1
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXqZ_ircBwvjcjC4xcp6OU4RI_kCBJVQqsmkiDjNDBd_iSoBNJXA"
   },
   {
     name: {
@@ -67,7 +67,7 @@ const experts = [
         en: "主要从事膜材料、膜制备及膜反应器的研究，先后承担包括国家'973'计划、'863'计划、国家自然科学基金、江苏省自然科学基金重点项目等10余项科研项目"
       }
     ],
-    imageUrl: expert1
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXqZ_ircBwvjcjC4xcp6OU4RI_kCBJVQqsmkiDjNDBd_iSoBNJXA"
   }
 ];
 
