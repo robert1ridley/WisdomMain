@@ -50,7 +50,7 @@ class SingleCard extends React.Component {
         <Col md={4} sm={6} xs={12} className="lower-margin" onClick={this.handleShow}>
           <div className="card wow fadeInLeft rounded-card green-hover" style={styles.padding}>
             <div className="card-body text-center">
-              <h4 className="card-title">{header}</h4>
+              <h4 className="card-title" style={styles.head}>{header}</h4>
               <p className="card-text clampMe">{text}</p>
             </div>
 
@@ -75,6 +75,12 @@ const styles = {
   margin: {
     marginBottom: 15,
     marginTop: 15
+  },
+
+  head: {
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis'
   }
 }
 

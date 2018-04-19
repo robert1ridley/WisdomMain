@@ -1,43 +1,35 @@
 import React from 'react';
 import { Button, Modal, Image  } from 'react-bootstrap';
 
-class InfoModal extends React.Component{
-
-  componentWillReceiveProps(nextProps){
-    console.log(nextProps.data)
-  }
-
-  render() {
-    const { showModal, close, language, data } = this.props;
-    console.log(data.articleHead[language])
-    return (
-      <Modal show={showModal} onHide={close}>
-        <Modal.Header closeButton={true}>
-          <Modal.Title>{data.articleHead[language]}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          {
-            data.articleContent.map((item, index) => 
-              <div>
-                <p>{item.text[language]}</p>
-                {
-                  item.articleImage.map((image, idx)=>
-                    <div className="img-container text-center" key={index} style={{marginBottom: 30}}>
-                      <Image src={image.imageURL} className="center-img" width="100%" responsive/>
-                      {image.caption[language]===""?<div></div>:
-                        <p className="medium-body" style={{marginTop: 2}}><span className="mini-tab" style={styles.tab} /> {image.caption[language]}</p>
-                      }
-                    </div>
-                  )
-                }
-              </div>
-            )
-          }
-        </Modal.Body>
-        {/* <Button onClick={close}>Close</Button> */}
-      </Modal>
-    )
-  }
+const InfoModal = (props) => {
+  const { showModal, close, language, data } = props;
+  return (
+    <Modal show={showModal} onHide={close}>
+      <Modal.Header closeButton={true}>
+        <Modal.Title>{data.articleHead[language]}</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        {
+          data.articleContent.map((item, index) => 
+            <div>
+              <p>{item.text[language]}</p>
+              {
+                item.articleImage.map((image, idx)=>
+                  image.imageURL!==null &&
+                  <div className="img-container text-center" key={idx} style={{marginBottom: 30}}>
+                    <Image src={image.imageURL} className="center-img" width="100%" responsive/>
+                    {image.caption[language]===""?<div></div>:
+                      <p className="medium-body" style={{marginTop: 2}}><span className="mini-tab" style={styles.tab} /> {image.caption[language]}</p>
+                    }
+                  </div>
+                )
+              }
+            </div>
+          )
+        }
+      </Modal.Body>
+    </Modal>
+  )
 }
 
 const styles = {
