@@ -21,7 +21,7 @@ const ImgBlocks = (props) => {
           {blocks}
         </Row>
         <div className="text-center">
-          <Link to="/about">
+          <Link to="/about/about-wisdom">
             <MainButton
               language = {language}
               buttonText = {{chinese:"了解更多", english: "Learn more"}}
