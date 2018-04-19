@@ -1,24 +1,24 @@
-import VOCarticle1 from '../../images/achievements/VOC/article1.jpg';
-import VOCarticle2 from '../../images/achievements/VOC/article2.jpg';
-import VOCarticle3 from '../../images/achievements/VOC/article3.jpg';
-import VOCarticle4 from '../../images/achievements/VOC/article4.jpg';
-import VOCarticle5 from '../../images/achievements/VOC/article5.jpg';
-import Desulpharticle1 from '../../images/achievements/Desulph/article1.jpg';
-import Desulpharticle2 from '../../images/achievements/Desulph/article2.png';
-import Desulpharticle3 from '../../images/achievements/Desulph/article3.png';
-import Desulpharticle4 from '../../images/achievements/Desulph/article4.jpg';
-import Desulpharticle5 from '../../images/achievements/Desulph/article5.jpg';
-import UtilArticle1 from '../../images/achievements/Utilize/article1.png';
-import UtilArticle2 from '../../images/achievements/Utilize/article2.jpg';
-import UtilArticle3 from '../../images/achievements/Utilize/article3.jpg';
-import UtilArticle4 from '../../images/achievements/Utilize/article4.png';
-import UtilArticle5 from '../../images/achievements/Utilize/article5.jpg';
-import UtilArticle6 from '../../images/achievements/Utilize/article6.jpg';
+import VOCarticle1 from '../../images/projects/VOC/article1.jpg';
+import VOCarticle2 from '../../images/projects/VOC/article2.jpg';
+import VOCarticle3 from '../../images/projects/VOC/article3.jpg';
+import VOCarticle4 from '../../images/projects/VOC/article4.jpg';
+import VOCarticle5 from '../../images/projects/VOC/article5.jpg';
+import Desulpharticle1 from '../../images/projects/Desulph/article1.jpg';
+import Desulpharticle2 from '../../images/projects/Desulph/article2.png';
+import Desulpharticle3 from '../../images/projects/Desulph/article3.png';
+import Desulpharticle4 from '../../images/projects/Desulph/article4.jpg';
+import Desulpharticle5 from '../../images/projects/Desulph/article5.jpg';
+import UtilArticle1 from '../../images/projects/Utilize/article1.png';
+import UtilArticle2 from '../../images/projects/Utilize/article2.jpg';
+import UtilArticle3 from '../../images/projects/Utilize/article3.jpg';
+import UtilArticle4 from '../../images/projects/Utilize/article4.png';
+import UtilArticle5 from '../../images/projects/Utilize/article5.jpg';
+import UtilArticle6 from '../../images/projects/Utilize/article6.jpg';
 
-const achievementsdata = {
+const projectsdata = {
     head: {
       zh: "工程业绩",
-      en:"Achievements"
+      en:"Projects"
     },
     body: {
       zh: "江苏智道工程技术有限公司是集研发、设计、核心制造、工程总承包为一体，专注于工业企业系统能量综合利用、有效成分回收和净化处理达标排放的国家级高新技术企业，节能环保系统优化解决的专家。",
@@ -231,4 +231,4 @@ const achievementsdata = {
     ]
   }
 
-export default achievementsdata;
+export default projectsdata;

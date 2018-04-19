@@ -20,9 +20,9 @@ const footerdata = {
       {
         header: {text: "解决方案", link: "/solutions/1"},
         subItems: [
-          {text: "主营业务", link:"/solutions/1"},
-          {text: "创新与研发", link:"/solutions/2"},
-          {text: "自主知识产权技术和装置介绍", link:"/solutions/3"}
+          {text: "油气回收、VOCs治理", link:"/solutions/1"},
+          {text: "脱硫脱硝技术", link:"/solutions/2"},
+          {text: "能量综合利用", link:"/solutions/3"}
         ]
       },
       {
@@ -50,7 +50,7 @@ const footerdata = {
     pagehead: {text: "Our clients include", link: "/"},
     footerItems:[
       {
-        header: {text: "About us", link: "/about"},
+        header: {text: "About us", link: "/about/about-wisdom"},
         subItems: [
          {text: "About Wisdom", link: "/about/about-wisdom"},
          {text: "Aptitude Honor", link: "/about/aptitude-honor"},
@@ -67,9 +67,9 @@ const footerdata = {
       {
         header:{text: "Solutions", link: "/solutions"}, 
         subItems: [
-         {text: "Main Business", link: "/solutions/1"},
-         {text: "Research and Development", link: "/solutions/2"},
-         {text: "Technology and Equipment Intellectual Property ", link: "/solutions/3"}
+          {text: "油气回收、VOCs治理", link:"/solutions/1"},
+          {text: "脱硫脱硝技术", link:"/solutions/2"},
+          {text: "能量综合利用", link:"/solutions/3"}
         ]
       },
       {

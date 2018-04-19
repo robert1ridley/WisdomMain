@@ -5,11 +5,11 @@ import Subnav from '../components/Subnav';
 import Sidebar from '../components/Sidebar';
 import NotFound from '../pages/NotFound';
 
-import achievementsdata from '../data/achievements/achievementsdata';
+import projectsdata from '../data/projects/projectsdata';
 
 import background14 from '../images/subnav/background14.jpg';
 
-class Achievements extends React.Component {
+class Projects extends React.Component {
   constructor() {
     super();
     this.changeActive = this.changeActive.bind(this);
@@ -24,7 +24,7 @@ class Achievements extends React.Component {
   componentWillReceiveProps(nextProps) {
     const pageId = nextProps.match.params.id;
     if (this.props.match.params.id !== pageId){
-      const foundIndex = achievementsdata.subCategories.findIndex((el) => (el.id === pageId));
+      const foundIndex = projectsdata.subCategories.findIndex((el) => (el.id === pageId));
       foundIndex<0 ?
       this.setState ({
         notFound: true
@@ -37,7 +37,7 @@ class Achievements extends React.Component {
 
   componentDidMount() {
     const pageId = this.props.match.params.id;
-    const foundIndex = achievementsdata.subCategories.findIndex((el) => (el.id === pageId));
+    const foundIndex = projectsdata.subCategories.findIndex((el) => (el.id === pageId));
     foundIndex<0 ?
       this.setState ({
         notFound: true
@@ -59,7 +59,7 @@ class Achievements extends React.Component {
     const { language } = this.props;
     const { activeIndex, subActive, notFound } = this.state;
     console.log(activeIndex);
-    const navData = achievementsdata.subCategories;
+    const navData = projectsdata.subCategories;
     if(notFound){
       return(<NotFound />)
     }
@@ -67,15 +67,15 @@ class Achievements extends React.Component {
       return (
         <div>
           <Subnav
-            path="achievements"
+            path="projects"
             language={language}
-            intro={achievementsdata}
+            intro={projectsdata}
             aboutData={navData}
             currentActive={activeIndex}
             childActive={this.changeActive}
             background={styles.subnav}
           />
-          <Route path={`/achievements/:id`} render={(props) =>
+          <Route path={`/projects/:id`} render={(props) =>
             <Sidebar 
               data={navData}
               language={language}
@@ -105,4 +105,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(Achievements);
+export default connect(mapStateToProps)(Projects);

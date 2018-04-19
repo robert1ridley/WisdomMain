@@ -31,9 +31,9 @@ const imgblockdata = [
     icon: "glyphicon glyphicon-certificate",
     text: {
       zh: "工程业绩",
-      en: "Achievements"
+      en: "Projects"
     },
-    link: "/achievements/oil-and-gas-recovery"
+    link: "/projects/oil-and-gas-recovery"
   },
   {
     id: 6,

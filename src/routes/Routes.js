@@ -7,7 +7,7 @@ import Home from '../pages/Home';
 import About from '../pages/About';
 import News from '../pages/News';
 import Solutions from '../pages/Solutions';
-import Achievements from '../pages/Achievements';
+import Projects from '../pages/Projects';
 import Careers from '../pages/Careers';
 import Contact from '../pages/Contact';
 import NotFound from '../pages/NotFound';
@@ -23,7 +23,7 @@ export default () => (
           <Route path="/about/:id" component={About}/>
           <Route path="/news/:id" component={News}/>
           <Route path="/solutions/:id" component={Solutions}/>
-          <Route path="/achievements/:id" component={Achievements}/>
+          <Route path="/projects/:id" component={Projects}/>
           <Route path="/careers/:id" component={Careers}/>
           <Route path="/contact" exact component={Contact}/>
           <Route path="*" component={NotFound}/>
