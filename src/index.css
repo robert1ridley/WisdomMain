@@ -7,17 +7,18 @@ body {
 }
 
 .central-info {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .big-head {
   font-weight: 500;
+  font-size: 2em;
 }
 
 .big-body {
   font-weight: 100;
-  font-size: 24px;
+  font-size: 20px;
   margin-top: 40px !important;
 }
 
@@ -35,7 +36,7 @@ body {
 
 .caps {
   font-weight: 100;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 div.full-card {
