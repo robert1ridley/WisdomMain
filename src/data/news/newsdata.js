@@ -106,8 +106,8 @@ const newsdata = [
                 },
                 {
                   image: "http://www.zhidao-chn.com/uploadfile/201835/2018351427445405078.jpg", caption: {
-                    zh: "总部基地照片",
-                    en: "总部基地照片"
+                    zh: "开工仪式会场",
+                    en: "开工仪式会场"
                   }
                 }
               ]
