@@ -11,7 +11,7 @@ const InfoModal = (props) => {
       <Modal.Body>
         {
           data.articleContent.map((item, index) => 
-            <div>
+            <div key={index}>
               <p>{item.text[language]}</p>
               {
                 item.articleImage.map((image, idx)=>

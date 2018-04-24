@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, Route } from 'react-router-dom';
-import OwlCarousel from 'react-owl-carousel';
 import { Image } from 'react-bootstrap';
 import {connect} from 'react-redux';
 import NotFound from '../pages/NotFound';
@@ -9,6 +8,7 @@ import newsheaddata from '../data/news/newsheaddata';
 import newsdata from '../data/news/newsdata';
 import background14 from '../images/subnav/background14.jpg';
 import NewsItem from './NewsItem';
+import NewsCards from '../components/NewsCards';
 
 class News extends React.Component {
   constructor() {
@@ -65,7 +65,6 @@ class News extends React.Component {
     const { language } = this.props;
     const { activeIndex, windowWidth, notFound } = this.state;
     const navData = newsdata;
-    const navButtons = language === "zh"? ["上一页", "下一页"]: ["Prev", "Next"];
     if(notFound){
       return(<NotFound />)
     }
@@ -81,29 +80,22 @@ class News extends React.Component {
             childActive={this.changeActive}
             background={styles.subnav}
           />
-          <div className="container" style={{marginTop: 50, marginBottom: 50}}>
-            <OwlCarousel 
-              className="owl-theme"
-              loop margin={10} 
-              nav
-              navText={navButtons}
-              items={windowWidth < 768 ? 1 : windowWidth < 1100 ? 2 : 3}
-            >
-            {
-              navData[activeIndex].articles.map((item, index) => 
-                <Link to={`/news/${item.id}`} className="black-text" key={item.id}>
-                  <div className="item">
-                    <Image src={item.headImage} alt="image" />
-                    <div className="card-body text-center">
-                      <h4 className="card-title">{item.head[language]}</h4>
-                    </div>
-                  </div>
-                </Link>
-              )
-            }
-            </OwlCarousel>
+          <div className="container">
+            <Route path={`/news/:id`} exact render={(props) =>
+              <NewsCards
+                language={language}
+                data={navData[activeIndex].articles}
+                {...props}
+              />
+            }/>
+            <Route path={`/news/:id/:postid`} exact render={(props) => 
+              <NewsItem
+                data={navData[activeIndex].articles}
+                language={language}
+                {...props}
+              />
+            }/>
           </div>
-          <Route path={`/news/:id`} exact component={NewsItem} />
         </div>
       )
     }
