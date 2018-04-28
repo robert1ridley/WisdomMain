@@ -2,8 +2,9 @@ import React from 'react';
 import { Image } from 'react-bootstrap';
 
 const NewsText = (props) => {
+  console.log(props)
   const { data, language } = props;
-  console.log(data[0].text)
+  console.log(data[0]===true)
   const paragraphs = data[0].text.map((paragraph, index) => 
     <div key={index} className="big-body">
       <p><strong>{paragraph.subHead[language]}</strong></p>

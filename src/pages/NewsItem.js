@@ -7,7 +7,7 @@ class NewsItem extends React.Component {
     const { data, language } = this.props;
     const postId = this.props.match.params.postid;
     const article = data.filter((matchedArticle) => matchedArticle.id === Number(postId))
-    console.log(article)
+    // console.log(article)
     return (
       // <ParagraphsNew language={this.props.language} data={navData} />
       <NewsText

@@ -14,20 +14,14 @@ class News extends React.Component {
   constructor() {
     super();
     this.changeActive = this.changeActive.bind(this);
-    this.calcSize = this.calcSize.bind(this);
     this.state = { 
-      activeIndex: 0,
-      windowWidth: window.innerWidth,
+      activeIndex: null,
       notFound: false
     }
   }
 
   changeActive(active) {
     this.setState({ activeIndex: active })
-  }
-
-  calcSize(){
-    this.setState({windowWidth: window.innerWidth})
   }
 
   componentWillReceiveProps(nextProps) {
@@ -45,7 +39,6 @@ class News extends React.Component {
   }
   
   componentDidMount(){
-    window.addEventListener('resize', this.calcSize)
     const pageId = this.props.match.params.id;
     const foundIndex = newsdata.findIndex((el) => (el.id === pageId));
     foundIndex<0 ?
@@ -55,10 +48,6 @@ class News extends React.Component {
     this.setState({
       activeIndex: foundIndex
     })
-  }
-  
-  componentWillUnmount(){
-    window.removeEventListener('resize', this.calcSize)
   }
 
   render() {
@@ -70,6 +59,7 @@ class News extends React.Component {
     }
     else{
       return (
+        activeIndex !== null &&
         <div>
           <Subnav
             path="news"
