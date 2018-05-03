@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 import {connect} from 'react-redux';
 
 const text = {
@@ -12,9 +12,13 @@ const text = {
     zh: "或许这个网页不存在了",
     en: "Perhaps the webpage doesn't exist any longer!"
   },
-  button: {
+  backButton: {
     zh: "返回",
     en: "Go back"
+  },
+  homeButton: {
+    zh: "回首页",
+    en: "Home"
   }
 }
 
@@ -35,8 +39,16 @@ class NotFound extends React.Component {
           className="rounded-card"
           style={styles.buttonStyle}
         >
-        {text.button[language]}
+        {text.backButton[language]}
         </Button>
+        <Link to="/">
+          <Button 
+            className="rounded-card"
+            style={styles.buttonStyle}
+          >
+          {text.homeButton[language]}
+          </Button>
+        </Link>
       </div>
     )
   }
@@ -44,6 +56,7 @@ class NotFound extends React.Component {
 
 const styles = {
   buttonStyle: {
+    marginLeft: 20,
     marginTop: 20,
     borderRadius: 0,
     paddingLeft: 20,
