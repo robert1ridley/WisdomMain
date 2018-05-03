@@ -35,7 +35,7 @@ const ParagraphsNew = (props) => {
 
   return (
     <div className="container both-margin">
-      <div className="wow fadeInLeft rounded-card" style={{padding:20}}>
+      <div className="wow fadeInLeft rounded-card responsive-padding">
         <div className="lower-margin upper-margin">
           <h1 className="text-center big-head">{sectionData.head[language]}</h1>      
             {paragraphs}

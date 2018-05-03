@@ -63,6 +63,16 @@ div.full-card {
   padding: 2px 16px;
 }
 
+.responsive-padding {
+  padding: 40px;
+}
+
+@media (max-width: 768px) {
+  .responsive-padding {
+    padding: 20px;
+  }
+}
+
 a:hover, a:focus, div.media-body:hover, div.media-body:hover {
   text-decoration: none;
 }
