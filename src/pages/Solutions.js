@@ -28,7 +28,7 @@ class Solutions extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    const pageId = Number(nextProps.match.params.id);
+    const pageId = nextProps.match.params.id;
     if (this.props.match.params.id !== pageId){
       const foundIndex = solutionsdata.findIndex((el) => (el.id === pageId));
       foundIndex<0 ?
@@ -42,7 +42,7 @@ class Solutions extends React.Component {
   }
 
   componentDidMount() {
-    const pageId = Number(this.props.match.params.id);
+    const pageId = this.props.match.params.id;
     const foundIndex = solutionsdata.findIndex((el) => (el.id === pageId));
     foundIndex<0 ?
       this.setState ({

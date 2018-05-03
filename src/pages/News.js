@@ -14,6 +14,7 @@ class News extends React.Component {
   constructor() {
     super();
     this.changeActive = this.changeActive.bind(this);
+    this.notFound = this.notFound.bind(this);
     this.state = { 
       activeIndex: null,
       notFound: false
@@ -36,6 +37,12 @@ class News extends React.Component {
         activeIndex: foundIndex
       })
     }
+  }
+
+  notFound() {
+    this.setState({
+      notFound: true
+    })
   }
   
   componentDidMount(){
@@ -82,6 +89,7 @@ class News extends React.Component {
               <NewsItem
                 data={navData[activeIndex].articles}
                 language={language}
+                notFound={this.notFound}
                 {...props}
               />
             }/>

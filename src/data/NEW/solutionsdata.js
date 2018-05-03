@@ -22,7 +22,7 @@ import energyutil9 from '../../images/solutions/energyutil9-min.png';
 
 const solutionsdata = [
     {
-      id: 1,
+      id: "oil-and-gas-recovery-and-voc-control",
       head: {
         zh: "油气回收、VOCs治理",
         en: "油气回收、VOCs治理"
@@ -114,7 +114,7 @@ const solutionsdata = [
       ]
     },
     {
-      id: 2,
+      id: "desulphurization-and-denitrification-technology",
       head: {
         zh: "脱硫脱硝技术",
         en: "脱硫脱硝技术"
@@ -297,7 +297,7 @@ const solutionsdata = [
     },
 
     {
-      id: 3,
+      id: "comprehensive-utilization-of-energy",
       head: {
         zh: "能量综合利用",
         en: "能量综合利用"

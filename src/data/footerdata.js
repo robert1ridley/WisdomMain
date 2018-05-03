@@ -18,11 +18,11 @@ const footerdata = {
         ]
       },
       {
-        header: {text: "解决方案", link: "/solutions/1"},
+        header: {text: "解决方案", link: "/solutions/oil-and-gas-recovery-and-voc-control"},
         subItems: [
-          {text: "油气回收、VOCs治理", link:"/solutions/1"},
-          {text: "脱硫脱硝技术", link:"/solutions/2"},
-          {text: "能量综合利用", link:"/solutions/3"}
+          {text: "油气回收、VOCs治理", link:"/solutions/oil-and-gas-recovery-and-voc-control"},
+          {text: "脱硫脱硝技术", link:"/solutions/desulphurization-and-denitrification-technology"},
+          {text: "能量综合利用", link:"/solutions/comprehensive-utilization-of-energy"}
         ]
       },
       {
@@ -65,11 +65,11 @@ const footerdata = {
         ]
       },
       {
-        header:{text: "Solutions", link: "/solutions"}, 
+        header:{text: "Solutions", link: "/solutions/oil-and-gas-recovery-and-voc-control"}, 
         subItems: [
-          {text: "油气回收、VOCs治理", link:"/solutions/1"},
-          {text: "脱硫脱硝技术", link:"/solutions/2"},
-          {text: "能量综合利用", link:"/solutions/3"}
+          {text: "油气回收、VOCs治理", link:"/solutions/oil-and-gas-recovery-and-voc-control"},
+          {text: "脱硫脱硝技术", link:"/solutions/desulphurization-and-denitrification-technology"},
+          {text: "能量综合利用", link:"/solutions/comprehensive-utilization-of-energy"}
         ]
       },
       {

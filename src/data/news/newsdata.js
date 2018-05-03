@@ -40,7 +40,7 @@ const newsdata = [
             zh: "江苏智道工程技术有限公司组织品牌管理培训",
             en: "江苏智道工程技术有限公司组织品牌管理培训"
           },
-          id: 0,
+          id: "pr-training",
           headImage: prTraining,
           text: [
             {
@@ -100,7 +100,7 @@ const newsdata = [
             zh: "月岛机械株式会社（TSK）专家一行访问江苏智道",
             en: "月岛机械株式会社（TSK）专家一行访问江苏智道"
           },
-          id: 1,
+          id: "tsk-visit",
           headImage: tskVisit,
           text: [
             {
@@ -156,7 +156,7 @@ const newsdata = [
             zh: "我司参加2018年南京溧水重大项目集中开工仪式",
             en: "我司参加2018年南京溧水重大项目集中开工仪式"
           },
-          id: 2,
+          id: "lishui-award",
           headImage: liShui3,
           text: [
             {
@@ -212,7 +212,7 @@ const newsdata = [
             zh: "热烈祝贺我司“智道”商标获得江苏省、南京市著名商标称号",
             en: "热烈祝贺我司“智道”商标获得江苏省、南京市著名商标称号"
           },
-          id: 3,
+          id: "jiangsu-trademark",
           headImage: jiangsuTrademark1,
           text: [
             {
@@ -250,7 +250,7 @@ const newsdata = [
             zh: "我司受邀参加中国-澳大利亚土壤污染防治和修复研究中心揭牌仪式",
             en: "我司受邀参加中国-澳大利亚土壤污染防治和修复研究中心揭牌仪式"
           },
-          id: 4,
+          id: "australia-soil-pollution",
           headImage: australiaSoilPollution2,
           text: [
             {
@@ -315,7 +315,7 @@ const newsdata = [
             zh: "大家智道，感恩有你--江苏智道2017年终总结表彰暨2018年迎新联欢旅游活动专题报道",
             en: "大家智道，感恩有你--江苏智道2017年终总结表彰暨2018年迎新联欢旅游活动专题报道"
           },
-          id: 5,
+          id: "year-end-ceremony",
           headImage: yearEndCeremony1,
           text: [
             {
@@ -535,7 +535,7 @@ const newsdata = [
             zh: "《“十二五”节能减排综合性工作方案》政策解读",
             en: "《“十二五”节能减排综合性工作方案》政策解读"
           },
-          id: 6,
+          id: "energy-saving-and-emission-reduction-five-Year",
           headImage: aboutImg,
           text: [
             {
@@ -875,7 +875,7 @@ const newsdata = [
             zh: "节能环保“十二五”规划出炉 2015年产业产值达4.5万亿元",
             en: "节能环保“十二五”规划出炉 2015年产业产值达4.5万亿元"
           },
-          id: 7,
+          id: "energy-saving-and-environmental-protection-12th-five-year-plan",
           headImage: aboutImg,
           text: [
             {
@@ -926,7 +926,7 @@ const newsdata = [
             zh: "中国石化投巨资推进环保行动",
             en: "中国石化投巨资推进环保行动"
           },
-          id: 8,
+          id: "sinopec-environmental-action-investment",
           headImage: aboutImg,
           text: [
             {
