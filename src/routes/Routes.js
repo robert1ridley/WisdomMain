@@ -20,11 +20,11 @@ export default () => (
         <SiteNav />
         <Switch>
           <Route path="/" exact component={Home}/>
-          <Route path="/about/:id" component={About}/>
-          <Route path="/news/:id" component={News}/>
-          <Route path="/solutions/:id" component={Solutions}/>
-          <Route path="/projects/:id" component={Projects}/>
-          <Route path="/careers/:id" component={Careers}/>
+          <Route path="/about/:id" exact component={About}/>
+          <Route path="/news/:id" exact component={News}/>
+          <Route path="/solutions/:id" exact component={Solutions}/>
+          <Route path="/projects/:id" exact component={Projects}/>
+          <Route path="/careers/:id" exact component={Careers}/>
           <Route path="/contact" exact component={Contact}/>
           <Route path="*" component={NotFound}/>
         </Switch>
