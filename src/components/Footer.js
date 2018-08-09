@@ -30,7 +30,7 @@ class Footer extends React.Component {
           <Image className="center-img" src={footer} responsive/>
         </div>
         <div id="footer">
-          <div className="container-fluid">
+          <div className="container">
             <Row>
               {footerItems}
             </Row>
