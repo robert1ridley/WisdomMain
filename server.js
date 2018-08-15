@@ -7,11 +7,19 @@ const bodyParser = require('body-parser');
 const nodeMailer = require('nodemailer');
 const sgMail = require('@sendgrid/mail');
 
+const fs = require('fs');
+
+const React = require('react');
+const ReactDOMServer = require('react-dom/server');
+
+const App = require('./src/App');
+
 const normalizePort = port => parseInt(port, 10);
 const PORT = normalizePort(process.env.PORT || 5000);
 
 const app = express()
 const dev = app.get('env') !== 'production'
+require('ignore-styles');
 
 if (!dev) {
 	app.disable('x-powered-by')
@@ -45,9 +53,23 @@ app.use(bodyParser.json());
 });
 
  
-	app.get('*', (req, res) => {
-		res.sendFile(path.resolve(__dirname, 'build', 'index.html'))
-	})
+	app.use(express.static('./build'));
+
+	app.get('/*', (req, res) => {
+		const app = ReactDOMServer.renderToString(<App />);
+
+		const indexFile = path.resolve('./build/index.html');
+		fs.readFile(indexFile, 'utf8', (err, data) => {
+			if (err) {
+				console.error('Something went wrong:', err);
+				return res.status(500).send('Oops, better luck next time!');
+			}
+
+			return res.send(
+				data.replace('<div id="root"></div>', `<div id="root">${app}</div>`)
+			);
+		});
+	});
 }
 
 

@@ -20,7 +20,7 @@ const store = createStore(
     applyMiddleware(thunk, promise, logger)
 );
 
-ReactDOM.render(
+ReactDOM.hydrate(
   <Provider store={store}> 
     <App />
   </Provider>, 
