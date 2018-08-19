@@ -13,7 +13,7 @@ const imgblockdata = [
     icon: "glyphicon glyphicon-blackboard",
     text: {
       zh: "新闻中心",
-      en: "Company News"
+      en: "News"
     },
     link: "/news/enterprise"
   },

@@ -1,5 +1,6 @@
 import React from 'react';
 // import BaiduMap from '../components/BaiduMap';
+import ContactHead from '../headers/ContactHead';
 import MainContactForm from '../components/MainContactForm';
 import ContactList from '../components/ContactList';
 import {connect} from 'react-redux';
@@ -9,7 +10,7 @@ const Contact = (props) => {
   const { language } = props;
   return (
     <div>
-      {/* <BaiduMap language={language}/> */}
+      <ContactHead />
       <div className="container big-lower-margin wow fadeIn">
         <div className="text-center central-info">
           <h1 className="big-head">{language === "zh"? "联系我们": "Contact us"}</h1>

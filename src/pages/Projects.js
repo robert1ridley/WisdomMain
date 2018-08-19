@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import {connect} from 'react-redux';
+import ProjectsHead from '../headers/ProjectsHead';
 import Subnav from '../components/Subnav';
 import Sidebar from '../components/Sidebar';
 import NotFound from '../pages/NotFound';
@@ -66,6 +67,7 @@ class Projects extends React.Component {
     else {
       return (
         <div>
+          <ProjectsHead />
           <Subnav
             path="projects"
             language={language}

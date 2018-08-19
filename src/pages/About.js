@@ -2,8 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import { Route } from 'react-router-dom';
 
-// import ParagraphsIntro from '../components/ParagraphsIntro';
-// import ParagraphsNew from '../components/ParagraphsNew';
+import AboutHead from '../headers/AboutHead';
 import ParagraphsNew from '../components/NEW/ParagraphsNew';
 import Subnav from '../components/Subnav';
 import Timeline from '../components/Timeline';
@@ -67,6 +66,7 @@ class About extends React.Component {
     else{
       return (
         <div>
+          <AboutHead />
           <Subnav
             path="about"
             language={language}

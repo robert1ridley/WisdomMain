@@ -1,28 +1,41 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import {Provider} from 'react-redux';
-import {createStore, applyMiddleware} from 'redux';
-import thunk from 'redux-thunk';
-import promise from 'redux-promise';
-import {createLogger} from 'redux-logger';
-import allReducers from './reducers';
+import { render, hydrate } from 'react-dom';
+import { Provider } from 'react-redux';
+import Loadable from 'react-loadable';
+import { Frontload } from 'react-frontload';
+import { ConnectedRouter } from 'connected-react-router';
+import createStore from './store';
+
 import App from './App';
 
-import 'animate.css';
 import './libs/bootstrap-3.3.6/dist/css/bootstrap.min.css';
 import './libs/font-awesome/css/font-awesome.min.css';
 import './index.css';
-import registerServiceWorker from './registerServiceWorker';
 
-const logger = createLogger();
-const store = createStore(
-    allReducers,
-    applyMiddleware(thunk, promise, logger)
+// Create a store and get back itself and its history object
+const { store, history } = createStore();
+
+// Running locally, we should run on a <ConnectedRouter /> rather than on a <StaticRouter /> like on the server
+// Let's also let React Frontload explicitly know we're not rendering on the server here
+const Application = (
+  <Provider store={store}>
+    <ConnectedRouter history={history}>
+      <Frontload noServerRender>
+        <App />
+      </Frontload>
+    </ConnectedRouter>
+  </Provider>
 );
 
-ReactDOM.hydrate(
-  <Provider store={store}> 
-    <App />
-  </Provider>, 
-  document.getElementById('root'));
-  registerServiceWorker();
+const root = document.querySelector('#root');
+
+if (process.env.NODE_ENV === 'production') {
+  // If we're running in production, we use hydrate to get fast page loads by just
+  // attaching event listeners after the initial render
+  Loadable.preloadReady().then(() => {
+    hydrate(Application, root);
+  });
+} else {
+  // If we're not running on the server, just render like normal
+  render(Application, root);
+}

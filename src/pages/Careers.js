@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import { Route } from 'react-router-dom';
+import CareersHead from '../headers/CareersHead';
 import NotFound from '../pages/NotFound';
 import Subnav from '../components/Subnav';
 import TextCards from '../components/TextCards';
@@ -61,6 +62,7 @@ class Careers extends React.Component {
     else{
       return (
         <div>
+          <CareersHead />
           <Subnav
             path="careers"
             language={language}

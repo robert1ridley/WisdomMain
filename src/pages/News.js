@@ -9,6 +9,7 @@ import newsdata from '../data/news/newsdata';
 import background14 from '../images/subnav/background14.jpg';
 import NewsItem from './NewsItem';
 import NewsCards from '../components/NewsCards';
+import NewsHead from '../headers/NewsHead';
 
 class News extends React.Component {
   constructor() {
@@ -68,6 +69,7 @@ class News extends React.Component {
       return (
         activeIndex !== null &&
         <div>
+          <NewsHead />
           <Subnav
             path="news"
             language={language}

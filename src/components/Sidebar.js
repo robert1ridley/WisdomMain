@@ -7,23 +7,34 @@ export default class Sidebar extends React.Component {
     super(props)
     this.changeActive = this.changeActive.bind(this);
     this.calcSize = this.calcSize.bind(this);
-
-    this.state = {
-        active: true,
-        windowWidth: window.innerWidth
-    };
+    if (typeof window !== 'undefined') {
+      this.state = {
+          active: true,
+          windowWidth: window.innerWidth
+      };
+    } else {
+      this.state = {
+        active: true
+      }
+    }
 }
 
 calcSize(){
-  this.setState({windowWidth: window.innerWidth})
+  if (typeof window !== 'undefined') {
+    this.setState({windowWidth: window.innerWidth})
+  }
 }
 
 componentDidMount(){
-  window.addEventListener('resize', this.calcSize)
+  if (typeof window !== 'undefined') {
+    window.addEventListener('resize', this.calcSize)
+  }
 }
 
 componentWillUnmount(){
-  window.removeEventListener('resize', this.calcSize)
+  if (typeof window !== 'undefined') {
+    window.removeEventListener('resize', this.calcSize)
+  }
 }
 
 changeActive(){

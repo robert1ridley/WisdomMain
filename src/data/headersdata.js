@@ -11,7 +11,7 @@ const headers = {
   english: [
     {head: "Home", icon: "glyphicon glyphicon-home", id: 1, link: "/"},
     {head: "About us", icon: "glyphicon glyphicon-info-sign", id: 2, link: "/about/about-wisdom"},
-    {head: "Company News", icon: "glyphicon glyphicon-blackboard", id: 3, link: "/news/enterprise"},
+    {head: "News", icon: "glyphicon glyphicon-blackboard", id: 3, link: "/news/enterprise"},
     {head: "Solutions", icon: "glyphicon glyphicon-pushpin", id: 4, link: "/solutions/oil-and-gas-recovery-and-voc-control"},
     {head: "Projects", icon: "glyphicon glyphicon-certificate", id: 5, link: "/projects/oil-and-gas-recovery"},
     {head: "Team", icon: "glyphicon glyphicon-education", id: 6, link: "/careers/jobs"},

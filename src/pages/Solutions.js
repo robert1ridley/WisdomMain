@@ -12,6 +12,7 @@ import solutionsheaddata from '../data/solutions/solutionsheaddata';
 
 import background14 from '../images/subnav/background14.jpg';
 import SolutionCards from '../components/SolutionCards';
+import SolutionsHead from '../headers/SolutionsHead';
 
 class Solutions extends React.Component {
   constructor() {
@@ -63,6 +64,7 @@ class Solutions extends React.Component {
     else{
       return (
         <div>
+          <SolutionsHead />
           <Subnav
             path="solutions"
             language={language}

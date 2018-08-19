@@ -10,6 +10,7 @@ import basicintrodata from '../data/basicintrodata';
 import newsintrodata from '../data/newsintrodata';
 
 //component imports
+import HomeHead from '../headers/HomeHead';
 import CarouselImages from '../components/CarouselImages';
 import Intro from '../components/Intro';
 import ImgBlocks from '../components/ImgBlocks';
@@ -21,6 +22,7 @@ class Home extends React.Component {
     const { language } = this.props
     return (
       <div>
+        <HomeHead />
         <CarouselImages language={language}/>
         <div className="container">
           <Intro

@@ -11,7 +11,7 @@ class Footer extends React.Component {
     const footerAll = this.props.language === "zh"? footerdata.chinese: footerdata.english;
     const footerHead = footerAll.pagehead;
     const footerItems = footerAll.footerItems.map((footerItem, idx) => 
-      <Col md={2} xs={6} key={idx}>
+      <Col md={2} xs={4} key={idx}>
         <Link to={footerItem.header.link}>
           <h4 className="footer-head">{footerItem.header.text}</h4>
         </Link>

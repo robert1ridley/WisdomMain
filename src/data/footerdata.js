@@ -58,7 +58,7 @@ const footerdata = {
         ]
       },
       {
-        header: {text: "Company News", link: "/news"},
+        header: {text: "News", link: "/news"},
         subItems: [
          {text: "Enterprise News", link: "/news/enterprise"},
          {text: "Industry Dynamics", link: "/news/enterprise"}
