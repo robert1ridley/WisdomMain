@@ -1,3 +1,33 @@
+.chinese-head {
+  font-family: PingFangSC-Regular;
+  font-size: 15px;
+  color: #333333;
+  letter-spacing: 0.42px;
+}
+
+.english-head {
+  /* Add styles when provided by design */
+  font-size: 15px;
+  color: #333333;
+}
+
+nav.navbar.navbar-default, a.navbar-brand, nav li a {
+  background-color: #FFFFFF;
+}
+
+.navbar-nav>li>a {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 13px;
+}
+
+a.navbar-brand {
+  height: 100% !important;
+  padding-left: 55px;
+  padding-bottom: 12px;
+  padding-top: 8px;
+}
+
 @media screen and (max-width: 775px) {
   a.navbar-brand {
     padding: 0px;
@@ -10,23 +40,23 @@
 }
   
   .navbar .container {
-  margin-left: 0px;
-  margin-right: 0px;
-  width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
 }
 
 nav.navbar.navbar-default {
   margin-bottom: 0px;
 }
 
-.navbar, .navbar a {
-  font-weight: 300 !important;
-  font-size: 16px;
+.navbar-right {
+  padding-top: 8px;
+  padding-bottom: 12px;
 }
 
-.navbar-right {
-  padding-top: 20px;
-  padding-bottom: 20px;
+ul.nav.navbar-nav.navbar-right {
+  padding-right: 40px;
+
 }
 
 .navbar-right .dropdown-menu a {
@@ -36,10 +66,10 @@ nav.navbar.navbar-default {
 
 .navbar a:link, .navbar a:visited, .navbar a:hover, .navbar a:active {
   color: rgb(119, 119, 119);
-  background-color: rgb(248, 248, 248) !important;
+  background-color: #FFFFFF !important;
 }
 
 .navbar ul.dropdown-menu {
-  background-color: rgb(248, 248, 248);
+  background-color: #FFFFFF;
 }
 

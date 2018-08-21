@@ -1,13 +1,14 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import MainButton from './MainButton';
+import '../styles/imgblock.css';
 
 const ImgBlocks = (props) => {
   const { data, language } = props;
   const blocks = data.map(block =>
     <div key = {block.id}>
-      <Columns       
+      <Columns
+        language={language}     
         id = {block.id}
         icon = {block.icon}
         text = {block.text[language]}
@@ -16,18 +17,8 @@ const ImgBlocks = (props) => {
     </div>
   )
   return (
-      <div style={styles.row} className="wow fadeIn">
-        <Row>
-          {blocks}
-        </Row>
-        <div className="text-center">
-          <Link to="/about/about-wisdom">
-            <MainButton
-              language = {language}
-              buttonText = {{chinese:"了解更多", english: "Learn more"}}
-            />
-          </Link>
-        </div>
+      <div style={styles.row} className="flex-container">
+        {blocks}
       </div>
   )
 }
@@ -47,18 +38,18 @@ class Columns extends React.Component {
   }
   
   render () {
-    var linkStyle = this.state.hover === true? {backgroundColor: '#7ebc59', color: 'white'}: {backgroundColor: 'white', color: 'black'};
+    var linkStyle = this.state.hover === true ? {opacity: 0.5} : {opacity: 0.9};
     return (
-      <Col md={4} sm={6} xs={12}>
+      // <Col lg={2} md={4} xs={6}>
         <Link to={this.props.link}>
-          <div className="card full-card wiggle-me" onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover} style={linkStyle}>
-            <div className={this.props.icon} style={styles.icon}/>
+          <div className="card full-card" onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover} style={linkStyle}>
+            <Image src={this.props.icon} style={{height: "60px"}} />
             <div className="card-block">
-              <h4 className="card-title caps">{this.props.text}</h4>
+              <h4 className={this.props.language === "zh" ? "chinese-caps" : "caps"}>{this.props.text}</h4>
             </div>
           </div>
         </Link>
-      </Col>
+      // </Col>
     )
   }
 }
@@ -66,7 +57,9 @@ class Columns extends React.Component {
 const styles = {
   row: {
     marginTop: 80,
-    marginBottom: 80
+    marginBottom: 80,
+    paddingLeft: "64px",
+    paddingRight: "64px",
   },
 
   icon: {

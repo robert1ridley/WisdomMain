@@ -7,6 +7,7 @@ import mainCarousel3 from '../images/carousel/test/page-1_slide03.jpg';
 import mainCarousel1tiny from '../images/carousel/test/page-1_slide01tiny.jpg';
 import mainCarousel2tiny from '../images/carousel/test/page-1_slide02tiny.jpg';
 import mainCarousel3tiny from '../images/carousel/test/page-1_slide03tiny.jpg';
+import '../styles/carousel.css';
 
 const images = [
   {
@@ -106,8 +107,24 @@ class ImageDiv extends React.Component {
       <div className={style} style={{backgroundImage: `url(${data.image})`}}>
         <Carousel.Caption>
           <Link to={data.link}>
-            <h3>{data.head[language]}</h3>
-            <p>{data.body[language]}</p>
+            <div className="outer">
+              <div className="middle">
+                <div className="inner">
+                  <h3
+                    className={language === "zh" ? "chinese-carousel-head" : "english-carousel-head"}
+                  >
+                    {data.head[language]}
+                  </h3>
+                  <div className="carousel-body-text">
+                    <p
+                      className={language === "zh" ? "chinese-carousel-body" : "english-carousel-body"}
+                    >
+                      {data.body[language]}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </Link>
         </Carousel.Caption>
       </div>

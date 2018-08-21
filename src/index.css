@@ -1,5 +1,11 @@
 body {
-  font-family: "Lato",sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+div.container.main-content-container {
+  padding-left: 55px;
+  padding-right: 55px;
+  width: 100%;
 }
 
 .white {
@@ -11,9 +17,26 @@ body {
   margin-bottom: 50px;
 }
 
+.chinese-big-head {
+  font-family: "PingFangSC-Semibold";
+  font-size: 26px;
+  color: #000000;
+  letter-spacing: 0.2px;
+}
+
 .big-head {
   font-weight: 500;
   font-size: 2em;
+}
+
+.chinese-big-body {
+  font-family: "PingFangSC-Semibold";
+  font-size: 18px;
+  color: #666666;
+  letter-spacing: 0.14px;
+  text-align: center;
+  line-height: 24px;
+  margin-top: 40px !important;
 }
 
 .big-body {
@@ -34,22 +57,18 @@ body {
   margin-top: 20px;
 }
 
-.caps {
-  font-weight: 100;
-  font-size: 20px;
+.chinese-caps {
+  font-family: PingFangSC-Medium;
+  font-size: 18px;
+  color: #FFFFFF;
+  letter-spacing: 0.14px;
+  text-align: center;
+  margin-top: 20px;
 }
 
-div.full-card {
-  margin: auto;
-  width: 30rem; 
-  height: 20rem; 
-  text-align: center; 
-  margin-bottom: 80px; 
-  padding-top: 25px;
-  border: 1px solid #dcdcdc;
-}
+/* IMAGE BLOCK */
 
-.rounded-card, div.full-card {
+.rounded-card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   background-color: white;
@@ -162,14 +181,6 @@ div.media-body {
   width: 100%;
 }
 
-/* animations */
-@-ms-keyframes wiggle{0%{-ms-transform:rotate(3deg);}50%{-ms-transform:rotate(-3deg);}100%{-ms-transform:rotate(3deg);}}
-@-moz-keyframes wiggle{0%{-moz-transform:rotate(3deg);}50%{-moz-transform:rotate(-3deg);}100%{-moz-transform:rotate(3deg);}}
-@-webkit-keyframes wiggle{0%{-webkit-transform:rotate(3deg);}50%{-webkit-transform:rotate(-3deg);}100%{-webkit-transform:rotate(3deg);}}
-@keyframes wiggle{0%{transform:rotate(3deg);}50%{transform:rotate(-3deg);}100%{transform:rotate(3deg);}}
-.wiggle-me:hover{-ms-animation:wiggle .3s 2;-moz-animation:wiggle .3s 2;-webkit-animation:wiggle .3s 2;animation:wiggle .3s 2;}
-
-
 /* clap text in image block text */
 .clampMe {
   position: relative;
@@ -249,21 +260,3 @@ div.media-body {
   color: white;
   cursor: pointer;
 }
-
-/* .mini-tab {
-  borderBottomColor: '#2c739d',
-  borderLeftColor: '#2c739d',
-  borderLeftStyle: 'solid',
-  borderLeftWidth: 4.79688,
-  borderRightColor: '#2c739d',
-  borderTopColor: '#2c739d',
-  // content: " ",
-  display: 'inline',
-  height: 24,
-  marginRight: 8,
-  paddingBottom: 0,
-  paddingLeft: 0,
-  paddingRight: 0,
-  paddingTop: 0,
-  width: 4.79688,
-} */

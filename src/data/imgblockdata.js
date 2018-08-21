@@ -1,7 +1,15 @@
+import info from '../images/icons/info.png';
+import news from '../images/icons/news.png';
+import solution from '../images/icons/solution.png';
+import result from '../images/icons/result.png';
+import hr from '../images/icons/hr.png';
+import contact from '../images/icons/contact.png';
+
+
 const imgblockdata = [
   {
     id: 2,
-    icon: "glyphicon glyphicon-info-sign",
+    icon: info,
     text: {
       zh: "关于智道",
       en: "About us"
@@ -10,7 +18,7 @@ const imgblockdata = [
   },
   {
     id: 3,
-    icon: "glyphicon glyphicon-blackboard",
+    icon: news,
     text: {
       zh: "新闻中心",
       en: "News"
@@ -19,7 +27,7 @@ const imgblockdata = [
   },
   {
     id: 4,
-    icon: "glyphicon glyphicon-pushpin",
+    icon: solution,
     text: {
       zh: "决定方案",
       en: "Solutions"
@@ -28,7 +36,7 @@ const imgblockdata = [
   },
   {
     id: 5,
-    icon: "glyphicon glyphicon-certificate",
+    icon: result,
     text: {
       zh: "工程业绩",
       en: "Projects"
@@ -37,7 +45,7 @@ const imgblockdata = [
   },
   {
     id: 6,
-    icon: "glyphicon glyphicon-education",
+    icon: hr,
     text: {
       zh: "人力资源",
       en: "Careers"
@@ -46,7 +54,7 @@ const imgblockdata = [
   },
   {
     id: 7,
-    icon: "glyphicon glyphicon-earphone",
+    icon: contact,
     text: {
       zh: "联系我们",
       en: "Contact us"

@@ -24,7 +24,7 @@ class Home extends React.Component {
       <div>
         <HomeHead />
         <CarouselImages language={language}/>
-        <div className="container">
+        <div className="container main-content-container">
           <Intro
             data={introdata}
             language={language}

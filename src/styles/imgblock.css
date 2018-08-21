@@ -1,0 +1,43 @@
+.caps {
+  font-weight: 100;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* IMAGE BLOCK */
+div.full-card {
+  margin: auto;
+  width: 155px; 
+  height: 155px;
+  background-color: #1A2136;
+  color: #FFFFFF;
+  text-align: center; 
+  padding-top: 25px;
+  margin-bottom: 25px;
+}
+
+.flex-container {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  display: grid;
+  grid-template-rows: 155px;
+  grid-template-columns: 155px 155px 155px 155px 155px 155px;
+  grid-column-gap: 22px;
+  grid-row-gap: 22px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1160px) {
+  .flex-container {
+    grid-template-rows: 155px 155px;
+    grid-template-columns: 155px 155px 155px;
+  }
+}
+
+@media (max-width: 600px) {
+  .flex-container {
+    grid-template-rows: 155px 155px 155px;
+    grid-template-columns: 155px 155px;
+  }
+}
