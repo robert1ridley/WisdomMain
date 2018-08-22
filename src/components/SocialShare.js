@@ -35,7 +35,7 @@ class SocialShare extends React.Component {
             <Intro 
               data={sharingdata}
               language={this.props.language}
-              color={{color:'white'}}
+              color={'white'}
             />
             <SocialShareBlock />
           </div>

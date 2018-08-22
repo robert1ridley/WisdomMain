@@ -28,19 +28,19 @@ class Home extends React.Component {
           <Intro
             data={introdata}
             language={language}
-            color={{color:'black'}}
+            color={'black'}
           />
           <ImgBlocks 
             data={imgblockdata}
             language={language}
           />
         </div>
-        <div style={{backgroundColor: '#2c739d'}}>
+        <div style={{backgroundColor: '#022E7B'}}>
         <div className="container">
           <Intro 
             data={newsintrodata}
             language={language}
-            color={{color:'white'}}
+            color={'white'}
           />
           <MediaObjects 
             data={basicintrodata}

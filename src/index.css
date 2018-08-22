@@ -9,13 +9,27 @@ div.container.main-content-container {
 }
 
 .white {
-  color: white !important;
+  color: #FFFFFF !important;
 }
 
 .central-info {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
+/* INTRO SECTION COLOR THEMES */
+h1.dark {
+  color: #000000;
+}
+
+p.dark {
+  color: #666666;
+}
+
+.light {
+  color: #FFFFFF;
+}
+/* INTRO SECTION COLOR THEMES */
 
 .chinese-big-head {
   font-family: "PingFangSC-Semibold";

@@ -27,7 +27,7 @@ const Subnav = (props) => {
           <Intro
             language={language}
             data={intro}
-            color={{color: 'white'}}
+            color={'white'}
           />
         </div>
         <div className="wow fadeIn text-center">
