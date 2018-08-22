@@ -8,8 +8,8 @@
 
 @media (max-width: 768px) {
   div.container.wide-content-margin  {
-    padding-left: 55px !important;
-    padding-right: 55px !important;
+    padding-left: 22px !important;
+    padding-right: 22px !important;
     width: 100% !important;
   }
 }

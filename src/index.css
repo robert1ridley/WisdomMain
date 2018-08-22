@@ -8,6 +8,14 @@ div.container.main-content-container {
   width: 100%;
 }
 
+@media (max-width: 786px) {
+  div.container.main-content-container {
+    padding-left: 22px;
+    padding-right: 22px;
+    width: 100%;
+  }
+}
+
 .white {
   color: #FFFFFF !important;
 }
