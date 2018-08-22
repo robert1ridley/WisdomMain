@@ -93,7 +93,10 @@ p.dark {
 }
 
 .card-body {
-  padding: 2px 16px;
+  padding-top: 32px;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-bottom: 34px;
 }
 
 .responsive-padding {
@@ -201,6 +204,7 @@ div.media-body {
   height: 4em; 
   overflow: hidden;
   line-height: 1.29;
+  margin-bottom: 0px;
 }
 
 .clampMe:after {

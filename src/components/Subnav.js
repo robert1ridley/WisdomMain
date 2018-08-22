@@ -30,7 +30,7 @@ const Subnav = (props) => {
             color={'white'}
           />
         </div>
-        <div className="wow fadeIn text-center">
+        <div className="text-center">
             {navButtons}
         </div>
       </div>
