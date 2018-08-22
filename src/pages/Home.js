@@ -36,17 +36,17 @@ class Home extends React.Component {
           />
         </div>
         <div style={{backgroundColor: '#022E7B'}}>
-        <div className="container">
-          <Intro 
-            data={newsintrodata}
-            language={language}
-            color={'white'}
-          />
-          <MediaObjects 
-            data={basicintrodata}
-            language={language}
-          />
-        </div>
+          <div className="container main-content-container">
+            <Intro 
+              data={newsintrodata}
+              language={language}
+              color={'white'}
+            />
+            <MediaObjects 
+              data={basicintrodata}
+              language={language}
+            />
+          </div>
         </div>
         {/* <BaiduMap language={language}/> */}
       </div>

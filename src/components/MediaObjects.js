@@ -15,7 +15,7 @@ const MediaObjects = (props) => {
     )
   return (
     <div className="central-info">
-      <Row>
+      <Row className="row-container">
         {MediaObjects}
       </Row>
     </div>

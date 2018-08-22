@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import backgroundImage2 from '../images/background2.jpg';
-import backgroundImage2tiny from '../images/background2-tiny.jpg';
+import backgroundImage14 from '../images/subnav/background14.jpg';
+import backgroundImage14tiny from '../images/subnav/background14-tiny.jpg';
 import Intro from '../components/Intro';
 import SocialShareBlock from '../components/SocialShareBlock';
 import sharingdata from '../data/sharingdata';
@@ -31,7 +31,7 @@ class SocialShare extends React.Component {
           style={this.state.visible===false? styles.loading: styles.background}
           className={this.state.visible===false? "background-loading": "background-loaded"}
         >
-          <div className="container">
+          <div className="container main-content-container">
             <Intro 
               data={sharingdata}
               language={this.props.language}
@@ -47,11 +47,11 @@ class SocialShare extends React.Component {
 
 const styles = {
   background: {
-    backgroundImage: 'url(' + backgroundImage2 + ')'
+    backgroundImage: 'url(' + backgroundImage14 + ')'
   },
 
   loading: {
-    backgroundImage: 'url(' + backgroundImage2tiny + ')'
+    backgroundImage: 'url(' + backgroundImage14tiny + ')'
   }
 }
 

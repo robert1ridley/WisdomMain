@@ -20,10 +20,15 @@ div.container.main-content-container {
 /* INTRO SECTION COLOR THEMES */
 h1.dark {
   color: #000000;
+  margin-bottom: 40px;
 }
 
 p.dark {
   color: #666666;
+}
+
+h1.light {
+  margin-bottom: 40px;
 }
 
 .light {
@@ -242,8 +247,15 @@ div.media-body {
 
 .background-loading, .background-loaded {
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center center !important;
   background-attachment: fixed !important;
+  background-size: cover !important;
+  min-height: 565;
+}
+
+.background-header {
+  background-repeat: no-repeat;
+  background-position: center center !important;
   background-size: cover !important;
   min-height: 565;
 }

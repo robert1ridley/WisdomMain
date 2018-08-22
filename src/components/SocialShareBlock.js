@@ -57,7 +57,7 @@ const styles = {
   },
 
   regButton: {
-    backgroundColor: '#7ebc59'
+    backgroundColor: '#1951B4'
   },
 
   hoverButton: {

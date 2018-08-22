@@ -8,7 +8,8 @@ import footerdata from '../data/footerdata';
 
 class Footer extends React.Component {
   render () {
-    const footerAll = this.props.language === "zh"? footerdata.chinese: footerdata.english;
+    const { language } = this.props;
+    const footerAll = language === "zh"? footerdata.chinese: footerdata.english;
     const footerHead = footerAll.pagehead;
     const footerItems = footerAll.footerItems.map((footerItem, idx) => 
       <Col md={2} xs={4} key={idx}>
@@ -25,8 +26,13 @@ class Footer extends React.Component {
 
     return (
       <div>
-        <div className="container" style={{padding: 40}}>
-          <h1 className="big-head text-center lower-margin">{footerHead.text}</h1>
+        <div className="container" style={{paddingTop: 45, paddingBottom: 40}}>
+          <h1 
+            className={language === "zh" ? "chinese-big-head text-center" : "big-head text-center"}
+            style={{marginTop: 0, marginBottom: 30}}
+          >
+            {footerHead.text}
+          </h1>
           <Image className="center-img" src={footer} responsive/>
         </div>
         <div id="footer">

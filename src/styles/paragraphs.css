@@ -1,0 +1,51 @@
+.main-upper-margin {
+  margin-top: 70px;
+}
+
+.main-lower-margin {
+  margin-bottom: 70px;
+}
+
+@media (max-width: 768px) {
+  div.container.wide-content-margin  {
+    padding-left: 55px !important;
+    padding-right: 55px !important;
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  div.container.wide-content-margin  {
+    padding-left: 120px;
+    padding-right: 120px;
+    width: 100% !important;
+  }
+}
+
+.main-chinese-paragraph-header {
+  font-family: 'PingFangSC-Light';
+  font-size: 48px;
+  color: #1951B4;
+}
+
+.main-english-paragraph-header {
+  font-size: 38px;
+  color: #1951B4;
+}
+
+.paragraph-margin {
+  margin-bottom: 65px;
+}
+
+.chinese-paragraph-body {
+  font-family: 'PingFangSC-Regular';
+  font-size: 24px;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: 34px;
+}
+
+.english-paragraph-body {
+  font-size: 22px;
+  color: #333333;
+}
