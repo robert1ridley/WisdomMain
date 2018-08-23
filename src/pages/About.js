@@ -6,6 +6,7 @@ import AboutHead from '../headers/AboutHead';
 import ParagraphsNew from '../components/NEW/ParagraphsNew';
 import Subnav from '../components/Subnav';
 import Timeline from '../components/Timeline';
+import Certified from '../components/Certified';
 import NotFound from '../pages/NotFound';
 
 import '../styles/timeline.css';
@@ -78,20 +79,38 @@ class About extends React.Component {
           />
           {
             <Route path={`/about/:id`} exact render={(props) => 
-              navData[activeIndex].id !== 'timeline' ?
-              <ParagraphsNew
-                language={language}
-                data={navData}
-                index={activeIndex}
-                {...props}
-              /> 
-              :
-              <Timeline
-                language={language}
-                data={navData}
-                index={activeIndex}
-                {...props}
-              /> 
+              {
+                console.log(navData[activeIndex].template)
+                switch(navData[activeIndex].template) {
+                  case('standard'):
+                    return (
+                      <ParagraphsNew
+                        language={language}
+                        data={navData}
+                        index={activeIndex}
+                        {...props}
+                      />
+                    )
+                  case('timeline'):
+                    return (
+                      <Timeline
+                        language={language}
+                        data={navData}
+                        index={activeIndex}
+                        {...props}
+                      />
+                    )
+                  case('certified'):
+                    return (
+                      <Certified
+                        language={language}
+                        data={navData}
+                        index={activeIndex}
+                        {...props}
+                      />
+                    )
+                }
+              }            
             }/>
           }
         </div>

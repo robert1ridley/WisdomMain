@@ -180,7 +180,8 @@ const aboutdatabasic = [
         ]
       },
     ],
-    id: 'about-wisdom'
+    id: 'about-wisdom',
+    template: 'standard'
   },
   {
     head: {
@@ -359,7 +360,8 @@ const aboutdatabasic = [
         ]
       }
     ],
-    id: 'aptitude-honor'
+    id: 'aptitude-honor',
+    template: 'certified'
   },
   {
     head: {
@@ -521,7 +523,8 @@ const aboutdatabasic = [
         ]
       }
     ],
-    id: 'timeline'
+    id: 'timeline',
+    template: 'timeline'
   }
 ]
 
