@@ -18,6 +18,9 @@ class SiteNav extends React.Component {
   componentDidMount() {
     if(typeof(window) !== 'undefined') {
       const path = getLocationFromParams(window.location.pathname);
+      this.setState({
+        path: path
+      })
     }
   }
 
