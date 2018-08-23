@@ -6,14 +6,38 @@ import { Navbar, Nav, NavItem, NavDropdown, MenuItem, Image } from 'react-bootst
 import { Link } from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
 import headers from '../data/headersdata';
+import { getLocationFromParams } from '../utils/index';
 import '../styles/sitenav.css';
 import logo from '../images/logo.png';
 
 class SiteNav extends React.Component {
+  state = {
+    path: '/'
+  }
+
+  componentDidMount() {
+    if(typeof(window) !== 'undefined') {
+      const path = getLocationFromParams(window.location.pathname);
+    }
+  }
+
+  updatePath = (newPath) => {
+    newPath = getLocationFromParams(newPath)
+    this.setState({
+      path: newPath
+    })
+  }
+
   render() {
+    console.log(this.state.path)
     const headings = this.props.language === "zh"? headers.chinese: headers.english;
     const titles = headings.map(heading => 
-      <LinkContainer to={heading.link} key={heading.id}>
+      <LinkContainer 
+        to={heading.link} 
+        key={heading.id} 
+        onClick={() => this.updatePath(heading.link)}
+        className={this.state.path === getLocationFromParams(heading.link) ? "clicked" : "not-clicked"}
+      >
         <NavItem eventKey={heading.id}>{heading.head}</NavItem>
       </LinkContainer>
     )

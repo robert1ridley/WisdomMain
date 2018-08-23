@@ -15,17 +15,26 @@ nav.navbar.navbar-default, a.navbar-brand, nav li a {
   background-color: #FFFFFF;
 }
 
-.navbar-nav>li>a {
-  padding-top: 22px;
-  padding-bottom: 22px;
-  padding-left: 13px;
-}
-
 a.navbar-brand {
   height: 100% !important;
   padding-left: 55px;
   padding-bottom: 12px;
   padding-top: 8px;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav>li>a {
+    padding-top: 30px;
+    padding-bottom: 33px;
+    padding-left: 13px;
+  }
+
+  .clicked>a {
+    border-bottom-style: solid;
+    border-bottom-color: #1951B4;
+    border-bottom-width: 5px;
+    padding-bottom: 28px !important;
+  }
 }
 
 @media screen and (max-width: 775px) {
@@ -50,8 +59,8 @@ nav.navbar.navbar-default {
 }
 
 .navbar-right {
-  padding-top: 8px;
-  padding-bottom: 12px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 ul.nav.navbar-nav.navbar-right {

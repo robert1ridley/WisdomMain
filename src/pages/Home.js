@@ -19,7 +19,7 @@ import MediaObjects from '../components/MediaObjects';
 
 class Home extends React.Component {
   render() {
-    const { language } = this.props
+    const { language, location } = this.props
     return (
       <div>
         <HomeHead />
