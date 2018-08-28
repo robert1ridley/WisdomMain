@@ -1,6 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import InfoModal from '../components/InfoModal';
+import '../styles/solution-cards.css';
 
 const SolutionCards = (props) => {
   const { data, language, activeIndex } = props;
@@ -43,15 +44,16 @@ class SingleCard extends React.Component {
 
   render() {
     const { header, text, language, fullItemData } = this.props;
-    const { show, num } = this.state;
-    console.log(fullItemData.articleContent[0].text[language])
+    const { show } = this.state;
+    const headTextClass = language === 'zh' ? 'chinese-solution-card-head hover-white' : 'english-solution-card-head hover-white';
+    const bodyTextClass = language === 'zh' ? 'chinese-solution-card-body solutions-clamp hover-white' : 'english-solution-card-body solutions-clamp hover-white';
     return (
       <div>
         <Col md={4} sm={6} xs={12} className="lower-margin" onClick={this.handleShow}>
-          <div className="card wow fadeInLeft rounded-card green-hover" style={styles.padding}>
-            <div className="card-body text-center">
-              <h4 className="card-title" style={styles.head}>{header}</h4>
-              <p className="card-text clampMe">{text}</p>
+          <div className="solutions-card blue-hover">
+            <div className="solutions-card-body text-center">
+              <h4 className={headTextClass} style={styles.head}>{header}</h4>
+              <p className={bodyTextClass}>{text}</p>
             </div>
 
           </div>
@@ -68,10 +70,6 @@ class SingleCard extends React.Component {
 }
 
 const styles = {
-  padding: {
-    padding: 15
-  },
-
   margin: {
     marginBottom: 15,
     marginTop: 15
