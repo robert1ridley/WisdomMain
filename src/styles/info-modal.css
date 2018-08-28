@@ -1,0 +1,17 @@
+.solutions-modal-header {
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.model-content {
+  color: #333333;
+  font-weight: 200;
+  line-height: 150%;
+}
+
+.modal-body {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 40px;
+}

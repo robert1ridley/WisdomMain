@@ -1,11 +1,12 @@
 import React from 'react';
-import { Button, Modal, Image  } from 'react-bootstrap';
+import { Modal, Image  } from 'react-bootstrap';
+import '../styles/info-modal.css';
 
 const InfoModal = (props) => {
   const { showModal, close, language, data } = props;
   return (
     <Modal show={showModal} onHide={close}>
-      <Modal.Header closeButton={true}>
+      <Modal.Header className="solutions-modal-header" closeButton={true}>
         <Modal.Title>{data.articleHead[language]}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
@@ -16,7 +17,7 @@ const InfoModal = (props) => {
               {
                 item.articleImage.map((image, idx)=>
                   image.imageURL!==null &&
-                  <div className="img-container text-center" key={idx} style={{marginBottom: 30}}>
+                  <div className="img-container text-center" key={idx}>
                     <Image src={image.imageURL} className="center-img" width="100%" responsive/>
                     {image.caption[language]===""?<div></div>:
                       <p className="medium-body" style={{marginTop: 2}}><span className="mini-tab" style={styles.tab} /> {image.caption[language]}</p>
