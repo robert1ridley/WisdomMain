@@ -41,7 +41,7 @@ const newsdata = [
             en: "江苏智道工程技术有限公司组织品牌管理培训"
           },
           id: "pr-training",
-          timestamp: "1524240000000",
+          timestamp: "1524240000",
           headImage: prTraining,
           text: [
             {
@@ -102,7 +102,7 @@ const newsdata = [
             en: "月岛机械株式会社（TSK）专家一行访问江苏智道"
           },
           id: "tsk-visit",
-          timestamp: "1524240000000",
+          timestamp: "1522166400",
           headImage: tskVisit,
           text: [
             {
@@ -159,7 +159,7 @@ const newsdata = [
             en: "我司参加2018年南京溧水重大项目集中开工仪式"
           },
           id: "lishui-award",
-          timestamp: "1524240000000",
+          timestamp: "1520179200",
           headImage: liShui3,
           text: [
             {
@@ -216,7 +216,7 @@ const newsdata = [
             en: "热烈祝贺我司“智道”商标获得江苏省、南京市著名商标称号"
           },
           id: "jiangsu-trademark",
-          timestamp: "1524240000000",
+          timestamp: "1494345600",
           headImage: jiangsuTrademark1,
           text: [
             {
@@ -255,7 +255,7 @@ const newsdata = [
             en: "我司受邀参加中国-澳大利亚土壤污染防治和修复研究中心揭牌仪式"
           },
           id: "australia-soil-pollution",
-          timestamp: "1524240000000",
+          timestamp: "1495123200",
           headImage: australiaSoilPollution2,
           text: [
             {
@@ -321,7 +321,7 @@ const newsdata = [
             en: "大家智道，感恩有你--江苏智道2017年终总结表彰暨2018年迎新联欢旅游活动专题报道"
           },
           id: "year-end-ceremony",
-          timestamp: "1524240000000",
+          timestamp: "1518537600",
           headImage: yearEndCeremony1,
           text: [
             {
@@ -540,7 +540,7 @@ const newsdata = [
             en: "《“十二五”节能减排综合性工作方案》政策解读"
           },
           id: "energy-saving-and-emission-reduction-five-Year",
-          timestamp: "1524240000000",
+          timestamp: "1524240000",
           headImage: aboutImg,
           text: [
             {
@@ -881,7 +881,7 @@ const newsdata = [
             en: "节能环保“十二五”规划出炉 2015年产业产值达4.5万亿元"
           },
           id: "energy-saving-and-environmental-protection-12th-five-year-plan",
-          timestamp: "1524240000000",
+          timestamp: "1524240000",
           headImage: aboutImg,
           text: [
             {
@@ -933,7 +933,7 @@ const newsdata = [
             en: "中国石化投巨资推进环保行动"
           },
           id: "sinopec-environmental-action-investment",
-          timestamp: "1524240000000",
+          timestamp: "1524240000",
           headImage: aboutImg,
           text: [
             {

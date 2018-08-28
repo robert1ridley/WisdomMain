@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../styles/news-cards.css';
+import { getDateFromTimestamp } from '../utils/index';
 
 const NewsCards = (props) => {
   const baseLink = props.match.params.id
@@ -28,6 +29,7 @@ const NewsCards = (props) => {
 class SingleMedia extends React.Component {
   render() {
     const { image, header, paragraph, baseLink, postId, timestamp, language } = this.props;
+    let publishDate = getDateFromTimestamp(timestamp, language);
     const headClass = language === 'zh' ? 'chinese-news-card-head' : 'english-news-card-head';
     const dateClass = language === 'zh' ? 'chinese-news-card-date' : 'english-news-card-date';
     const bodyClass = language === 'zh' ? 'chinese-news-card-body' : 'english-news-card-body';
@@ -42,7 +44,7 @@ class SingleMedia extends React.Component {
               <Col lg={7} md={7}>
                 <div>
                   <h4 className={headClass}>{header}</h4>
-                  <p className={dateClass}>2018年4月21日</p>
+                  <p className={dateClass}>{publishDate}</p>
                   <p className={bodyClass}>{paragraph}</p>
                 </div>
               </Col>
