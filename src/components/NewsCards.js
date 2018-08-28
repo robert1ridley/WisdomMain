@@ -1,62 +1,58 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import '../styles/news-cards.css';
 
 const NewsCards = (props) => {
   const baseLink = props.match.params.id
   const { language, data } = props
-  const MediaObjects = data.map(MediaObject =>
-    <SingleMedia 
-      image={MediaObject.headImage}
-      header={MediaObject.head[language]}
-      key={MediaObject.id}
-      postId={MediaObject.id}
-      baseLink={baseLink}
-    />
+  const MediaObjects = data.map(MediaObject => 
+      <SingleMedia
+        image={MediaObject.headImage}
+        header={MediaObject.head[language]}
+        paragraph={MediaObject.text[0].subText[0][language]}
+        key={MediaObject.id}
+        postId={MediaObject.id}
+        baseLink={baseLink}
+        timestamp={MediaObject.timestamp}
+        language={language}
+      />
     )
   return (
     <div className="central-info">
-      <Row>
-        {MediaObjects}
-      </Row>
+      {MediaObjects}
     </div>
   )
 }
 
 class SingleMedia extends React.Component {
-  constructor(props) {
-    super(props)
-    this.toggleHover = this.toggleHover.bind(this);
-
-    this.state = {
-        hover: false
-    };
-}
-
-  toggleHover() {
-    this.setState({hover: !this.state.hover})
-  }
-  
   render() {
-    const linkStyle = this.state.hover === true? 
-      {backgroundColor: '#7ebc59', color: 'white', padding: 10}: 
-      {backgroundColor: 'white', color: 'black', padding: 10};
-    const { image, header, baseLink, postId } = this.props;
+    const { image, header, paragraph, baseLink, postId, timestamp, language } = this.props;
+    const headClass = language === 'zh' ? 'chinese-news-card-head' : 'english-news-card-head';
+    const dateClass = language === 'zh' ? 'chinese-news-card-date' : 'english-news-card-date';
+    const bodyClass = language === 'zh' ? 'chinese-news-card-body' : 'english-news-card-body';
     return (
-      <Col md={4} sm={6} xs={12} className="lower-margin">
+      <div>
         <Link to={`${baseLink}/${postId}`}>
-          <div className="card wow fadeInLeft rounded-card" 
-            onMouseEnter={this.toggleHover} 
-            onMouseLeave={this.toggleHover}
-            style={linkStyle}
-          >
-            <img className="img-fluid" src={image} alt={image} style={styles.image} />
-            <div className="card-body text-center">
-              <h4 className="card-title">{header}</h4>
-            </div>
+          <div className="news-card-item">
+            <Row>
+              <Col lg={5} md={5}>
+                <img className="img-fluid" src={image} alt={image} style={styles.image} />
+              </Col>
+              <Col lg={7} md={7}>
+                <div>
+                  <h4 className={headClass}>{header}</h4>
+                  <p className={dateClass}>2018年4月21日</p>
+                  <p className={bodyClass}>{paragraph}</p>
+                </div>
+              </Col>
+            </Row>
           </div>
         </Link>
-      </Col>
+        <div style={{paddingTop: 20, paddingBottom: 20}}>
+          <hr style={{borderWidth: 1, borderColor: '#333333'}}/>
+        </div>
+      </div>
     )
   }
 }

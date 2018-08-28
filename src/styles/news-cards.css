@@ -1,0 +1,45 @@
+@media (min-width: 768px) {
+  .news-card-item {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+.chinese-news-card-head {
+  font-family: 'PingFangSC-Semibold';
+  font-size: 28px;
+  color: #1951B4;
+}
+
+.english-news-card-head {
+  font-size: 28px;
+  color: #1951B4;
+}
+
+.chinese-news-card-body {
+  font-family: 'PingFangSC-Light';
+  font-size: 20px;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
+.english-news-card-body {
+  font-size: 20px;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
+.chinese-news-card-date {
+  font-family: 'PingFangSC-Light';
+  font-size: 20px;
+  color: #333333c9;
+  letter-spacing: 0;
+}
+
+.english-news-card-date {
+  font-size: 20px;
+  color: #333333c9;
+  letter-spacing: 0;
+}

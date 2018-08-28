@@ -7,3 +7,9 @@ export const getLocationFromParams = (url) => {
     return url[1]
   }
 }
+
+// export const getPublishDate = (timestamp) => {
+//   var date = new Date(timestamp);
+//   console.log(date)
+//   // return date;
+// }

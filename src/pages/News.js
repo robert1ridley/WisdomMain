@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link, Route } from 'react-router-dom';
-import { Image } from 'react-bootstrap';
+import { Route } from 'react-router-dom';
 import {connect} from 'react-redux';
 import NotFound from '../pages/NotFound';
 import Subnav from '../components/Subnav';
@@ -60,7 +59,7 @@ class News extends React.Component {
 
   render() {
     const { language } = this.props;
-    const { activeIndex, windowWidth, notFound } = this.state;
+    const { activeIndex, notFound } = this.state;
     const navData = newsdata;
     if(notFound){
       return(<NotFound />)
@@ -79,7 +78,7 @@ class News extends React.Component {
             childActive={this.changeActive}
             background={styles.subnav}
           />
-          <div className="container">
+          <div className="container main-content-container">
             <Route path={`/news/:id`} exact render={(props) =>
               <NewsCards
                 language={language}
