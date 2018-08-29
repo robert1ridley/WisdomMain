@@ -1,12 +1,8 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import mainCarousel1 from '../images/carousel/test/page-1_slide01.jpg';
-import mainCarousel2 from '../images/carousel/test/page-1_slide02.jpg';
-import mainCarousel3 from '../images/carousel/test/page-1_slide03.jpg';
-import mainCarousel1tiny from '../images/carousel/test/page-1_slide01tiny.jpg';
-import mainCarousel2tiny from '../images/carousel/test/page-1_slide02tiny.jpg';
-import mainCarousel3tiny from '../images/carousel/test/page-1_slide03tiny.jpg';
+import mainCarousel1 from '../images/carousel/carousel1.png';
+import mainCarousel1tiny from '../images/carousel/carousel1-tiny.png';
 import '../styles/carousel.css';
 
 const images = [
@@ -25,8 +21,8 @@ const images = [
     link: "/"
   },
   {
-    image: mainCarousel2, 
-    blurImage: mainCarousel2tiny, 
+    image: mainCarousel1, 
+    blurImage: mainCarousel1tiny, 
     id: 2, 
     head: {
       zh: "董事长致辞",
@@ -39,8 +35,8 @@ const images = [
     link: "/"
   },
   {
-    image: mainCarousel3, 
-    blurImage: mainCarousel3tiny, 
+    image: mainCarousel1, 
+    blurImage: mainCarousel1tiny, 
     id: 3, 
     head: {
       zh: "董事长致辞",
@@ -67,7 +63,7 @@ const images = [
     link: "/"
   },
   {
-    image: mainCarousel2, 
+    image: mainCarousel1, 
     blurImage: mainCarousel1tiny, 
     id: 5, 
     head: {

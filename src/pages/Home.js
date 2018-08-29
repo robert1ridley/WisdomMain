@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-
+import welcomeImage from '../images/welcome-bg.png';
 import '../styles/home.css';
 
 //data imports
@@ -24,7 +24,7 @@ class Home extends React.Component {
       <div>
         <HomeHead />
         <CarouselImages language={language}/>
-        <div className="container main-content-container">
+        <div className="container main-content-container background-loaded" style={styles.mainBackground}>
           <Intro
             data={introdata}
             language={language}
@@ -51,6 +51,12 @@ class Home extends React.Component {
         {/* <BaiduMap language={language}/> */}
       </div>
     )
+  }
+}
+
+const styles = {
+  mainBackground: {
+    backgroundImage: 'url(' + welcomeImage + ')'
   }
 }
 

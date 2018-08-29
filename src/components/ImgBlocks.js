@@ -40,7 +40,6 @@ class Columns extends React.Component {
   render () {
     var linkStyle = this.state.hover === true ? {opacity: 0.5} : {opacity: 0.9};
     return (
-      // <Col lg={2} md={4} xs={6}>
         <Link to={this.props.link}>
           <div className="card full-card" onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover} style={linkStyle}>
             <Image src={this.props.icon} style={{height: "60px"}} />
@@ -49,7 +48,6 @@ class Columns extends React.Component {
             </div>
           </div>
         </Link>
-      // </Col>
     )
   }
 }
