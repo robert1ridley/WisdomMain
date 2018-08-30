@@ -1,13 +1,18 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import {connect} from 'react-redux';
+
+//components
+import Accordion from '../components/Accordion';
 import ProjectsHead from '../headers/ProjectsHead';
 import Subnav from '../components/Subnav';
 import Sidebar from '../components/Sidebar';
 import NotFound from '../pages/NotFound';
 
+//data
 import projectsdata from '../data/projects/projectsdata';
 
+//assets
 import background14 from '../images/subnav/background14.jpg';
 
 class Projects extends React.Component {
@@ -77,7 +82,14 @@ class Projects extends React.Component {
             childActive={this.changeActive}
             background={styles.subnav}
           />
-          <Route path={`/projects/:id`} render={(props) =>
+          <Accordion 
+            data={navData}
+            language={language}
+            currentActive={activeIndex}
+            currentSubActive={subActive}
+            changeSubActive={this.changeSubActive}
+          />
+          {/* <Route path={`/projects/:id`} render={(props) =>
             <Sidebar 
               data={navData}
               language={language}
@@ -86,7 +98,7 @@ class Projects extends React.Component {
               changeSubActive={this.changeSubActive}
               {...props}
             />
-          }/>
+          }/> */}
         </div>
       )
     }
