@@ -41,7 +41,6 @@ class Accordion extends React.Component {
                   <span>
                     <img 
                       src={this.state.activePanelIndex === index ? collapse : expand} 
-                      // style={{float: 'right', marginTop: 7, overflow: 'hidden'}}
                       className={this.state.activePanelIndex === index ? 'panel-collapse' : 'panel-expand'}
                     />
                   </span>
@@ -60,7 +59,7 @@ class Accordion extends React.Component {
                   </Col>
                   <Col md={5} lg={5} style={{paddingRight: 0, paddingLeft: 0}}>
                     <div className="accordion-text-container">
-                      <p className={language==='zh' ? 'panel-chinese' : 'panel-english'}>{item.articleText[language]}</p>
+                      <p className={language === 'zh' ? 'panel-chinese' : 'panel-english'}>{item.articleText[language]}</p>
                     </div>
                   </Col>
                 </Row>
