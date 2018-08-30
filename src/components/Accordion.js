@@ -34,7 +34,7 @@ class Accordion extends React.Component {
                 className={this.state.activePanelIndex === index ? "active-accordion" : "accordion"}
                 onClick={() => this.changeActivePanel(index)}
               >
-                <div className="flex-container">
+                <div className="accordion-flex-container">
                   <span className={language === 'zh' ? 'accordion-chinese' : 'accordion-english'}>
                     {item.articleHead[language]}
                   </span>
