@@ -39,6 +39,19 @@
   }
 }
 
+.panel-expand, .panel-collapse {
+  float: 'right';
+  overflow: 'hidden';
+}
+
+.panel-collapse {
+  margin-top: 18px;
+}
+
+.panel-expand {
+  margin-top: 7px;
+}
+
 .accordion-chinese, .accordion-english {
   font-size: 26px;
   line-height: 37px;

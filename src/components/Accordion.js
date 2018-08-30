@@ -41,7 +41,8 @@ class Accordion extends React.Component {
                   <span>
                     <img 
                       src={this.state.activePanelIndex === index ? collapse : expand} 
-                      style={{float: 'right', marginTop: 7, overflow: 'hidden'}}
+                      // style={{float: 'right', marginTop: 7, overflow: 'hidden'}}
+                      className={this.state.activePanelIndex === index ? 'panel-collapse' : 'panel-expand'}
                     />
                   </span>
                 </div>
