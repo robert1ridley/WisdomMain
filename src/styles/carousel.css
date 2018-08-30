@@ -90,7 +90,8 @@ ol.carousel-indicators {
 .inner {
   margin-left: auto;
   margin-right: auto;
-  width: 600px;
+  /* width: 600px; */
+  width: 728px;
 }
 
 .chinese-carousel-head {
@@ -136,6 +137,12 @@ Add English text styles when given by design
   padding-left: 2%;
   padding-right: 2%;
   background: rgba(0,0,0,0.50);
+}
+
+@media (max-width: 990px) {
+  .inner {
+    width: 600px;
+  }
 }
 
 @media (max-width: 775px) {
