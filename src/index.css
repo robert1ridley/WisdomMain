@@ -327,3 +327,7 @@ div.media-body {
   font-size: 25px;
   content: "\f1d6";
  }
+
+ div#bdshare_weixin_qrcode_dialog {
+   height: unset !important;
+ }
