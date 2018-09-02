@@ -8,7 +8,7 @@ import {createLogger} from 'redux-logger';
 import allReducers from './reducers';
 import App from './App';
 
-// import 'animate.css';
+import 'animate.css';
 import './libs/bootstrap-3.3.6/dist/css/bootstrap.min.css';
 import './libs/font-awesome/css/font-awesome.min.css';
 import './index.css';
