@@ -20,7 +20,7 @@ const NewsCards = (props) => {
       />
     )
   return (
-    <div className="central-info">
+    <div className="news-main-container">
       {MediaObjects}
     </div>
   )
@@ -51,8 +51,8 @@ class SingleMedia extends React.Component {
             </Row>
           </div>
         </Link>
-        <div style={{paddingTop: 20, paddingBottom: 20}}>
-          <hr style={{borderWidth: 1, borderColor: '#333333'}}/>
+        <div style={{paddingTop: 30, paddingBottom: 30}}>
+          <hr style={{borderWidth: 1, borderColor: '#7F7F7F', marginTop: 0, marginBottom: 0}}/>
         </div>
       </div>
     )

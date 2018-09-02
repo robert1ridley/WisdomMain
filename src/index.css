@@ -6,6 +6,9 @@ div.container.main-content-container {
   padding-left: 55px;
   padding-right: 55px;
   width: 100%;
+
+  /* NEW MAX WIDTH */
+  max-width: 1280px;
 }
 
 @media (max-width: 786px) {

@@ -24,16 +24,18 @@ class Home extends React.Component {
       <div>
         <HomeHead />
         <CarouselImages language={language}/>
-        <div className="container main-content-container background-loaded" style={styles.mainBackground}>
-          <Intro
-            data={introdata}
-            language={language}
-            color={'black'}
-          />
-          <ImgBlocks 
-            data={imgblockdata}
-            language={language}
-          />
+        <div className="background-loaded" style={styles.mainBackground}>
+          <div className="container main-content-container">
+            <Intro
+              data={introdata}
+              language={language}
+              color={'black'}
+            />
+            <ImgBlocks 
+              data={imgblockdata}
+              language={language}
+            />
+          </div>
         </div>
         <div style={{backgroundColor: '#022E7B'}}>
           <div className="container main-content-container">

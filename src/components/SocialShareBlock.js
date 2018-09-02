@@ -61,6 +61,7 @@ const styles = {
   },
 
   hoverButton: {
-    backgroundColor: 'rgb(85, 87, 91)'
+    backgroundColor: '#1951B4',
+    opacity: 0.6
   }
 }
