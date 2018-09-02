@@ -301,3 +301,29 @@ div.media-body {
   color: white !important;
   cursor: pointer;
 }
+
+
+/* SOCIAL SHARE */
+.bds_weixin, .bds_tsina, .bds_qzone {
+  padding-left: 0px !important;
+  color: #FFFFFF;
+  padding-top: 30px;
+}
+
+.bds_weixin:after {
+  font-family: FontAwesome;
+  font-size: 25px;
+  content: "\f1d7"
+ }
+
+ .bds_tsina:after {
+  font-family: FontAwesome;
+  font-size: 25px;
+  content: "\f18a";
+ }
+
+ .bds_qzone:after {
+  font-family: FontAwesome;
+  font-size: 25px;
+  content: "\f1d6";
+ }

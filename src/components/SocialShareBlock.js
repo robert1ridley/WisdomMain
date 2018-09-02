@@ -2,13 +2,19 @@ import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 
 export default class SocialShareBlock extends React.Component {
+  componentDidMount() {
+    var script = document.createElement('script');
+    script.src = "http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion=408841";
+    document.body.appendChild(script);  
+  }
+
   render () {
     return (
-      <Row className="central-info wow fadeInLeft">
+      <Row className="central-info">
         <Col md={3} sm={3} />
-        <SocialItem img="fa fa-facebook fa-3x circle-child"/>
-        <SocialItem img="fa fa-weixin fa-3x circle-child"/>
-        <SocialItem img="fa fa-weibo fa-3x circle-child"/>
+          <SocialItem itemClass="bds_weixin" data="weixin" />
+          <SocialItem itemClass="bds_tsina" data="tsina" />
+          <SocialItem itemClass="bds_qzone" data="qzone" />
         <Col md={3} sm={4} />
       </Row>
     )
@@ -39,11 +45,16 @@ class SocialItem extends React.Component {
             onMouseLeave={this.toggleHover}
             style={buttonStyle}
           >
-            <a className="white" href="/">
-              <div style={styles.fill}>
-                <i className={this.props.img} aria-hidden="true"></i>
+            <div className="bdsharebuttonbox" data-tag="share_1">
+              <div style={styles.fill} className="white">
+                <a 
+                  className={this.props.itemClass} 
+                  data-cmd={this.props.data}
+                  style={{width:80, height: 80, margin: 0, backgroundImage: 'none'}} 
+                  href="javascript:;"
+                />
               </div>
-            </a>
+            </div>
           </div>
       </Col>
     )
