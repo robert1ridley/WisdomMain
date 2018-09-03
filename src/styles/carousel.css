@@ -68,11 +68,37 @@ ol.carousel-indicators {
 }
 
 .carousel-control {
-  /* background-color: #F5A623; */
   width: 55px;
-  /* opacity: 0.4; */
 }
 
+/* REMOVE DEFAULT INDICATORS AND ADD CUSTOMIZED ONES */
+.glyphicon-chevron-left::before {
+  content: ' ';
+  display: block;
+  background-image: url(../images/icons/arrow-left.png);
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.glyphicon-chevron-right::before {
+  content: ' ';
+  display: block;
+  background-image: url(../images/icons/arrow-right.png);
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  span.glyphicon.glyphicon-chevron-left, span.glyphicon.glyphicon-chevron-right {
+    width: 20px;
+    height: 20px;
+  }
+
+  .glyphicon-chevron-left::before, .glyphicon-chevron-right::before {
+    background-size: 12.5px 20px;
+  }
+}
+/* REMOVE DEFAULT INDICATORS AND ADD CUSTOMIZED ONES */
 
 /* TEXT STYLES */
 .outer {

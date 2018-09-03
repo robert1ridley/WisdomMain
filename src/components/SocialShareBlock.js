@@ -39,23 +39,23 @@ class SocialItem extends React.Component {
     var buttonStyle = !this.state.hover === true? styles.regButton: styles.hoverButton;
     return (
       <Col md={2} sm={2} xs={12}>
-          <div 
-            className="circle lower-margin"
-            onMouseEnter={this.toggleHover}
-            onMouseLeave={this.toggleHover}
-            style={buttonStyle}
-          >
-            <div className="bdsharebuttonbox" data-tag="share_1">
-              <div style={styles.fill} className="white">
-                <a 
-                  className={this.props.itemClass} 
-                  data-cmd={this.props.data}
-                  style={{width:80, height: 80, margin: 0, backgroundImage: 'none'}} 
-                  href="javascript:;"
-                />
-              </div>
+        <div 
+          className="circle lower-margin"
+          onMouseEnter={this.toggleHover}
+          onMouseLeave={this.toggleHover}
+          style={buttonStyle}
+        >
+          <div className="bdsharebuttonbox" data-tag="share_1">
+            <div style={styles.fill} className="white">
+              <a 
+                className={this.props.itemClass} 
+                data-cmd={this.props.data}
+                style={{width:80, height: 80, margin: 0, backgroundImage: 'none'}} 
+                href="javascript:;"
+              />
             </div>
           </div>
+        </div>
       </Col>
     )
   }
