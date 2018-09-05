@@ -33,7 +33,8 @@ export default class MainContactForm extends React.Component {
     emailError: null,
     messageError: null,
     sendingError: null,
-    isSnackBarVisible: false
+    isSnackBarVisible: false,
+    submissionPending: false
   }
   
   updateContactData = (event) => {
@@ -41,6 +42,7 @@ export default class MainContactForm extends React.Component {
   }
 
   formSubmit = () => {
+    this.setState({ submissionPending: true });
     const { name, email, message } = this.state;
     const payload = {
       name: name,
@@ -63,16 +65,21 @@ export default class MainContactForm extends React.Component {
           nameError: data.error.name,
           emailError: data.error.email,
           messageError: data.error.message,
-          sendingError: data.error.sendingError
+          sendingError: data.error.sendingError,
+          submissionPending: false
         })
       }
       else {
         this.setState({
+          name: '',
+          email: '',
+          message: '',
           nameError: null,
           emailError: null,
           messageError: null,
           sendingError: null,
-          isSnackBarVisible: true
+          isSnackBarVisible: true,
+          submissionPending: false
         })
         setTimeout (() => { 
           this.setState({
@@ -97,9 +104,10 @@ export default class MainContactForm extends React.Component {
         <FormGroup bsSize="large">
           <FormControl
             name="name"
-            type="name" 
+            type="name"
+            value={this.state.name}
             placeholder={data.name} 
-            className="form-entry" 
+            className="form-entry"
             onChange={this.updateContactData}
             required
           />
@@ -111,7 +119,8 @@ export default class MainContactForm extends React.Component {
         <FormGroup bsSize="large">
           <FormControl 
             name="email"
-            type="email" 
+            type="email"
+            value={this.state.email}
             placeholder={data.email} 
             className="form-entry" 
             onChange={this.updateContactData}
@@ -125,6 +134,7 @@ export default class MainContactForm extends React.Component {
         <FormGroup controlId="formControlsTextarea" bsSize="large">
           <FormControl
             name="message"
+            value={this.state.message}
             componentClass="textarea" 
             placeholder={data.message}
             rows="6" 
@@ -137,7 +147,11 @@ export default class MainContactForm extends React.Component {
             <HelpBlock>{this.state.messageError}</HelpBlock>
           }
         </FormGroup>
-        <Button onClick={this.formSubmit} className="form-submit">
+        <Button 
+          onClick={this.formSubmit} 
+          className="form-submit"
+          disabled={this.state.submissionPending}
+        >
           {data.send}
         </Button>
         {/* SNACKBAR */}
