@@ -24,7 +24,7 @@ export default class ContactForm extends React.Component {
   render () {
     var data = this.props.language === "zh"? placeholders.chinese: placeholders.english;
     return (
-      <form method="post" action="/consult">
+      <form>
         <FormGroup bsSize="large">
           <FormControl 
             type="name" 

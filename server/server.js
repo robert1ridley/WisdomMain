@@ -9,6 +9,9 @@ import Loadable from 'react-loadable';
 // Our loader - this basically acts as the entry point for each page load
 import loader from './loader';
 
+// apis
+const contact = require('./api/contact');
+
 // Create our express app using the port optionally specified
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -37,6 +40,9 @@ app.use(compression());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(morgan('dev'));
+
+//apis
+app.post('/consult', bodyParser.json(), contact.emailAdmin);
 
 // Set up homepage, static assets, and capture everything else
 app.use(express.Router().get('/', loader));
