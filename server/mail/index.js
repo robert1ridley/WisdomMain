@@ -15,8 +15,8 @@ exports.consultEmail = function(name, email, emailMessage) {
   }));
       
   let message = {
-      from: `${name} <wisdomtest@protonmail.com>`,
-      to: 'Wisdom Employee <wisdomtest@protonmail.com>',
+      from: `${name} <${process.env.MAIL_CLIENT}>`,
+      to: `Wisdom Employee <${process.env.MAIL_CLIENT}>`,
       subject: 'Consult',
       html: `<p>${emailMessage}</p></br/><p style="color: #6a6f7c">Sender email: ${email}</p>`
   };
