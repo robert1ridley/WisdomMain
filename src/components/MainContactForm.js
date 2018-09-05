@@ -3,7 +3,12 @@ import { FormGroup, FormControl, Button, HelpBlock } from 'react-bootstrap';
 import { processResponse } from '../utils/index';
 import '../styles/snackbar.css';
 
-const BASE_URL = 'http://localhost:3000';
+if (typeof document !== 'undefined') {
+  var pathArray = document.location.href.split( '/' );
+  var protocol = pathArray[0];
+  var host = pathArray[2];
+  var BASE_URL = protocol + '//' + host;
+}
 
 const placeholders = {
   chinese:
