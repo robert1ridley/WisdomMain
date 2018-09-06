@@ -6,42 +6,21 @@ import morgan from 'morgan';
 import path from 'path';
 import Loadable from 'react-loadable';
 
-// Our loader - this basically acts as the entry point for each page load
 import loader from './loader';
 
-// apis
-const contact = require('./api/contact');
+// Controllers
+const contact = require('./controllers/contactController');
 
-// Create our express app using the port optionally specified
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// NOTE: UNCOMMENT THIS IF YOU WANT THIS FUNCTIONALITY
-/*
-  Forcing www and https redirects in production, totally optional.
 
-  http://mydomain.com
-  http://www.mydomain.com
-  https://mydomain.com
-
-  Resolve to: https://www.mydomain.com
-*/
-// if (process.env.NODE_ENV === 'production') {
-//   app.use(
-//     forceDomain({
-//       hostname: 'www.mydomain.com',
-//       protocol: 'https'
-//     })
-//   );
-// }
-
-// Compress, parse, log, and raid the cookie jar
 app.use(compression());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(morgan('dev'));
 
-//apis
+//API endpoints
 app.post('/consult', bodyParser.json(), contact.emailAdmin);
 
 // Set up homepage, static assets, and capture everything else
@@ -49,12 +28,12 @@ app.use(express.Router().get('/', loader));
 app.use(express.static(path.resolve(__dirname, '../build')));
 app.use(loader);
 
-// We tell React Loadable to load all required assets and start listening - ROCK AND ROLL!
+// Use React Loadable to load required assets
 Loadable.preloadAll().then(() => {
   app.listen(PORT, console.log(`App listening on port ${PORT}!`));
 });
 
-// Handle the bugs somehow
+// Handle errors
 app.on('error', error => {
   if (error.syscall !== 'listen') {
     throw error;

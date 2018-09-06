@@ -1,4 +1,5 @@
-const mail = require('../mail/index');
+const mail = require('../mail');
+const consult = require('../models/mailModels/ConsultMessage');
 const validator = require('validator');
 
 exports.emailAdmin = function(req, res, err) {
@@ -12,10 +13,10 @@ exports.emailAdmin = function(req, res, err) {
     return errorsObject;
   }
   
-  const deliverPayload = mail.consultEmail(name, email, message);
-  const { transporter, messageDetails } = deliverPayload;
+  const emailTransporter = mail.emailTransporter();
+  const messageDetails = consult.ConsultMessage(name, email, message);
   
-  transporter.sendMail(messageDetails, function(error, info){
+  emailTransporter.sendMail(messageDetails, function(error, info){
     if(error){
       errorsObject.isError = true;
       errorsObject.sendingError = "发送消息有问题。";
