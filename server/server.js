@@ -22,6 +22,7 @@ app.use(morgan('dev'));
 
 //API endpoints
 app.post('/consult', bodyParser.json(), contact.emailAdmin);
+app.post('/jobenquiry', bodyParser.json(), contact.jobEnquiry);
 
 // Set up homepage, static assets, and capture everything else
 app.use(express.Router().get('/', loader));

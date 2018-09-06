@@ -36,8 +36,7 @@ export default class PopModal extends React.Component {
     var buttonStyle = !this.state.hover === true? styles.regButton: styles.hoverButton;
     return (
       <div>
-        <Button 
-          className="wiggle-me"
+        <Button
           onMouseEnter={this.mouseIn} 
           onMouseLeave={this.mouseOut}
           onClick={this.open} 
@@ -48,7 +47,7 @@ export default class PopModal extends React.Component {
             <ContactForm 
               language = {this.props.language}
               close = {this.close}
-              staffMember = {this.props.name}
+              position = {this.props.name}
             />
           </Modal.Body>
         </Modal>
