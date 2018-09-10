@@ -10,6 +10,10 @@ import loader from './loader';
 
 // Controllers
 const contact = require('./controllers/contactController');
+const users = require('./controllers/userController');
+
+// db instance connection
+require("./config/db");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -23,6 +27,9 @@ app.use(morgan('dev'));
 //API endpoints
 app.post('/consult', bodyParser.json(), contact.emailAdmin);
 app.post('/jobenquiry', bodyParser.json(), contact.jobEnquiry);
+app.post('/users/add', bodyParser.json(), users.createNewUser);
+app.get('/users', bodyParser.json(), users.listAllUsers);
+app.get('/login/send', bodyParser.json(), users.readUser);
 
 // Set up homepage, static assets, and capture everything else
 app.use(express.Router().get('/', loader));
