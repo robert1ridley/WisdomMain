@@ -37,7 +37,7 @@ class Home extends React.Component {
             />
           </div>
         </div>
-        <div style={{backgroundColor: '#022E7B'}}>
+        <div style={{backgroundColor: 'rgba(27, 147, 210, 0.8)'}}>
           <div className="container main-content-container">
             <Intro 
               data={newsintrodata}

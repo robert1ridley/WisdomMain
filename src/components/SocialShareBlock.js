@@ -68,11 +68,11 @@ const styles = {
   },
 
   regButton: {
-    backgroundColor: '#1951B4'
+    backgroundColor: '#1B93D2'
   },
 
   hoverButton: {
-    backgroundColor: '#1951B4',
+    backgroundColor: '#1B93D2',
     opacity: 0.6
   }
 }

@@ -15,7 +15,7 @@ const images = [
       en: "Chairman's Speech"
     },
     body: {
-      zh: "客户成功，才有智道的成功；",
+      zh: "膜技术工程应用领先者",
       en: "Our success depends on the success of customers;"
     },
     link: "/"
@@ -29,7 +29,7 @@ const images = [
       en: "Chairman's Speech"
     },
     body: {
-      zh: "客户的信赖与支持，智道才能稳步、健康的发展；",
+      zh: "节能环保系统优化解决专家；",
       en: "The trust and support of customers help us grow stably;"
     },
     link: "/"
@@ -43,7 +43,7 @@ const images = [
       en: "Chairman's Speech"
     },
     body: {
-      zh: "优秀的员工和先进的技术，奠定了智道成功的基石；",
+      zh: "远程智能监控运营维护管家；",
       en: "The foundation of our success is excellent employees and advanced technologies;"
     },
     link: "/"
@@ -57,22 +57,8 @@ const images = [
       en: "Chairman's Speech"
     },
     body: {
-      zh: "现代管理模式和高效执行能力，使智道工程超越客户期望；",
+      zh: "科技净化环境与客户共成功！",
       en: "We serve customers better with our modern management and efficient performance;"
-    },
-    link: "/"
-  },
-  {
-    image: mainCarousel1, 
-    blurImage: mainCarousel1tiny, 
-    id: 5, 
-    head: {
-      zh: "董事长致辞",
-      en: "Chairman's Speech"
-    },
-    body: {
-      zh: "智道致力于：科技净化环境，与客户共成功！",
-      en: "We devote ourselves to making the world more beautiful through advanced technologies and sharing success with customers."
     },
     link: "/"
   }

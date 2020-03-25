@@ -38,8 +38,8 @@ class SingleMedia extends React.Component {
   
   render() {
     const linkStyle = this.state.hover === true? 
-      {opacity: 0.5, backgroundColor: '#FFFFFF'}: 
-      {opacity: 1, backgroundColor: '#FFFFFF'};
+      {opacity: 0.5, backgroundColor: '#FFFFFF', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'}: 
+      {opacity: 1, backgroundColor: '#FFFFFF', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'};
     const { image, header, text } = this.props;
     return (
       <Col md={4} sm={6} xs={12} className="lower-margin">
@@ -51,14 +51,9 @@ class SingleMedia extends React.Component {
           >
           <figure className="wp-caption">
             <img className="img-fluid" src={image} alt={image} style={styles.image} />
-            <figcaption 
-              className="wp-caption-text"
-              style={this.props.language === "zh" ? styles.wpCaptionTextChinese : styles.wpCaptionTextEnglish}
-            >
-              {header}
-            </figcaption>
           </figure>
             <div className="text-center card-body">
+              <h4 style={styles.headerInCard}><strong>{header}</strong></h4>
               <p 
                 className="card-text clampMe"
                 style={this.props.language === "zh" ? styles.smallCaptionChinese : styles.smallCaptionEnglish}
@@ -109,6 +104,10 @@ const styles = {
     letterSpacing: 0,
     textAlign: 'center',
     lineHeight: '22px',
+  },
+
+  headerInCard: {
+    marginTop: 0
   }
 }
 

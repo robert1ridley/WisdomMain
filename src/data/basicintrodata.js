@@ -6,7 +6,7 @@ const basicintrodata = [
   {
     id: 1,
     head: {
-      zh: "企业概况",
+      zh: "智道简介",
       en: "About us"
     },
     text: {
@@ -18,7 +18,7 @@ const basicintrodata = [
   {
     id: 2,
     head: {
-      zh: "主营业务",
+      zh: "膜技术工程应用",
       en: "Services"
     },
     text: {
@@ -30,7 +30,7 @@ const basicintrodata = [
   {
     id: 3,
     head: {
-      zh: "社会责任",
+      zh: "企业新闻",
       en: "Social Responsibility"
     },
     text: {

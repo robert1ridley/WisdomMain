@@ -19,7 +19,7 @@ a.navbar-brand {
   height: 100% !important;
   padding-left: 55px;
   padding-bottom: 12px;
-  padding-top: 8px;
+  padding-top: 12px;
 }
 
 @media (min-width: 768px) {

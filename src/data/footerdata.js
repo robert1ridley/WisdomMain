@@ -1,6 +1,6 @@
 const footerdata = {
   chinese: {
-    pagehead: {text: "我们的客户包括", link: "/"},
+    pagehead: {text: "合作伙伴&友情链接", link: "/"},
     footerItems:[
       {
         header: {text: "关于智道", link:"/about/about-wisdom"},
