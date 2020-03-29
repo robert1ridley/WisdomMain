@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import shareImg from '../images/share-bg.png';
-import Intro from '../components/Intro';
+import IntroHead from '../components/IntroHead';
 import SocialShareBlock from '../components/SocialShareBlock';
 import sharingdata from '../data/sharingdata';
 
@@ -14,7 +14,7 @@ class SocialShare extends React.Component {
           className="background-loaded"
         >
           <div className="container main-content-container">
-            <Intro 
+            <IntroHead 
               data={sharingdata}
               language={this.props.language}
               color={'white'}

@@ -2,49 +2,52 @@ import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import mainCarousel1 from '../images/carousel/carousel1.png';
+import mainCarousel2 from '../images/carousel/carousel2.png';
+import mainCarousel3 from '../images/carousel/carousel3.jpg';
+import mainCarousel4 from '../images/carousel/carousel4.jpg';
 import mainCarousel1tiny from '../images/carousel/carousel1-tiny.png';
 import '../styles/carousel.css';
 
 const images = [
   {
-    image: mainCarousel1, 
+    image: mainCarousel2, 
     blurImage: mainCarousel1tiny, 
     id: 1, 
     head: {
-      zh: "董事长致辞",
+      zh: "江苏智道使命",
       en: "Chairman's Speech"
     },
     body: {
       zh: "膜技术工程应用领先者",
-      en: "Our success depends on the success of customers;"
+      en: "Our success depends on the success of customers"
     },
     link: "/"
   },
   {
-    image: mainCarousel1, 
+    image: mainCarousel3, 
     blurImage: mainCarousel1tiny, 
     id: 2, 
     head: {
-      zh: "董事长致辞",
+      zh: "江苏智道使命",
       en: "Chairman's Speech"
     },
     body: {
-      zh: "节能环保系统优化解决专家；",
-      en: "The trust and support of customers help us grow stably;"
+      zh: "节能环保系统优化解决专家",
+      en: "The trust and support of customers help us grow stably"
     },
     link: "/"
   },
   {
-    image: mainCarousel1, 
+    image: mainCarousel4, 
     blurImage: mainCarousel1tiny, 
     id: 3, 
     head: {
-      zh: "董事长致辞",
+      zh: "江苏智道使命",
       en: "Chairman's Speech"
     },
     body: {
-      zh: "远程智能监控运营维护管家；",
-      en: "The foundation of our success is excellent employees and advanced technologies;"
+      zh: "远程智能监控运营维护管家",
+      en: "The foundation of our success is excellent employees and advanced technologies"
     },
     link: "/"
   },
@@ -53,12 +56,12 @@ const images = [
     blurImage: mainCarousel1tiny, 
     id: 4, 
     head: {
-      zh: "董事长致辞",
+      zh: "江苏智道使命",
       en: "Chairman's Speech"
     },
     body: {
-      zh: "科技净化环境与客户共成功！",
-      en: "We serve customers better with our modern management and efficient performance;"
+      zh: "科技净化环境，与客户共成功！",
+      en: "We serve customers better with our modern management and efficient performance"
     },
     link: "/"
   }
@@ -92,17 +95,17 @@ class ImageDiv extends React.Component {
             <div className="outer">
               <div className="middle">
                 <div className="inner">
-                  <h3
-                    className={language === "zh" ? "chinese-carousel-head" : "english-carousel-head"}
-                  >
-                    {data.head[language]}
-                  </h3>
                   <div className="carousel-body-text">
-                    <p
+                    <h3
                       className={language === "zh" ? "chinese-carousel-body" : "english-carousel-body"}
                     >
+                      江苏智道––
+                    </h3>
+                    <h3
+                      className={language === "zh" ? "chinese-carousel-head" : "english-carousel-head"}
+                    >
                       {data.body[language]}
-                    </p>
+                    </h3>
                   </div>
                 </div>
               </div>

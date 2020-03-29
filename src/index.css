@@ -11,6 +11,15 @@ div.container.main-content-container {
   max-width: 1280px;
 }
 
+div.container.full-width-container {
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
+
+  /* NEW MAX WIDTH */
+  max-width: 1280px;
+}
+
 @media (max-width: 786px) {
   div.container.main-content-container {
     padding-left: 22px;
@@ -26,6 +35,13 @@ div.container.main-content-container {
 .central-info {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.stats-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  /* padding-left: 300px;
+  padding-right: 150px; */
 }
 
 /* INTRO SECTION COLOR THEMES */

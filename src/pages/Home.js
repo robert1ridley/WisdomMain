@@ -15,6 +15,8 @@ import CarouselImages from '../components/CarouselImages';
 import Intro from '../components/Intro';
 import ImgBlocks from '../components/ImgBlocks';
 import MediaObjects from '../components/MediaObjects';
+import Stats from '../components/Stats';
+import AboutBlocks from '../components/AboutBlocks'
 // import BaiduMap from '../components/BaiduMap';
 
 class Home extends React.Component {
@@ -25,21 +27,16 @@ class Home extends React.Component {
         <HomeHead />
         <CarouselImages language={language}/>
         <div className="background-loaded" style={styles.mainBackground}>
-          <div className="container main-content-container">
-            <Intro
-              data={introdata}
+          <div className="main-content-container container">
+            <Stats
               language={language}
               color={'black'}
             />
-            <ImgBlocks 
-              data={imgblockdata}
-              language={language}
-            />
           </div>
         </div>
-        <div style={{backgroundColor: 'rgba(27, 147, 210, 0.8)'}}>
-          <div className="container main-content-container">
-            <Intro 
+        <div style={{backgroundColor: '#eef0f1'}}>
+          {/* <div className="container main-content-container" style={{backgroundColor: '#eef0f1'}}> */}
+            {/* <Intro 
               data={newsintrodata}
               language={language}
               color={'white'}
@@ -47,8 +44,16 @@ class Home extends React.Component {
             <MediaObjects 
               data={basicintrodata}
               language={language}
-            />
-          </div>
+            /> */}
+            {/* <AboutBlocks
+              language={language}
+              color={'black'}
+            /> */}
+          {/* </div> */}
+          <AboutBlocks
+            language={language}
+            color={'black'}
+          />
         </div>
         {/* <BaiduMap language={language}/> */}
       </div>

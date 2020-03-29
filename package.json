@@ -13,6 +13,7 @@
     "nodemailer-ses-transport": "^1.5.1",
     "prettier": "^1.13.4",
     "react": "^16.4.0",
+    "react-animated-number": "^0.4.4",
     "react-bootstrap": "^0.31.5",
     "react-dom": "^16.4.0",
     "react-frontload": "^1.0.1",
