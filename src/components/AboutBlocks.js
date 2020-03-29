@@ -18,7 +18,7 @@ const head = {
 }
 
 const subHead = {
-    'zh': '以膜应用为核心，集成创新优化系统的节能环保专家',
+    'zh': '以膜应用为核心，综合诊断，集成优化系统的节能环保专家',
     'en': 'Not only reducing pollution, but also providing ecomonic benefits'
 }
 
@@ -80,8 +80,8 @@ const AboutBlocks = (props) => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col md={6} />
-                    <Col md={6}>
+                    <Col md={5} />
+                    <Col md={7}>
                         <h1 
                             className={color === "white" ? "light" : "dark"}
                             style= {language === "zh" ? styles.chineseBigHead : styles.englishBigHead}

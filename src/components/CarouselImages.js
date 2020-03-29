@@ -6,12 +6,15 @@ import mainCarousel2 from '../images/carousel/carousel2.png';
 import mainCarousel3 from '../images/carousel/carousel3.jpg';
 import mainCarousel4 from '../images/carousel/carousel4.jpg';
 import mainCarousel1tiny from '../images/carousel/carousel1-tiny.png';
+import mainCarousel2tiny from '../images/carousel/carousel2-tiny.png';
+import mainCarousel3tiny from '../images/carousel/carousel3-tiny.jpg';
+import mainCarousel4tiny from '../images/carousel/carousel4-tiny.jpg';
 import '../styles/carousel.css';
 
 const images = [
   {
     image: mainCarousel2, 
-    blurImage: mainCarousel1tiny, 
+    blurImage: mainCarousel2tiny, 
     id: 1, 
     head: {
       zh: "江苏智道使命",
@@ -25,7 +28,7 @@ const images = [
   },
   {
     image: mainCarousel3, 
-    blurImage: mainCarousel1tiny, 
+    blurImage: mainCarousel3tiny, 
     id: 2, 
     head: {
       zh: "江苏智道使命",
@@ -39,7 +42,7 @@ const images = [
   },
   {
     image: mainCarousel4, 
-    blurImage: mainCarousel1tiny, 
+    blurImage: mainCarousel4tiny, 
     id: 3, 
     head: {
       zh: "江苏智道使命",
