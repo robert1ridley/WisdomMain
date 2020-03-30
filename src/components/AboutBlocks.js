@@ -95,7 +95,7 @@ const AboutBlocks = (props) => {
                 </Row>
             </div>
             <div>
-                <Row style={{marginTop: 50, marginBottom: 100}}>
+                <Row style={{paddingTop: 50, paddingBottom: 100, backgroundColor: '#eef0f1'}}>
                     {image_urls.map((img, idx) => 
                         <AboutBlockSingle 
                             img={img}
@@ -177,8 +177,4 @@ const styles = {
         fontSize: 20,
         marginTop: '40px !important',
     },
-
-    white: {
-        color: '#FFFFFF !important'
-    }
 }

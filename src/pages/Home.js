@@ -35,21 +35,6 @@ class Home extends React.Component {
           </div>
         </div>
         <div style={{backgroundColor: '#eef0f1'}}>
-          {/* <div className="container main-content-container" style={{backgroundColor: '#eef0f1'}}> */}
-            {/* <Intro 
-              data={newsintrodata}
-              language={language}
-              color={'white'}
-            />
-            <MediaObjects 
-              data={basicintrodata}
-              language={language}
-            /> */}
-            {/* <AboutBlocks
-              language={language}
-              color={'black'}
-            /> */}
-          {/* </div> */}
           <AboutBlocks
             language={language}
             color={'black'}
