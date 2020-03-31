@@ -41,6 +41,11 @@
     height: auto;
   }
 
+  .hvrbox-text-vis {
+    width: 100%;
+    margin-left: 5%;
+  }
+
   .hvrbox img {
     max-width: 100%;
   }
@@ -99,7 +104,7 @@
 
   .hvrbox .hvrbox-text-vis {
     text-align: center;
-    font-size: 26px;
+    font-size: 34px;
     display: inline-block;
     position: absolute;
     top: 55%;
