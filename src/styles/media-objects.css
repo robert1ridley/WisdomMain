@@ -67,10 +67,6 @@
     padding: 15px;
     font-weight: 500;
     z-index: 2;
-    -moz-transition: all 0.4s ease-in-out 0s;
-    -webkit-transition: all 0.4s ease-in-out 0s;
-    -ms-transition: all 0.4s ease-in-out 0s;
-    transition: all 0.4s ease-in-out 0s;
   }
 
   .visible {
@@ -92,6 +88,10 @@
     font-size: 20px;
     font-weight: 500;
     opacity: 0;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
   }
 
   .hvrbox:hover .hvrbox-layer_top,
@@ -100,6 +100,14 @@
   .visible > .hvrbox-text-vis 
   > #invis {
     opacity: 1;
+  }
+
+  .hvrbox:hover > 
+  .visible > .hvrbox-text-vis {
+    -moz-transform: translate(-55%, -70%);
+    -webkit-transform: translate(-55%, -70%);
+    -ms-transform: translate(-55%, -70%);
+    transform: translate(-55%, -70%);
   }
 
   .hvrbox .hvrbox-text-vis {
@@ -113,6 +121,11 @@
     -webkit-transform: translate(-55%, -50%);
     -ms-transform: translate(-55%, -50%);
     transform: translate(-55%, -50%);
+
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
   }
 
   .hvrbox .hvrbox-text_mobile {
