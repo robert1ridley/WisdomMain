@@ -40,9 +40,7 @@ class AboutBlockSingle extends React.Component {
 
   render() {
     const { language, img } = this.props;
-    const linkStyle = this.state.hover === true? 
-      {opacity: 0.5, backgroundColor: '#FFFFFF'}: 
-      {opacity: 1, backgroundColor: '#FFFFFF'};
+    const linkStyle = {opacity: 1, backgroundColor: '#FFFFFF'};
 
     return(
         <Col md={4} style={{paddingLeft: 5, paddingRight: 5}}>
@@ -51,16 +49,15 @@ class AboutBlockSingle extends React.Component {
                     onMouseEnter={this.toggleHover} 
                     onMouseLeave={this.toggleHover}
                     style={linkStyle}
+                    className = "hvrbox"
                 >
-                    <figure className="wp-caption">
-                        <img src={img.img} className="img-fluid" style={{width: '100%'}}/>
-                        <figcaption 
-                            className="wp-caption-text"
-                            style={language === "zh" ? styles.wpCaptionTextChinese : styles.wpCaptionTextEnglish}
-                        >
-                            {img[language]}
-                        </figcaption>
-                    </figure>
+                    <img src={img.img} className="img-fluid hvrbox-layer_bottom" style={{width: '100%'}}/>
+                    <div className="visible">
+                        <div className="hvrbox-text-vis">
+                            <div>{img[language]}</div>
+                            <div className="hvrbox-text" id="invis">了解更多</div>
+                        </div>
+                    </div>
                 </div>
             </Link>
         </Col>)
