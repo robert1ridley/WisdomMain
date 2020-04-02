@@ -13,9 +13,9 @@ const Certified = (props) => {
 			</h1>
 			<Row>
 				{sectionData.text.map((cert, index) => 
-					<Col md={3} key={index}>
-						<div className="rounded-apt-card">
-							<p style={{paddingTop: 20}} className="text-center chinese-section-body">{cert[language]}</p>
+					<Col md={3} sm={4} xs={6} key={index} style={{borderSpacing: '0px 10px'}}>
+						<div className="rounded-apt-card text-center chinese-section-body" style={{verticalAlign: 'middle', width: 'inherit', display: 'table-cell'}}>
+							{cert[language]}
 						</div>
 					</Col>
 				)}
