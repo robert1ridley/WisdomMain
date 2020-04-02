@@ -8,7 +8,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 import headers from '../data/headersdata';
 import { getLocationFromParams } from '../utils/index';
 import '../styles/sitenav.css';
-import logo from '../images/logo-orig.jpg';
+import logo from '../images/logo-orig2.png';
 
 class SiteNav extends React.Component {
   state = {

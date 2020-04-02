@@ -91,7 +91,6 @@ class Solutions extends React.Component {
 
 const styles = {
   subnav: {
-    paddingBottom: 30, 
     background: 'url(' + background14 + ')'
   }
 }

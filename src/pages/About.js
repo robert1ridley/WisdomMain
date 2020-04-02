@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import { Route } from 'react-router-dom';
 
 import AboutHead from '../headers/AboutHead';
-import ParagraphsNew from '../components/NEW/ParagraphsNew';
+import CompanyAbout from '../components/CompanyAbout';
 import Subnav from '../components/Subnav';
 import Timeline from '../components/Timeline';
 import Certified from '../components/Certified';
@@ -12,7 +12,6 @@ import NotFound from '../pages/NotFound';
 import '../styles/timeline.css';
 
 import aboutheaddata from '../data/about/aboutheaddata';
-// import aboutdatabasic from '../data/about/aboutdatabasic';
 import aboutdatabasic from '../data/NEW/aboutdatabasic';
 
 import background14 from '../images/subnav/background14.jpg';
@@ -84,12 +83,7 @@ class About extends React.Component {
                 switch(navData[activeIndex].template) {
                   case('standard'):
                     return (
-                      <ParagraphsNew
-                        language={language}
-                        data={navData}
-                        index={activeIndex}
-                        {...props}
-                      />
+                      <CompanyAbout language={language}/>
                     )
                   case('timeline'):
                     return (
@@ -120,8 +114,7 @@ class About extends React.Component {
 }
 
 const styles = {
-  subnav: {
-    paddingBottom: 30, 
+  subnav: { 
     background: 'url(' + background14 + ')'
   }
 }

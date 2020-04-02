@@ -1,6 +1,6 @@
 const aboutheaddata = {
   head: {
-    zh: "关于智道",
+    zh: "走进智道",
     en: "About Wisdom"
   },
   body: {

@@ -1,12 +1,8 @@
-.chinese-list-body {
-  font-family: 'PingFangSC-Regular';
-  font-size: 24px;
-  color: #333333;
-  letter-spacing: 0;
-  line-height: 32px;
-}
-
-.english-list-body {
-  font-size: 22px;
-  color: #333333;
+.rounded-apt-card {
+	border-style: solid;
+  	border-width: 0.5px;
+	border-color: #d0d4d6;
+	border-radius: 15px;
+	padding: 5px;
+	margin-bottom: 15px;
 }

@@ -1,353 +1,377 @@
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 div.container.main-content-container {
-  padding-left: 55px;
-  padding-right: 55px;
-  width: 100%;
+	padding-left: 55px;
+	padding-right: 55px;
+	width: 100%;
 
-  /* NEW MAX WIDTH */
-  max-width: 1280px;
+	/* NEW MAX WIDTH */
+	max-width: 1280px;
 }
 
 div.container.full-width-container {
-  padding-left: 0px;
-  padding-right: 0px;
-  width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 100%;
 
-  /* NEW MAX WIDTH */
-  max-width: 1280px;
+	/* NEW MAX WIDTH */
+	max-width: 1280px;
+}
+
+.component-container {
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 @media (max-width: 786px) {
-  div.container.main-content-container {
-    padding-left: 22px;
-    padding-right: 22px;
-    width: 100%;
-  }
+  	div.container.main-content-container {
+		padding-left: 22px;
+		padding-right: 22px;
+		width: 100%;
+  	}
 }
 
 .white {
-  color: #FFFFFF !important;
+  	color: #FFFFFF !important;
+}
+
+.chinese-section-header {
+	font-size: 26px;
+	font-family: "PingFangSC-Semibold";
+	padding-bottom: 20px;
+}
+
+.chinese-section-body {
+	font-size: 18px;
+	font-family: "PingFangSC-Light";
+	line-height: '30px';
+	padding-bottom: 10px;
+}
+
+.chinese-section-sub-header-blue {
+	font-size: 24px;
+	font-family: "PingFangSC-Semibold";
+	color: '#4495CD';
+	padding-bottom: 20px;
 }
 
 .central-info {
-  margin-top: 50px;
-  margin-bottom: 50px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 .stats-container {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  /* padding-left: 300px;
-  padding-right: 150px; */
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 /* INTRO SECTION COLOR THEMES */
 h1.dark {
-  color: #000000;
-  margin-bottom: 40px;
+	color: #000000;
+	margin-bottom: 40px;
 }
 
 p.dark {
-  color: #666666;
+  	color: #666666;
 }
 
 h1.light {
-  margin-bottom: 40px;
+  	margin-bottom: 40px;
 }
 
 .light {
-  color: #FFFFFF;
+  	color: #FFFFFF;
 }
 /* INTRO SECTION COLOR THEMES */
 
 .chinese-big-head {
-  font-family: "PingFangSC-Semibold";
-  font-size: 26px;
-  color: #000000;
-  letter-spacing: 0.2px;
+	font-family: "PingFangSC-Semibold";
+	font-size: 26px;
+	color: #000000;
+	letter-spacing: 0.2px;
 }
 
 .big-head {
-  font-weight: 500;
-  font-size: 2em;
+	font-weight: 500;
+	font-size: 2em;
 }
 
 .chinese-big-body {
-  font-family: "PingFangSC-Semibold";
-  font-size: 18px;
-  color: #666666;
-  letter-spacing: 0.14px;
-  text-align: center;
-  line-height: 24px;
-  margin-top: 40px !important;
+	font-family: "PingFangSC-Semibold";
+	font-size: 18px;
+	color: #666666;
+	letter-spacing: 0.14px;
+	text-align: center;
+	line-height: 24px;
+	margin-top: 40px !important;
 }
 
 .big-body {
-  font-weight: 100;
-  font-size: 20px;
-  margin-top: 40px !important;
+	font-weight: 100;
+	font-size: 20px;
+	margin-top: 40px !important;
 }
 
 .medium-head {
-  margin-top: 10px;
-  font-weight: 300;
-  font-size: 20px;
+	margin-top: 10px;
+	font-weight: 300;
+	font-size: 20px;
 }
 
 .medium-body {
-  font-weight: 100;
-  font-size: 16px;
-  margin-top: 20px;
+	font-weight: 100;
+	font-size: 16px;
+	margin-top: 20px;
 }
 
 .chinese-caps {
-  font-family: PingFangSC-Medium;
-  font-size: 18px;
-  color: #FFFFFF;
-  letter-spacing: 0.14px;
-  text-align: center;
-  margin-top: 20px;
+	font-family: PingFangSC-Medium;
+	font-size: 18px;
+	color: #FFFFFF;
+	letter-spacing: 0.14px;
+	text-align: center;
+	margin-top: 20px;
 }
 
 /* IMAGE BLOCK */
 
 .rounded-card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	background-color: white;
 }
 
 .rounded-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .card-body {
-  padding-top: 32px;
-  padding-left: 28px;
-  padding-right: 28px;
-  padding-bottom: 34px;
+	padding-top: 32px;
+	padding-left: 28px;
+	padding-right: 28px;
+	padding-bottom: 34px;
 }
 
 .responsive-padding {
-  padding: 40px;
+  	padding: 40px;
 }
 
 @media (max-width: 768px) {
-  .responsive-padding {
-    padding: 20px;
-  }
+	.responsive-padding {
+    	padding: 20px;
+  	}
 }
 
 a:hover, a:focus, div.media-body:hover, div.media-body:hover {
-  text-decoration: none;
+  	text-decoration: none;
 }
 
 .black-text:hover, .black-text:focus, .black-text {
-  color: black;
+  	color: black;
 }
 
 div.media-body {
-  color: black;
+  	color: black;
 }
 
 /* form styles */
 .form-entry {
-  font-weight: 100;
-  border-radius: 0px !important;
+	font-weight: 100;
+	border-radius: 0px !important;
 }
 
 .form-submit, .form-close {
-  border-radius: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10;
-  padding-bottom: 10;
-  font-size: 14;
-  font-weight: 100;
-  margin-right: 10px;
+	border-radius: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10;
+	padding-bottom: 10;
+	font-size: 14;
+	font-weight: 100;
+	margin-right: 10px;
 }
 
 .form-submit {
-  background-color: #7ebc59;
-  color: white;
+	background-color: #7ebc59;
+	color: white;
 }
 
 .circle {
-  width:80px;
-  line-height: 80px;
-  border-radius:40px;
-  color:#fff;
-  text-align:center;
-  background:#7ebc59;
-  margin: 0 auto;
+	width:80px;
+	line-height: 80px;
+	border-radius:40px;
+	color:#fff;
+	text-align:center;
+	background:#7ebc59;
+	margin: 0 auto;
 }
 
 .upper-margin {
-  margin-top: 30px !important;
+  	margin-top: 30px !important;
 }
 
 .lower-margin {
-  margin-bottom: 30px;
+  	margin-bottom: 30px;
 }
 
 .both-margin {
-  margin-top: 30px;
-  margin-bottom: 30px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .big-lower-margin {
-  margin-bottom: 80px;
+  	margin-bottom: 80px;
 }
 
 .media-height {
-  min-height: 80px;
-  position: relative;
+	min-height: 80px;
+	position: relative;
 }
 
 .vert-align {
-  margin-left: 30px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+	margin-left: 30px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .block {
-  vertical-align: middle;
-  line-height: normal;
+	vertical-align: middle;
+	line-height: normal;
 }
 
 .circle-child {
-  font-size:30px;
-  vertical-align: middle;
-  width: 100%;
+	font-size:30px;
+	vertical-align: middle;
+	width: 100%;
 }
 
 .center-img {
-  margin: 0 auto;
-  width: 100%;
+	margin: 0 auto;
+	width: 100%;
 }
 
 /* clap text in image block text */
 .clampMe {
-  position: relative;
-  height: 4em; 
-  overflow: hidden;
-  line-height: 1.29;
-  margin-bottom: 0px;
+	position: relative;
+	height: 4em; 
+	overflow: hidden;
+	line-height: 1.29;
+	margin-bottom: 0px;
 }
 
 .clampMe:after {
-  content: "";
-  text-align: right;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 50%;
-  height: 60px; /* Just use multiples of the line-height */
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 80%);
+	content: "";
+	text-align: right;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 50%;
+	height: 60px; /* Just use multiples of the line-height */
+	background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 80%);
 }
 
 /*support -webkit-line-clamp and overwrite the non-supportive stuff */
 @supports (-webkit-line-clamp: 2) {
-  .clampMe {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-  }
+	.clampMe {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+  	}
   
   .clampMe:after {
-    display: none;
-  }
+    	display: none;
+  	}
 }
 
 .center-div {
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-  text-align: center;
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	text-align: center;
 }
 
 .background-loading, .background-loaded {
-  background-repeat: no-repeat;
-  background-position: center center !important;
-  background-attachment: fixed !important;
-  background-size: cover !important;
-  min-height: 565;
+	background-repeat: no-repeat;
+	background-position: center center !important;
+	background-attachment: fixed !important;
+	background-size: cover !important;
+	min-height: 565;
 }
 
 .background-header {
-  background-repeat: no-repeat;
-  background-position: center center !important;
-  background-size: cover !important;
-  min-height: 565;
+	display: flex;
+	background-repeat: no-repeat;
+	background-position: center center !important;
+	background-size: cover !important;
+	min-height: 565;
 }
 
 .background-loading {
-  filter: blur(20px);
+  	filter: blur(20px);
 }
 
 /* NEW */
 .img-container {
-  position: relative;
-  width: 100%;
+	position: relative;
+	width: 100%;
 }
 
 .caption {
-  position: absolute;
-  background-color: #292929;
-  color: white;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 10px;
-  opacity: 0.8;
+	position: absolute;
+	background-color: #292929;
+	color: white;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 10px;
+	opacity: 0.8;
 }
 
 .caption p {
-  margin: 0px !important;
+  	margin: 0px !important;
 }
 
 .green-hover:hover {
-  background-color: #7ebc59;
-  color: white !important;
-  cursor: pointer;
+	background-color: #7ebc59;
+	color: white !important;
+	cursor: pointer;
 }
 
 
 /* SOCIAL SHARE */
 .bds_weixin, .bds_tsina, .bds_qzone {
-  padding-left: 0px !important;
-  color: #FFFFFF;
-  padding-top: 30px;
+	padding-left: 0px !important;
+	color: #FFFFFF;
+	padding-top: 30px;
 }
 
 .bds_weixin:after {
-  font-family: FontAwesome;
-  font-size: 25px;
-  content: "\f1d7"
+	font-family: FontAwesome;
+	font-size: 25px;
+	content: "\f1d7"
  }
 
  .bds_tsina:after {
-  font-family: FontAwesome;
-  font-size: 25px;
-  content: "\f18a";
+	font-family: FontAwesome;
+	font-size: 25px;
+	content: "\f18a";
  }
 
  .bds_qzone:after {
-  font-family: FontAwesome;
-  font-size: 25px;
-  content: "\f1d6";
+	font-family: FontAwesome;
+	font-size: 25px;
+	content: "\f1d6";
  }
 
  div#bdshare_weixin_qrcode_dialog {
-   height: unset !important;
+	height: unset !important;
  }
 
  .bdshare-button-style0-16 a:hover, .bdshare-button-style0-16 a:focus {
-   color: #FFFFFF !important;
+	color: #FFFFFF !important;
  }

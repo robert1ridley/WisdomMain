@@ -1,7 +1,7 @@
 const headers = {
   chinese: [
     {head: "首页", icon: "glyphicon glyphicon-home", id: 1, link: "/"},
-    {head: "关于智道", icon: "glyphicon glyphicon-info-sign", id: 2, link: "/about/about-wisdom"},
+    {head: "走进智道", icon: "glyphicon glyphicon-info-sign", id: 2, link: "/about/about-wisdom"},
     {head: "新闻中心", icon: "glyphicon glyphicon-blackboard", id: 3, link: "/news/enterprise"},
     {head: "决定方案", icon: "glyphicon glyphicon-pushpin", id: 4, link: "/solutions/oil-and-gas-recovery-and-voc-control"},
     {head: "工程业绩", icon: "glyphicon glyphicon-certificate", id: 5, link: "/projects/oil-and-gas-recovery"},

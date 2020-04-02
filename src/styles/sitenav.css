@@ -31,7 +31,7 @@ a.navbar-brand {
 
   .clicked>a {
     border-bottom-style: solid;
-    border-bottom-color: #1951B4;
+    border-bottom-color: rgb(68, 149, 205);
     border-bottom-width: 5px;
     padding-bottom: 28px !important;
   }

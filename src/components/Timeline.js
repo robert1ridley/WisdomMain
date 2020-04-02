@@ -31,8 +31,9 @@ class Timeline extends React.Component {
     const { language, data, index } = this.props;
     const { smallScreen } = this.state;
     return (
-      <div className="container">
-        <ul className="timeline" style={{marginTop: 50}}>
+      <div className="container component-container">
+        <h1 className="text-center chinese-section-header">大事记</h1>
+        <ul className="timeline">
         {
           data[index].text.map((item, index) =>
           <li 

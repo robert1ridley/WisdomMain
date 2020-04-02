@@ -190,174 +190,76 @@ const aboutdatabasic = [
     },
     text: [
       {
-        subHead: {
-          zh: "资质荣誉",
-          en: "Aptitude honor"
-        },
-        subText: [
-          {
-            zh: "• 资质/荣誉",
-            en: "• Chinese high-tech enterprise"
-          },
-          {
-            zh: "• 国家高新技术企业 ",
-            en: "• Grade B environmental engineering design qualification"
-          },
-          {
-            zh: "• 环境工程专项乙级资质 ",
-            en: "• Design qualification of level D pressure vessel"
-          },
-          {
-            zh: "• D级压力容器设计资质",
-            en: "• Design qualification of level GC1 pressure piping"
-          },
-          {
-            zh: "• GC1类压力管道设计资质",
-            en: "• Graduate workstation of jiangsu province"
-          },
-          {
-            zh: "• 江苏省研究生工作站",
-            en: "• Famous trade mark in jiangsu province"
-          },
-          {
-            zh: "• 江苏省著名商标",
-            en: "• Famous trade mark in nanjing"
-          },
-          {
-            zh: "• 南京市著名商标",
-            en: "• Nanjing enterprise technology center"
-          },
-          {
-            zh: "• 南京市企业技术中心",
-            en: "• Qualification of A2 pressure container manufacturing"
-          },
-          {
-            zh: "• A2级压力容器制造资质",
-            en: "• One of the fifth batch of energy-conserving companies"
-          },
-          {
-            zh: "• 国家第五批合同能源管理企业",
-            en: "• Member of the Sinopec Resource Market"
-          },
-          {
-            zh: "• 中石化市场成员单位",
-            en: "• Network supplier of China National Chemical Corporation"
-          },
-          {
-            zh: "• 中国化工集团网络成员单位",
-            en: "• Jiangsu private technology enterprise"
-          },
-          {
-            zh: "• 江苏省民营科技企业",
-            en: "• AAA credit rating enterprise"
-          },
-          {
-            zh: "• AAA级资信等级企业",
-            en: "• Qualification of ISO9001 quality management system"
-          },
-          {
-            zh: "• ISO9001质量管理体系认证",
-            en: "• Qualification of ISO14001 environmental management system"
-          },
-          {
-            zh: "• ISO14001环境管理体系认证",
-            en: "• OHSAS18001 occupational health and safety management system"
-          },
-          {
-            zh: "• OHSAS18001职业健康安全管理体系认证",
-            en: ""
-          }
-        ],
-        imgUrl: [
-          {
-            image: image3,
-            caption: {
-              zh: "",
-              en: ""
-            }
-          }
-        ]
-      },     
+        zh: "资质/荣誉",
+        en: "Chinese high-tech enterprise"
+      },
       {
-        subHead: {
-          zh: "自主知识产权/专利公司拥有数十项专利和自主知识产权技术",
-          en: "Proprietary intellectual rights/Patents"
-        },
-        subText: [
-          {
-            zh: "• 一种SBS生产中回收环己烷溶剂的系统 ",
-            en: "• Cyclohexane Recycling System Applied in SBS Manufacturing"
-          },
-          {
-            zh: "• 高效冷凝集油分离器",
-            en: "• High-Performance Condensing Oil Separator"
-          },
-          {
-            zh: "• 高效自散热式稳态吸附塔",
-            en: "• High-Performance Self-Radiating Absorption Tower"
-          },
-          {
-            zh: "• 一种治理低浓度VOCs废气的系统",
-            en: "• System Treating Low-Density VOCs Exhaust Gas"
-          },
-          {
-            zh: "• 一种SBS生产中回收环己烷溶剂的方法及系统",
-            en: "• Cyclohexane Recycling Method and System Applied in SBS Manufacturing"
-          },
-          {
-            zh: "• 炼油厂硫磺装置集硫坑内挥发性尾气回收装置",
-            en: "• Volatile Tail Gas Recycling Apparatus in Sulphur Collectors of Sulphur Apparatuses in Oil Plants"
-          },
-          {
-            zh: "• 一种治理低浓度VOCs废气的系统和工艺",
-            en: "• System and Process Treating Low-Density VOCs Exhaust Gas"
-          },
-          {
-            zh: "• 一种炼油厂硫磺装置集硫坑内挥发性尾气回收工艺及装置",
-            en: "• Volatile Tail Gas Recycling Process and Apparatus in Sulphur Collectors of Sulphur Apparatuses in Oil Plants"
-          },
-          {
-            zh: "• 一种氨纶干法纺丝介质循环方法及系统",
-            en: "• Recycling Method and System of Spandex Dry Spinning"
-          },
-          {
-            zh: "• 一种串行塔活性碱基超高效脱硫系统",
-            en: "• High-Performance Desulfurization System of Serial Active Alkali"
-          },
-          {
-            zh: "• 一种串行塔活性碱基超高效脱硫装置",
-            en: "• High-Performance Desulfurization Apparatus of Serial Active Alkali"
-          },
-          {
-            zh: "• 一种耐用防露堵组合式烟气余热利用装置",
-            en: "• Durable Anti-Leak and Anti-Block Apparatus of Flue gas Waste Heat Utilization"
-          },
-          {
-            zh: "• 工业炉烟气低温热量利用方法",
-            en: "• Utilization Method of Low-Temperature Industrial Furnace Flue gas Heat"
-          },
-          {
-            zh: "• 蓄热式跨临界烟气余热回收设备",
-            en: "• Regenerative Recycling Apparatus of Transcritical Flue gas Waste Heat"
-          },
-          {
-            zh: "• 一种旋风分离燃烧蓄热管式加热炉",
-            en: "• Tubing Heating Furnace with Cyclone Separator and Combustion Heat-Storage"
-          },
-          {
-            zh: "• 适用于燃料气工况的工业炉窑燃烧烟气余热回收系统",
-            en: "• Flue gas Waste Heat Recycling System of Industrial Furnace Combustion Applied in Fuel Gas Working Status"
-          }
-        ],
-        imgUrl: [
-          {
-            image: image4,
-            caption: {
-              zh: "",
-              en: ""
-            }
-          }
-        ]
+        zh: "国家高新技术企业 ",
+        en: "Grade B environmental engineering design qualification"
+      },
+      {
+        zh: "环境工程专项乙级资质 ",
+        en: "Design qualification of level D pressure vessel"
+      },
+      {
+        zh: "D级压力容器设计资质",
+        en: "Design qualification of level GC1 pressure piping"
+      },
+      {
+        zh: "GC1类压力管道设计资质",
+        en: "Graduate workstation of jiangsu province"
+      },
+      {
+        zh: "江苏省研究生工作站",
+        en: "Famous trade mark in jiangsu province"
+      },
+      {
+        zh: "江苏省著名商标",
+        en: "Famous trade mark in nanjing"
+      },
+      {
+        zh: "南京市著名商标",
+        en: "Nanjing enterprise technology center"
+      },
+      {
+        zh: "南京市企业技术中心",
+        en: "Qualification of A2 pressure container manufacturing"
+      },
+      {
+        zh: "A2级压力容器制造资质",
+        en: "One of the fifth batch of energy-conserving companies"
+      },
+      {
+        zh: "国家第五批合同能源管理企业",
+        en: "Member of the Sinopec Resource Market"
+      },
+      {
+        zh: "中石化市场成员单位",
+        en: "Network supplier of China National Chemical Corporation"
+      },
+      {
+        zh: "中国化工集团网络成员单位",
+        en: "Jiangsu private technology enterprise"
+      },
+      {
+        zh: "江苏省民营科技企业",
+        en: "AAA credit rating enterprise"
+      },
+      {
+        zh: "AAA级资信等级企业",
+        en: "Qualification of ISO9001 quality management system"
+      },
+      {
+        zh: "ISO9001质量管理体系认证",
+        en: "Qualification of ISO14001 environmental management system"
+      },
+      {
+        zh: "ISO14001环境管理体系认证",
+        en: "OHSAS18001 occupational health and safety management system"
+      },
+      {
+        zh: "OHSAS18001职业健康安全管理体系认证",
+        en: "OHSAS18001职业健康安全管理体系认证"
       }
     ],
     id: 'aptitude-honor',
@@ -371,10 +273,61 @@ const aboutdatabasic = [
     text: [
       {
         subHead: {
+          zh: "2020年",
+          en: "2020"
+        },
+        subText: [
+          {
+            zh: "2020年1月，公司成立膜事业部，与江苏省产业技术研究院膜科学技术研究所/南京膜材料产业技术研究院有限公司进行工程化深入合作",
+            en: "2020年1月，公司成立膜事业部，与江苏省产业技术研究院膜科学技术研究所/南京膜材料产业技术研究院有限公司进行工程化深入合作"
+          }
+        ]
+      },
+      
+      {
+        subHead: {
+          zh: "2019年",
+          en: "2019"
+        },
+        subText: [
+          {
+            zh: "2019年11月，中美绿色合作伙伴项目顺利结业",
+            en: "2019年11月，中美绿色合作伙伴项目顺利结业"
+          },
+          {
+            zh: "2019年8月，成为国家工信部2019年度工业节能诊断服务提供单位",
+            en: "2019年8月，成为国家工信部2019年度工业节能诊断服务提供单位"
+          }
+        ]
+      },
+
+      {
+        subHead: {
+          zh: "2018年",
+          en: "2018"
+        },
+        subText: [
+          {
+            zh: "2018年8月，成功中标马钢炼焦总厂焦炉烟气脱硫脱硝EPC总承包项目",
+            en: "2018年8月，成功中标马钢炼焦总厂焦炉烟气脱硫脱硝EPC总承包项目"
+          },
+          {
+            zh: "2018年7月，“氨纶SM-HEX系统热管换热器项目” 荣获2018年江苏省循环经济协会科学技术奖特等奖",
+            en: "2018年7月，“氨纶SM-HEX系统热管换热器项目” 荣获2018年江苏省循环经济协会科学技术奖特等奖"
+          }
+        ]
+      },
+
+      {
+        subHead: {
           zh: "2017年",
           en: "2017"
         },
         subText: [
+          {
+            zh: "2017年7月，公司成为南京节能环保产业协会会长单位",
+            en: "2017年7月，公司成为南京节能环保产业协会会长单位"
+          },
           {
             zh: "2017年4月， 《石化行业有机废气资源化回收与净化技术研发及产业化》项目获得南京市科学技术进步奖三等奖。",
             en: "In April 2017, The Project Won The Third Prize Of Nanjing Science And Technology Progress Award In The Project Of 'Organic Waste Gas Recovery And Purification Technology Development And Industrialization Of Petrochemical Industry'."

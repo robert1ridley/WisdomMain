@@ -7,29 +7,31 @@ const Subnav = (props) => {
   const { aboutData, currentActive, childActive, language, background, intro, path } = props;
   const navButtons = aboutData.map((navButton, index) => 
     <Link to={`/${path}/${navButton.id}`} key={index}>
-      <button 
+      <span 
         style={currentActive===index? styles.activeButton: styles.regularButton} 
         onClick={() => childActive(index)}
         key={index}
       >
         {navButton.head[language]}
-      </button>
+      </span>
     </Link>
   )
   return (
-    <div style={{backgroundColor: '#595959'}}>
+    <div>
       <div
         className={"background-header"} 
         style={background}>
-        <div className="container main-content-container">
-          <SharedIntro
-            language={language}
-            data={intro}
-          />
-          <div style={{marginBottom: 40}}>
-            {navButtons}
+        <div style={{alignItems: 'stretch', width: '100%', backgroundColor: 'rgba(68, 149, 205, 0.4)'}}>
+          <div className="container main-content-container" style={{marginTop: '40px', marginBottom: '40px'}}>
+            <SharedIntro
+              language={language}
+              data={intro}
+            />
           </div>
         </div>
+      </div>
+      <div className='container' style={{paddingTop: 20, paddingBottom: 17}}>
+        {navButtons}
       </div>
     </div>
   )
@@ -37,36 +39,37 @@ const Subnav = (props) => {
 
 const styles = {
   regularButton: {
-    background: '#FFFFFF',
-    border: '1px solid #1951B4',
+    border: '0px',
+    borderBottom: '0px',
     whiteSpace: 'normal',
     paddingTop: 13,
     paddingBottom: 14,
-    paddingRight: 42,
-    paddingLeft: 42,
+    marginRight: 56,
+    // paddingLeft: 32,
 
-    fontFamily: 'PingFangSC-Semibold',
-    fontSize: '20px',
-    color: '#1951B4',
-    letterSpacing: '0.16px',
+    fontFamily: 'PingFangSC-Regular',
+    fontSize: '16px',
+    color: '#5F6464',
     textAlign: 'center',
   },
 
   activeButton: {
-    background: '#1951B4',
-    border: '1px solid #1951B4',
+    border: '0px',
+    borderBottom: '2px solid rgb(68, 149, 205)',
     whiteSpace: 'normal',
     paddingTop: 13,
     paddingBottom: 14,
-    paddingRight: 42,
-    paddingLeft: 42,
+    marginRight: 56,
+    // paddingLeft: 32,
 
-    fontFamily: 'PingFangSC-Semibold',
-    fontSize: '20px',
-    color: '#FFFFFF',
+    fontFamily: 'PingFangSC-Regular',
+    fontSize: '16px',
+    color: '#2a2e2e',
     letterSpacing: '0.16px',
     textAlign: 'center',
   }
+
+
 }
 
 export default Subnav;

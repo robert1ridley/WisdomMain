@@ -20,7 +20,7 @@ const NewsCards = (props) => {
       />
     )
   return (
-    <div className="news-main-container">
+    <div className="news-main-container" style={{marginTop: 30}}>
       {MediaObjects}
     </div>
   )
