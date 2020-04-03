@@ -43,7 +43,7 @@ class AboutBlockSingle extends React.Component {
     const linkStyle = {opacity: 1, backgroundColor: '#FFFFFF'};
 
     return(
-        <Col md={4} style={{paddingLeft: 5, paddingRight: 5}}>
+        <Col md={4} style={{paddingLeft: 5, paddingRight: 5, marginBottom: 15}}>
             <Link to={img.link}>
                 <div
                     onMouseEnter={this.toggleHover} 
@@ -71,8 +71,8 @@ const AboutBlocks = (props) => {
         <div>
             <div className="container main-content-container" style={{backgroundColor: '#eef0f1', paddingTop: 100}}>
                 <Row>
-                    <Col md={9}/>
-                    <Col md={3}>
+                    <Col md={9} sm={6} xs={3}/>
+                    <Col md={3} sm={6} xs={9}>
                         <div style={{borderTop: '15px solid #4495CD'}}/>
                     </Col>
                 </Row>

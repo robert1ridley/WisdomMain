@@ -176,6 +176,10 @@ Add English text styles when given by design
   .inner {
     width: 600px;
   }
+
+  .carousel-control.left, .carousel-control.right {
+    background: rgba(255,255,255, 0);
+  }
 }
 
 @media (max-width: 775px) {

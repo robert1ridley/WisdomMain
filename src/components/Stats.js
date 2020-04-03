@@ -77,7 +77,7 @@ const Stats = (props) => {
     return(
         <div className="stats-container">
             <Row>
-                <Col md={3}>
+                <Col md={3} sm={6} xs={9}>
                     <div style={{borderTop: '15px solid #86B728'}}/>
                 </Col>
             </Row>
