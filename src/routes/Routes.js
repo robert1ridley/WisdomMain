@@ -26,16 +26,34 @@ const News = Loadable({
   modules: ['News']
 });
 
-const Solutions = Loadable({
-  loader: () => import(/* webpackChunkName: "Solutionspage" */ '../pages/Solutions'),
+const Mission = Loadable({
+  loader: () => import(/* webpackChunkName: "Missionpage" */ '../pages/Mission'),
   loading: () => null,
-  modules: ['Solutions']
+  modules: ['Mission']
 });
 
-const Projects = Loadable({
-  loader: () => import(/* webpackChunkName: "Projectspage" */ '../pages/Projects'),
+const Membrane = Loadable({
+  loader: () => import(/* webpackChunkName: "Membranepage" */ '../pages/Membrane'),
   loading: () => null,
-  modules: ['Projects']
+  modules: ['Membrane']
+});
+
+const VOC = Loadable({
+  loader: () => import(/* webpackChunkName: "VOCpage" */ '../pages/VOC'),
+  loading: () => null,
+  modules: ['VOC']
+});
+
+const Desulph = Loadable({
+  loader: () => import(/* webpackChunkName: "Desulphpage" */ '../pages/Desulph'),
+  loading: () => null,
+  modules: ['Desulph']
+});
+
+const Comp = Loadable({
+  loader: () => import(/* webpackChunkName: "Comppage" */ '../pages/Comp'),
+  loading: () => null,
+  modules: ['Comp']
 });
 
 const Contact = Loadable({
@@ -82,9 +100,12 @@ export default () => (
       <Route path="/" exact component={Home}/>
       <Route path="/about/:id" exact component={About}/>
       <Route path="/innovation/:id" exact component={Innovation}/>
+      <Route path="/mission" exact component={Mission}/>
+      <Route path="/mission/membrane/:id" exact component={Membrane}/>
+      <Route path="/mission/voc/:id" exact component={VOC}/>
+      <Route path="/mission/desulph/:id" exact component={Desulph}/>
+      <Route path="/mission/comprehensive/:id" exact component={Comp}/>
       <Route path="/news/:id" component={News}/>
-      <Route path="/solutions/:id" exact component={Solutions}/>
-      <Route path="/projects/:id" exact component={Projects}/>
       <Route path="/contact" exact component={Contact}/>
       <Route path="*" component={NotFound}/>
     </Switch>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SharedIntro from '../components/SharedIntro';
+import SubNoNav from './SubNoNav';
 
 const Subnav = (props) => {
   const { aboutData, currentActive, childActive, language, background, intro, path } = props;
@@ -17,18 +17,7 @@ const Subnav = (props) => {
   )
   return (
     <div>
-      <div
-        className={"background-header"} 
-        style={background}>
-        <div style={{alignItems: 'stretch', width: '100%', backgroundColor: 'rgba(68, 149, 205, 0.4)'}}>
-          <div className="container main-content-container" style={{marginTop: '40px', marginBottom: '40px'}}>
-            <SharedIntro
-              language={language}
-              data={intro}
-            />
-          </div>
-        </div>
-      </div>
+      <SubNoNav language={language} intro={intro} background={background} />
       <div className='container' style={{paddingTop: 20, paddingBottom: 17}}>
         {navButtons}
       </div>

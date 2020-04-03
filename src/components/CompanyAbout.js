@@ -117,7 +117,7 @@ const companyCultureData = {
 const BasicIntro = (props) => {
     const { language } = props;
     return (
-        <div className="container component-container" style={styles.componentContainer}>
+        <div className="container component-container">
             <h1 className="text-center chinese-section-header">{basicIntroData[language].head}</h1>
             {basicIntroData[language].body.map((bodyItem, index) => 
                 <p key={index} className="chinese-section-body">{bodyItem}</p>

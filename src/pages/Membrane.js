@@ -1,0 +1,115 @@
+import React from 'react';
+import {connect} from 'react-redux';
+import { Route } from 'react-router-dom';
+
+import MembraneHead from '../headers/MembraneHead';
+import MembraneTech from '../components/MembraneTech';
+import MembraneCases from '../components/MembraneCases';
+import Subnav from '../components/Subnav';
+import NotFound from '../pages/NotFound';
+
+import membraneheaddata from '../data/membrane/membraneheaddata';
+import membranebasic from '../data/membrane/membranebasic';
+
+import membraneBackground from '../images/mission/membrane-background.png';
+
+class Membrane extends React.Component {
+  constructor() {
+    super();
+    this.changeActive = this.changeActive.bind(this);
+    this.state = { 
+      activeIndex: 0,
+      notFound: false
+    }
+  }
+
+  changeActive(active) {
+    this.setState({ activeIndex: active })
+  }
+
+  componentWillReceiveProps(nextProps) {
+    const pageId = nextProps.match.params.id;
+    if (this.props.match.params.id !== pageId){
+      const foundIndex = membranebasic.findIndex((el) => (el.id === pageId));
+      foundIndex<0 ?
+      this.setState ({
+        notFound: true
+      }):
+      this.setState({
+        activeIndex: foundIndex
+      })
+    }
+  }
+
+  componentDidMount() {
+    const pageId = this.props.match.params.id;
+    const foundIndex = membranebasic.findIndex((el) => (el.id === pageId));
+    foundIndex<0 ?
+      this.setState ({
+        notFound: true
+      }):
+    this.setState({
+      activeIndex: foundIndex
+    })
+  }
+  
+  render() {
+    const { activeIndex, notFound } = this.state;
+    const { language } = this.props;
+    const navData = membranebasic;
+    if(notFound){
+      return (<NotFound/>)
+    }
+    else{
+      return (
+        <div>
+          <MembraneHead />
+          <Subnav
+            path="mission/membrane"
+            language={language}
+            intro={membraneheaddata}
+            aboutData={navData}
+            currentActive={activeIndex}
+            childActive={this.changeActive}
+            background={styles.subnav}
+          />
+          {
+            <Route path={`/mission/membrane/:id`} exact render={(props) => 
+              {
+                console.log(navData[activeIndex].template)
+                switch(navData[activeIndex].template) {
+                  case('standard'):
+                    return (
+                      <MembraneTech language={language}/>
+                    )
+                  case('standard2'):
+                    return (
+                      <MembraneCases
+                        language={language}
+                        {...props}
+                      />
+                    )
+                }
+              }            
+            }/>
+          }
+        </div>
+      )
+    }
+  }
+}
+
+const styles = {
+  subnav: { 
+    background: 'url(' + membraneBackground + ')'
+  }
+}
+
+function mapStateToProps(state) {
+  console.log(state.language)
+  return {
+      language: state.language
+  };
+}
+
+export default connect(mapStateToProps)(Membrane);
