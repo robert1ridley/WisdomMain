@@ -1,9 +1,4 @@
 import image1 from '../../images/about/about.jpg';
-import image2 from '../../images/about/structure.jpg';
-import image3 from '../../images/about/achievements1.jpg';
-import image4 from '../../images/about/achievements2.jpg';
-import image5 from '../../images/about/social1.jpg';
-import image6 from '../../images/about/social2.jpg';
 
 const aboutdatabasic = [
   {

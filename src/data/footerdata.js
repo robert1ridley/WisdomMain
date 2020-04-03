@@ -3,7 +3,7 @@ const footerdata = {
     pagehead: {text: "合作伙伴&友情链接", link: "/"},
     footerItems:[
       {
-        header: {text: "关于智道", link:"/about/about-wisdom"},
+        header: {text: "走进智道", link:"/about/about-wisdom"},
         subItems: [
           {text: "公司概况", link:"/about/about-wisdom"},
           {text: "资质荣誉", link: "/about/aptitude-honor"},

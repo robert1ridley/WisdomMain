@@ -3,21 +3,11 @@ import {connect} from 'react-redux';
 import welcomeImage from '../images/welcome-bg.png';
 import '../styles/home.css';
 
-//data imports
-import introdata from '../data/introdata';
-import imgblockdata from '../data/imgblockdata';
-import basicintrodata from '../data/basicintrodata';
-import newsintrodata from '../data/newsintrodata';
-
 //component imports
 import HomeHead from '../headers/HomeHead';
 import CarouselImages from '../components/CarouselImages';
-import Intro from '../components/Intro';
-import ImgBlocks from '../components/ImgBlocks';
-import MediaObjects from '../components/MediaObjects';
 import Stats from '../components/Stats';
 import AboutBlocks from '../components/AboutBlocks'
-// import BaiduMap from '../components/BaiduMap';
 
 class Home extends React.Component {
   render() {
@@ -40,7 +30,6 @@ class Home extends React.Component {
             color={'black'}
           />
         </div>
-        {/* <BaiduMap language={language}/> */}
       </div>
     )
   }

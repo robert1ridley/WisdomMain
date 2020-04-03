@@ -1,7 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import '../styles/company-about.css';
 import backgroundImage from '../images/about/factory_opaque.png';
 import moleculeIcon from '../images/about/molecule-icon.png';
 import recycleIcon from '../images/about/recycle-icon.png';
@@ -179,7 +178,7 @@ const CoreProducts = (props) => {
 const CompanyCulture = (props) => {
     const { language } = props;
     return (
-        <div className="container component-container">
+        <div className="container component-container" style={{paddingBottom: 20}}>
             <h1 className="text-center chinese-section-header">{companyCultureData.head[language]}</h1>
             <Row style={{paddingTop: 20}}>
                 <Col md={6}>
@@ -213,11 +212,6 @@ const CompanyAbout = (props) => {
 }
 
 const styles = {
-    // componentContainer: {
-    //     marginTop: 30,
-    //     marginBottom: 30
-    // },
-
     background: {
         backgroundImage: 'url(' + backgroundImage + ')',
         paddingTop: 30,

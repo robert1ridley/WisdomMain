@@ -1,0 +1,9 @@
+@media (min-width: 992px) {
+    .pad-right {
+        padding-right: 70px;
+    }
+    
+    .pad-left {
+        padding-left: 70px;
+    }
+}

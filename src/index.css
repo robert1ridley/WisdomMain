@@ -375,3 +375,32 @@ div.media-body {
  .bdshare-button-style0-16 a:hover, .bdshare-button-style0-16 a:focus {
 	color: #FFFFFF !important;
  }
+
+ @media(min-width: 978px) {
+    .with-border-img {
+        height: 100%; 
+        padding-left: 40px;
+        border-left: 1px solid #5F5F5F;
+    }
+
+    .no-border-img {
+        height: 100%; 
+        padding-left: 40px;
+    }
+
+    .column-padding {
+        padding: 20px 20px 20px 20px;
+    }
+
+    .padding-on-big {
+        padding-right: 40px;
+	}
+	
+	.fix-height {
+		height: 160px;
+	}
+
+	.padding-top {
+		padding-top: 45px;
+	}
+}

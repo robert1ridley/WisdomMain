@@ -1,5 +1,4 @@
 import React from 'react';
-// import BaiduMap from '../components/BaiduMap';
 import ContactHead from '../headers/ContactHead';
 import MainContactForm from '../components/MainContactForm';
 import ContactList from '../components/ContactList';
