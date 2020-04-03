@@ -9,7 +9,7 @@ import '../styles/media-objects.css';
 
 const image_urls = [
     {'img': image1, 'zh': '智道简介', 'en': '智道简介', 'link': '/about/about-wisdom'}, 
-    {'img': image2, 'zh': '膜技术工程应用', 'en': '膜技术工程应用', 'link': '/solutions/oil-and-gas-recovery-and-voc-control'}, 
+    {'img': image2, 'zh': '膜技术工程应用', 'en': '膜技术工程应用', 'link': '/mission/membrane/tech'}, 
     {'img': image3, 'zh': '新闻中心', 'en': '新闻中心', 'link': '/news/enterprise'}]
 
 const head = {
