@@ -1,7 +1,7 @@
-import projectImage1 from '../images/innovation/innovation-project1.webp';
-import projectImage2 from '../images/innovation/innovation-project2.webp';
-import projectImage3 from '../images/innovation/innovation-project3.webp';
-import projectImage4 from '../images/innovation/innovation-project4.webp';
+import projectImage1 from '../images/innovation/innovation-project1.jpg';
+import projectImage2 from '../images/innovation/innovation-project2.jpg';
+import projectImage3 from '../images/innovation/innovation-project3.jpg';
+import projectImage4 from '../images/innovation/innovation-project4.jpg';
 
 const projectData = [
     {
