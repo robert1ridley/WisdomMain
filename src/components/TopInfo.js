@@ -19,7 +19,9 @@ const TopInfo = (props) => {
                         {data.body[language]}
                     </p>
                     <a href={scrollTarget} style={{width: 60, paddingTop: 10}}>
-                        <span style={{fontFamily: 'PingFangSC-Semibold', color: '#333333'}}>{data.buttontext[language]}</span>
+                        <span style={{fontFamily: 'PingFangSC-Semibold', color: '#333333'}}>
+                            {data.buttontext[language]}
+                        </span>
                         <img src={inverseCaretImg} style={{width: 30, marginLeft: 12}} />
                     </a>
                 </Col>
