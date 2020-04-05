@@ -24,6 +24,15 @@ class SiteNav extends React.Component {
     }
   }
 
+  componentDidUpdate() {
+    window.onpopstate  = (e) => {
+      const path = getLocationFromParams(window.location.pathname);
+      this.setState({
+        path: path
+      })
+    }
+  }
+
   updatePath = (newPath) => {
     newPath = getLocationFromParams(newPath)
     this.setState({
