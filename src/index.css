@@ -404,3 +404,7 @@ div.media-body {
 		padding-top: 45px;
 	}
 }
+
+html {
+	scroll-behavior: smooth;
+}

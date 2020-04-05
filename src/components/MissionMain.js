@@ -69,10 +69,10 @@ const MissionMain = (props) => {
     const { language } = props;
     return (
         <div>
-            <TopInfo language={language} data={topInfoData} />
-            <LeftAlignInfo language={language} data={membraneInfoData} />
+            <TopInfo language={language} data={topInfoData} scrollTarget={'#membrane'} />
+            <LeftAlignInfo language={language} data={membraneInfoData} scrollTargetId={'membrane'} />
             <ProductsInfo language={language} />
-            <LeftAlignInfo language={language} data={remoteIntroData} />
+            <LeftAlignInfo language={language} data={remoteIntroData} scrollTargetId={'remote'} />
         </div>
     )
 }

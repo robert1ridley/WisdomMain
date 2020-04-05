@@ -5,7 +5,7 @@ import topStrokeImg from '../images/mission/topstroke.png';
 import inverseCaretImg from '../images/mission/inversecaret.png';
 
 const TopInfo = (props) => {
-    const { language, data } = props;
+    const { language, data, scrollTarget } = props;
     return (
         <div className="container" style={styles.sectionContainer}>
             <Row>
@@ -18,10 +18,10 @@ const TopInfo = (props) => {
                     <p className="chinese-section-body">
                         {data.body[language]}
                     </p>
-                    <div style={{width: 60, paddingTop: 10, cursor: 'pointer'}}>
-                        <span style={{fontFamily: 'PingFangSC-Semibold'}}>{data.buttontext[language]}</span>
+                    <a href={scrollTarget} style={{width: 60, paddingTop: 10}}>
+                        <span style={{fontFamily: 'PingFangSC-Semibold', color: '#333333'}}>{data.buttontext[language]}</span>
                         <img src={inverseCaretImg} style={{width: 30, marginLeft: 12}} />
-                    </div>
+                    </a>
                 </Col>
                 <Col md={5}>
                     <img 

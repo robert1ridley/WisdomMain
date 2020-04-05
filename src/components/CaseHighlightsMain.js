@@ -10,8 +10,8 @@ const CaseHighlightsMain = (props) => {
     const { language } = props;
     return (
         <div>
-            <TopInfo language={language} data={topInfoData} />
-            <LeftAlignInfo language={language} data={masteelintro} />
+            <TopInfo language={language} data={topInfoData} scrollTarget="#masteel" />
+            <LeftAlignInfo language={language} data={masteelintro} scrollTargetId="masteel" />
         </div>
     )
 }

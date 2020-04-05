@@ -6,9 +6,9 @@ import topStrokeImg from '../images/mission/topstroke.png';
 import sideCaretImg from '../images/mission/sidecaret.png';
 
 const LeftAlignInfo = (props) => {
-    const { language, data } = props;
+    const { language, data, scrollTargetId } = props;
     return (
-        <div style={{backgroundColor: '#eff1f2'}}>
+        <div id={scrollTargetId} style={{backgroundColor: '#eff1f2'}}>
             <div className="container" 
                 style={styles.sectionContainer}>
                 <Row style={{display: 'flex', flexWrap: 'wrap'}}>
