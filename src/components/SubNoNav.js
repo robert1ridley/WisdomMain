@@ -9,7 +9,7 @@ const SubNoNav = (props) => {
             style={background}
         >
             <div style={{alignItems: 'stretch', width: '100%', backgroundColor: 'rgba(68, 149, 205, 0.4)'}}>
-                <div className="container main-content-container" style={{marginTop: '40px', marginBottom: '40px'}}>
+                <div className="container main-content-container sub-no-nav">
                     <SharedIntro
                         language={language}
                         data={intro}

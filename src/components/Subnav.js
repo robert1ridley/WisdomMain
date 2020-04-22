@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SubNoNav from './SubNoNav';
+import '../styles/subnav.css';
 
 const Subnav = (props) => {
   const { aboutData, currentActive, childActive, language, background, intro, path } = props;
