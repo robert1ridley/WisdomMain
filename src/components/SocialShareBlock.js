@@ -11,7 +11,7 @@ export default class SocialShareBlock extends React.Component {
   render () {
     return (
       <Row className="central-info">
-        <Col md={3} sm={3} />
+        <Col md={3} sm={3} xs={0} />
           <SocialItem itemClass="bds_weixin" data="weixin" />
           <SocialItem itemClass="bds_tsina" data="tsina" />
           <SocialItem itemClass="bds_qzone" data="qzone" />
@@ -38,7 +38,7 @@ class SocialItem extends React.Component {
   render () {
     var buttonStyle = !this.state.hover === true? styles.regButton: styles.hoverButton;
     return (
-      <Col md={2} sm={2} xs={12}>
+      <Col md={2} sm={2} xs={4}>
         <div 
           className="circle lower-margin"
           onMouseEnter={this.toggleHover}
