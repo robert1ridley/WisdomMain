@@ -69,7 +69,7 @@ export default class AnimationCount extends Component {
 
   render() {
     return (
-      <span style={{fontSize: 50, color: '#86B728'}}> {this.state.value} </span>
+      <span className="home-green-stat"> {this.state.value} </span>
     );
   }
 }

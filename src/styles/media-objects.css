@@ -1,24 +1,3 @@
-@media (min-width: 990px) {
-  .row-container {
-    padding-left: 66px;
-    padding-right: 66px;
-  }
-}
-
-@media (min-width: 768px) {
-  .row-container {
-    padding-left: 44px;
-    padding-right: 44px;
-  }
-}
-
-@media (max-width: 768px) {
-  .row-container {
-    padding-left: 22px;
-    padding-right: 22px;
-  }
-}
-
 .hvrbox:after {
     content: "";
     position: absolute;
@@ -140,4 +119,29 @@
   .hvrbox.active .hvrbox-text_mobile {
     display: block;
   }
+
+  @media (min-width: 990px) {
+  .row-container {
+    padding-left: 66px;
+    padding-right: 66px;
+  }
+}
+
+@media (min-width: 768px) {
+  .row-container {
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+}
+
+@media (max-width: 768px) {
+  .row-container {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .hvrbox .hvrbox-text-vis {
+    font-size: 24px;
+  }
+}
   

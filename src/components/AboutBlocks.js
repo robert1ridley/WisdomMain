@@ -69,30 +69,31 @@ const AboutBlocks = (props) => {
     const { language, color } = props;
     return(
         <div>
-            <div className="container main-content-container" style={{backgroundColor: '#eef0f1', paddingTop: 100}}>
+            <div className="container main-content-container about-container">
                 <Row>
                     <Col md={9} sm={6} xs={3}/>
                     <Col md={3} sm={6} xs={9}>
-                        <div style={{borderTop: '15px solid #4495CD'}}/>
+                        <div className="blue-top-border"/>
                     </Col>
                 </Row>
                 <Row>
                     <Col md={5} />
                     <Col md={7}>
                         <h1 
-                            className={color === "white" ? "light" : "dark"}
-                            style= {language === "zh" ? styles.chineseBigHead : styles.englishBigHead}
+                            className="chinese-head-home"
+                            style= {{textAlign: 'right'}}
                         >
                             {head[language]}
                         </h1>
-                        <p style={{textAlign: 'left'}, styles.chineseBigBodyBlackSubHead}>
+                        <p className="chinese-home-sub"
+                        style={{textAlign: 'right'}}>
                             {subHead[language]}
                         </p>
                     </Col>
                 </Row>
             </div>
             <div>
-                <Row style={{paddingTop: 50, paddingBottom: 100, backgroundColor: '#eef0f1'}}>
+                <Row className="about-block-container">
                     {image_urls.map((img, idx) => 
                         <AboutBlockSingle 
                             img={img}
@@ -111,67 +112,67 @@ const AboutBlocks = (props) => {
 export default AboutBlocks;
 
 
-const styles = {
-    wpCaptionTextChinese: {
-        fontFamily: 'PingFangSC-Semibold',
-        fontSize: '34px',
-        color: '#FFFFFF',
-        letterSpacing: '0.27px',
-        textAlign: 'center',
-        lineHeight: '24px',
-        },
+// const styles = {
+//     wpCaptionTextChinese: {
+//         fontFamily: 'PingFangSC-Semibold',
+//         fontSize: '34px',
+//         color: '#FFFFFF',
+//         letterSpacing: '0.27px',
+//         textAlign: 'center',
+//         lineHeight: '24px',
+//         },
         
-        wpCaptionTextEnglish: {
-        fontSize: '28px',
-        color: '#FFFFFF',
-        textAlign: 'center',
-        lineHeight: '20px',
-        },
+//         wpCaptionTextEnglish: {
+//         fontSize: '28px',
+//         color: '#FFFFFF',
+//         textAlign: 'center',
+//         lineHeight: '20px',
+//         },
 
-    chineseBigHead: {
-        fontFamily: "PingFangSC-Semibold",
-        textAlign: 'right',
-        fontSize: 42,
-        letterSpacing: 0.2,
-        marginBottom: 10
-    },
+//     chineseBigHead: {
+//         fontFamily: "PingFangSC-Semibold",
+//         textAlign: 'right',
+//         fontSize: 42,
+//         letterSpacing: 0.2,
+//         marginBottom: 10
+//     },
     
-    englishBigHead: {
-        fontWeight: 500,
-        fontSize: '2em',
-    },
+//     englishBigHead: {
+//         fontWeight: 500,
+//         fontSize: '2em',
+//     },
     
-    chineseBigBody: {
-        fontFamily: "PingFangSC-Semibold",
-        fontSize: 22,
-        letterSpacing: 0.14,
-        textAlign: 'center',
-        lineHeight: '50px',
-        marginTop: '40px !important',
-        color: '#86B728'
-    },
+//     chineseBigBody: {
+//         fontFamily: "PingFangSC-Semibold",
+//         fontSize: 22,
+//         letterSpacing: 0.14,
+//         textAlign: 'center',
+//         lineHeight: '50px',
+//         marginTop: '40px !important',
+//         color: '#86B728'
+//     },
 
-    chineseBigBodyBlackSubHead: {
-        fontFamily: "PingFangSC-Semibold",
-        fontSize: 22,
-        letterSpacing: 0.14,
-        textAlign: 'right',
-        marginTop: '40px !important',
-        color: '#666'
-    },
+//     chineseBigBodyBlackSubHead: {
+//         fontFamily: "PingFangSC-Semibold",
+//         fontSize: 22,
+//         letterSpacing: 0.14,
+//         textAlign: 'right',
+//         marginTop: '40px !important',
+//         color: '#666'
+//     },
 
-    chineseBigBodyBlack: {
-        fontFamily: "PingFangSC-Semibold",
-        fontSize: 22,
-        letterSpacing: 0.14,
-        textAlign: 'center',
-        marginTop: '40px !important',
-        color: '#666'
-    },
+//     chineseBigBodyBlack: {
+//         fontFamily: "PingFangSC-Semibold",
+//         fontSize: 22,
+//         letterSpacing: 0.14,
+//         textAlign: 'center',
+//         marginTop: '40px !important',
+//         color: '#666'
+//     },
     
-    bigBody: {
-        fontWeight: 100,
-        fontSize: 20,
-        marginTop: '40px !important',
-    },
-}
+//     bigBody: {
+//         fontWeight: 100,
+//         fontSize: 20,
+//         marginTop: '40px !important',
+//     },
+// }

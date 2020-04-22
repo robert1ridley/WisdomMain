@@ -54,16 +54,10 @@ const SingleStat = (props) => {
 
     return (
         <div>
-            <p
-                className={color === "white" ? "light" : "dark"}
-                style= {language === "zh" ? styles.chineseBigBodyBlack : styles.bigBody}
-            >
+            <p className="chinese-home-body dark" style={{textAlign: 'center'}}>
                 {fig[language]}
                 <AnimationCount {...settings}/>
-                <span
-                    className={color === "white" ? "light" : "dark"}
-                    style= {language === "zh" ? styles.chineseBigBodyBlack : styles.bigBody}
-                >
+                <span className="chinese-home-body">
                     {fig.unit}
                 </span>
             </p>
@@ -78,18 +72,15 @@ const Stats = (props) => {
         <div className="stats-container">
             <Row>
                 <Col md={3} sm={6} xs={9}>
-                    <div style={{borderTop: '15px solid #86B728'}}/>
+                    <div className="green-top-border"/>
                 </Col>
             </Row>
             <Row>
                 <Col md={6}>
-                    <h1 
-                        className={color === "white" ? "light" : "dark"}
-                        style= {language === "zh" ? styles.chineseBigHead : styles.englishBigHead}
-                    >
+                    <h1 className="chinese-head-home">
                         {head[language]}
                     </h1>
-                    <p style={{textAlign: 'left'}, styles.chineseBigBodyBlackSubHead}>
+                    <p className="chinese-home-sub dark" style={{textAlign: 'left'}}>
                         {subHead[language]}
                     </p>
                 </Col>
@@ -107,56 +98,3 @@ const Stats = (props) => {
 
 
 export default Stats;
-
-
-const styles = {
-  chineseBigHead: {
-    fontFamily: "PingFangSC-Semibold",
-    fontSize: 42,
-    letterSpacing: 0.2,
-    marginBottom: 10
-  },
-  
-  englishBigHead: {
-    fontWeight: 500,
-    fontSize: '2em',
-  },
-  
-  chineseBigBody: {
-    fontFamily: "PingFangSC-Semibold",
-    fontSize: 22,
-    letterSpacing: 0.14,
-    textAlign: 'center',
-    lineHeight: '50px',
-    marginTop: '40px !important',
-    color: '#86B728'
-  },
-
-  chineseBigBodyBlackSubHead: {
-    fontFamily: "PingFangSC-Semibold",
-    fontSize: 22,
-    letterSpacing: 0.14,
-    textAlign: 'left',
-    marginTop: '40px !important',
-    color: '#666'
-  },
-
-  chineseBigBodyBlack: {
-    fontFamily: "PingFangSC-Semibold",
-    fontSize: 22,
-    letterSpacing: 0.14,
-    textAlign: 'center',
-    marginTop: '40px !important',
-    color: '#666'
-  },
-  
-  bigBody: {
-    fontWeight: 100,
-    fontSize: 20,
-    marginTop: '40px !important',
-  },
-
-  white: {
-    color: '#FFFFFF !important'
-  }
-}

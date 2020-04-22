@@ -1,3 +1,81 @@
-/* 
-Add any shared styles for the homepage here
- */
+.stats-container, .about-container {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.about-block-container {
+    padding-bottom: 100px; 
+    background-color: #eef0f1;
+}
+
+.about-container {
+    background-color: #eef0f1;
+}
+
+.green-top-border {
+	border-top: 15px solid #86B728;
+}
+
+.blue-top-border {
+	border-top: 15px solid #4495CD;
+}
+
+.chinese-head-home {
+    font-family: PingFangSC-Semibold;
+    font-size: 42px;
+    letter-spacing: 0.2px;
+    margin-bottom: 10px;
+}
+
+.chinese-home-sub {
+    font-family: PingFangSC-Semibold;
+    font-size: 22px;
+    letter-spacing: 0.14;
+    margin-top: 40px;
+    color: #666;
+  }
+
+.chinese-home-body {
+    font-family: PingFangSC-Semibold;
+    font-size: 22px;
+    letter-spacing: 0.14;
+    margin-top: 40px;
+    color: #666;
+  }
+
+.home-green-stat {
+    font-size: 50px;
+    color: #86B728
+}
+
+@media (max-width: 786px) {
+	.stats-container, .about-container {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.green-top-border {
+		border-top: 5px solid #86B728;
+    }
+
+    .blue-top-border {
+		border-top: 5px solid #4495CD;
+    }
+    
+    .chinese-head-home {
+        font-size: 24px;
+    }
+
+    .chinese-home-sub, .chinese-home-body {
+        font-size: 14px;
+        margin-top: 24px;
+    }
+
+    .home-green-stat {
+        font-size: 30px;
+    }
+
+    .about-block-container {
+        padding-bottom: 50px; 
+    }
+}
