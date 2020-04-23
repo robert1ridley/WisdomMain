@@ -4,10 +4,30 @@
     text-align: right;
 }
 
+.outer-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; 
+}
+
+.align-self-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; 
+    flex-direction: column;
+}
+
 @media(max-width: 990px) {
     .align-self-center {
         margin-top: 15px;
     }
+
+    .outer-row {
+        flex-wrap: wrap;
+    }
+
 }
 
 @media(max-width: 768px) {

@@ -11,9 +11,8 @@ const LeftAlignInfo = (props) => {
         <div id={scrollTargetId} style={{backgroundColor: '#eff1f2'}}>
             <div className="container" 
                 style={styles.sectionContainer}>
-                <Row style={{display: 'flex', flexWrap: 'wrap'}}>
-                    <Col md={6} className="align-self-center" 
-                        style={{display: 'flex', flexDirection: 'column'}}>
+                <Row className="outer-row">
+                    <Col md={6} className="align-self-center">
                         <div style={{margin: 'auto'}}>
                             <img src={topStrokeImg} style={{width: 130}} />
                             <p className="chinese-section-body" 
