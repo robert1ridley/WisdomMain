@@ -45,7 +45,7 @@ const ProductsInfo = (props) => {
                         <p className="chinese-section-body" style={styles.rightSmallHeading}>
                             {allProductsIntroData.intro.head[language]}
                         </p>
-                        <h1 className="chinese-section-header" style={styles.rightBigHeading}>
+                        <h1 className="chinese-section-header mission-right-big-heading">
                             {allProductsIntroData.intro.subHead[language]}
                         </h1>
                         <p className="chinese-section-body" style={{textAlign: 'right'}}>

@@ -1,0 +1,17 @@
+.mission-right-big-heading {
+    padding-top: 5px; 
+    padding-left: 220px; 
+    text-align: right;
+}
+
+@media(max-width: 990px) {
+    .align-self-center {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width: 768px) {
+    .mission-right-big-heading {
+        padding-left: 0px; 
+    }
+}
