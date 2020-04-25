@@ -12,10 +12,11 @@ const PartnersList = () => {
   const partnersImgLinks = partnersimgdata.map((dataitem, index) => 
     <Col md={2} xs={4} key={index}>
       <a href={dataitem.linkurl} target="_blank" rel="noopener">
-        <LazyLoad offsetVertical={300}>
+        <LazyLoad offsetVertical={300} onContentVisible={() => console.log('Partners list lazyloaded!')}>
           <Image 
             className="center-img" 
             style={{marginTop: 0, marginBottom: 10, border: '1px solid #666666'}} 
+            alt={'合作伙伴' + index}
             src={dataitem.imgurl} responsive 
           />
         </LazyLoad>
@@ -60,7 +61,6 @@ class Footer extends React.Component {
           </h1>
           <PartnersList />
         </div>
-        {/* <PartnersList /> */}
         <div id="footer">
           <div className="container">
             <Row>
