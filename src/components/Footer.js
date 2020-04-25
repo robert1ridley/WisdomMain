@@ -11,7 +11,7 @@ import partnersimgdata from '../data/partnersdata';
 const PartnersList = () => {
   const partnersImgLinks = partnersimgdata.map((dataitem, index) => 
     <Col md={2} xs={4} key={index}>
-      <a href={dataitem.linkurl} target="_blank">
+      <a href={dataitem.linkurl} target="_blank" rel="noopener">
         <LazyLoad offsetVertical={300}>
           <Image 
             className="center-img" 

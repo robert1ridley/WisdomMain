@@ -103,6 +103,8 @@ class About extends React.Component {
                         {...props}
                       />
                     )
+                  default:
+                    return (<NotFound />)
                 }
               }            
             }/>

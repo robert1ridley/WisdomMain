@@ -11,7 +11,7 @@ import AboutBlocks from '../components/AboutBlocks'
 
 class Home extends React.Component {
   render() {
-    const { language, location } = this.props
+    const { language } = this.props
     return (
       <div>
         <HomeHead />

@@ -98,6 +98,8 @@ class Innovation extends React.Component {
                                             {...props}
                                         />
                                     )
+                                default:
+                                    return (<NotFound/>)
                                 }
                             }            
                         }/>

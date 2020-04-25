@@ -144,7 +144,7 @@ class SinglCoreProduct extends React.Component {
             <Col md={3} sm={6} xs={6} className='column-padding'>
                 <Link to={product.link}>
                     <div className={borderStyle}>
-                        <img className='img-responsive' src={product.imageUrl} />
+                        <img className='img-responsive' src={product.imageUrl} alt={product[language]} />
                         <p className="text-center white chinese-section-body">{product[language]}</p>
                     </div>
                 </Link>
@@ -192,7 +192,7 @@ const CompanyCulture = (props) => {
                 </Col>
                 <Col md={1}/>
                 <Col md={5}>
-                    <img className="img-responsive" src={companyCultureImage} />
+                    <img className="img-responsive" src={companyCultureImage} alt="企业文化" />
                 </Col>
             </Row>
         </div>

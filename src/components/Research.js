@@ -117,7 +117,7 @@ class Projects extends React.Component {
                     </div>
                 </Col>
                 <Col md={4}>
-                    <img className="img-responsive" style={{width: '100%', marginBottom: 25}} src={activeImgUrl} />
+                    <img className="img-responsive" style={{width: '100%', marginBottom: 25}} src={activeImgUrl} alt={activeText.head} />
                 </Col>
                 <Col md={4}>
                     <h1 className="chinese-section-header" style={{fontSize: 22, marginTop: 0}}>{activeText.head}</h1>
@@ -165,7 +165,7 @@ const FactilityInfo = (props) => {
                 </ul>
             </Col>
             <Col md={6} className="pad-left">
-                <img className="img-responsive" style={{width: '100%'}} src={facilityData.imgUrl} />
+                <img className="img-responsive" style={{width: '100%'}} src={facilityData.imgUrl} alt="研究院" />
             </Col>
         </Row>
     )

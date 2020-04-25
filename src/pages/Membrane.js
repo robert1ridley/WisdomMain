@@ -89,6 +89,8 @@ class Membrane extends React.Component {
                         {...props}
                       />
                     )
+                  default:
+                    return (<NotFound />)
                 }
               }            
             }/>

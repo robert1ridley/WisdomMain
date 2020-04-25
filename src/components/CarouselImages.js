@@ -1,6 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import LazyLoad from 'react-lazy-load';
 import mainCarousel1 from '../images/carousel/carousel1.jpg';
 import mainCarousel2 from '../images/carousel/carousel2.jpg';
 import mainCarousel3 from '../images/carousel/carousel3.jpg';
@@ -92,30 +93,32 @@ class ImageDiv extends React.Component {
     const { data, language } = this.props;
     const style = this.state.visible === false? "carousel-div-non": "carousel-div";
     return (
-      <div className={style} style={{backgroundImage: `url(${data.image})`}}>
-        <Carousel.Caption>
-          <Link to={data.link}>
-            <div className="outer">
-              <div className="middle">
-                <div className="inner">
-                  <div className="carousel-body-text">
-                    <h3
-                      className={language === "zh" ? "chinese-carousel-body" : "english-carousel-body"}
-                    >
-                      江苏智道––
-                    </h3>
-                    <h3
-                      className={language === "zh" ? "chinese-carousel-head" : "english-carousel-head"}
-                    >
-                      {data.body[language]}
-                    </h3>
+      <LazyLoad offsetLeft={200} offsetRight={200}>
+        <div className={style} style={{backgroundImage: `url(${data.image})`}}>
+          <Carousel.Caption>
+            <Link to={data.link}>
+              <div className="outer">
+                <div className="middle">
+                  <div className="inner">
+                    <div className="carousel-body-text">
+                      <h3
+                        className={language === "zh" ? "chinese-carousel-body" : "english-carousel-body"}
+                      >
+                        江苏智道––
+                      </h3>
+                      <h3
+                        className={language === "zh" ? "chinese-carousel-head" : "english-carousel-head"}
+                      >
+                        {data.body[language]}
+                      </h3>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </Link>
-        </Carousel.Caption>
-      </div>
+            </Link>
+          </Carousel.Caption>
+        </div>
+      </LazyLoad>
     )
   }
 }

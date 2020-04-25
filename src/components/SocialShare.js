@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import LazyLoad from 'react-lazy-load';
 import shareImg from '../images/share-bg.png';
 import IntroHead from '../components/IntroHead';
 import SocialShareBlock from '../components/SocialShareBlock';
@@ -9,19 +10,21 @@ class SocialShare extends React.Component {
   render () {
     return (
       <div style={{backgroundColor: '#595959'}}>
-        <div 
-          style={styles.background}
-          className="background-loaded"
-        >
-          <div className="container main-content-container">
-            <IntroHead 
-              data={sharingdata}
-              language={this.props.language}
-              color={'white'}
-            />
-            <SocialShareBlock />
+        <LazyLoad offsetVertical={300}>
+          <div 
+            style={styles.background}
+            className="background-loaded"
+          >
+            <div className="container main-content-container">
+              <IntroHead 
+                data={sharingdata}
+                language={this.props.language}
+                color={'white'}
+              />
+              <SocialShareBlock />
+            </div>
           </div>
-        </div>
+        </LazyLoad>
       </div>
     )
   }

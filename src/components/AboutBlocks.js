@@ -53,7 +53,7 @@ class AboutBlockSingle extends React.Component {
                     className = "hvrbox"
                 >
                     <LazyLoad offsetVertical={300}>
-                        <img src={img.img} className="img-fluid hvrbox-layer_bottom" style={{width: '100%'}}/>
+                        <img src={img.img} className="img-fluid hvrbox-layer_bottom" alt={img[language]} style={{width: '100%'}}/>
                     </LazyLoad>
                     <div className="visible">
                         <div className="hvrbox-text-vis">
@@ -69,7 +69,7 @@ class AboutBlockSingle extends React.Component {
 
 
 const AboutBlocks = (props) => {
-    const { language, color } = props;
+    const { language } = props;
     return(
         <div>
             <div className="container main-content-container about-container">

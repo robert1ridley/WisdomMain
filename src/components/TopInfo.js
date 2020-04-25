@@ -10,7 +10,7 @@ const TopInfo = (props) => {
         <div className="container" style={styles.sectionContainer}>
             <Row>
                 <Col md={7}>
-                    <img src={topStrokeImg} style={{width: 130}} />
+                    <img src={topStrokeImg} style={{width: 130}} alt="" />
                     <p className="chinese-section-body" 
                         style={styles.smallHeading}>
                         {data.head[language]}
@@ -22,7 +22,7 @@ const TopInfo = (props) => {
                         <span style={{fontFamily: 'PingFangSC-Semibold', color: '#333333'}}>
                             {data.buttontext[language]}
                         </span>
-                        <img src={inverseCaretImg} style={{width: 30, marginLeft: 12}} />
+                        <img src={inverseCaretImg} style={{width: 30, marginLeft: 12}} alt="" />
                     </a>
                 </Col>
                 <Col md={5}>
@@ -30,6 +30,7 @@ const TopInfo = (props) => {
                         className="img-responsive" 
                         src={data.imgUrl} 
                         style={styles.halfSizeImg}
+                        alt={data.head[language]}
                     />
                 </Col>
             </Row>

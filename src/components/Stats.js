@@ -41,7 +41,7 @@ const figures = [
 
 
 const SingleStat = (props) => {
-    const { fig, language, color } = props;
+    const { fig, language } = props;
 
     const settings = {
         start: fig.num - 800,

@@ -34,6 +34,7 @@ class AccordionV2 extends React.Component {
 										<img 
 											src={this.state.activePanelIndex === index ? collapse : expand} 
 											className={this.state.activePanelIndex === index ? 'panel-collapse' : 'panel-expand'}
+											alt={item.articleHead[language]}
 										/>
 									</span>
 								</div>

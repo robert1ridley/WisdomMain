@@ -41,7 +41,7 @@ const ProductsInfo = (props) => {
                 </Col>
                 <Col md={6} className="align-self-center">
                     <div style={{margin: 'auto'}}>
-                        <img src={topStrokeGreenReverseImg} style={{width: 130, float: 'right'}} />
+                        <img src={topStrokeGreenReverseImg} alt="" style={{width: 130, float: 'right'}} />
                         <p className="chinese-section-body" style={styles.rightSmallHeading}>
                             {allProductsIntroData.intro.head[language]}
                         </p>
@@ -54,7 +54,7 @@ const ProductsInfo = (props) => {
                         <div style={{paddingTop: 10, textAlign: 'right'}}>
                             <Link to="mission/case-high">
                                 <button style={{fontFamily: 'PingFangSC-Semibold', color: '#333333', backgroundColor: '#FFFFFF', border: 0}}>
-                                    了解更多<img src={sideCaretGreenImg} style={{height: 30, marginLeft: 8}} />
+                                    了解更多<img src={sideCaretGreenImg} style={{height: 30, marginLeft: 8}} alt="" />
                                 </button>
                             </Link>
                         </div>

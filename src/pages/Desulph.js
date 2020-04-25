@@ -96,6 +96,8 @@ class Desulph extends React.Component {
                                                 {...props}
                                             />
                                         )
+                                    default:
+                                        return (<NotFound />)
                                 }
                             }            
                         }/>

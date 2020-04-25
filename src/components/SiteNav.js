@@ -64,7 +64,7 @@ class SiteNav extends React.Component {
         <Navbar.Header>
           <Navbar.Brand>
             <Link to="/">
-              <Image src={logo} responsive/>
+              <Image src={logo} alt="logo" responsive/>
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle />

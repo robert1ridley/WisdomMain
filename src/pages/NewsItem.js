@@ -1,7 +1,5 @@
 import React from 'react';
-import ParagraphsNew from '../components/ParagraphsNew';
 import NewsText from '../components/NewsText';
-import NotFound from './NotFound';
 
 class NewsItem extends React.Component {
 
