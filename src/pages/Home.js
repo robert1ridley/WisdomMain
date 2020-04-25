@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import LazyLoad from 'react-lazy-load';
 import welcomeImage from '../images/welcome-bg.png';
 import '../styles/home.css';
 
@@ -7,7 +8,7 @@ import '../styles/home.css';
 import HomeHead from '../headers/HomeHead';
 import CarouselImages from '../components/CarouselImages';
 import Stats from '../components/Stats';
-import AboutBlocks from '../components/AboutBlocks'
+import AboutBlocks from '../components/AboutBlocks';
 
 class Home extends React.Component {
   render() {
@@ -16,14 +17,16 @@ class Home extends React.Component {
       <div>
         <HomeHead />
         <CarouselImages language={language}/>
-        <div className="background-loaded" style={styles.mainBackground}>
-          <div className="main-content-container container">
-            <Stats
-              language={language}
-              color={'black'}
-            />
+        <LazyLoad offsetVertical={300}>
+          <div className="background-loaded" style={styles.mainBackground}>
+            <div className="main-content-container container">
+              <Stats
+                language={language}
+                color={'black'}
+              />
+            </div>
           </div>
-        </div>
+        </LazyLoad>
         <div style={{backgroundColor: '#eef0f1'}}>
           <AboutBlocks
             language={language}
