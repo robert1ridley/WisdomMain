@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import LazyLoad from 'react-lazy-load';
 import image1 from '../images/home/company.jpg';
 import image2 from '../images/home/membrane.jpg';
 import image3 from '../images/home/news_center.jpg';
@@ -51,7 +52,9 @@ class AboutBlockSingle extends React.Component {
                     style={linkStyle}
                     className = "hvrbox"
                 >
-                    <img src={img.img} className="img-fluid hvrbox-layer_bottom" style={{width: '100%'}}/>
+                    <LazyLoad offsetVertical={300}>
+                        <img src={img.img} className="img-fluid hvrbox-layer_bottom" style={{width: '100%'}}/>
+                    </LazyLoad>
                     <div className="visible">
                         <div className="hvrbox-text-vis">
                             <div>{img[language]}</div>

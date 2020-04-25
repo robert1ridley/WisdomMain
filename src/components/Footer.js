@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Image, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import LazyLoad from 'react-lazy-load';
 import '../styles/footer.css';
 import footerdata from '../data/footerdata';
 import partnersimgdata from '../data/partnersdata';
@@ -11,11 +12,13 @@ const PartnersList = () => {
   const partnersImgLinks = partnersimgdata.map((dataitem, index) => 
     <Col md={2} xs={4} key={index}>
       <a href={dataitem.linkurl} target="_blank">
-        <Image 
-          className="center-img" 
-          style={{marginTop: 0, marginBottom: 10, border: '1px solid #666666'}} 
-          src={dataitem.imgurl} responsive 
-        />
+        <LazyLoad offsetVertical={300}>
+          <Image 
+            className="center-img" 
+            style={{marginTop: 0, marginBottom: 10, border: '1px solid #666666'}} 
+            src={dataitem.imgurl} responsive 
+          />
+        </LazyLoad>
       </a>
     </Col>
   )
