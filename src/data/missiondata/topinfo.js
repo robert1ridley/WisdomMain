@@ -1,4 +1,4 @@
-import threeSectionsImg from '../../images/mission/threesections.png';
+import threeSectionsImg from '../../images/mission/threesections.jpg';
 
 const topinfodata = {
     'head': {

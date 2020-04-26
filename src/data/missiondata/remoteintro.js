@@ -1,4 +1,4 @@
-import remoteImg from '../../images/mission/remote.png';
+import remoteImg from '../../images/mission/remote.jpg';
 
 const remoteintro = {
     'head': {

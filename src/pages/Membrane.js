@@ -11,7 +11,7 @@ import NotFound from '../pages/NotFound';
 import membraneheaddata from '../data/membrane/membraneheaddata';
 import membranebasic from '../data/membrane/membranebasic';
 
-import membraneBackground from '../images/mission/membrane-background.png';
+import membraneBackground from '../images/mission/membrane-background.jpg';
 
 class Membrane extends React.Component {
   constructor() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import LazyLoad from 'react-lazy-load';
-import shareImg from '../images/share-bg.png';
+import shareImg from '../images/share-bg.jpg';
 import IntroHead from '../components/IntroHead';
 import SocialShareBlock from '../components/SocialShareBlock';
 import sharingdata from '../data/sharingdata';

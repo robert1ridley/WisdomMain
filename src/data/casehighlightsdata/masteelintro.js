@@ -1,4 +1,4 @@
-import masteelImg from '../../images/casehigh/masteel.png';
+import masteelImg from '../../images/casehigh/masteel.jpg';
 
 const masteelintro = {
     'head': {

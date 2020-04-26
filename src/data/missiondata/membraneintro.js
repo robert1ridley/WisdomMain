@@ -1,4 +1,4 @@
-import membraneImg from '../../images/mission/membrane.png';
+import membraneImg from '../../images/mission/membrane.jpg';
 
 const membraneintro = {
     'head': {

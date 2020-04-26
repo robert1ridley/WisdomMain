@@ -1,4 +1,4 @@
-import workersImg from '../../images/mission/workers.png';
+import workersImg from '../../images/mission/workers.jpg';
 
 const allproductsintro = {
     'intro': {

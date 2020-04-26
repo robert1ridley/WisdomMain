@@ -2,14 +2,11 @@ import React from 'react';
 import {connect} from 'react-redux';
 import LazyLoad from 'react-lazy-load';
 import Loadable from 'react-loadable';
-import welcomeImage from '../images/welcome-bg.png';
+import welcomeImage from '../images/welcome-bg.jpg';
 import '../styles/home.css';
 
 //component imports
 import HomeHead from '../headers/HomeHead';
-// import CarouselImages from '../components/CarouselImages';
-// import Stats from '../components/Stats';
-// import AboutBlocks from '../components/AboutBlocks';
 
 const CarouselImages = Loadable({
 	loader: () => import(/* webpackChunkName: "CarouselImages" */ '../components/CarouselImages'),

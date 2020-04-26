@@ -1,12 +1,12 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import backgroundImage from '../images/about/factory_opaque.png';
+import backgroundImage from '../images/about/factory_opaque.jpg';
 import moleculeIcon from '../images/about/molecule-icon.png';
 import recycleIcon from '../images/about/recycle-icon.png';
 import burnIcon from '../images/about/burn-icon.png';
 import industryIcon from '../images/about/industry-icon.png';
-import companyCultureImage from '../images/about/company-culture.png';
+import companyCultureImage from '../images/about/company-culture.jpg';
 
 
 const basicIntroData = {

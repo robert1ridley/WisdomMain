@@ -4,7 +4,7 @@ import { Col, Row } from 'react-bootstrap';
 import researchprojectdata from '../data/researchprojectdata';
 import facilityData from '../data/researchfacilitydata';
 import researchTeamData from '../data/researchteamdata';
-import backgroundImage from '../images/subnav/background15.png';
+import backgroundImage from '../images/subnav/background15.jpg';
 import '../styles/research.css';
 
 const head = {
