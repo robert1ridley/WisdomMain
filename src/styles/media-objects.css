@@ -63,7 +63,7 @@
     z-index: 2;
   }
 
-  .invis {
+  #invis {
     font-size: 20px;
     font-weight: 500;
     opacity: 0;
@@ -77,7 +77,7 @@
   .hvrbox.active .hvrbox-layer_top, 
   .hvrbox-text, .hvrbox:hover > 
   .visible > .hvrbox-text-vis 
-  > .invis {
+  > #invis {
     opacity: 1;
   }
 

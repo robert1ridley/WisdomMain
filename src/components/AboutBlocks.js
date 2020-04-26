@@ -58,7 +58,7 @@ class AboutBlockSingle extends React.Component {
                     <div className="visible">
                         <div className="hvrbox-text-vis">
                             <div>{img[language]}</div>
-                            <div className="hvrbox-text invis">了解更多</div>
+                            <div className="hvrbox-text" id="invis">了解更多</div>
                         </div>
                     </div>
                 </div>
