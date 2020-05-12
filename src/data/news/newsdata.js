@@ -25,6 +25,8 @@ import strategicEcoDialogue4 from '../../images/news/strategic-economic-dialogue
 import qianjie1 from '../../images/news/qianjie-language-rehab/qianjie-rehab1.jpg';
 import qianjie2 from '../../images/news/qianjie-language-rehab/qianjie-rehab2.jpg';
 import qianjie3 from '../../images/news/qianjie-language-rehab/qianjie-rehab3.jpg';
+import dragon2019_1 from '../../images/news/dragonboat-2019/dragonboat1.jpg';
+import dragon2019_2 from '../../images/news/dragonboat-2019/dragonboat2.jpg';
 import prTraining from '../../images/news/pr-training/pr-training-min.png';
 import tskVisit from '../../images/news/tsk-visit/tsk-visit-min.jpg';
 import liShui1 from '../../images/news/lishui-project-ceremony/lishui-project-ceremony-1-min.jpg';
@@ -711,6 +713,89 @@ const newsdata = [
                   caption: {
                     zh: "全体合影留念",
                     en: "全体合影留念"
+                  }
+                }
+              ]
+            }     
+          ]
+        },
+
+        {
+          head: {
+            zh: "浓浓粽情过端午 , 丝丝清凉沁人心",
+            en: "浓浓粽情过端午 , 丝丝清凉沁人心"
+          },
+          id: "dragonboat-2019",
+          timestamp: "1559698799",
+          headImage: dragon2019_1,
+          text: [
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: " 2019年6月5日下午，在端午节来临之际，公司总经办主任周倜、人力资源经理孙园园一行代表董事长、总经理李来所赴马钢工程项目部现场慰问节日期间坚守在劳动岗位的智道员工，负责项目现场一线督导的公司副总经理邱世庭、施工经理葛传杰代表现场员工全程陪同。",
+                  en: " 2019年6月5日下午，在端午节来临之际，公司总经办主任周倜、人力资源经理孙园园一行代表董事长、总经理李来所赴马钢工程项目部现场慰问节日期间坚守在劳动岗位的智道员工，负责项目现场一线督导的公司副总经理邱世庭、施工经理葛传杰代表现场员工全程陪同。"
+                }
+              ],
+              imgUrl: [
+                {
+                  image: dragon2019_1,
+                  caption: {
+                    zh: "项目现场",
+                    en: "项目现场"
+                  }
+                }
+              ]
+            },
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: " 在项目现场，周主任代表董事长、总经理李来所表达了对项目部员工最深切的慰问和关怀，并亲手送上节日慰问礼品，随后与现场员工进行了亲切交流，了解了生产生活和现场项目的情况，同时对大家在工作中取得的成绩予以充分肯定及表扬，处在项目一线的员工这种爱岗敬业、无私奉献的精神值得全体智道人学习。",
+                  en: " 在项目现场，周主任代表董事长、总经理李来所表达了对项目部员工最深切的慰问和关怀，并亲手送上节日慰问礼品，随后与现场员工进行了亲切交流，了解了生产生活和现场项目的情况，同时对大家在工作中取得的成绩予以充分肯定及表扬，处在项目一线的员工这种爱岗敬业、无私奉献的精神值得全体智道人学习。"
+                },
+                {
+                  zh: "当得知现场一名员工因病住院之后，周主任一行立即前往看望，带去了董事长、总经理李来所的深切慰问与谆谆嘱托，并对其带病坚持工作的精神给予了高度评价，嘱咐他一定要保重身体，下一步公司将会发动一切资源全力做好后勤保障工作。",
+                  en: "当得知现场一名员工因病住院之后，周主任一行立即前往看望，带去了董事长、总经理李来所的深切慰问与谆谆嘱托，并对其带病坚持工作的精神给予了高度评价，嘱咐他一定要保重身体，下一步公司将会发动一切资源全力做好后勤保障工作。"
+                }
+              ],
+              imgUrl: [
+                {
+                  image: dragon2019_2,
+                  caption: {
+                    zh: "",
+                    en: ""
+                  }
+                }
+              ]
+            },
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: " 公司的慰问让现场员工深刻感受到家的温暖，备受鼓舞。大家纷纷表示，一定会克服困难，团结一心、全力投入到项目工作中，以实际行动确保项目的安全、优质、高效。为江苏智道又快又好、持续健康发展添砖加瓦，为下一步江苏智道在每一场“战役”中取得更大胜利打下坚实基础。",
+                  en: " 公司的慰问让现场员工深刻感受到家的温暖，备受鼓舞。大家纷纷表示，一定会克服困难，团结一心、全力投入到项目工作中，以实际行动确保项目的安全、优质、高效。为江苏智道又快又好、持续健康发展添砖加瓦，为下一步江苏智道在每一场“战役”中取得更大胜利打下坚实基础。"
+                },
+                {
+                  zh: "大家智道，感恩有你！",
+                  en: "大家智道，感恩有你！"
+                }
+              ],
+              imgUrl: [
+                {
+                  image: null,
+                  caption: {
+                    zh: "",
+                    en: ""
                   }
                 }
               ]
