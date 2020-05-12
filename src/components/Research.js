@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Col, Row } from 'react-bootstrap';
+import InfoModal from './InfoModal';
 import researchprojectdata from '../data/researchprojectdata';
 import facilityData from '../data/researchfacilitydata';
 import researchTeamData from '../data/researchteamdata';
@@ -69,7 +69,8 @@ class Projects extends React.Component {
     state = {
         activeId: 0,
         activeImgUrl: researchprojectdata[0].imgUrl,
-        activeText: researchprojectdata[0][this.props.language]
+        activeText: researchprojectdata[0][this.props.language],
+        show: false
     }
 
     componentDidMount() {
@@ -93,9 +94,19 @@ class Projects extends React.Component {
         })
     }
 
+    handleClose() {
+    	this.setState({ show: false, num: 'nnn' });
+  	}
+
+  	handleShow() {
+    	this.setState({ show: true });
+  	}
+
     render(){
         const { language } = this.props;
-        const { activeId, activeImgUrl, activeText } = this.state;
+        const { activeId, activeImgUrl, activeText, show } = this.state;
+        const activeArticles = researchprojectdata.filter(x => x.id === activeId);
+        const activeArticle = activeArticles[0].moreInfo;
         return (
             <Row style={{minHeight: 294}}>
                 <Col md={4}>
@@ -123,15 +134,21 @@ class Projects extends React.Component {
                     <h1 className="chinese-section-header" style={{fontSize: 22, marginTop: 0}}>{activeText.tagline}</h1>
                     <p className="chinese-section-body" style={{fontSize: 14, color: '#666'}}><span style={{color: "#4495cd"}}><strong>–</strong> </span> {activeText.head}</p>
                     <p className="chinese-section-body">{activeText.body}</p>
-                    <Link to="/">
-                        <p 
-                            className="text-center" 
-                            style={{fontFamily: "PingFangSC-Semibold", fontSize: 16}}
-                        >
-                            了解更多
-                        </p>
-                    </Link>
+                    <p 
+                        onClick={() => this.handleShow()}
+                        className="text-center" 
+                        style={{fontFamily: "PingFangSC-Semibold", fontSize: 16, color: '#4495cd', cursor: 'pointer'}}
+                    >
+                        了解更多
+                    </p>
                 </Col>
+
+                <InfoModal
+					language={language}
+					showModal={show}
+					close={() => this.handleClose()}
+					data={activeArticle}
+        		/>
             </Row>
         )
     }
