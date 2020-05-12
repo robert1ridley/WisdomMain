@@ -18,10 +18,13 @@ import norwayGreen2 from '../../images/news/norway-green-energy-workshop/norway-
 import norwayGreen3 from '../../images/news/norway-green-energy-workshop/norway-green3.jpg';
 import norwayGreen4 from '../../images/news/norway-green-energy-workshop/norway-green4.jpg';
 import norwayGreen5 from '../../images/news/norway-green-energy-workshop/norway-green5.jpg';
-import strategicEcoDialogue1 from '../../images/news/strategic-economic-dialogue-2020/strategic-eco-dialogue1.jpg';
-import strategicEcoDialogue2 from '../../images/news/strategic-economic-dialogue-2020/strategic-eco-dialogue2.jpg';
-import strategicEcoDialogue3 from '../../images/news/strategic-economic-dialogue-2020/strategic-eco-dialogue3.jpg';
-import strategicEcoDialogue4 from '../../images/news/strategic-economic-dialogue-2020/strategic-eco-dialogue4.jpg';
+import strategicEcoDialogue1 from '../../images/news/strategic-economic-dialogue-2019/strategic-eco-dialogue1.jpg';
+import strategicEcoDialogue2 from '../../images/news/strategic-economic-dialogue-2019/strategic-eco-dialogue2.jpg';
+import strategicEcoDialogue3 from '../../images/news/strategic-economic-dialogue-2019/strategic-eco-dialogue3.jpg';
+import strategicEcoDialogue4 from '../../images/news/strategic-economic-dialogue-2019/strategic-eco-dialogue4.jpg';
+import qianjie1 from '../../images/news/qianjie-language-rehab/qianjie-rehab1.jpg';
+import qianjie2 from '../../images/news/qianjie-language-rehab/qianjie-rehab2.jpg';
+import qianjie3 from '../../images/news/qianjie-language-rehab/qianjie-rehab3.jpg';
 import prTraining from '../../images/news/pr-training/pr-training-min.png';
 import tskVisit from '../../images/news/tsk-visit/tsk-visit-min.jpg';
 import liShui1 from '../../images/news/lishui-project-ceremony/lishui-project-ceremony-1-min.jpg';
@@ -428,7 +431,7 @@ const newsdata = [
             zh: "江苏智道工程技术有限公司共同承办江苏-挪威绿色科技及海洋装备项目对接洽谈活动并达成合作意向",
             en: "江苏智道工程技术有限公司共同承办江苏-挪威绿色科技及海洋装备项目对接洽谈活动并达成合作意向"
           },
-          id: "norway-green-energy-workshop-2020",
+          id: "norway-green-energy-workshop-2019",
           timestamp: "1573090799",
           headImage: norwayGreen1,
           text: [
@@ -538,7 +541,7 @@ const newsdata = [
             zh: "江苏智道工程技术有限公司中美绿色合作伙伴计划项目顺利结题、结业",
             en: "江苏智道工程技术有限公司中美绿色合作伙伴计划项目顺利结题、结业"
           },
-          id: "strategic-economic-dialogue-2020",
+          id: "strategic-economic-dialogue-2019",
           timestamp: "1573609199",
           headImage: strategicEcoDialogue1,
           text: [
@@ -612,7 +615,7 @@ const newsdata = [
             zh: "江苏智道工程技术有限公司成功中标国家工信部2019年度工业节能诊断服务提供单位",
             en: "江苏智道工程技术有限公司成功中标国家工信部2019年度工业节能诊断服务提供单位"
           },
-          id: "ccgp-zhongbiao-2020",
+          id: "ccgp-zhongbiao-2019",
           timestamp: "1567129199",
           headImage: aboutImg,
           text: [
@@ -645,6 +648,69 @@ const newsdata = [
                   caption: {
                     zh: "",
                     en: ""
+                  }
+                }
+              ]
+            }     
+          ]
+        },
+
+        {
+          head: {
+            zh: "关爱残障儿童 传递温暖爱心",
+            en: "关爱残障儿童 传递温暖爱心"
+          },
+          id: "qianjie-language-rehabilitation-2019",
+          timestamp: "1561945199",
+          headImage: qianjie1,
+          text: [
+            {
+              subHead: {
+                zh: "——江苏智道工程技术有限公司赴钱洁语言康复中心参加党建公益活动",
+                en: "——江苏智道工程技术有限公司赴钱洁语言康复中心参加党建公益活动"
+              },
+              subText: [
+                {
+                  zh: "6月29日上午，栖霞区钱洁语言康复中心的活动室里掌声热烈，江苏智道工程技术有限公司常务副总经理、中共南京节能环保产业协会党支部副书记李艳敏、中共梅山设计院党总支书记刘忠和协会各会员单位代表们带着物资来慰问中心的残障儿童们，并在这里上了一堂特殊的“党课”。",
+                  en: "6月29日上午，栖霞区钱洁语言康复中心的活动室里掌声热烈，江苏智道工程技术有限公司常务副总经理、中共南京节能环保产业协会党支部副书记李艳敏、中共梅山设计院党总支书记刘忠和协会各会员单位代表们带着物资来慰问中心的残障儿童们，并在这里上了一堂特殊的“党课”。"
+                },
+                {
+                  zh: "党建公益活动开始之际，栖霞区钱洁语言康复中心的负责人钱主任向大家表示深深的感激之情，并带领全体人员一同参观了学校建设情况，详细介绍了园区内的具体情况。目前，栖霞区钱洁语言康复中心近十五年来，已成功康复了各类残疾儿童近1200名，康复率达到95%。中心现有60残障儿童，大部分来自农村，家庭经济状况不是太好。家长们交不起康复训练费，中心就无条件为他们进行康复训练，“为了帮助更多的孩子们得到进一步康复，有的只收取基本的生活费，不会因为交不起学费而把他们拒之门外。”钱主任说。",
+                  en: "党建公益活动开始之际，栖霞区钱洁语言康复中心的负责人钱主任向大家表示深深的感激之情，并带领全体人员一同参观了学校建设情况，详细介绍了园区内的具体情况。目前，栖霞区钱洁语言康复中心近十五年来，已成功康复了各类残疾儿童近1200名，康复率达到95%。中心现有60残障儿童，大部分来自农村，家庭经济状况不是太好。家长们交不起康复训练费，中心就无条件为他们进行康复训练，“为了帮助更多的孩子们得到进一步康复，有的只收取基本的生活费，不会因为交不起学费而把他们拒之门外。”钱主任说。"
+                },
+                {
+                  zh: "随后，在中心工作人员的带领下，大家来到活动室观看了纪录片《聆听》，记录片由栖霞区钱洁语言康复中心等单位联合制作，讲述了中心孩子们日常学习、生活等故事。“爸爸不在家，出门打工了，妈妈别牵挂，宝宝已长大……”大家看到纪录片中在康复训练的孩子吐字并不是太清晰，但还是努力地用歌声唱着对很久没见面的父母的思念，引发在场的所有人都留下了感动的泪水。",
+                  en: "随后，在中心工作人员的带领下，大家来到活动室观看了纪录片《聆听》，记录片由栖霞区钱洁语言康复中心等单位联合制作，讲述了中心孩子们日常学习、生活等故事。“爸爸不在家，出门打工了，妈妈别牵挂，宝宝已长大……”大家看到纪录片中在康复训练的孩子吐字并不是太清晰，但还是努力地用歌声唱着对很久没见面的父母的思念，引发在场的所有人都留下了感动的泪水。"
+                },
+                {
+                  zh: "活动接近尾声，栖霞区钱洁语言康复中心的负责人钱主任表示：“感谢大家来到康复中心，跟孩子们交流，是对孩子们最大的帮助。因为大家为孩子们创造了更多的语言环境，为孩子们更好地开口说话创造了机会。”",
+                  en: "活动接近尾声，栖霞区钱洁语言康复中心的负责人钱主任表示：“感谢大家来到康复中心，跟孩子们交流，是对孩子们最大的帮助。因为大家为孩子们创造了更多的语言环境，为孩子们更好地开口说话创造了机会。”"
+                },
+                {
+                  zh: "值得关注的是，江苏智道工程技术有限公司作为南京节能环保产业协会的会长单位，每个月都会组织各个会员单位的党员一起做一些公益性质的活动，“因为我们党员本身就要发挥模范带头作用，增强党组织的凝聚力，鼓励党员亮身份、做公益，带头攻坚克难。”党支部副书记李艳敏说。此次活动江苏智道工程技术有限公司带头共计捐助善款26900元，三台市场价值15000元的净水器和2000多元的日用品等。",
+                  en: "值得关注的是，江苏智道工程技术有限公司作为南京节能环保产业协会的会长单位，每个月都会组织各个会员单位的党员一起做一些公益性质的活动，“因为我们党员本身就要发挥模范带头作用，增强党组织的凝聚力，鼓励党员亮身份、做公益，带头攻坚克难。”党支部副书记李艳敏说。此次活动江苏智道工程技术有限公司带头共计捐助善款26900元，三台市场价值15000元的净水器和2000多元的日用品等。"
+                }
+              ],
+              imgUrl: [
+                {
+                  image: qianjie1,
+                  caption: {
+                    zh: "钱洁校长介绍学校环境",
+                    en: "钱洁校长介绍学校环境"
+                  }
+                },
+                {
+                  image: qianjie2,
+                  caption: {
+                    zh: "捐赠仪式现场",
+                    en: "捐赠仪式现场"
+                  }
+                },
+                {
+                  image: qianjie3,
+                  caption: {
+                    zh: "全体合影留念",
+                    en: "全体合影留念"
                   }
                 }
               ]
