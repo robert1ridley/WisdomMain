@@ -36,6 +36,11 @@ import israel2019_6 from '../../images/news/israel-2019/israel6.jpg';
 import meishan2019_1 from '../../images/news/meishan-design-2019/meishan1.jpg';
 import meishan2019_2 from '../../images/news/meishan-design-2019/meishan2.jpg';
 import meishan2019_3 from '../../images/news/meishan-design-2019/meishan3.jpg';
+import magang2018_1 from '../../images/news/magang-project-2018/magang1.jpg';
+import magang2018_2 from '../../images/news/magang-project-2018/magang2.jpg';
+import magang2018_3 from '../../images/news/magang-project-2018/magang3.jpg';
+import magang2018_4 from '../../images/news/magang-project-2018/magang4.jpg';
+import magang2018_5 from '../../images/news/magang-project-2018/magang5.jpg';
 import prTraining from '../../images/news/pr-training/pr-training-min.png';
 import tskVisit from '../../images/news/tsk-visit/tsk-visit-min.jpg';
 import liShui1 from '../../images/news/lishui-project-ceremony/lishui-project-ceremony-1-min.jpg';
@@ -1027,6 +1032,75 @@ const newsdata = [
               imgUrl: [
                 {
                   image: meishan2019_3,
+                  caption: {
+                    zh: "",
+                    en: ""
+                  }
+                }
+              ]
+            }     
+          ]
+        },
+
+        {
+          head: {
+            zh: "马钢7#8#焦炉烟道气脱硫脱硝项目开工典礼",
+            en: "马钢7#8#焦炉烟道气脱硫脱硝项目开工典礼"
+          },
+          id: "magang-project-2018",
+          timestamp: "1539653999",
+          headImage: magang2018_1,
+          text: [
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "2018年10月11日上午，在马钢炼焦总厂第三炼焦分厂举行了“7#8#焦炉烟道气脱硫脱硝项目开工典礼”，炼焦总厂厂长、第三分厂厂长、江苏智道公司总经理、上海克硫公司现场经理、马钢建设公司项目经理等，以及各公司职工代表出席了开工典礼。",
+                  en: "2018年10月11日上午，在马钢炼焦总厂第三炼焦分厂举行了“7#8#焦炉烟道气脱硫脱硝项目开工典礼”，炼焦总厂厂长、第三分厂厂长、江苏智道公司总经理、上海克硫公司现场经理、马钢建设公司项目经理等，以及各公司职工代表出席了开工典礼。"
+                },
+                {
+                  zh: "7#8#焦炉烟道气脱硫脱硝项目是马钢股份公司环保提升改造的重点工程。践行“绿水青山就是金山银山”；打造“三好”马钢，建设绿色都市工厂等环保理念。项目由江苏智道工程技术有限公司和上海克硫环保科技有限公司联合EPC总承包。",
+                  en: "7#8#焦炉烟道气脱硫脱硝项目是马钢股份公司环保提升改造的重点工程。践行“绿水青山就是金山银山”；打造“三好”马钢，建设绿色都市工厂等环保理念。项目由江苏智道工程技术有限公司和上海克硫环保科技有限公司联合EPC总承包。"
+                },
+                {
+                  zh: "该项目采用国内先进的活性焦脱硫脱硝协同处置一体化工艺。活性焦首先吸附烟道气中的SO2。同时在烟道气中喷入氨气，在活性焦催化作用下发生脱硝反应脱除NOx。吸附SO2后的活性焦经加热再生,释放出高浓度SO2气体。SO2气体通过氨氧化法制成硫酸铵。实现硫资源的有效回收利用。该工艺的最大特点是没有固废产生，不造成二次污染。装置投用后的焦炉烟道气排放指标优于国家要求的钢铁企业超低排放限值要求。",
+                  en: "该项目采用国内先进的活性焦脱硫脱硝协同处置一体化工艺。活性焦首先吸附烟道气中的SO2。同时在烟道气中喷入氨气，在活性焦催化作用下发生脱硝反应脱除NOx。吸附SO2后的活性焦经加热再生,释放出高浓度SO2气体。SO2气体通过氨氧化法制成硫酸铵。实现硫资源的有效回收利用。该工艺的最大特点是没有固废产生，不造成二次污染。装置投用后的焦炉烟道气排放指标优于国家要求的钢铁企业超低排放限值要求。"
+                },
+              ],
+              imgUrl: [
+                {
+                  image: magang2018_1,
+                  caption: {
+                    zh: "",
+                    en: ""
+                  }
+                },
+                {
+                  image: magang2018_2,
+                  caption: {
+                    zh: "",
+                    en: ""
+                  }
+                },
+                {
+                  image: magang2018_3,
+                  caption: {
+                    zh: "",
+                    en: ""
+                  }
+                },
+                {
+                  image: magang2018_4,
+                  caption: {
+                    zh: "",
+                    en: ""
+                  }
+                },
+                {
+                  image: magang2018_5,
                   caption: {
                     zh: "",
                     en: ""
