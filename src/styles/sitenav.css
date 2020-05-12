@@ -73,8 +73,13 @@ ul.nav.navbar-nav.navbar-right {
   margin-bottom: 10px;
 }
 
-.navbar a:link, .navbar a:visited, .navbar a:hover, .navbar a:active {
+.navbar a:link, .navbar a:visited, .navbar a:active {
   color: rgb(119, 119, 119);
+  background-color: #FFFFFF !important;
+}
+
+.navbar a:hover {
+  color: rgb(26, 25, 25) !important;
   background-color: #FFFFFF !important;
 }
 

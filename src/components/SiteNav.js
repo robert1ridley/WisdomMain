@@ -44,6 +44,7 @@ class SiteNav extends React.Component {
     console.log(this.state.path)
     const headings = this.props.language === "zh"? headers.chinese: headers.english;
     const titles = headings.map(heading => 
+      heading.id !== 4?
       <LinkContainer 
         to={heading.link} 
         key={heading.id} 
@@ -51,7 +52,30 @@ class SiteNav extends React.Component {
         className={this.state.path === getLocationFromParams(heading.link) ? "clicked" : "not-clicked"}
       >
         <NavItem eventKey={heading.id}>{heading.head}</NavItem>
-      </LinkContainer>
+      </LinkContainer> :
+      <NavDropdown 
+        eventKey={heading.id} 
+        key={heading.id} 
+        title={heading.head} 
+        id="basic-nav-dropdown" 
+        className={this.state.path === getLocationFromParams(heading.link) ? "clicked" : "not-clicked"}>
+          <LinkContainer 
+            to={heading.link}
+            onClick={() => this.updatePath(heading.link)}
+          >
+            <MenuItem className="nav-background" >{heading.head}</MenuItem>
+          </LinkContainer>
+          <hr style={{margin: 10}}/>
+          {heading.sublist.map(subItem => 
+            <LinkContainer 
+              to={subItem.link}
+              key={subItem.id}
+              onClick={() => this.updatePath(heading.link)}
+            >
+              <MenuItem className="nav-background" >{subItem.head}</MenuItem>
+            </LinkContainer>
+          )}
+      </NavDropdown>
     )
 
     const langTitle = this.props.language === "zh"? "中文/Chinese": "English/英语";
