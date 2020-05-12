@@ -2,8 +2,8 @@ import membraneImg from '../../images/mission/membrane.jpg';
 
 const membraneintro = {
     'head': {
-        'zh': '膜技术工程应用领先者',
-        'en': '膜技术工程应用领先者'
+        'zh': '分子筛膜技术工程应用领先者',
+        'en': '分子筛膜技术工程应用领先者'
     },
     'subHead': {
         'zh': '以中空纤维膜技术为核心，与其它膜技术协同生效',

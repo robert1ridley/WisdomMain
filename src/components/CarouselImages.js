@@ -21,10 +21,10 @@ const images = [
       en: "Chairman's Speech"
     },
     body: {
-      zh: "膜技术工程应用领先者",
+      zh: "分子筛膜技术工程应用领先者",
       en: "Our success depends on the success of customers"
     },
-    link: "/mission/membrane/cases"
+    link: "/mission/membrane/tech"
   },
   {
     image: mainCarousel3, 
@@ -38,7 +38,7 @@ const images = [
       zh: "节能环保系统优化解决专家",
       en: "The trust and support of customers help us grow stably"
     },
-    link: "/"
+    link: "/mission"
   },
   {
     image: mainCarousel4, 
@@ -52,7 +52,7 @@ const images = [
       zh: "远程智能监控运营维护管家",
       en: "The foundation of our success is excellent employees and advanced technologies"
     },
-    link: "/"
+    link: "/mission"
   },
   {
     image: mainCarousel1, 
@@ -66,7 +66,7 @@ const images = [
       zh: "科技净化环境，与客户共成功！",
       en: "We serve customers better with our modern management and efficient performance"
     },
-    link: "/"
+    link: "/mission"
   }
 ]
 

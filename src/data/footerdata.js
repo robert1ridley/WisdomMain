@@ -15,16 +15,16 @@ const footerdata = {
         subItems: [
           {text: "创新与研发", link:"/innovation/research"},
           {text: "自主知识产权", link:"/innovation/intellectual-property"},
-          {text: "专家", link:"/innovation/experts"}
+          {text: "专家委员会", link:"/innovation/experts"}
         ]
       },
       {
         header: {text: "知道使命", link:"/mission"},
         subItems: [
-          {text: "膜分离技术", link: "/mission/membrane/cases"},
-          {text: "有效成分回收、VOCs治理技术", link:"/mission/voc/cases"},
-          {text: "气体净化处理、达标排放技术", link: "/mission/desulph/cases"},
-          {text: "能量综合利用技术", link:"/mission/comprehensive/cases"},
+          {text: "膜分离技术", link: "/mission/membrane/tech"},
+          {text: "有效成分回收、VOCs治理技术", link:"/mission/voc/tech"},
+          {text: "气体净化处理、达标排放技术", link: "/mission/desulph/tech"},
+          {text: "能量综合利用技术", link:"/mission/comprehensive/tech"},
         ]
       },
       {
@@ -43,7 +43,7 @@ const footerdata = {
       {
         header: {text: "电话", link:"/contact"},
         subItems: [
-          {text: "9400929844738", link:"/contact"}
+          {text: "+86 25 85582257 85582240", link:"/contact"}
         ]
       }
     ]
@@ -64,23 +64,23 @@ const footerdata = {
         subItems: [
           {text: "创新与研发", link:"/innovation/research"},
           {text: "自主知识产权", link:"/innovation/intellectual-property"},
-          {text: "专家", link:"/innovation/experts"}
+          {text: "专家委员会", link:"/innovation/experts"}
         ]
       },
       {
         header: {text: "知道使命", link:"/mission"},
         subItems: [
-          {text: "膜分离技术", link: "/mission/membrane/cases"},
-          {text: "有效成分回收、VOCs治理技术", link:"/mission/voc/cases"},
-          {text: "气体净化处理、达标排放技术", link: "/mission/desulph/cases"},
-          {text: "能量综合利用技术", link:"/mission/comprehensive/cases"},
+          {text: "膜分离技术", link: "/mission/membrane/tech"},
+          {text: "有效成分回收、VOCs治理技术", link:"/mission/voc/tech"},
+          {text: "气体净化处理、达标排放技术", link: "/mission/desulph/tech"},
+          {text: "能量综合利用技术", link:"/mission/comprehensive/tech"},
         ]
       },
       {
         header: {text: "News", link: "/news"},
         subItems: [
          {text: "Enterprise News", link: "/news/enterprise"},
-         {text: "Industry Dynamics", link: "/news/enterprise"}
+         {text: "Industry Dynamics", link: "/news/industry"}
         ]
       },
       {
@@ -92,7 +92,7 @@ const footerdata = {
       {
         header:{text: "Phone", link: "/contact"},
         subItems: [
-         {text: "9400929844738", link: "/contact"}
+         {text: "+86 25 85582257 85582240", link: "/contact"}
         ]
       }
     ]

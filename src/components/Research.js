@@ -8,7 +8,7 @@ import backgroundImage from '../images/subnav/background15.jpg';
 import '../styles/research.css';
 
 const head = {
-    'zh': '专家委员会',
+    'zh': '技术创新',
     'en': 'Research and Development'
 }
 

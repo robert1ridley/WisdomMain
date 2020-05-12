@@ -83,7 +83,7 @@ const innovationdatabasic = [
     },
     {
         head: {
-            zh: "专家",
+            zh: "专家委员会",
             en: "Experts"
         },
         id: 'experts',
