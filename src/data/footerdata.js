@@ -11,25 +11,27 @@ const footerdata = {
         ]
       },
       {
+        header: {text: "技术创新", link: "/innovation/research"},
+        subItems: [
+          {text: "创新与研发", link:"/innovation/research"},
+          {text: "自主知识产权", link:"/innovation/intellectual-property"},
+          {text: "专家", link:"/innovation/experts"}
+        ]
+      },
+      {
+        header: {text: "知道使命", link:"/mission"},
+        subItems: [
+          {text: "膜分离技术", link: "/mission/membrane/cases"},
+          {text: "有效成分回收、VOCs治理技术", link:"/mission/voc/cases"},
+          {text: "气体净化处理、达标排放技术", link: "/mission/desulph/cases"},
+          {text: "能量综合利用技术", link:"/mission/comprehensive/cases"},
+        ]
+      },
+      {
         header: {text: "新闻中心", link: "/news/enterprise"},
         subItems: [
           {text: "企业新闻", link: "/news/enterprise"},
           {text: "行业动态", link: "/news/industry"}
-        ]
-      },
-      {
-        header: {text: "解决方案", link: "/solutions/oil-and-gas-recovery-and-voc-control"},
-        subItems: [
-          {text: "油气回收、VOCs治理", link:"/solutions/oil-and-gas-recovery-and-voc-control"},
-          {text: "脱硫脱硝技术", link:"/solutions/desulphurization-and-denitrification-technology"},
-          {text: "能量综合利用", link:"/solutions/comprehensive-utilization-of-energy"}
-        ]
-      },
-      {
-        header: {text: "人力资源", link:"/careers/jobs"},
-        subItems: [
-          {text: "人才招聘", link: "/careers/jobs"},
-          {text: "专家", link:"/careers/experts"}
         ]
       },
       {
@@ -58,25 +60,27 @@ const footerdata = {
         ]
       },
       {
+        header: {text: "技术创新", link: "/innovation/research"},
+        subItems: [
+          {text: "创新与研发", link:"/innovation/research"},
+          {text: "自主知识产权", link:"/innovation/intellectual-property"},
+          {text: "专家", link:"/innovation/experts"}
+        ]
+      },
+      {
+        header: {text: "知道使命", link:"/mission"},
+        subItems: [
+          {text: "膜分离技术", link: "/mission/membrane/cases"},
+          {text: "有效成分回收、VOCs治理技术", link:"/mission/voc/cases"},
+          {text: "气体净化处理、达标排放技术", link: "/mission/desulph/cases"},
+          {text: "能量综合利用技术", link:"/mission/comprehensive/cases"},
+        ]
+      },
+      {
         header: {text: "News", link: "/news"},
         subItems: [
          {text: "Enterprise News", link: "/news/enterprise"},
          {text: "Industry Dynamics", link: "/news/enterprise"}
-        ]
-      },
-      {
-        header:{text: "Solutions", link: "/solutions/oil-and-gas-recovery-and-voc-control"}, 
-        subItems: [
-          {text: "油气回收、VOCs治理", link:"/solutions/oil-and-gas-recovery-and-voc-control"},
-          {text: "脱硫脱硝技术", link:"/solutions/desulphurization-and-denitrification-technology"},
-          {text: "能量综合利用", link:"/solutions/comprehensive-utilization-of-energy"}
-        ]
-      },
-      {
-        header:{text: "Team", link: "/careers"},
-        subItems: [
-         {text: "Jobs", link: "/careers/jobs"},
-         {text: "Experts", link: "/careers/experts"}
         ]
       },
       {

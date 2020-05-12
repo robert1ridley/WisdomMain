@@ -8,7 +8,7 @@ import backgroundImage from '../images/subnav/background15.jpg';
 import '../styles/research.css';
 
 const head = {
-    'zh': '创新与研发',
+    'zh': '专家委员会',
     'en': 'Research and Development'
 }
 
@@ -120,8 +120,8 @@ class Projects extends React.Component {
                     <img className="img-responsive" style={{width: '100%', marginBottom: 25}} src={activeImgUrl} alt={activeText.head} />
                 </Col>
                 <Col md={4}>
-                    <h1 className="chinese-section-header" style={{fontSize: 22, marginTop: 0}}>{activeText.head}</h1>
-                    <p className="chinese-section-body" style={{fontSize: 14, color: '#666'}}><span style={{color: "#4495cd"}}><strong>–</strong> </span> {activeText.tagline}</p>
+                    <h1 className="chinese-section-header" style={{fontSize: 22, marginTop: 0}}>{activeText.tagline}</h1>
+                    <p className="chinese-section-body" style={{fontSize: 14, color: '#666'}}><span style={{color: "#4495cd"}}><strong>–</strong> </span> {activeText.head}</p>
                     <p className="chinese-section-body">{activeText.body}</p>
                     <Link to="/">
                         <p 

@@ -38,25 +38,25 @@ const coreProductsData = {
             'imageUrl': moleculeIcon,
             'zh': '膜技术工程应用',
             'en': '膜技术工程应用',
-            'link': '/'
+            'link': '/mission/membrane/tech'
         },
         {
             'imageUrl': recycleIcon,
             'zh': '油气回收、VOCs治理',
             'en': '油气回收、VOCs治理',
-            'link': '/'
+            'link': '/mission/voc/tech'
         },
         {
             'imageUrl': burnIcon,
             'zh': '脱硫脱硝技术',
             'en': '脱硫脱硝技术',
-            'link': '/'
+            'link': '/mission/desulph/tech'
         },
         {
             'imageUrl': industryIcon,
             'zh': '能量综合利用',
             'en': '能量综合利用',
-            'link': '/'
+            'link': '/mission/comprehensive/tech'
         }
     ]
 }

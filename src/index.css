@@ -348,6 +348,41 @@ div.media-body {
 	padding-top: 30px;
 }
 
+.linkedin:after {
+	font-family: FontAwesome;
+	font-size: 28px;
+	margin: 10px 10px 10px 10px;
+	color: #0077b5;
+	content: "\f08c";
+}
+
+.weixin_icon:after {
+	font-family: FontAwesome;
+	font-size: 28px;
+	color: rgb(126, 188, 89);
+	content: "\f1d7";
+ }
+
+ .wechat-container {
+	margin: 10px 10px 10px 40px;
+	cursor: pointer;
+	position:relative;
+ }
+
+ #two {
+    background:#223344;
+    position:absolute;
+    width:100px;
+    height:100px;
+    display:none;
+    color:#FFFFFF;
+}
+
+.wechat-container:hover #two {
+	display:block;
+	left:100px
+}
+
 .bds_weixin:after {
 	font-family: FontAwesome;
 	font-size: 25px;

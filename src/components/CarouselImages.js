@@ -17,21 +17,21 @@ const images = [
     blurImage: mainCarousel2tiny, 
     id: 1, 
     head: {
-      zh: "江苏智道使命",
+      zh: "江苏智道––",
       en: "Chairman's Speech"
     },
     body: {
       zh: "膜技术工程应用领先者",
       en: "Our success depends on the success of customers"
     },
-    link: "/"
+    link: "/mission/membrane/cases"
   },
   {
     image: mainCarousel3, 
     blurImage: mainCarousel3tiny, 
     id: 2, 
     head: {
-      zh: "江苏智道使命",
+      zh: "江苏智道––",
       en: "Chairman's Speech"
     },
     body: {
@@ -45,7 +45,7 @@ const images = [
     blurImage: mainCarousel4tiny, 
     id: 3, 
     head: {
-      zh: "江苏智道使命",
+      zh: "江苏智道––",
       en: "Chairman's Speech"
     },
     body: {
@@ -59,7 +59,7 @@ const images = [
     blurImage: mainCarousel1tiny, 
     id: 4, 
     head: {
-      zh: "江苏智道使命",
+      zh: "江苏智道––",
       en: "Chairman's Speech"
     },
     body: {
@@ -102,7 +102,7 @@ class ImageDiv extends React.Component {
                     <h3
                       className={language === "zh" ? "chinese-carousel-body" : "english-carousel-body"}
                     >
-                      江苏智道––
+                      {data.head[language]}
                     </h3>
                     <h3
                       className={language === "zh" ? "chinese-carousel-head" : "english-carousel-head"}
