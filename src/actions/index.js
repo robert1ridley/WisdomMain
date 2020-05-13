@@ -4,3 +4,10 @@ export const switchLanguage = (language) => {
       payload: language
   }
 };
+
+export const switchPage = (page) => {
+  return {
+      type: 'PAGE_SELECT',
+      payload: page
+  }
+};

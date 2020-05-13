@@ -10,7 +10,7 @@ class SocialShare extends React.Component {
   render () {
     return (
       <div style={{backgroundColor: '#595959'}}>
-        <LazyLoad offsetVertical={300} onContentVisible={() => console.log('Social lazyloaded!')}>
+        <LazyLoad offsetVertical={300}>
           <div 
             style={styles.background}
             className="background-loaded"

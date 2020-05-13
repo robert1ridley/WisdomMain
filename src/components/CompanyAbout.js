@@ -1,6 +1,10 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import {switchPage} from '../actions/index';
+import { getLocationFromParams } from '../utils/index';
 import backgroundImage from '../images/about/factory_opaque.jpg';
 import moleculeIcon from '../images/about/molecule-icon.png';
 import recycleIcon from '../images/about/recycle-icon.png';
@@ -137,12 +141,17 @@ class SinglCoreProduct extends React.Component {
         })
     }
 
+    updatePath = (newPath) => {
+        newPath = getLocationFromParams(newPath)
+        this.props.switchPage(newPath)
+    }
+
     render() {
         const { language, product } = this.props;
         const borderStyle = this.state.productIndex !== 0 ? 'with-border-img' : 'no-border-img';
         return (
             <Col md={3} sm={6} xs={6} className='column-padding'>
-                <Link to={product.link}>
+                <Link to={product.link} onClick={() => this.updatePath(product.link)}>
                     <div className={borderStyle}>
                         <img className='img-responsive' src={product.imageUrl} alt={product[language]} />
                         <p className="text-center white chinese-section-body">{product[language]}</p>
@@ -155,7 +164,7 @@ class SinglCoreProduct extends React.Component {
 
 
 const CoreProducts = (props) => {
-    const { language } = props;
+    const { language, switchPage } = props;
     return (
         <div className="background-loaded" style={styles.background}>
             <h1 className="text-center white chinese-section-header">{coreProductsData.head[language]}</h1>
@@ -167,6 +176,7 @@ const CoreProducts = (props) => {
                             product={product} 
                             language={language}
                             index={index}
+                            switchPage={switchPage}
                         />
                     )}
                 </div>
@@ -201,11 +211,11 @@ const CompanyCulture = (props) => {
 
 
 const CompanyAbout = (props) => {
-    const { language } = props;
+    const { language, switchPage } = props;
     return (
         <div>
             <BasicIntro language={language} />
-            <CoreProducts language={language} />
+            <CoreProducts language={language} switchPage={switchPage} />
             <CompanyCulture language={language} />
         </div>
     )
@@ -226,5 +236,14 @@ const styles = {
     },
 }
 
+function mapStateToProps(state) {
+  return {
+      page: state.page
+  };
+}
 
-export default CompanyAbout;
+function matchDispatchToProps(dispatch){
+  return bindActionCreators({switchPage: switchPage}, dispatch);
+}
+
+export default connect(mapStateToProps, matchDispatchToProps)(CompanyAbout);

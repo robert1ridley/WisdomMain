@@ -76,7 +76,6 @@ class Membrane extends React.Component {
           {
             <Route path={`/mission/membrane/:id`} exact render={(props) => 
               {
-                console.log(navData[activeIndex].template)
                 switch(navData[activeIndex].template) {
                   case('standard'):
                     return (
@@ -108,7 +107,6 @@ const styles = {
 }
 
 function mapStateToProps(state) {
-  console.log(state.language)
   return {
       language: state.language
   };

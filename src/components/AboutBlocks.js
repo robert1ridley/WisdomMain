@@ -2,6 +2,10 @@ import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import LazyLoad from 'react-lazy-load';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import {switchPage} from '../actions/index';
+import { getLocationFromParams } from '../utils/index';
 import image1 from '../images/home/company.jpg';
 import image2 from '../images/home/membrane.jpg';
 import image3 from '../images/home/news_center.jpg';
@@ -39,13 +43,18 @@ class AboutBlockSingle extends React.Component {
     this.setState({hover: !this.state.hover})
   }
 
+  updatePath = (newPath) => {
+    newPath = getLocationFromParams(newPath)
+    this.props.switchPage(newPath)
+  }
+
   render() {
     const { language, img } = this.props;
     const linkStyle = {opacity: 1, backgroundColor: '#FFFFFF'};
 
     return(
         <Col md={4} style={{paddingLeft: 5, paddingRight: 5, marginBottom: 15}}>
-            <Link to={img.link}>
+            <Link to={img.link} onClick={() => this.updatePath(img.link)}>
                 <div
                     onMouseEnter={this.toggleHover} 
                     onMouseLeave={this.toggleHover}
@@ -69,7 +78,7 @@ class AboutBlockSingle extends React.Component {
 
 
 const AboutBlocks = (props) => {
-    const { language } = props;
+    const { language, switchPage } = props;
     return(
         <div>
             <div className="container main-content-container about-container">
@@ -102,6 +111,7 @@ const AboutBlocks = (props) => {
                             img={img}
                             language={language}
                             key={idx}
+                            switchPage={switchPage}
                         />
                         )
                     }
@@ -111,71 +121,14 @@ const AboutBlocks = (props) => {
 )
 }
 
+function mapStateToProps(state) {
+  return {
+      page: state.page
+  };
+}
 
-export default AboutBlocks;
+function matchDispatchToProps(dispatch){
+  return bindActionCreators({switchPage: switchPage}, dispatch);
+}
 
-
-// const styles = {
-//     wpCaptionTextChinese: {
-//         fontFamily: 'PingFangSC-Semibold',
-//         fontSize: '34px',
-//         color: '#FFFFFF',
-//         letterSpacing: '0.27px',
-//         textAlign: 'center',
-//         lineHeight: '24px',
-//         },
-        
-//         wpCaptionTextEnglish: {
-//         fontSize: '28px',
-//         color: '#FFFFFF',
-//         textAlign: 'center',
-//         lineHeight: '20px',
-//         },
-
-//     chineseBigHead: {
-//         fontFamily: "PingFangSC-Semibold",
-//         textAlign: 'right',
-//         fontSize: 42,
-//         letterSpacing: 0.2,
-//         marginBottom: 10
-//     },
-    
-//     englishBigHead: {
-//         fontWeight: 500,
-//         fontSize: '2em',
-//     },
-    
-//     chineseBigBody: {
-//         fontFamily: "PingFangSC-Semibold",
-//         fontSize: 22,
-//         letterSpacing: 0.14,
-//         textAlign: 'center',
-//         lineHeight: '50px',
-//         marginTop: '40px !important',
-//         color: '#86B728'
-//     },
-
-//     chineseBigBodyBlackSubHead: {
-//         fontFamily: "PingFangSC-Semibold",
-//         fontSize: 22,
-//         letterSpacing: 0.14,
-//         textAlign: 'right',
-//         marginTop: '40px !important',
-//         color: '#666'
-//     },
-
-//     chineseBigBodyBlack: {
-//         fontFamily: "PingFangSC-Semibold",
-//         fontSize: 22,
-//         letterSpacing: 0.14,
-//         textAlign: 'center',
-//         marginTop: '40px !important',
-//         color: '#666'
-//     },
-    
-//     bigBody: {
-//         fontWeight: 100,
-//         fontSize: 20,
-//         marginTop: '40px !important',
-//     },
-// }
+export default connect(mapStateToProps, matchDispatchToProps)(AboutBlocks);

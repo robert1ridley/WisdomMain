@@ -19,30 +19,30 @@ const allproductsintro = {
     'productTypes': {
         'zh': [
             {
-                'text': '膜分离技术', 'link': 'mission/membrane/tech'
+                'text': '膜分离技术', 'link': '/mission/membrane/tech'
             },
             {
-                'text': '有效成分回收、VOCs治理技术', 'link': 'mission/voc/tech'
+                'text': '有效成分回收、VOCs治理技术', 'link': '/mission/voc/tech'
             },
             {
-                'text': '烟气净化技术', 'link': 'mission/desulph/tech'
+                'text': '烟气净化技术', 'link': '/mission/desulph/tech'
             },
             {
-                'text': '能量综合利用技术', 'link': 'mission/comprehensive/tech'
+                'text': '能量综合利用技术', 'link': '/mission/comprehensive/tech'
             }
         ],
         'en': [
             {
-                'text': '膜分离技术', 'link': 'mission/membrane/tech'
+                'text': '膜分离技术', 'link': '/mission/membrane/tech'
             },
             {
-                'text': '有效成分回收、VOCs治理技术', 'link': 'mission/voc/tech'
+                'text': '有效成分回收、VOCs治理技术', 'link': '/mission/voc/tech'
             },
             {
-                'text': '烟气净化技术', 'link': 'mission/desulph/tech'
+                'text': '烟气净化技术', 'link': '/mission/desulph/tech'
             },
             {
-                'text': '能量综合利用技术', 'link': 'mission/comprehensive/tech'
+                'text': '能量综合利用技术', 'link': '/mission/comprehensive/tech'
             }
         ]
     }

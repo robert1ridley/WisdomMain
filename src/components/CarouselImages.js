@@ -1,6 +1,10 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import {switchPage} from '../actions/index';
+import { getLocationFromParams } from '../utils/index';
 import mainCarousel1 from '../images/carousel/carousel1.jpg';
 import mainCarousel2 from '../images/carousel/carousel2.jpg';
 import mainCarousel3 from '../images/carousel/carousel3.jpg';
@@ -88,13 +92,18 @@ class ImageDiv extends React.Component {
       this.show()
   }
 
+  updatePath = (newPath) => {
+    newPath = getLocationFromParams(newPath)
+    this.props.switchPage(newPath)
+  }
+
   render(){
     const { data, language } = this.props;
     const style = this.state.visible === false? "carousel-div-non": "carousel-div";
     return (
       <div className={style} style={{backgroundImage: `url(${data.image})`}}>
         <Carousel.Caption>
-          <Link to={data.link}>
+          <Link to={data.link} onClick={() => this.updatePath(data.link)}>
             <div className="outer">
               <div className="middle">
                 <div className="inner">
@@ -121,7 +130,7 @@ class ImageDiv extends React.Component {
 }
 
 const CarouselImages = (props) => {
-  const { language } = props;
+  const { language, switchPage } = props;
   const imageData = images.map(imageDatum=>
       <Carousel.Item key={imageDatum.id}>
         <div className="wrapper">
@@ -130,6 +139,7 @@ const CarouselImages = (props) => {
             <ImageDiv
               data={imageDatum}
               language = {language}
+              switchPage= {switchPage}
             />
           </div>
         </div>
@@ -143,4 +153,14 @@ const CarouselImages = (props) => {
   )
 }
 
-export default CarouselImages;
+function mapStateToProps(state) {
+  return {
+      page: state.page
+  };
+}
+
+function matchDispatchToProps(dispatch){
+  return bindActionCreators({switchPage: switchPage}, dispatch);
+}
+
+export default connect(mapStateToProps, matchDispatchToProps)(CarouselImages);

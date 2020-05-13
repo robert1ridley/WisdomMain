@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {switchLanguage} from '../actions/index';
+import {switchLanguage, switchPage} from '../actions/index';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
@@ -11,37 +11,27 @@ import '../styles/sitenav.css';
 import logo from '../images/logo-orig2.png';
 
 class SiteNav extends React.Component {
-  state = {
-    path: '/'
-  }
 
   componentDidMount() {
     if(typeof(window) !== 'undefined') {
       const path = getLocationFromParams(window.location.pathname);
-      this.setState({
-        path: path
-      })
+      this.props.switchPage(path)
     }
   }
 
   componentDidUpdate() {
     window.onpopstate  = (e) => {
       const path = getLocationFromParams(window.location.pathname);
-      this.setState({
-        path: path
-      })
+      this.props.switchPage(path)
     }
   }
 
   updatePath = (newPath) => {
     newPath = getLocationFromParams(newPath)
-    this.setState({
-      path: newPath
-    })
+    this.props.switchPage(newPath)
   }
 
   render() {
-    console.log(this.state.path)
     const headings = this.props.language === "zh"? headers.chinese: headers.english;
     const titles = headings.map(heading => 
       heading.id !== 4?
@@ -49,7 +39,7 @@ class SiteNav extends React.Component {
         to={heading.link} 
         key={heading.id} 
         onClick={() => this.updatePath(heading.link)}
-        className={this.state.path === getLocationFromParams(heading.link) ? "clicked" : "not-clicked"}
+        className={this.props.page === getLocationFromParams(heading.link) ? "clicked" : "not-clicked"}
       >
         <NavItem eventKey={heading.id}>{heading.head}</NavItem>
       </LinkContainer> :
@@ -58,7 +48,7 @@ class SiteNav extends React.Component {
         key={heading.id} 
         title={heading.head} 
         id="basic-nav-dropdown" 
-        className={this.state.path === getLocationFromParams(heading.link) ? "clicked" : "not-clicked"}>
+        className={this.props.page === getLocationFromParams(heading.link) ? "clicked" : "not-clicked"}>
           <LinkContainer 
             to={heading.link}
             onClick={() => this.updatePath(heading.link)}
@@ -109,12 +99,13 @@ class SiteNav extends React.Component {
 
 function mapStateToProps(state) {
   return {
-      language: state.language
+      language: state.language,
+      page: state.page
   };
 }
 
 function matchDispatchToProps(dispatch){
-  return bindActionCreators({switchLanguage: switchLanguage}, dispatch);
+  return bindActionCreators({switchLanguage: switchLanguage, switchPage: switchPage}, dispatch);
 }
 
 export default connect(mapStateToProps, matchDispatchToProps)(SiteNav);

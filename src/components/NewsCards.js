@@ -1,12 +1,16 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import {switchPage} from '../actions/index';
+import { getLocationFromParams } from '../utils/index';
 import '../styles/news-cards.css';
 import { getDateFromTimestamp } from '../utils/index';
 
 const NewsCards = (props) => {
   const baseLink = props.match.params.id
-  const { language, data } = props
+  const { language, data, switchPage } = props
   const MediaObjects = data.map(MediaObject => 
       <SingleMedia
         image={MediaObject.headImage}
@@ -17,6 +21,7 @@ const NewsCards = (props) => {
         baseLink={baseLink}
         timestamp={MediaObject.timestamp}
         language={language}
+        switchPage={switchPage}
       />
     )
   return (
@@ -27,6 +32,12 @@ const NewsCards = (props) => {
 }
 
 class SingleMedia extends React.Component {
+  
+  updatePath = (newPath) => {
+    newPath = getLocationFromParams(newPath)
+    this.props.switchPage(newPath)
+  }
+
   render() {
     const { image, header, paragraph, baseLink, postId, timestamp, language } = this.props;
     let publishDate = getDateFromTimestamp(timestamp, language);
@@ -35,7 +46,7 @@ class SingleMedia extends React.Component {
     const bodyClass = language === 'zh' ? 'chinese-news-card-body' : 'english-news-card-body';
     return (
       <div>
-        <Link to={`${baseLink}/${postId}`}>
+        <Link to={`${baseLink}/${postId}`} onClick={() => this.updatePath(`/news/${baseLink}/${postId}`)}>
           <div className="news-card-item">
             <Row>
               <Col lg={5} md={5}>
@@ -65,6 +76,14 @@ const styles = {
   }
 }
 
-export default NewsCards;
+function mapStateToProps(state) {
+  return {
+      page: state.page
+  };
+}
 
+function matchDispatchToProps(dispatch){
+  return bindActionCreators({switchPage: switchPage}, dispatch);
+}
 
+export default connect(mapStateToProps, matchDispatchToProps)(NewsCards);

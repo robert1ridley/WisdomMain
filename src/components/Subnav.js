@@ -1,29 +1,41 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import {switchPage} from '../actions/index';
+import { getLocationFromParams } from '../utils/index';
 import SubNoNav from './SubNoNav';
 import '../styles/subnav.css';
 
-const Subnav = (props) => {
-  const { aboutData, currentActive, childActive, language, background, intro, path } = props;
-  const navButtons = aboutData.map((navButton, index) => 
-    <Link to={`/${path}/${navButton.id}`} key={index}>
-      <span 
-        style={currentActive===index? styles.activeButton: styles.regularButton} 
-        onClick={() => childActive(index)}
-        key={index}
-      >
-        {navButton.head[language]}
-      </span>
-    </Link>
-  )
-  return (
-    <div>
-      <SubNoNav language={language} intro={intro} background={background} />
-      <div className='container' style={{paddingTop: 20, paddingBottom: 17}}>
-        {navButtons}
+class Subnav extends React.Component {
+
+  updatePath = (newPath) => {
+    newPath = getLocationFromParams(newPath)
+    this.props.switchPage(newPath)
+  }
+
+  render() {
+    const { aboutData, currentActive, childActive, language, background, intro, path } = this.props;
+    const navButtons = aboutData.map((navButton, index) => 
+      <Link to={`/${path}/${navButton.id}`} key={index} onClick={() => this.updatePath(`/${path}/${navButton.id}`)}>
+        <span 
+          style={currentActive===index? styles.activeButton: styles.regularButton} 
+          onClick={() => childActive(index)}
+          key={index}
+        >
+          {navButton.head[language]}
+        </span>
+      </Link>
+    )
+    return (
+      <div>
+        <SubNoNav language={language} intro={intro} background={background} />
+        <div className='container' style={{paddingTop: 20, paddingBottom: 17}}>
+          {navButtons}
+        </div>
       </div>
-    </div>
-  )
+    ) 
+  }
 }
 
 const styles = {
@@ -61,4 +73,14 @@ const styles = {
 
 }
 
-export default Subnav;
+function mapStateToProps(state) {
+  return {
+      page: state.page
+  };
+}
+
+function matchDispatchToProps(dispatch){
+  return bindActionCreators({switchPage: switchPage}, dispatch);
+}
+
+export default connect(mapStateToProps, matchDispatchToProps)(Subnav);
