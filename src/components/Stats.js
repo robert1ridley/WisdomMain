@@ -39,7 +39,6 @@ const figures = [
     }
 ]
 
-
 const SingleStat = (props) => {
     const { fig, language } = props;
 
