@@ -16,27 +16,33 @@ const link6 = 'https://www.hyundai-steel.com/en/index.hds'
 const partnersimgdata = [
     {
         imgurl: partnerimg1,
-        linkurl: link1
+        linkurl: link1,
+        name: '中国宝武钢铁集团有限公司'
     },
     {
         imgurl: partnerimg2,
-        linkurl: link2
+        linkurl: link2,
+        name: '中国海油'
     },
     {
         imgurl: partnerimg3,
-        linkurl: link3
+        linkurl: link3,
+        name: '中华人民共和国科学技术部'
     },
     {
         imgurl: partnerimg4,
-        linkurl: link4
+        linkurl: link4,
+        name: '南京南钢钢铁联合有限公司'
     },
     {
         imgurl: partnerimg5,
-        linkurl: link5
+        linkurl: link5,
+        name: '中国石化'
     },
     {
         imgurl: partnerimg6,
-        linkurl: link6
+        linkurl: link6,
+        name: '现代制铁'
     }
 ]
 

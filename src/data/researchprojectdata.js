@@ -12,12 +12,12 @@ const projectData = [
         'zh': {
             'tagline': '首创四通道中空纤维分子筛膜技术',
             'head': '江苏智道研究院',
-            'body': '南京工业大学顾学红教授课题组开发出新型四通道α-Al2O3中空纤维支撑体（图1）。由于该载体内腔存在交错连接的结构，其机械强度较常规单通道中空纤维载体得到显著提高，如表1所示，解决了中空纤维膜应用过程中面临的易断、易碎问题。',
+            'body': '南京工业大学顾学红教授课题组开发出新型四通道α-Al2O3中空纤维支撑体。由于该载体内腔存在交错连接的结构，其机械强度较常规单通道中空纤维载体得到显著提高，如表1所示，解决了中空纤维膜应用过程中面临的易断、易碎问题。',
         },
         'en': {
             'tagline': '首创四通道中空纤维分子筛膜技术',
             'head': '江苏智道研究院',
-            'body': '南京工业大学顾学红教授课题组开发出新型四通道α-Al2O3中空纤维支撑体（图1）。由于该载体内腔存在交错连接的结构，其机械强度较常规单通道中空纤维载体得到显著提高，如表1所示，解决了中空纤维膜应用过程中面临的易断、易碎问题。',
+            'body': '南京工业大学顾学红教授课题组开发出新型四通道α-Al2O3中空纤维支撑体。由于该载体内腔存在交错连接的结构，其机械强度较常规单通道中空纤维载体得到显著提高，如表1所示，解决了中空纤维膜应用过程中面临的易断、易碎问题。',
         },
         'imgUrl': projectImage1,
         'id': 0,
@@ -95,29 +95,7 @@ const projectData = [
         },
         'imgUrl': projectImage3,
         'id': 2,
-        'moreInfo': {
-            'articleHead': {
-                'zh': "江苏省科技厅重大科技成果转化专项扶持资金",
-                'en': "江苏省科技厅重大科技成果转化专项扶持资金"
-            },
-            'articleContent': [
-                {
-                    'text': {
-                        'zh': "",
-                        'en': ""
-                    },
-                    'articleImage': [
-                        {
-                            'imageURL': null,
-                            'caption': {
-                                'zh': "",
-                                'en': ""
-                            }
-                        }
-                    ]
-                }
-            ]
-        }
+        'moreInfo': null
     },
     
     {
@@ -133,29 +111,7 @@ const projectData = [
         },
         'imgUrl': projectImage4,
         'id': 1,
-        'moreInfo': {
-            'articleHead': {
-                'zh': "工业废气酸露点的测量与控制关键技术联合研发",
-                'en': "工业废气酸露点的测量与控制关键技术联合研发"
-            },
-            'articleContent': [
-                {
-                    'text': {
-                        'zh': "",
-                        'en': ""
-                    },
-                    'articleImage': [
-                        {
-                            'imageURL': null,
-                            'caption': {
-                                'zh': "",
-                                'en': ""
-                            }
-                        }
-                    ]
-                }
-            ]
-        }
+        'moreInfo': null
     },
 
     {
@@ -171,29 +127,7 @@ const projectData = [
         },
         'imgUrl': projectImage2,
         'id': 3,
-        'moreInfo': {
-            'articleHead': {
-                'zh': "南京市科技进步奖",
-                'en': "南京市科技进步奖"
-            },
-            'articleContent': [
-                {
-                    'text': {
-                        'zh': "",
-                        'en': ""
-                    },
-                    'articleImage': [
-                        {
-                            'imageURL': null,
-                            'caption': {
-                                'zh': "",
-                                'en': ""
-                            }
-                        }
-                    ]
-                }
-            ]
-        }
+        'moreInfo': null
     }
 ]
 

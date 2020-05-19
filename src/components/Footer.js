@@ -16,12 +16,15 @@ const PartnersList = () => {
     <Col md={2} xs={4} key={index}>
       <a href={dataitem.linkurl} target="_blank" rel="noopener">
         <LazyLoad offsetVertical={300}>
-          <Image 
-            className="center-img" 
-            style={{marginTop: 0, marginBottom: 10, border: '1px solid #666666'}} 
-            alt={'合作伙伴' + index}
-            src={dataitem.imgurl} responsive 
-          />
+          <div className="tooltip1">
+            <span className="tooltiptext">{dataitem.name}</span>
+            <Image 
+              className="center-img" 
+              style={{marginTop: 0, marginBottom: 10, border: '1px solid #666666'}} 
+              alt={'合作伙伴' + index}
+              src={dataitem.imgurl} responsive 
+            />
+          </div>
         </LazyLoad>
       </a>
     </Col>

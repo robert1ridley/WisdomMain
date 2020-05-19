@@ -13,14 +13,14 @@ const InfoModal = (props) => {
         {
           data.articleContent.map((item, index) => 
             <div key={index}>
-              <p>{item.text[language]}</p>
+              <p style={{textIndent: '.3in'}}>{item.text[language]}</p>
               {
                 item.articleImage.map((image, idx)=>
                   image.imageURL!==null &&
                   <div className="img-container text-center" key={idx}>
                     <Image src={image.imageURL} className="center-img" width="100%" responsive/>
                     {image.caption[language]===""?<div></div>:
-                      <p className="medium-body" style={{marginTop: 2}}><span className="mini-tab" style={styles.tab} /> {image.caption[language]}</p>
+                      <p className="modal-caption" style={{marginTop: 2}}><span className="mini-tab" style={styles.tab} /> {image.caption[language]}</p>
                     }
                   </div>
                 )

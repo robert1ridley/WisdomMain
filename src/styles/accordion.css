@@ -53,7 +53,7 @@
 }
 
 .accordion-chinese, .accordion-english {
-  font-size: 26px;
+  font-size: 20px;
   line-height: 37px;
   color: #1951B4;
   letter-spacing: 0;
@@ -85,14 +85,14 @@
 
 .panel-chinese {
   font-family: 'PingFangSC-Light';
-  font-size: 20px;
+  font-size: 16px;
   color: #333333;
   letter-spacing: 0;
   line-height: 30px;
 }
 
 .panel-english {
-  font-size: 20px;
+  font-size: 16px;
   color: #333333;
   letter-spacing: 0;
   line-height: 30px;

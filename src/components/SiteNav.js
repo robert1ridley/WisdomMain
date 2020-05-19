@@ -86,10 +86,11 @@ class SiteNav extends React.Component {
         <Navbar.Collapse>
           <Nav pullRight>
             {titles}
-            <NavDropdown eventKey={8} title={langTitle} id="basic-nav-dropdown">
+            {/* UNCOMMENT FOR LANGUAGE OPTION */}
+            {/* <NavDropdown eventKey={8} title={langTitle} id="basic-nav-dropdown">
               <MenuItem className="nav-background" eventKey={8.1} onClick={() => this.props.switchLanguage("zh")}>中文</MenuItem>
               <MenuItem className="nav-background" eventKey={8.2} onClick={() => this.props.switchLanguage("en")}>English</MenuItem>
-            </NavDropdown>
+            </NavDropdown> */}
           </Nav>
         </Navbar.Collapse>
       </Navbar>

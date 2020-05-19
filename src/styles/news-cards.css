@@ -18,26 +18,26 @@
 
 .chinese-news-card-head {
   font-family: 'PingFangSC-Semibold';
-  font-size: 26px;
+  font-size: 20px;
   color: #1951B4;
   letter-spacing: 0;
 }
 
 .english-news-card-head {
-  font-size: 26px;
+  font-size: 20px;
   color: #1951B4;
 }
 
 .chinese-news-card-body {
   font-family: 'PingFangSC-Light';
-  font-size: 20px;
+  font-size: 16px;
   color: #333333;
   letter-spacing: 0;
   line-height: 30px;
 }
 
 .english-news-card-body {
-  font-size: 20px;
+  font-size: 16px;
   color: #333333;
   letter-spacing: 0;
   line-height: 30px;
@@ -45,13 +45,13 @@
 
 .chinese-news-card-date {
   font-family: 'PingFangSC-Regular';
-  font-size: 18px;
+  font-size: 14px;
   color: #666666;
   letter-spacing: 0.14px;
   line-height: 24px;
 }
 
 .english-news-card-date {
-  font-size: 18px;
+  font-size: 14px;
   color: #666666;
 }

@@ -19,12 +19,13 @@ const footerdata = {
         ]
       },
       {
-        header: {text: "知道使命", link:"/mission"},
+        header: {text: "智道使命", link:"/mission"},
         subItems: [
           {text: "膜分离技术", link: "/mission/membrane/tech"},
           {text: "有效成分回收、VOCs治理技术", link:"/mission/voc/tech"},
           {text: "气体净化处理、达标排放技术", link: "/mission/desulph/tech"},
           {text: "能量综合利用技术", link:"/mission/comprehensive/tech"},
+          {text: "综合应用案例", link:"/mission/case-high"},
         ]
       },
       {
@@ -68,12 +69,13 @@ const footerdata = {
         ]
       },
       {
-        header: {text: "知道使命", link:"/mission"},
+        header: {text: "智道使命", link:"/mission"},
         subItems: [
           {text: "膜分离技术", link: "/mission/membrane/tech"},
           {text: "有效成分回收、VOCs治理技术", link:"/mission/voc/tech"},
           {text: "气体净化处理、达标排放技术", link: "/mission/desulph/tech"},
           {text: "能量综合利用技术", link:"/mission/comprehensive/tech"},
+          {text: "综合应用案例", link:"/mission/case-high"}
         ]
       },
       {

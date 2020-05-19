@@ -134,21 +134,26 @@ class Projects extends React.Component {
                     <h1 className="chinese-section-header" style={{fontSize: 22, marginTop: 0}}>{activeText.tagline}</h1>
                     <p className="chinese-section-body" style={{fontSize: 14, color: '#666'}}><span style={{color: "#4495cd"}}><strong>–</strong> </span> {activeText.head}</p>
                     <p className="chinese-section-body">{activeText.body}</p>
-                    <p 
-                        onClick={() => this.handleShow()}
-                        className="text-center" 
-                        style={{fontFamily: "PingFangSC-Semibold", fontSize: 16, color: '#4495cd', cursor: 'pointer'}}
-                    >
-                        了解更多
-                    </p>
+                    {
+                        activeArticle &&
+                        <p 
+                            onClick={() => this.handleShow()}
+                            className="text-center" 
+                            style={{fontFamily: "PingFangSC-Semibold", fontSize: 16, color: '#4495cd', cursor: 'pointer'}}
+                        >
+                            了解更多
+                        </p>
+                    }
                 </Col>
-
-                <InfoModal
-					language={language}
-					showModal={show}
-					close={() => this.handleClose()}
-					data={activeArticle}
-        		/>
+                {
+                    activeArticle &&
+                    <InfoModal
+                        language={language}
+                        showModal={show}
+                        close={() => this.handleClose()}
+                        data={activeArticle}
+                    />
+                }
             </Row>
         )
     }
