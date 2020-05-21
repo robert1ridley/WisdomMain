@@ -4,7 +4,7 @@ import MissionHead from '../headers/MissionHead';
 import SubNoNav from '../components/SubNoNav';
 import MissionMain from '../components/MissionMain';
 import missionheaddata from '../data/missiondata/missionheaddata';
-import '../styles/mission.css';
+import '../styles/left-align.css';
 import background14 from '../images/subnav/background14.jpg';
 
 const Mission = (props) => {

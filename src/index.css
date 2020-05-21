@@ -115,6 +115,7 @@ h1.light {
 }
 
 .medium-body {
+	font-family: PingFangSC-Medium;
 	font-weight: 100;
 	font-size: 16px;
 	margin-top: 20px;
@@ -330,7 +331,17 @@ div.media-body {
 	opacity: 0.8;
 }
 
-.caption p {
+.caption-green {
+	position: absolute;
+	background-color: rgba(126, 188, 89, 0.5);
+	color: black;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 10px;
+}
+
+.caption p, .caption-green p {
   	margin: 0px !important;
 }
 

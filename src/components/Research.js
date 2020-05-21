@@ -3,9 +3,13 @@ import { Col, Row } from 'react-bootstrap';
 import InfoModal from './InfoModal';
 import researchprojectdata from '../data/researchprojectdata';
 import facilityData from '../data/researchfacilitydata';
+import platformData from '../data/researchplatformdata';
 import researchTeamData from '../data/researchteamdata';
 import backgroundImage from '../images/subnav/background15.jpg';
+import topStrokeImg from '../images/mission/topstroke.png';
+import topStrokeGreenReverseImg from '../images/mission/topstrokegreenreverse.png';
 import '../styles/research.css';
+import '../styles/left-align.css';
 
 const head = {
     'zh': '技术创新',
@@ -13,8 +17,8 @@ const head = {
 }
 
 const facilityHead = {
-    'zh': '膜科学研究所',
-    'en': 'Membrane Science Institute'
+    'zh': '江苏智道研究院',
+    'en': '江苏智道研究院'
 }
 
 const teamHead = {
@@ -174,19 +178,22 @@ const ResearchProjects = (props) => {
 const FactilityInfo = (props) => {
     const { language } = props;
     return (
-        <Row>
-            <Col md={6} className="pad-right">
-                <ul>
+        <Row className="outer-row">
+            <Col md={7} sm={6} className="align-self-center">
+                <div style={{margin: 'auto'}}>
+                    <img src={topStrokeImg} style={{width: 130}} alt="" />
+                    <p className="chinese-section-body" 
+                        style={styles.smallHeading}>
+                        {facilityData.head[language]}
+                    </p>
                     {
                         facilityData[language].map((bullet, index) => 
-                            <li key={index} className="chinese-section-body">
-                                {bullet}
-                            </li>
+                            <p key={index} className="chinese-section-body">{bullet}</p>
                         )
                     }
-                </ul>
+                </div>
             </Col>
-            <Col md={6} className="pad-left">
+            <Col md={5} sm={6} className="pad-left">
                 <img className="img-responsive" style={{width: '100%'}} src={facilityData.imgUrl} alt="研究院" />
             </Col>
         </Row>
@@ -208,82 +215,83 @@ const ResearchFacility = (props) => {
     )
 }
 
-const ResearchTeamInfo = (props) => {
+const PlatformInfo = (props) => {
     const { language } = props;
     return (
-        <ul>
-            {
-                researchTeamData[language].map((bullet, index) => 
-                    <li key={index} className="chinese-section-body">
-                        {bullet}
-                    </li>
-                )
-            }
-        </ul>
+        <Row className="outer-row">
+            <Col md={5} sm={6}>
+                <div className="img-container text-center">
+                    <img 
+                        className="img-responsive" 
+                        src={platformData.imgUrl} 
+                        style={{width: '100%'}}
+                        alt={platformData.imgCaption[language]}
+                    />
+                    <div className="caption-green">
+                        <p className="medium-body">{platformData.imgCaption[language]}</p>
+                    </div>
+                </div>
+            </Col>
+            <Col md={7} sm={6} className="align-self-center">
+                <div style={{margin: 'auto'}}>
+                    <img src={topStrokeGreenReverseImg} alt="" style={{width: 130, float: 'right'}} />
+                    <p className="chinese-section-body" 
+                        style={styles.rightSmallHeading}>
+                        {platformData.head[language]}
+                    </p>
+                    {
+                        platformData[language].map((para, index) => 
+                            <p key={index} className="chinese-section-body">{para}</p>
+                        )
+                    }
+                </div>
+            </Col>
+        </Row>
     )
 }
 
-class SingleTeamData extends React.Component {
-    state = {
-        dataIndex: 0
-    }
-
-    componentDidMount() {
-        this.setState({
-            dataIndex: this.props.index
-        })
-    }
-
-    render() {
-        const { language, datum } = this.props;
-        const borderStyle = this.state.dataIndex !== 0 ? 'with-border-img' : 'no-border-img';
-        const somePadding = this.state.dataIndex > 1  ? 'padding-top' : '';
-        return (
-            <Col md={3} sm={6} xs={6} className='column-padding fix-height'>
-                <div className={borderStyle}>
-                    <p 
-                        className="text-center white chinese-section-body" 
-                        style={{fontSize: 50, marginBottom: 0, paddingBottom: 0}}
-                    >
-                        {datum.big[language]}
-                    </p>
-                    <p className={"text-center white chinese-section-body " + somePadding}>{datum.small[language]}</p>
-                </div>
-            </Col>
-        )
-    }
-}
-
-const ResearchTeam = (props) => {
+const ResearchPlatform = (props) => {
     const { language } = props;
     return (
-        <div>
-            <div className="container" style={{paddingTop: 30, paddingBottom: 30}}>
-                <h1 className="text-center chinese-section-header">
-                    {teamHead[language]}
-                </h1>
-                <ResearchTeamInfo language={language} />
-            </div>
-            <div className="background-loaded" style={styles.background}>
-                <h1 className="text-center chinese-section-header white">
-                    学术队伍
-                </h1>
-                <div className=" container padding-on-big">
-                    {teamDetails.map((datum, index) => 
-                        <SingleTeamData 
-                            key={index} 
-                            datum={datum} 
-                            language={language}
-                            index={index}
-                        />
-                    )}
+        <div className="container" style={{paddingTop: 30, paddingBottom: 50}}>
+            <PlatformInfo language={language} />
+        </div>
+    )
+}
+
+const ResearchTeamInfov2 = (props) => {
+    const { language } = props;
+    return (
+        <Row className="outer-row">
+            <Col md={5} sm={6} className="align-self-center">
+                <div style={{margin: 'auto', marginLeft: 0}}>
+                    <img src={topStrokeImg} style={{width: 130}} alt="" />
+                    <p className="chinese-section-body" 
+                        style={styles.smallHeading}>
+                        {researchTeamData.head[language]}
+                    </p>
+                    <ul>
+                        {
+                            researchTeamData[language].map((bullet, index) => 
+                                <li key={index} className="chinese-section-body">{bullet}</li>
+                            )
+                        }
+                    </ul>
                 </div>
-            </div>
-            <div className="container" style={{paddingTop: 30, paddingBottom: 30}}>
-                <h1 className="text-center chinese-section-header">
-                    产业化队伍
-                </h1>
-                <p className="chinese-section-body">以研究所为技术依托，建立了集研发、生产、销售为一体的产业化团队。培养膜行业30多位企业总经理，衍生、孵化出数十家高科技企业，打造专业化的膜科技产业园。</p>
+            </Col>
+            <Col md={7} sm={6} className="pad-left">
+                <img className="img-responsive" style={{width: '100%'}} src={researchTeamData.imgUrl} alt="研究团" />
+            </Col>
+        </Row>
+    )
+}
+
+const ResearchTeamV2 = (props) => {
+    const { language } = props;
+    return (
+        <div style={{backgroundColor: '#EFF1F2'}}>
+            <div className="container" style={{paddingTop: 30, paddingBottom: 50}}>
+                <ResearchTeamInfov2 language={language} />
             </div>
         </div>
     )
@@ -295,7 +303,8 @@ const Research = (props) => {
         <div>
             <ResearchProjects language={language}/>
             <ResearchFacility language={language}/>
-            <ResearchTeam language={language}/>
+            <ResearchPlatform language={language}/>
+            <ResearchTeamV2 language={language}/>
         </div>
 	)
 }
@@ -317,7 +326,19 @@ const styles = {
     regularTextColor: {
         marginBottom: 15,
         cursor: 'pointer'
-    }
+    },
+
+    smallHeading: {
+        marginTop: 5, 
+        fontFamily: 'PingFangSC-Semibold'
+    },
+
+    rightSmallHeading: {
+        marginTop: 17, 
+        fontFamily: 'PingFangSC-Semibold', 
+        textAlign: 'right', 
+        clear: 'right'
+    },
 }
 
 export default Research;

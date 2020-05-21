@@ -15,9 +15,9 @@ const Follow = (props) => {
 				{language === "zh"? "关注我们": "Follow us"}
 				<span className="wechat-container">
 					<span className="weixin_icon" />
-					<span id="two"><img src={wechatCode} style={{height: 200}} /></span>
+					<span id="two"><img src={wechatCode} style={{height: 200}} alt="微信关注" /></span>
 				</span>
-				<a href="https://www.linkedin.com/company/jswisdom/" target="_blank" rel="noopener">
+				<a href="https://www.linkedin.com/company/jswisdom/" target="_blank" rel="noopener noreferrer">
 					<span className="linkedin" />
 				</a>
 			</h1>
