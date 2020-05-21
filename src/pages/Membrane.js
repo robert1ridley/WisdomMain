@@ -3,13 +3,14 @@ import {connect} from 'react-redux';
 import { Route } from 'react-router-dom';
 
 import MembraneHead from '../headers/MembraneHead';
-import MembraneTech from '../components/MembraneTech';
+import GenericTech from '../components/GenericTech';
 import MembraneCases from '../components/MembraneCases';
 import Subnav from '../components/Subnav';
 import NotFound from '../pages/NotFound';
 
 import membraneheaddata from '../data/membrane/membraneheaddata';
 import membranebasic from '../data/membrane/membranebasic';
+import membranesolutions from '../data/membrane/membranesolutions';
 
 import membraneBackground from '../images/mission/membrane-background.jpg';
 
@@ -79,7 +80,11 @@ class Membrane extends React.Component {
                 switch(navData[activeIndex].template) {
                   case('standard'):
                     return (
-                      <MembraneTech language={language}/>
+                      <GenericTech 
+                        language={language} 
+                        currentData={navData[activeIndex]} 
+                        solutionsData={membranesolutions}
+                      />
                     )
                   case('standard2'):
                     return (

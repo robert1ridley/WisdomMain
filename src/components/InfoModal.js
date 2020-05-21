@@ -13,7 +13,7 @@ const InfoModal = (props) => {
         {
           data.articleContent.map((item, index) => 
             <div key={index}>
-              <p style={{textIndent: '.3in'}}>{item.text[language]}</p>
+              <p style={{textIndent: '.3in', margin: "10px 10px 10px"}}>{item.text[language]}</p>
               {
                 item.articleImage.map((image, idx)=>
                   image.imageURL!==null &&

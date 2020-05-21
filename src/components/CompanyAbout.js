@@ -191,7 +191,7 @@ const CompanyCulture = (props) => {
         <div className="container component-container" style={{paddingBottom: 20}}>
             <h1 className="text-center chinese-section-header">{companyCultureData.head[language]}</h1>
             <Row style={{paddingTop: 20}}>
-                <Col md={6}>
+                <Col md={5}>
                     <h1 style={styles.headerChineseBlue}>{companyCultureData.subhead[language]}</h1>
                     {companyCultureData.body.map((companyValue, index) => 
                         <p key={index} className="chinese-section-body">
@@ -201,8 +201,8 @@ const CompanyCulture = (props) => {
                     )}
                 </Col>
                 <Col md={1}/>
-                <Col md={5}>
-                    <img className="img-responsive" src={companyCultureImage} alt="企业文化" />
+                <Col md={6}>
+                    <img className="img-responsive" src={companyCultureImage} style={{width: "100%"}} alt="企业文化" />
                 </Col>
             </Row>
         </div>

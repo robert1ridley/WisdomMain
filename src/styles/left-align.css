@@ -4,11 +4,15 @@
     text-align: right;
 }
 
-.outer-row {
+.outer-row, .outer-row-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex; 
+}
+
+.outer-row-wrap {
+    flex-wrap: wrap;
 }
 
 .align-self-center {

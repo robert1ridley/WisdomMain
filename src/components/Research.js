@@ -263,7 +263,7 @@ const ResearchTeamInfov2 = (props) => {
     const { language } = props;
     return (
         <Row className="outer-row">
-            <Col md={5} sm={6} className="align-self-center">
+            <Col md={6} sm={6} className="align-self-center">
                 <div style={{margin: 'auto', marginLeft: 0}}>
                     <img src={topStrokeImg} style={{width: 130}} alt="" />
                     <p className="chinese-section-body" 
@@ -279,7 +279,7 @@ const ResearchTeamInfov2 = (props) => {
                     </ul>
                 </div>
             </Col>
-            <Col md={7} sm={6} className="pad-left">
+            <Col md={6} sm={6} className="pad-left">
                 <img className="img-responsive" style={{width: '100%'}} src={researchTeamData.imgUrl} alt="研究团" />
             </Col>
         </Row>

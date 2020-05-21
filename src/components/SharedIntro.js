@@ -12,12 +12,16 @@ const SharedIntro = (props) => {
       >
         {data.head[language]}
       </h1>
-      <p 
+      <div 
         className="light half-width"
         style= {language === "zh" ? styles.chineseBigBody : styles.bigBody}
       >
-        {data.body[language]}
-      </p>
+        {
+          data.body.map((item, index) => 
+            <p style={{margin: '0px 0px 0px'}} key={index}>{item[language]}</p>
+          )
+        }
+      </div>
     </div>
   )
 }

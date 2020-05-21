@@ -449,6 +449,18 @@ div.media-body {
 	}
 }
 
+.chinese-blue-card-head {
+	font-family: 'PingFangSC-Semibold';
+	font-size: 20px;
+	color: #1951B4;
+	letter-spacing: 0;
+  }
+  
+  .english-blue-card-head {
+	font-size: 20px;
+	color: #1951B4;
+  }
+
 html {
 	scroll-behavior: smooth;
 }
