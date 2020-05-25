@@ -17,7 +17,7 @@ export default class InfoCards extends React.Component {
                 <ListGroupItem key={index} style={{border: 0}}>
                   <div className="media">
                     <Col lg={2} md={2} sm={6} xs={12}>
-                      <div className="text-center" style={{paddingTop: 15, paddingBottom: 15}}>
+                      <div className="text-center">
                         <Image src={expert.imageUrl} alt={expert.name[language]} width={"100%"} />
                       </div>
                     </Col>
