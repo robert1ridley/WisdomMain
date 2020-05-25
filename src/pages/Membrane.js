@@ -11,6 +11,7 @@ import NotFound from '../pages/NotFound';
 import membraneheaddata from '../data/membrane/membraneheaddata';
 import membranebasic from '../data/membrane/membranebasic';
 import membranesolutions from '../data/membrane/membranesolutions';
+import membraneProjects from '../data/membrane/membraneprojects';
 
 import membraneBackground from '../images/mission/membrane-background.jpg';
 
@@ -90,6 +91,7 @@ class Membrane extends React.Component {
                     return (
                       <MembraneCases
                         language={language}
+                        casesData={membraneProjects}
                         {...props}
                       />
                     )

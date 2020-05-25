@@ -1,8 +1,4 @@
 import memSol1 from '../../images/solutions/membraneSol1.png';
-import VOC2 from '../../images/solutions/VOC2-min.png';
-import VOC3 from '../../images/solutions/VOC3-min.png';
-import VOC4 from '../../images/solutions/VOC4-min.png';
-import VOC5 from '../../images/solutions/VOC5-min.png';
 
 const membraneSolutions = [
     {

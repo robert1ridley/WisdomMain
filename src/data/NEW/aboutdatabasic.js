@@ -324,11 +324,11 @@ const aboutdatabasic = [
             en: "2017年7月，公司成为南京节能环保产业协会会长单位"
           },
           {
-            zh: "2017年4月， 《石化行业有机废气资源化回收与净化技术研发及产业化》项目获得南京市科学技术进步奖三等奖。",
+            zh: "2017年4月， 《石化行业有机废气资源化回收与净化技术研发及产业化》项目获得南京市科学技术进步奖三等奖",
             en: "In April 2017, The Project Won The Third Prize Of Nanjing Science And Technology Progress Award In The Project Of 'Organic Waste Gas Recovery And Purification Technology Development And Industrialization Of Petrochemical Industry'."
           },
           {
-            zh: "2017年3月，“智道”获得江苏省、南京市著名商标称号。",
+            zh: "2017年3月，“智道”获得江苏省、南京市著名商标称号",
             en: "In March 2017, Wisdom won The Title Of Famous Trademark Of Jiangsu Province And Nanjing City."
           }
         ]
@@ -345,11 +345,11 @@ const aboutdatabasic = [
             en: "In December 2016, Jiangsu Zhidao Engineering Technology Co., Ltd. Was Awarded The 'Xuanwu Golden Phoenix Award' In 2016."
           },
           {
-            zh: "2016年09月，智道公司获邀参加2016年南京金秋经贸洽谈会及溧水“三城一园”发展商机推介会。",
+            zh: "2016年09月，智道公司获邀参加2016年南京金秋经贸洽谈会及溧水“三城一园”发展商机推介会",
             en: "In August 2016, The Company Was Promoted To The Chairman Of The General Assembly Of The Energy Conservation And Environmental Protection Industry Association Of Nanjing, And Li, Chairman And General Manager Of The Company."
           },
           {
-            zh: "2016年08月，公司被南京市节能环保产业协会会员代表大会推举为理事长单位，公司董事长兼总经理李来所先生当选协会理事长。",
+            zh: "2016年08月，公司被南京市节能环保产业协会会员代表大会推举为理事长单位，公司董事长兼总经理李来所先生当选协会理事长",
             en: "In July 2016, The Project Of Petrochemical Industry Organic Waste Gas Recovery And Purification Technology Development And Industrialization Was Supported By The Project Of 2016 Provincial Scientific And Technological Achievements Transformation."
           },
           {
@@ -357,11 +357,11 @@ const aboutdatabasic = [
             en: "In February 2016, Jiangsu Zhidao Engineering Technology Co., LTD. 2015 Annual Summary Recognition Conference Was Held In Nanjing."
           },
           {
-            zh: "2016年02月，江苏智道工程技术有限公司2015年度总结表彰大会在南京隆重召开。",
+            zh: "2016年02月，江苏智道工程技术有限公司2015年度总结表彰大会在南京隆重召开",
             en: "In September 2016, Zhidao Company Was Invited To Participate In The 2016 Nanjing Jinqiu Economic And Trade Fair And Lishui 'Three Cities And One Garden' Development Business Opportunities Promotion Seminar."
           },
           {
-            zh: "2016年01月，江苏智道工程技术有限公司2015年度工作总结管理研讨会在南京成功举办。",
+            zh: "2016年01月，江苏智道工程技术有限公司2015年度工作总结管理研讨会在南京成功举办",
             en: "In January 2016, Jiangsu Zhidao Engineering Technology Co., LTD. 2015 Annual Work Summary Management Seminar Was Successfully Held In Nanjing."
           }
         ]
@@ -373,31 +373,31 @@ const aboutdatabasic = [
         },
         subText: [
           {
-            zh: "2015年12月，成功主办2015中国南京第二届大气及水污染综合治理技术国际论坛；顺利通过GC1级压力管道设计资质。",
+            zh: "2015年12月，成功主办2015中国南京第二届大气及水污染综合治理技术国际论坛；顺利通过GC1级压力管道设计资质",
             en: "In December 2015, I Successfully Hosted The Second International BBS Of The Integrated Management Technology Of Air And Water Pollution In Nanjing, China. Through GC1 Pressure Pipeline Design Qualification."
           },
           {
-            zh: "2015年11月，获得D类压力容器设计资质。",
+            zh: "2015年11月，获得D类压力容器设计资质",
             en: "In November 2015, I Obtained The Design Qualification Of Class D Pressure Vessel."
           },
           {
-            zh: "2015年10月，承接的中石化某企业脱硫脱硝项目一次性开车成功，各项指标优于设计。",
+            zh: "2015年10月，承接的中石化某企业脱硫脱硝项目一次性开车成功，各项指标优于设计",
             en: "In October 2015, The Company Undertook A One-Time Driving Success Of Desulfurization And Denitration Of A Company Of Sinopec, Which Was Better Than The Design."
           },
           {
-            zh: "2015年09月，公司董事长李来所被评为江苏省产业教授。",
+            zh: "2015年09月，公司董事长李来所被评为江苏省产业教授",
             en: "In September 2015, Li, Chairman Of The Company, Was Awarded The Jiangsu Province Industry Professor."
           },
           {
-            zh: "2015年08月，智道与南京理工大学获批研究生工作站；获授权发明专利3项。",
+            zh: "2015年08月，智道与南京理工大学获批研究生工作站；获授权发明专利3项",
             en: "In August 2015, Zhidao And Nanjing University Of Technology Received A Batch Of Postgraduate Workstations. Three Patents Authorized To Be Patented."
           },
           {
-            zh: "2015年06月，成功入选中美绿色合作伙伴计划。次月受邀参加第七届中美战略经济论坛签字仪式。",
+            zh: "2015年06月，成功入选中美绿色合作伙伴计划。次月受邀参加第七届中美战略经济论坛签字仪式",
             en: "In June 2015, I Was Successfully Selected As The Sino-Us Green Partner Program. The Following Month Was Invited To Participate In The 7th China-Us Strategic Economic BBS Signing Ceremony. "
           },
           {
-            zh: "2015年05月，承接的中石化某企业储运部油气回收项目，一次开车成功，各项排放指标全部达标。",
+            zh: "2015年05月，承接的中石化某企业储运部油气回收项目，一次开车成功，各项排放指标全部达标",
             en: "In May 2015, The Oil And Gas Recovery Project Of A Sinopec Enterprise Storage And Transportation Department Was Successfully Carried Out, And All The Emission Indexes Reached The Standard."
           }
         ]
@@ -409,19 +409,19 @@ const aboutdatabasic = [
         },
         subText: [
           {
-            zh: "2014年12月，成功主办2014中国南京首届大气污染防治及综合利用技术论坛。",
+            zh: "2014年12月，成功主办2014中国南京首届大气污染防治及综合利用技术论坛",
             en: "In December 2014, I Successfully Hosted The First Air Pollution Prevention And Control Technology In Nanjing, China, And The Comprehensive Utilization Technology Of BBS."
           },
           {
-            zh: "2014年10月，被认定为国家高新技术企业，南京市企业技术中心。",
+            zh: "2014年10月，被认定为国家高新技术企业，南京市企业技术中心",
             en: "In October 2014, It Was Identified As A National High-Tech Enterprise, Nanjing Enterprise Technology Center."
           },
           {
-            zh: "2014年04月，成功签订某烟气脱硫改造工程合同，实现在脱硫工程方面的零突破；获得授权发明专利一项；荣获江苏省民营科技企业称号。",
+            zh: "2014年04月，成功签订某烟气脱硫改造工程合同，实现在脱硫工程方面的零突破；获得授权发明专利一项；荣获江苏省民营科技企业称号",
             en: "In April 2014, A Flue Gas Desulfurization Project Contract Was Successfully Signed To Realize Zero Breakthrough In Desulfurization Engineering. Obtaining A Patent For An Authorized Invention; Won The Title Of Jiangsu Private Technology Enterprise."
           },
           {
-            zh: "2014年02月， 获得环境工程专项乙级设计资质；成功签订某烟气脱硝项目合同，实现在脱硝工程方面的零突破。",
+            zh: "2014年02月， 获得环境工程专项乙级设计资质；成功签订某烟气脱硝项目合同，实现在脱硝工程方面的零突破",
             en: "In February 2014, I Obtained The Qualification Of Grade B Of Environmental Engineering; Successful Signing Of A Flue Gas Denitration Project To Achieve Zero Breakthrough In Denitration Engineering."
           }
         ]
@@ -433,11 +433,11 @@ const aboutdatabasic = [
         },
         subText: [
           {
-            zh: "2013年08月，完成扬子石化首套双聚回收项目，被中石化列为企业重点环境治理和增效项目。",
+            zh: "2013年08月，完成扬子石化首套双聚回收项目，被中石化列为企业重点环境治理和增效项目",
             en: "In August 2013, The First Set Of Yangzi Petrochemical Project Was Completed, Which Was Listed By Sinopec As A Key Environmental Management And Efficiency Project."
           },
           {
-            zh: "2013年05月， 备案通过国家第五批节能服务公司。",
+            zh: "2013年05月， 备案通过国家第五批节能服务公司",
             en: "In May 2013, The Country's Fifth Batch Of Energy-Saving Services Was Put On Record."
           }
         ]
@@ -449,7 +449,7 @@ const aboutdatabasic = [
         },
         subText: [
           {
-            zh: "2012年07月，成功开拓纺织氨纶行业余热回收市场，实现进口设备国产化。",
+            zh: "2012年07月，成功开拓纺织氨纶行业余热回收市场，实现进口设备国产化",
             en: "In July 2012, We Successfully Developed The Waste Heat Recovery Market Of The Textile And Spandex Industry And Realized The Localization Of Imported Equipment."
           }
         ]
@@ -461,11 +461,11 @@ const aboutdatabasic = [
         },
         subText: [
           {
-            zh: "2011年12月，我司顺利通过ISO9001质量管理体系认证和IOS14001环境体系认证。",
+            zh: "2011年12月，我司顺利通过ISO9001质量管理体系认证和IOS14001环境体系认证",
             en: "In December 2011, Our Company Passed ISO9001 Quality Management System Certification And IOS14001 Environmental System Certification."
           },
           {
-            zh: "2011年11月，我司顺利通过AAA级资信等级审定。",
+            zh: "2011年11月，我司顺利通过AAA级资信等级审定",
             en: "In November 2011, We Successfully Approved The AAA Credit Rating."
           }
         ]

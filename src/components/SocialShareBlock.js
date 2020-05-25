@@ -4,6 +4,7 @@ import { Row, Col } from 'react-bootstrap';
 export default class SocialShareBlock extends React.Component {
   componentDidMount() {
     var script = document.createElement('script');
+    script.setAttribute("async", "");
     script.setAttribute("rel", "preconnect");
     script.src = "http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion=408841";
     document.body.appendChild(script);  
