@@ -30,8 +30,8 @@ class ProductsInfo extends React.Component {
                 <Row className="outer-row">
                     <Col md={6} xs={12} style={styles.productsBackground}>
                         <Row>
-                            <Col md={3} xs={2} />
-                            <Col md={9} xs={10}>
+                            <Col md={2} xs={2} />
+                            <Col md={10} xs={10}>
                                 <div style={styles.greenBlockOuter}>
                                     {
                                         allProductsIntroData.productTypes[language].map((item, index) => 
