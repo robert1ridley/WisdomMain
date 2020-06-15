@@ -48,7 +48,7 @@ class Timeline extends React.Component {
               <div className="timeline-body">
               <ul className="inner-list">
               {item.subText.map((paragraph, idx) => 
-                <li key={idx} className="medium-body">{paragraph[language]}</li>
+                <li key={idx} className="chinese-section-body">{paragraph[language]}</li>
               )}
               </ul>
               </div>

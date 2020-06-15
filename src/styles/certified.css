@@ -5,5 +5,6 @@
 	border-radius: 15px;
 	padding: 10px;
 	margin-bottom: 15px;
-	height: 80px;
+	height: 100px;
+	width: 1000px !important; /* Make sure the div fills the container width */
 }

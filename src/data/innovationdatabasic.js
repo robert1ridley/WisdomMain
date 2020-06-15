@@ -76,6 +76,54 @@ const innovationdatabasic = [
             {
                 zh: "适用于燃料气工况的工业炉窑燃烧烟气余热回收系统",
                 en: "Flue gas Waste Heat Recycling System of Industrial Furnace Combustion Applied in Fuel Gas Working Status"
+            },
+            {
+                zh: "一种高稳定性全硅MFI型分子筛膜的制备方法",
+                en: "一种高稳定性全硅MFI型分子筛膜的制备方法"
+            },
+            {
+                zh: "一体式多根陶瓷中空纤维分子筛膜制备方法",
+                en: "一体式多根陶瓷中空纤维分子筛膜制备方法"
+            },
+            {
+                zh: "一种中空纤维分子筛膜的批量化制备方法",
+                en: "一种中空纤维分子筛膜的批量化制备方法"
+            },
+            {
+                zh: "一种高通量的分子筛透醇膜及其制备方法",
+                en: "一种高通量的分子筛透醇膜及其制备方法"
+            },
+            {
+                zh: "一种正多边形中空纤维膜组件",
+                en: "一种正多边形中空纤维膜组件"
+            },
+            {
+                zh: "一种膜分离法回收锂电池生产中N-甲基吡咯烷酮废气的方法和装置",
+                en: "一种膜分离法回收锂电池生产中N-甲基吡咯烷酮废气的方法和装置"
+            },
+            {
+                zh: "一种二甲基甲酰胺废液的渗透汽化法回收系统及方法",
+                en: "一种二甲基甲酰胺废液的渗透汽化法回收系统及方法"
+            },
+            {
+                zh: "一种生物燃料脱水精制的方法及装置",
+                en: "一种生物燃料脱水精制的方法及装置"
+            },
+            {
+                zh: "一种制备多通道陶瓷中空纤维膜的方法",
+                en: "一种制备多通道陶瓷中空纤维膜的方法"
+            },
+            {
+                zh: "一种高强度中空纤维分子筛膜及其制备方法",
+                en: "一种高强度中空纤维分子筛膜及其制备方法"
+            },
+            {
+                zh: "Method for Preparing Multichannel Ceramic Hollow Fiber Membrane",
+                en: "Method for Preparing Multichannel Ceramic Hollow Fiber Membrane"
+            },
+            {
+                zh: "High-strength Hollow Fiber Zeolite Membrane and Its Preparation Method",
+                en: "High-strength Hollow Fiber Zeolite Membrane and Its Preparation Method"
             }
         ],
         id: 'intellectual-property',
