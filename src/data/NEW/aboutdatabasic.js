@@ -185,10 +185,6 @@ const aboutdatabasic = [
     },
     text: [
       {
-        zh: "资质/荣誉",
-        en: "Chinese high-tech enterprise"
-      },
-      {
         zh: "国家高新技术企业 ",
         en: "Grade B environmental engineering design qualification"
       },
@@ -255,6 +251,22 @@ const aboutdatabasic = [
       {
         zh: "OHSAS18001职业健康安全管理体系认证",
         en: "OHSAS18001职业健康安全管理体系认证"
+      },
+      {
+        en: "中国石油和化学工业联合会技术发明奖一等奖",
+        zh: "中国石油和化学工业联合会技术发明奖一等奖"
+      },
+      {
+        en: "中国产学研合作创新奖",
+        zh: "中国产学研合作创新奖"
+      },
+      {
+        en: "教育部自然科学奖二等奖",
+        zh: "教育部自然科学奖二等奖"
+      },
+      {
+        en: "教育部技术发明奖二等奖",
+        zh: "教育部技术发明奖二等奖"
       }
     ],
     id: 'aptitude-honor',

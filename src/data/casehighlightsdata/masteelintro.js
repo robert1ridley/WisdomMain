@@ -1,6 +1,8 @@
 import masteelImg from '../../images/casehigh/masteel.jpg';
 import masteelImg1 from '../../images/casehigh/masteel1.jpg';
 import masteelImg2 from '../../images/casehigh/masteel2.jpg';
+import masteelImg3 from '../../images/casehigh/masteel3.jpg';
+import masteelImg4 from '../../images/casehigh/masteel4.jpg';
 
 const masteelintro = {
     'head': {
@@ -25,8 +27,8 @@ const masteelintro = {
             'en': '总投资7500万元'
         },
         {
-            'zh': '焦炉烟道气量30万Nm3/h',
-            'en': '焦炉烟道气量30万Nm3/h'
+            'zh': '焦炉烟道气量30万Nm³/h',
+            'en': '焦炉烟道气量30万Nm³/h'
         },
         {
             'zh': '余热回收6吨/h，蒸汽压力0.6mpa',
@@ -58,8 +60,8 @@ const masteelintro = {
             },
             {
                 'text': {
-                    'zh': "本工程烟气排放浓度指标为，基准含氧量8%时，粉尘排放浓度设计小于10mg/Nm3，SO2排放浓度设计为小于30mg/Nm3，NOx排放浓度设计为小于100mg/Nm3。",
-                    'en': "本工程烟气排放浓度指标为，基准含氧量8%时，粉尘排放浓度设计小于10mg/Nm3，SO2排放浓度设计为小于30mg/Nm3，NOx排放浓度设计为小于100mg/Nm3。"
+                    'zh': "本工程烟气排放浓度指标为，基准含氧量8%时，粉尘排放浓度设计小于10mg/Nm³，SO₂排放浓度设计为小于30mg/Nm³，NOx排放浓度设计为小于100mg/Nm³。",
+                    'en': "本工程烟气排放浓度指标为，基准含氧量8%时，粉尘排放浓度设计小于10mg/Nm³，SO₂排放浓度设计为小于30mg/Nm³，NOx排放浓度设计为小于100mg/Nm³。"
                 },
                 'articleImage': []
             },
@@ -86,8 +88,8 @@ const masteelintro = {
             },
             {
                 'text': {
-                    'zh': "2.	污染物资源化为产品：将高浓度SO2混合气体用硫铵母液吸收，进化产工序；利用高温高效陶瓷膜过滤装置，确保硫铵质量，实现硫资源的有效回收利用。",
-                    'en': "2.	污染物资源化为产品：将高浓度SO2混合气体用硫铵母液吸收，进化产工序；利用高温高效陶瓷膜过滤装置，确保硫铵质量，实现硫资源的有效回收利用。"
+                    'zh': "2.	污染物资源化为产品：将高浓度SO₂混合气体用硫铵母液吸收，进化产工序；利用高温高效陶瓷膜过滤装置，确保硫铵质量，实现硫资源的有效回收利用。",
+                    'en': "2.	污染物资源化为产品：将高浓度SO₂混合气体用硫铵母液吸收，进化产工序；利用高温高效陶瓷膜过滤装置，确保硫铵质量，实现硫资源的有效回收利用。"
                 },
                 'articleImage': []
             },
@@ -99,6 +101,36 @@ const masteelintro = {
                 'articleImage': [
                     {
                         imageURL: masteelImg2,
+                        caption: {
+                            zh: "",
+                            en: ""
+                        }
+                    }
+                ]
+            },
+            {
+                'text': {
+                    'zh': "项目实际运营效果达到超洁净排放指标：",
+                    'en': "项目实际运营效果达到超洁净排放指标："
+                },
+                'articleImage': [
+                    {
+                        imageURL: masteelImg3,
+                        caption: {
+                            zh: "",
+                            en: ""
+                        }
+                    }
+                ]
+            },
+            {
+                'text': {
+                    'zh': "通过本项目的实施，可实现可观的经济效益与环境效益。回收热量8.8MW（折合标煤8660t/年），回收余热产生的经济效益：~800万元/年。减少SOx气体排放616t/年（脱硫408t/年+节能减排208t/年），减少NOx气体排放204t/年（脱硝204t/年+节能减排60t/年），减少CO₂气体排放21600t/年，实现了焦炉烟道气的综合治理和资源化回收利用，装置运行稳定、安全。",
+                    'en': "通过本项目的实施，可实现可观的经济效益与环境效益。回收热量8.8MW（折合标煤8660t/年），回收余热产生的经济效益：~800万元/年。减少SOx气体排放616t/年（脱硫408t/年+节能减排208t/年），减少NOx气体排放204t/年（脱硝204t/年+节能减排60t/年），减少CO₂气体排放21600t/年，实现了焦炉烟道气的综合治理和资源化回收利用，装置运行稳定、安全。"
+                },
+                'articleImage': [
+                    {
+                        imageURL: masteelImg4,
                         caption: {
                             zh: "",
                             en: ""

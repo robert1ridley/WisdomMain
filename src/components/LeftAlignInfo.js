@@ -35,12 +35,15 @@ class LeftAlignInfo extends React.Component {
                                     {data.subHead[language]}</h1>
                                 <p className="chinese-section-body">{data.body[language]}</p>
                                 <div style={{width: 100, paddingTop: 10, cursor: 'pointer'}}>
-                                    <Link to={data.link} onClick={() => this.updatePath(data.link)}>
-                                        <button style={styles.buttonStyle}>了解更多
-                                            <img src={sideCaretImg} 
-                                                style={{height: 30, marginLeft: 8}} alt="" />
-                                        </button>
-                                    </Link>
+                                    {
+                                        data.link &&
+                                        <Link to={data.link} onClick={() => this.updatePath(data.link)}>
+                                            <button style={styles.buttonStyle}>了解更多
+                                                <img src={sideCaretImg} 
+                                                    style={{height: 30, marginLeft: 8}} alt="" />
+                                            </button>
+                                        </Link>
+                                    }
                                 </div>
                             </div>
                         </Col>
