@@ -9,6 +9,7 @@
     "js-cookie": "^2.2.0",
     "md5-file": "^4.0.0",
     "morgan": "^1.10.0",
+    "nodejs-nodemailer-outlook": "^1.2.3",
     "nodemailer": "^4.6.8",
     "nodemailer-ses-transport": "^1.5.1",
     "prettier": "^1.13.4",

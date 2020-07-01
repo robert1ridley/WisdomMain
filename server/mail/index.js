@@ -1,18 +1,10 @@
 require('dotenv').config();
-const nodemailer = require('nodemailer');
-const sesTransport = require('nodemailer-ses-transport');
 
-exports.emailTransporter = function() {
-  const SESCREDENTIALS = {
-    accessKeyId : process.env.ACCESS_KEY_ID,
-    secretAccessKey : process.env.SECRET_ACCESS_KEY
-  };
-
-  const transporter = nodemailer.createTransport(sesTransport({
-      accessKeyId: SESCREDENTIALS.accessKeyId,
-      secretAccessKey: SESCREDENTIALS.secretAccessKey,
-      rateLimit: 5
-  }));
-
-  return transporter
+exports.emailCredentials = function() {
+  const OUTLOOKCREDENTIALS = {
+    accountname: process.env.OUTLOOK_ACCOUNT_NAME,
+    pass: process.env.OUTLOOK_ACCOUNT_PASS,
+  }
+  console.log(OUTLOOKCREDENTIALS)
+  return OUTLOOKCREDENTIALS;
 }

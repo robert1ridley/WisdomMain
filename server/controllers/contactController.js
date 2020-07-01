@@ -2,6 +2,7 @@ const mail = require('../mail');
 const consult = require('../models/mailModels/ConsultMessage');
 const jobApplication = require('../models/mailModels/JobEnquiryMessage');
 const validator = require('validator');
+var nodeoutlook = require('nodejs-nodemailer-outlook')
 
 exports.emailAdmin = function(req, res, err) {
   const { name, email, message } = req.body;
@@ -14,22 +15,34 @@ exports.emailAdmin = function(req, res, err) {
     return errorsObject;
   }
   
-  const emailTransporter = mail.emailTransporter();
+  const outlookCredentials = mail.emailCredentials();
   const messageDetails = consult.ConsultMessage(name, email, message);
-  
-  emailTransporter.sendMail(messageDetails, function(error, info){
-    if(error){
+  console.log("message details: ", messageDetails)
+  nodeoutlook.sendEmail({
+    auth: {
+      user: outlookCredentials.accountname,
+      pass: outlookCredentials.pass
+    },
+    from: outlookCredentials.accountname,
+    to: messageDetails.to,
+    subject: messageDetails.subject,
+    html: messageDetails.html,
+    replyTo: messageDetails.replyto,
+    onError: (e) => {
       errorsObject.isError = true;
       errorsObject.sendingError = "发送消息有问题。";
+      console.log(e)
       res.status(500).json({
         success: false,
         error: errorsObject
       })
-    }else{
+    },
+    onSuccess: (i) => {
+      console.log(i)
       res.status(200).json({
         success: true,
         error: errorsObject
-      });
+      })
     }
   })
 }
