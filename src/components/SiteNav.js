@@ -53,7 +53,7 @@ class SiteNav extends React.Component {
             to={heading.link}
             onClick={() => this.updatePath(heading.link)}
           >
-            <MenuItem className="nav-background" >{heading.head}</MenuItem>
+            <MenuItem className="nav-background" >{heading.subitem}</MenuItem>
           </LinkContainer>
           <hr style={{margin: 10}}/>
           {heading.sublist.map(subItem => 

@@ -7,10 +7,10 @@ const headers = {
 			head: "走进智道", icon: "glyphicon glyphicon-info-sign", id: 2, link: "/about/about-wisdom"
 		},
 		{
-			head: "技术创新", icon: "glyphicon glyphicon-info-sign", id: 3, link: "/innovation/research"
+			head: "核心技术", icon: "glyphicon glyphicon-info-sign", id: 3, link: "/innovation/research"
 		},
 		{
-			head: "智道使命", icon: "glyphicon glyphicon-pushpin", id: 4, link: "/mission", sublist:[
+			head: "工程案例", icon: "glyphicon glyphicon-pushpin", id: 4, link: "/mission", subitem: '智道使命', sublist:[
 				{
 					head: "膜分离技术", id: 4.2, link: "/mission/membrane/tech"
 				},
@@ -43,7 +43,7 @@ const headers = {
 			head: "Innovation", icon: "glyphicon glyphicon-info-sign", id: 3, link: "/innovation/research"
 		},
 		{
-			head: "Mission", icon: "glyphicon glyphicon-pushpin", id: 4, link: "/mission", sublist:[
+			head: "Mission", icon: "glyphicon glyphicon-pushpin", id: 4, link: "/mission", subitem: '智道使命', sublist:[
 				{
 					head: "膜分离技术", id: 4.2, link: "/mission/membrane/tech"
 				},

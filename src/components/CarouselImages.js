@@ -25,7 +25,7 @@ const images = [
       en: "Chairman's Speech"
     },
     body: {
-      zh: "分子筛膜技术工程应用领先者",
+      zh: "中空纤维分子筛膜工程应用先行者",
       en: "Our success depends on the success of customers"
     },
     link: "/mission/membrane/tech"
