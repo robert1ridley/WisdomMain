@@ -1,7 +1,7 @@
 const headers = {
 	chinese: [
 		{
-			head: "Staging首页", icon: "glyphicon glyphicon-home", id: 1, link: "/"
+			head: "首页", icon: "glyphicon glyphicon-home", id: 1, link: "/"
 		},
 		{
 			head: "走进智道", icon: "glyphicon glyphicon-info-sign", id: 2, link: "/about/about-wisdom"
