@@ -9,9 +9,9 @@ You will need either `npm` or `yarn` installed on your machine …
 – run either `npm install` or `yarn install`<br />
 – run `npm start` to run the development server. The project should open up in your browser on `http://localhost:3000/`<br />
 – to create a production build, run `npm run build`<br />
-– to run the frontend build on the backend server for development, run `npm run serve`
-– to run the staging environment, run `npm run servestage` (ensure you have `forever` installed). This will run on port 3001.
-– to run the production environment, run `npm run serveprod` (ensure you have `forever` installed). This will run on port 3000.
+– to run the frontend build on the backend server for development, run `npm run serve`<br />
+– to run the staging environment, run `npm run servestage` (ensure you have `forever` installed). This will run on port 3001.<br />
+– to run the production environment, run `npm run serveprod` (ensure you have `forever` installed). This will run on port 3000.<br />
 
 ## Contributing
 To contribute to the project, submit a pull request.
