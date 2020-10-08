@@ -5,8 +5,9 @@ const validator = require('validator');
 var nodeoutlook = require('nodejs-nodemailer-outlook')
 
 exports.emailAdmin = function(req, res, err) {
-  const { name, email, message } = req.body;
-  const errorsObject = validateEmailInput(name, email, message);
+  const { name, email, phonenumber, message } = req.body;
+  console.log(req.body)
+  const errorsObject = validateEmailInput(name, email, phonenumber, message);
   if (errorsObject.isError) {
     res.status(500).json({
       success: false,
@@ -16,7 +17,7 @@ exports.emailAdmin = function(req, res, err) {
   }
   
   const outlookCredentials = mail.emailCredentials();
-  const messageDetails = consult.ConsultMessage(name, email, message);
+  const messageDetails = consult.ConsultMessage(name, email, phonenumber, message);
   console.log("message details: ", messageDetails)
   nodeoutlook.sendEmail({
     auth: {
@@ -78,11 +79,12 @@ exports.jobEnquiry = function(req, res, err) {
   })
 }
 
-const validateEmailInput = function(name, email, message) {
+const validateEmailInput = function(name, email, phonenumber, message) {
   let errors = {
     isError: false,
     name: null,
     email: null,
+    phonenumber: null,
     message: null,
     sendingError: null
   };
@@ -93,6 +95,10 @@ const validateEmailInput = function(name, email, message) {
   if (!validator.isEmail(email)) {
     errors.isError = true
     errors.email = "请输入有效的电子邮件地址。"
+  }
+  if (validator.isEmpty(phonenumber)) {
+    errors.isError = true
+    errors.phonenumber = "请输入有效的电话号码。"
   }
   if (validator.isEmpty(message)) {
     errors.isError = true

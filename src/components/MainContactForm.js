@@ -15,6 +15,7 @@ const placeholders = {
     {
       name: "名字",
       email: "电子邮件",
+      phonenumber: '电话号码',
       message: "留言",
       send: "发邮件",
       close: "关闭"
@@ -23,6 +24,7 @@ const placeholders = {
     {
       name: "Name",
       email: "Email",
+      phonenumber: 'Phone Number',
       message: "Message",
       send: "Send",
       close: "Close"
@@ -33,9 +35,11 @@ export default class MainContactForm extends React.Component {
   state = {
     name: '',
     email: '',
+    phonenumber: '',
     message: '',
     nameError: null,
     emailError: null,
+    phonenumberError: null,
     messageError: null,
     sendingError: null,
     isSnackBarVisible: false,
@@ -48,12 +52,14 @@ export default class MainContactForm extends React.Component {
 
   formSubmit = () => {
     this.setState({ submissionPending: true });
-    const { name, email, message } = this.state;
+    const { name, email, phonenumber, message } = this.state;
     const payload = {
       name: name,
       email: email,
+      phonenumber: phonenumber,
       message: message
     }
+    console.log(payload)
     fetch(`${BASE_URL}/consult`, { 
       headers: { 
         'content-type': 'application/json'
@@ -69,6 +75,7 @@ export default class MainContactForm extends React.Component {
         this.setState({
           nameError: data.error.name,
           emailError: data.error.email,
+          phonenumberError: data.error.phonenumber,
           messageError: data.error.message,
           sendingError: data.error.sendingError,
           submissionPending: false
@@ -78,9 +85,11 @@ export default class MainContactForm extends React.Component {
         this.setState({
           name: '',
           email: '',
+          phonenumber: '',
           message: '',
           nameError: null,
           emailError: null,
+          phonenumberError: null,
           messageError: null,
           sendingError: null,
           isSnackBarVisible: true,
@@ -134,6 +143,21 @@ export default class MainContactForm extends React.Component {
           {
             this.state.emailError &&
             <HelpBlock>{this.state.emailError}</HelpBlock>
+          }
+        </FormGroup>
+        <FormGroup bsSize="large">
+          <FormControl 
+            name="phonenumber"
+            type="tel"
+            value={this.state.phonenumber}
+            placeholder={data.phonenumber} 
+            className="form-entry" 
+            onChange={this.updateContactData}
+            required
+          />
+          {
+            this.state.phonenumberError &&
+            <HelpBlock>{this.state.phonenumberError}</HelpBlock>
           }
         </FormGroup>
         <FormGroup controlId="formControlsTextarea" bsSize="large">
