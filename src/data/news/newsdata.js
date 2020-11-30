@@ -1,3 +1,6 @@
+import reformCommision2020_1 from '../../images/news/2020-reform-commission/reform-commission-1.jpg'
+import reformCommision2020_2 from '../../images/news/2020-reform-commission/reform-commission-2.jpg'
+import reformCommision2020_3 from '../../images/news/2020-reform-commission/reform-commission-3.jpg'
 import processTraining2020_1 from '../../images/news/2020-process-training/2020-process-training-1.jpg'
 import processTraining2020_2 from '../../images/news/2020-process-training/2020-process-training-2.jpg'
 import VOCdesign1 from '../../images/news/2020-VOC-design-review/VOC-design1.jpg';
@@ -100,6 +103,73 @@ const newsdata = [
         en: "Enterprise News"
       },
       articles: [
+        
+        {
+          head: {
+            zh: "情系智道—江苏省发展改革委服务业处、江苏省现代服务业联合会走访交流座谈会",
+            en: "情系智道—江苏省发展改革委服务业处、江苏省现代服务业联合会走访交流座谈会"
+          },
+          id: "2020-reform-commission",
+          timestamp: "1606634756",
+          headImage: reformCommision2020_1,
+          text: [
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "2020年11月27日下午，江苏省发展改革委服务业处一级调研员戴开忠、江苏省现代服务业联合会会长赵芝明、秘书长秦少华、副秘书长田宁中、副秘书长麻旭亮一行莅临江苏智道，开展座谈交流活动，一起参加座谈会的还有中国石化节能监测中心的领导李炜，公司董事长、总经理李来所、副董事长贺俊英及相关高管予以了热情接待。",
+                  en: "2020年11月27日下午，江苏省发展改革委服务业处一级调研员戴开忠、江苏省现代服务业联合会会长赵芝明、秘书长秦少华、副秘书长田宁中、副秘书长麻旭亮一行莅临江苏智道，开展座谈交流活动，一起参加座谈会的还有中国石化节能监测中心的领导李炜，公司董事长、总经理李来所、副董事长贺俊英及相关高管予以了热情接待。"
+                }
+              ],
+              imgUrl: [
+                {
+                  image: reformCommision2020_2,
+                  caption: {
+                    zh: "",
+                    en: ""
+                  }
+                }
+              ]
+            },
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "江苏省现代联合会作为江苏省服务业提速和推进区域联动发展、多领域交流合作桥梁纽带的社会组织，坚持贯彻“服务行业、服务企业、服务政府”的宗旨。此次走访智道，不仅是了解企业文化，关心公司经营情况、业务拓展情况，交流经验，增进感情，更是想企业之所想、谋企业之所谋，联合会表示下一步将深入企业，主动开展服务，为企业开阔视野、做大做强做优营造更好的政企交流环境。",
+                  en: "江苏省现代联合会作为江苏省服务业提速和推进区域联动发展、多领域交流合作桥梁纽带的社会组织，坚持贯彻“服务行业、服务企业、服务政府”的宗旨。此次走访智道，不仅是了解企业文化，关心公司经营情况、业务拓展情况，交流经验，增进感情，更是想企业之所想、谋企业之所谋，联合会表示下一步将深入企业，主动开展服务，为企业开阔视野、做大做强做优营造更好的政企交流环境。"
+                }
+              ],
+              imgUrl: [
+                {
+                  image: reformCommision2020_3,
+                  caption: {
+                    zh: "",
+                    en: ""
+                  }
+                }
+              ]
+            },
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "江苏智道坚持以“膜应用为核心，优系统为目标；立足节能环保，集成先进技术；整合内外资源，严格节能控制；超越顾客期望，创造领先项目”为战略，在加强核心技术研发及应用的同时，加大市场开拓力度，推动企业发挥更大作用、实现更大发展。",
+                  en: "江苏智道坚持以“膜应用为核心，优系统为目标；立足节能环保，集成先进技术；整合内外资源，严格节能控制；超越顾客期望，创造领先项目”为战略，在加强核心技术研发及应用的同时，加大市场开拓力度，推动企业发挥更大作用、实现更大发展。"
+                }
+              ],
+              imgUrl: []
+            }
+          ]
+        },
 
         {
           head: {
