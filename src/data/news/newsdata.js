@@ -1,3 +1,7 @@
+import pressurePipeline2020_1 from '../../images/news/2020-pressure-pipeline/pressure-pipeline-cert-1.jpg'
+import pressurePipeline2020_2 from '../../images/news/2020-pressure-pipeline/pressure-pipeline-cert-2.jpg'
+import pressurePipeline2020_3 from '../../images/news/2020-pressure-pipeline/pressure-pipeline-cert-3.jpg'
+import pressurePipeline2020_4 from '../../images/news/2020-pressure-pipeline/pressure-pipeline-cert-4.png'
 import reformCommision2020_1 from '../../images/news/2020-reform-commission/reform-commission-1.jpg'
 import reformCommision2020_2 from '../../images/news/2020-reform-commission/reform-commission-2.jpg'
 import reformCommision2020_3 from '../../images/news/2020-reform-commission/reform-commission-3.jpg'
@@ -104,6 +108,82 @@ const newsdata = [
       },
       articles: [
         
+        {
+          head: {
+            zh: "江苏智道|GC1压力管道换证评审工作圆满完成",
+            en: "江苏智道|GC1压力管道换证评审工作圆满完成"
+          },
+          id: "2020-pressure-pipeline-cert",
+          timestamp: "1606634756",
+          headImage: pressurePipeline2020_1,
+          text: [
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "近日，由中国化工装备协会秘书长朱海鹰、专家张喜春、张西平组成的评审专家组莅临江苏智道，对公司GC1压力管道设计许可换证工作进行现场评审。公司董事长李来所及相关部门负责人、从事压力管道设计工作的审定、审核、设计人员参加了评审工作，此外评审会还邀请到南京市市场监督管理局特设处梁鹏处长。",
+                  en: "近日，由中国化工装备协会秘书长朱海鹰、专家张喜春、张西平组成的评审专家组莅临江苏智道，对公司GC1压力管道设计许可换证工作进行现场评审。公司董事长李来所及相关部门负责人、从事压力管道设计工作的审定、审核、设计人员参加了评审工作，此外评审会还邀请到南京市市场监督管理局特设处梁鹏处长。"
+                }
+              ],
+              imgUrl: [
+                {
+                  image: pressurePipeline2020_2,
+                  caption: {
+                    zh: "",
+                    en: ""
+                  }
+                }
+              ]
+            },
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "评审专家组从资源、技术、体系、业绩等换证申请材料准备等几个方面对公司的工作给予肯定评价，并给公司提出宝贵意见。",
+                  en: "评审专家组从资源、技术、体系、业绩等换证申请材料准备等几个方面对公司的工作给予肯定评价，并给公司提出宝贵意见。"
+                }
+              ],
+              imgUrl: [
+                {
+                  image: pressurePipeline2020_3,
+                  caption: {
+                    zh: "",
+                    en: ""
+                  }
+                }
+              ]
+            },
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "最终，评审组一致认为，江苏智道工程技术有限公司质量管理体系运行扎实有效，资源条件充足，业绩资料完整，鉴定评审符合要求，公司顺利通过换证评审。",
+                  en: "最终，评审组一致认为，江苏智道工程技术有限公司质量管理体系运行扎实有效，资源条件充足，业绩资料完整，鉴定评审符合要求，公司顺利通过换证评审。"
+                }
+              ],
+              imgUrl: [
+                {
+                  image: pressurePipeline2020_4,
+                  caption: {
+                    zh: "",
+                    en: ""
+                  }
+                }
+              ]
+            }
+          ]
+        },
+
+
         {
           head: {
             zh: "情系智道—江苏省发展改革委服务业处、江苏省现代服务业联合会走访交流座谈会",
