@@ -6,11 +6,11 @@ const NewsText = (props) => {
   const { data, language } = props;
   console.log(data[0]===true)
   const paragraphs = data[0].text.map((paragraph, index) => 
-    <div key={index} className="big-body">
-      <p><strong>{paragraph.subHead[language]}</strong></p>
+    <div key={index}>
+      <p className="chinese-section-body"><strong>{paragraph.subHead[language]}</strong></p>
       {
         paragraph.subText.map((subItem, idx) => 
-        <p key={idx}>
+        <p className="chinese-section-body" key={idx}>
           {subItem[language]}
         </p>
         )
@@ -35,13 +35,9 @@ const NewsText = (props) => {
   )
 
   return (
-    <div className="container both-margin">
-      <div className="wow fadeInLeft rounded-card responsive-padding">
-        <div className="lower-margin upper-margin">
-          <h1 className="text-center big-head">{data[0].head[language]}</h1>      
-            {paragraphs}
-        </div>
-      </div>
+    <div className="container component-container">
+      <h1 className="text-center chinese-section-header">{data[0].head[language]}</h1>      
+        {paragraphs}
     </div>
   )
 }
