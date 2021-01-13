@@ -1,12 +1,16 @@
-import pressurePipeline2020_1 from '../../images/news/2020-pressure-pipeline/pressure-pipeline-cert-1.jpg'
-import pressurePipeline2020_2 from '../../images/news/2020-pressure-pipeline/pressure-pipeline-cert-2.jpg'
-import pressurePipeline2020_3 from '../../images/news/2020-pressure-pipeline/pressure-pipeline-cert-3.jpg'
-import pressurePipeline2020_4 from '../../images/news/2020-pressure-pipeline/pressure-pipeline-cert-4.png'
-import reformCommision2020_1 from '../../images/news/2020-reform-commission/reform-commission-1.jpg'
-import reformCommision2020_2 from '../../images/news/2020-reform-commission/reform-commission-2.jpg'
-import reformCommision2020_3 from '../../images/news/2020-reform-commission/reform-commission-3.jpg'
-import processTraining2020_1 from '../../images/news/2020-process-training/2020-process-training-1.jpg'
-import processTraining2020_2 from '../../images/news/2020-process-training/2020-process-training-2.jpg'
+import nangangWind2021_1 from '../../images/news/2021-nangang-wind/nangang-wind-1.jpg';
+import nangangWind2021_2 from '../../images/news/2021-nangang-wind/nangang-wind-2.jpg';
+import nangangWind2021_3 from '../../images/news/2021-nangang-wind/nangang-wind-3.jpg';
+import nangangWind2021_4 from '../../images/news/2021-nangang-wind/nangang-wind-4.jpg';
+import pressurePipeline2020_1 from '../../images/news/2020-pressure-pipeline/pressure-pipeline-cert-1.jpg';
+import pressurePipeline2020_2 from '../../images/news/2020-pressure-pipeline/pressure-pipeline-cert-2.jpg';
+import pressurePipeline2020_3 from '../../images/news/2020-pressure-pipeline/pressure-pipeline-cert-3.jpg';
+import pressurePipeline2020_4 from '../../images/news/2020-pressure-pipeline/pressure-pipeline-cert-4.png';
+import reformCommision2020_1 from '../../images/news/2020-reform-commission/reform-commission-1.jpg';
+import reformCommision2020_2 from '../../images/news/2020-reform-commission/reform-commission-2.jpg';
+import reformCommision2020_3 from '../../images/news/2020-reform-commission/reform-commission-3.jpg';
+import processTraining2020_1 from '../../images/news/2020-process-training/2020-process-training-1.jpg';
+import processTraining2020_2 from '../../images/news/2020-process-training/2020-process-training-2.jpg';
 import VOCdesign1 from '../../images/news/2020-VOC-design-review/VOC-design1.jpg';
 import VOCdesign2 from '../../images/news/2020-VOC-design-review/VOC-design2.jpg';
 import aiwei1 from '../../images/news/aiwei-tongxing/aiwei-tongxing1.jpg';
@@ -108,6 +112,110 @@ const newsdata = [
       },
       articles: [
         
+        {
+          head: {
+            zh: "风寒料峭冬意浓 火热施工正当时",
+            en: "风寒料峭冬意浓 火热施工正当时"
+          },
+          id: "2021-nangang-wind",
+          timestamp: "1607993845",
+          headImage: nangangWind2021_4,
+          text: [
+            {
+              subHead: {
+                zh: "南钢VOCs项目采风记",
+                en: "南钢VOCs项目采风记"
+              },
+              subText: [
+                {
+                  zh: "新年伊始，南京即进入风寒料峭的冬季，而我江苏智道工程技术有限公司总承包（EPC）的南钢VOCs项目现场却在紧张有序地施工中。目前，该项目一期VOCs尾气净化装置已经安装并验收完毕，待天气回暖择机投运。",
+                  en: "新年伊始，南京即进入风寒料峭的冬季，而我江苏智道工程技术有限公司总承包（EPC）的南钢VOCs项目现场却在紧张有序地施工中。目前，该项目一期VOCs尾气净化装置已经安装并验收完毕，待天气回暖择机投运。"
+                }
+              ],
+              imgUrl: [
+                {
+                  image: nangangWind2021_4,
+                  caption: {
+                    zh: "验收会议现场",
+                    en: "验收会议现场"
+                  }
+                }
+              ]
+            },
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "为了满足业主单位提出的要求，项目部同事紧紧围绕“一期鼓冷工期1月8日投产”这一目标，日夜兼程，坚守岗位，赶工期、保质量，出色地完成了一期装置任务；该装置的顺利验收，我方与监理、业主三方之间的相互协调、沟通制定合适施工方案，对作业人员安全教育以及监护人员认真负责的态度密不可分。",
+                  en: "为了满足业主单位提出的要求，项目部同事紧紧围绕“一期鼓冷工期1月8日投产”这一目标，日夜兼程，坚守岗位，赶工期、保质量，出色地完成了一期装置任务；该装置的顺利验收，我方与监理、业主三方之间的相互协调、沟通制定合适施工方案，对作业人员安全教育以及监护人员认真负责的态度密不可分。"
+                }
+              ],
+              imgUrl: [
+                {
+                  image: nangangWind2021_3,
+                  caption: {
+                    zh: "紧锣密鼓的施工现场",
+                    en: "紧锣密鼓的施工现场"
+                  }
+                },
+                {
+                  image: nangangWind2021_1,
+                  caption: {
+                    zh: "建设中的项目现场",
+                    en: "建设中的项目现场"
+                  }
+                }
+              ]
+            },
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "VOCs尾气净化是业主单位燃供厂环保工作中重要一环，对化产作业区意义重大。一期VOCs尾气净化装置运行将会大大的改善南钢化产作业区整体环境，对作业区的绿色生产具有重要作用，同时也为作业区内工作人员的身体健康提供了保障。",
+                  en: "VOCs尾气净化是业主单位燃供厂环保工作中重要一环，对化产作业区意义重大。一期VOCs尾气净化装置运行将会大大的改善南钢化产作业区整体环境，对作业区的绿色生产具有重要作用，同时也为作业区内工作人员的身体健康提供了保障。"
+                },
+                {
+                  zh: "目前，一期脱硫、硫氨装置，二期鼓冷、脱硫、硫氨装置，一期二期粗苯装置，外管廊，RTO炉等施工在井然有序地进行。江苏智道一线项目人员一丝不苟的工作态度、精益求精的专业能力、积极向上的乐观心态，收获了业主单位一致好评。",
+                  en: "目前，一期脱硫、硫氨装置，二期鼓冷、脱硫、硫氨装置，一期二期粗苯装置，外管廊，RTO炉等施工在井然有序地进行。江苏智道一线项目人员一丝不苟的工作态度、精益求精的专业能力、积极向上的乐观心态，收获了业主单位一致好评。"
+                }
+              ],
+              imgUrl: [
+                {
+                  image: nangangWind2021_2,
+                  caption: {
+                    zh: "",
+                    en: ""
+                  }
+                }
+              ]
+            },
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "江苏智道以膜技术产业工程应用为核心，专注系统能量、有效成份回收利用及净化处理达标排放，在项目管理实施过程中一贯追求卓越品质，打造精品工程，同时给业主单位带来最大化效益。",
+                  en: "江苏智道以膜技术产业工程应用为核心，专注系统能量、有效成份回收利用及净化处理达标排放，在项目管理实施过程中一贯追求卓越品质，打造精品工程，同时给业主单位带来最大化效益。"
+                },
+                {
+                  zh: "超越顾客期望，创造领先项目！",
+                  en: "超越顾客期望，创造领先项目！"
+                }
+              ],
+              imgUrl: []
+            }
+          ]
+        },
+
+
         {
           head: {
             zh: "江苏智道|GC1压力管道换证评审工作圆满完成",
