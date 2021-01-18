@@ -1,3 +1,9 @@
+import conservationSigning2021_1 from '../../images/news/2021-conservation-signing/signing1.jpg';
+import conservationSigning2021_2 from '../../images/news/2021-conservation-signing/signing2.jpg';
+import conservationSigning2021_3 from '../../images/news/2021-conservation-signing/signing3.jpg';
+import conservationSigning2021_4 from '../../images/news/2021-conservation-signing/signing4.jpg';
+import conservationSigning2021_5 from '../../images/news/2021-conservation-signing/signing5.jpg';
+import conservationSigning2021_6 from '../../images/news/2021-conservation-signing/signing6.jpg';
 import nangangWind2021_1 from '../../images/news/2021-nangang-wind/nangang-wind-1.jpg';
 import nangangWind2021_2 from '../../images/news/2021-nangang-wind/nangang-wind-2.jpg';
 import nangangWind2021_3 from '../../images/news/2021-nangang-wind/nangang-wind-3.jpg';
@@ -111,7 +117,132 @@ const newsdata = [
         en: "Enterprise News"
       },
       articles: [
-        
+
+        {
+          head: {
+            zh: "校企共建 再创佳绩 | 江苏智道作为会长单位参加南京节能环保产业协会签约仪式",
+            en: "校企共建 再创佳绩 | 江苏智道作为会长单位参加南京节能环保产业协会签约仪式"
+          },
+          id: "2021-conservation-signing",
+          timestamp: "1610684265",
+          headImage: conservationSigning2021_1,
+          text: [
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "为适应新的经济形势，南京节能环保产业协会走高质量、高水平的发展路线，为会员单位提供更好的发展机遇奠定基础，1月14日下午，南京大学宜兴环保研究院与南京节能环保产业协会共同建设国家技术标准创新基地（水环境技术与装备）签约仪式在南京大学仙林校区隆重举行，我江苏智道公司作为南京节能环保产业协会会长单位出席了此次活动。",
+                  en: "为适应新的经济形势，南京节能环保产业协会走高质量、高水平的发展路线，为会员单位提供更好的发展机遇奠定基础，1月14日下午，南京大学宜兴环保研究院与南京节能环保产业协会共同建设国家技术标准创新基地（水环境技术与装备）签约仪式在南京大学仙林校区隆重举行，我江苏智道公司作为南京节能环保产业协会会长单位出席了此次活动。"
+                }
+              ],
+              imgUrl: [
+                {
+                  image: conservationSigning2021_2,
+                  caption: {
+                    zh: "",
+                    en: ""
+                  }
+                }
+              ]
+            },
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "公司董事长李来所作为南京节能环保产业协会会长在签约仪式上发表热情洋溢的讲话。他感谢南京大学环境学院、南大宜兴环保研究院及院士团队对协会的大力支持，并简要介绍了协会去年所做的一些具体工作，同时表示共建合作对协会进一步深化会员服务，提升会员单位市场竞争力，具有深远意义；“好风凭借力，送我上青云”，协会一定不负众望，全力组织会员单位共同携手创建好国家技术标准创新基地。",
+                  en: "公司董事长李来所作为南京节能环保产业协会会长在签约仪式上发表热情洋溢的讲话。他感谢南京大学环境学院、南大宜兴环保研究院及院士团队对协会的大力支持，并简要介绍了协会去年所做的一些具体工作，同时表示共建合作对协会进一步深化会员服务，提升会员单位市场竞争力，具有深远意义；“好风凭借力，送我上青云”，协会一定不负众望，全力组织会员单位共同携手创建好国家技术标准创新基地。"
+                }
+              ],
+              imgUrl: [
+                {
+                  image: conservationSigning2021_3,
+                  caption: {
+                    zh: "签约仪式",
+                    en: "签约仪式"
+                  }
+                },
+                {
+                  image: conservationSigning2021_4,
+                  caption: {
+                    zh: "签约仪式",
+                    en: "签约仪式"
+                  }
+                }
+              ]
+            },
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "签约仪式后，下一步将重点抓好“两个结合”，切实推进标准化工作：一是标准研制与技术创新相结合；二是标准研制与技术转化相结合。以关键技术、核心技术为依托，积极探索并完善产、学、研相结合的标准研究、创新、应用、再创的新循环机制。",
+                  en: "签约仪式后，下一步将重点抓好“两个结合”，切实推进标准化工作：一是标准研制与技术创新相结合；二是标准研制与技术转化相结合。以关键技术、核心技术为依托，积极探索并完善产、学、研相结合的标准研究、创新、应用、再创的新循环机制。"
+                }
+              ],
+              imgUrl: [
+                {
+                  image: conservationSigning2021_5,
+                  caption: {
+                    zh: "参加会议的有南大环境学院和会员单位代表共20余人",
+                    en: "参加会议的有南大环境学院和会员单位代表共20余人"
+                  }
+                }
+              ]
+            },
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "千里之行，始于足下。江苏智道公司作为南京节能环保产业协会会长单位，一定承担起会长单位的责任和担当，切实加强会员单位信息互通和交流往来，运用好协会这个平台，扎扎实实地把各项工作做好，快出成果，出好成果，为基地建设贡献自己的力量。",
+                  en: "千里之行，始于足下。江苏智道公司作为南京节能环保产业协会会长单位，一定承担起会长单位的责任和担当，切实加强会员单位信息互通和交流往来，运用好协会这个平台，扎扎实实地把各项工作做好，快出成果，出好成果，为基地建设贡献自己的力量。"
+                },
+              ],
+              imgUrl: [
+                {
+                  image: conservationSigning2021_6,
+                  caption: {
+                    zh: "",
+                    en: ""
+                  }
+                }
+              ]
+            },
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "精彩解读：",
+                  en: "精彩解读："
+                },
+                {
+                  zh: "南京大学环境学院的综合排名在国内高校名列前茅，院长任洪强院士团队主导研制的技术标准《ISO 22447 Industrial wastewater classification(工业废水分类)国际标准》于2019年11月正式发布，这是我国主导编制的首个工业水回用领域国际标准，具有里程碑式的意义。该标准从立项到发布历时30个月，是TC282最快发布的提案之一。",
+                  en: "南京大学环境学院的综合排名在国内高校名列前茅，院长任洪强院士团队主导研制的技术标准《ISO 22447 Industrial wastewater classification(工业废水分类)国际标准》于2019年11月正式发布，这是我国主导编制的首个工业水回用领域国际标准，具有里程碑式的意义。该标准从立项到发布历时30个月，是TC282最快发布的提案之一。"
+                },
+                {
+                  zh: "南京节能环保产业协会荣幸地被邀成为国家技术标准创新基地（水环境技术与装备）的首批共建单位。",
+                  en: "南京节能环保产业协会荣幸地被邀成为国家技术标准创新基地（水环境技术与装备）的首批共建单位。"
+                },
+              ],
+              imgUrl: []
+            }
+          ]
+        },
+
+
         {
           head: {
             zh: "风寒料峭冬意浓 火热施工正当时",
