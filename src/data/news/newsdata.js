@@ -1,3 +1,10 @@
+import managementReview2020_1 from '../../images/news/2020-management-review/management-review-1.jpg'
+import managementReview2020_2 from '../../images/news/2020-management-review/management-review-2.jpg'
+import managementReview2020_3 from '../../images/news/2020-management-review/management-review-3.jpg'
+import managementReview2020_4 from '../../images/news/2020-management-review/management-review-4.jpg'
+import managementReview2020_5 from '../../images/news/2020-management-review/management-review-5.jpg'
+import managementReview2020_6 from '../../images/news/2020-management-review/management-review-6.jpg'
+import managementReview2020_7 from '../../images/news/2020-management-review/management-review-7.jpg'
 import conservationSigning2021_1 from '../../images/news/2021-conservation-signing/signing1.jpg';
 import conservationSigning2021_2 from '../../images/news/2021-conservation-signing/signing2.jpg';
 import conservationSigning2021_3 from '../../images/news/2021-conservation-signing/signing3.jpg';
@@ -117,6 +124,160 @@ const newsdata = [
         en: "Enterprise News"
       },
       articles: [
+
+        {
+          head: {
+            zh: "江苏智道 | 2020年度管理评审会落幕 组织落实正进行",
+            en: "江苏智道 | 2020年度管理评审会落幕 组织落实正进行"
+          },
+          id: "2020-management-review-conference",
+          timestamp: "1611540795",
+          headImage: managementReview2020_1,
+          text: [
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "2021年1月9日、10日，江苏智道公司2020年度管理评审会，在美丽的南京市六合区茉莉花园度假村隆重召开，公司相关管理人员及特邀嘉宾共41人参加了此次会议。",
+                  en: "2021年1月9日、10日，江苏智道公司2020年度管理评审会，在美丽的南京市六合区茉莉花园度假村隆重召开，公司相关管理人员及特邀嘉宾共41人参加了此次会议。"
+                }
+              ],
+              imgUrl: [
+                {
+                  image: managementReview2020_2,
+                  caption: {
+                    zh: "管理评审会现场",
+                    en: "管理评审会现场"
+                  }
+                }
+              ]
+            },
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "两天会议中，公司董事长李来所、特邀嘉宾、各部门负责人及相关人员耐心听取了公司项目专题汇报和各部门专题汇报。其中，项目经理就公司部分项目进行的专题汇报，从项目实施过程中如何贯穿公司战略方针中所要求的“集成先进技术，严格节点控制，超越顾客期望，创造领先项目”进行对照、分析和总结，着重将过程控制和质量安全等方面深入剖析，总结得失，积累经验。",
+                  en: "两天会议中，公司董事长李来所、特邀嘉宾、各部门负责人及相关人员耐心听取了公司项目专题汇报和各部门专题汇报。其中，项目经理就公司部分项目进行的专题汇报，从项目实施过程中如何贯穿公司战略方针中所要求的“集成先进技术，严格节点控制，超越顾客期望，创造领先项目”进行对照、分析和总结，着重将过程控制和质量安全等方面深入剖析，总结得失，积累经验。"
+                }
+              ],
+              imgUrl: [
+                {
+                  image: managementReview2020_3,
+                  caption: {
+                    zh: "部分汇报发言场景",
+                    en: "部分汇报发言场景"
+                  }
+                }
+              ]
+            },
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "在部门专题汇报中，各扎口部门负责人知无不言、言无不尽，全面审视和评估2020年度公司管理体系建设运行情况，集中展现公司一年来，在营销管理、项目建设、采购管理、技术保障、人事行政管理、运营管理、基地建设方面实际运行成果，并深入剖析依旧存在的问题和拟改进的措施；各部门负责人还提出了落实措施的具体方法及对2021年的展望，旨在提高要求，提升能力，为公司2021年工作顺利开展夯实基础。",
+                  en: "在部门专题汇报中，各扎口部门负责人知无不言、言无不尽，全面审视和评估2020年度公司管理体系建设运行情况，集中展现公司一年来，在营销管理、项目建设、采购管理、技术保障、人事行政管理、运营管理、基地建设方面实际运行成果，并深入剖析依旧存在的问题和拟改进的措施；各部门负责人还提出了落实措施的具体方法及对2021年的展望，旨在提高要求，提升能力，为公司2021年工作顺利开展夯实基础。"
+                }
+              ],
+              imgUrl: [
+                {
+                  image: managementReview2020_4,
+                  caption: {
+                    zh: "公司副董事长贺俊英主持并发言",
+                    en: "公司副董事长贺俊英主持并发言"
+                  }
+                },
+                {
+                  image: managementReview2020_5,
+                  caption: {
+                    zh: "资深人力资源老师引导大家讨论",
+                    en: "资深人力资源老师引导大家讨论"
+                  }
+                }
+              ]
+            },
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "与以往不同的是，此次评审会邀请到国际注册管理咨询师、高级咨询顾问施鸿雁老师、黄敏克老师，由两位老师听取汇报并带领大家进行互动式交流讨论，就项目管理和部门管理的问题及策略开展分组研讨，引导大家集思广益，深入探究，交流发言，书于笔下。",
+                  en: "与以往不同的是，此次评审会邀请到国际注册管理咨询师、高级咨询顾问施鸿雁老师、黄敏克老师，由两位老师听取汇报并带领大家进行互动式交流讨论，就项目管理和部门管理的问题及策略开展分组研讨，引导大家集思广益，深入探究，交流发言，书于笔下。"
+                },
+              ],
+              imgUrl: [
+                {
+                  image: managementReview2020_6,
+                  caption: {
+                    zh: "分组自由式讨论",
+                    en: "分组自由式讨论"
+                  }
+                }
+              ]
+            },
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "此次评审会效果显著，不光在于汇报胜利成果，总结成功经验，更注重抓住问题、解决问题。会议提出的问题和改进措施，并非流于形式的总结和汇报，日前，各部门正认真组织落实，持续改进完善，切实加强管理体系建设，推进公司健康可持续高质量发展。",
+                  en: "此次评审会效果显著，不光在于汇报胜利成果，总结成功经验，更注重抓住问题、解决问题。会议提出的问题和改进措施，并非流于形式的总结和汇报，日前，各部门正认真组织落实，持续改进完善，切实加强管理体系建设，推进公司健康可持续高质量发展。"
+                }
+              ],
+              imgUrl: [
+                {
+                  image: managementReview2020_7,
+                  caption: {
+                    zh: "董事长李来所重要讲话",
+                    en: "董事长李来所重要讲话"
+                  }
+                }
+              ]
+            },
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "此次评审会是对正处于创新发展、积极探索征程中的公司管理体系建设一次全面梳理，以确保公司持续的适宜性、充分性和有效性，并与公司战略方向一致。正如公司董事长李来所在总结讲话中提到的：",
+                  en: "此次评审会是对正处于创新发展、积极探索征程中的公司管理体系建设一次全面梳理，以确保公司持续的适宜性、充分性和有效性，并与公司战略方向一致。正如公司董事长李来所在总结讲话中提到的："
+                },
+                {
+                  zh: "业务发展的路标是客户需求，企业管理的目标是流程化组织建设；",
+                  en: "业务发展的路标是客户需求，企业管理的目标是流程化组织建设；"
+                },
+                {
+                  zh: "优秀的员工和先进的技术，奠定了智道成功的基石；",
+                  en: "优秀的员工和先进的技术，奠定了智道成功的基石；"
+                },
+                {
+                  zh: "现代管理模式和高效执行能力，使智道工程超越客户期望；",
+                  en: "现代管理模式和高效执行能力，使智道工程超越客户期望；"
+                },
+                {
+                  zh: "智道致力于：科技净化环境，与客户共成功！",
+                  en: "智道致力于：科技净化环境，与客户共成功！"
+                }
+              ],
+              imgUrl: []
+            }
+          ]
+        },
+
 
         {
           head: {
