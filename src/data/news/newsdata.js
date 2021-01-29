@@ -1,10 +1,14 @@
-import managementReview2020_1 from '../../images/news/2020-management-review/management-review-1.jpg'
-import managementReview2020_2 from '../../images/news/2020-management-review/management-review-2.jpg'
-import managementReview2020_3 from '../../images/news/2020-management-review/management-review-3.jpg'
-import managementReview2020_4 from '../../images/news/2020-management-review/management-review-4.jpg'
-import managementReview2020_5 from '../../images/news/2020-management-review/management-review-5.jpg'
-import managementReview2020_6 from '../../images/news/2020-management-review/management-review-6.jpg'
-import managementReview2020_7 from '../../images/news/2020-management-review/management-review-7.jpg'
+import energyConservationAward2020_1 from '../../images/news/2020-nanjing-energy-conservation-award/nanjing-energy-conservation-award-1.jpg';
+import energyConservationAward2020_2 from '../../images/news/2020-nanjing-energy-conservation-award/nanjing-energy-conservation-award-2.png';
+import energyConservationAward2020_3 from '../../images/news/2020-nanjing-energy-conservation-award/nanjing-energy-conservation-award-3.jpg';
+import energyConservationAward2020_4 from '../../images/news/2020-nanjing-energy-conservation-award/nanjing-energy-conservation-award-4.jpg';
+import managementReview2020_1 from '../../images/news/2020-management-review/management-review-1.jpg';
+import managementReview2020_2 from '../../images/news/2020-management-review/management-review-2.jpg';
+import managementReview2020_3 from '../../images/news/2020-management-review/management-review-3.jpg';
+import managementReview2020_4 from '../../images/news/2020-management-review/management-review-4.jpg';
+import managementReview2020_5 from '../../images/news/2020-management-review/management-review-5.jpg';
+import managementReview2020_6 from '../../images/news/2020-management-review/management-review-6.jpg';
+import managementReview2020_7 from '../../images/news/2020-management-review/management-review-7.jpg';
 import conservationSigning2021_1 from '../../images/news/2021-conservation-signing/signing1.jpg';
 import conservationSigning2021_2 from '../../images/news/2021-conservation-signing/signing2.jpg';
 import conservationSigning2021_3 from '../../images/news/2021-conservation-signing/signing3.jpg';
@@ -125,6 +129,77 @@ const newsdata = [
       },
       articles: [
 
+        {
+          head: {
+            zh: "江苏智道 | 在南京节能环保产业协会两项评选活动中获得荣誉",
+            en: "江苏智道 | 在南京节能环保产业协会两项评选活动中获得荣誉"
+          },
+          id: "2020-nanjing-energy-conservation-award",
+          timestamp: "1611540795",
+          headImage: energyConservationAward2020_1,
+          text: [
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "近日，在南京节能环保产业协会组织开展的2020年下半年“南京市节能环保行业优秀工程”和“南京市节能环保行业科技之星”两项评选活动中，我江苏智道公司EPC总承包项目炼焦总厂7#焦炉烟气活性焦脱硫脱硝工程荣获“2020年度南京市节能环保行业优秀工程”荣誉称号、公司设计研究院院长余从立荣获“2020年南京市节能环保行业科技之星”荣誉称号。",
+                  en: "近日，在南京节能环保产业协会组织开展的2020年下半年“南京市节能环保行业优秀工程”和“南京市节能环保行业科技之星”两项评选活动中，我江苏智道公司EPC总承包项目炼焦总厂7#焦炉烟气活性焦脱硫脱硝工程荣获“2020年度南京市节能环保行业优秀工程”荣誉称号、公司设计研究院院长余从立荣获“2020年南京市节能环保行业科技之星”荣誉称号。"
+                }
+              ],
+              imgUrl: [
+                {
+                  image: energyConservationAward2020_2,
+                  caption: {
+                    zh: "2020年度南京市节能环保行业优秀工程",
+                    en: "2020年度南京市节能环保行业优秀工程"
+                  }
+                },
+                {
+                  image: energyConservationAward2020_3,
+                  caption: {
+                    zh: "2020年南京市节能环保行业“科技之星”",
+                    en: "2020年南京市节能环保行业“科技之星”"
+                  }
+                },
+                {
+                  image: energyConservationAward2020_4,
+                  caption: {
+                    zh: "炼焦总厂7#焦炉烟气活性焦脱硫脱硝EPC总承包项目",
+                    en: "炼焦总厂7#焦炉烟气活性焦脱硫脱硝EPC总承包项目"
+                  }
+                }
+              ]
+            },
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "国内最大7.63米焦炉；装置规模：烟气量300000Nm3/h",
+                  en: "国内最大7.63米焦炉；装置规模：烟气量300000Nm3/h"
+                },
+                {
+                  zh: "余热回收蒸汽量6t/h，压力0.6MPa.G",
+                  en: "余热回收蒸汽量6t/h，压力0.6MPa.G"
+                },
+                {
+                  zh: "排放指标：SO₂排放浓度≤30mg/Nm3、NOx排放浓度≤20mg/Nm3、粉尘外排浓度≤10mg/Nm3",
+                  en: "排放指标：SO₂排放浓度≤30mg/Nm3、NOx排放浓度≤20mg/Nm3、粉尘外排浓度≤10mg/Nm3"
+                },
+                {
+                  zh: "经济效益：SO₂资源化利用，每年可产硫酸铵789吨",
+                  en: "经济效益：SO₂资源化利用，每年可产硫酸铵789吨"
+                }
+              ],
+              imgUrl: []
+            },
+          ]
+        },
         {
           head: {
             zh: "江苏智道 | 2020年度管理评审会落幕 组织落实正进行",
@@ -277,8 +352,6 @@ const newsdata = [
             }
           ]
         },
-
-
         {
           head: {
             zh: "校企共建 再创佳绩 | 江苏智道作为会长单位参加南京节能环保产业协会签约仪式",
