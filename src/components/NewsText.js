@@ -35,7 +35,7 @@ const NewsText = (props) => {
   )
 
   return (
-    <div className="container component-container">
+    <div className="container component-container limited-width">
       <h1 className="text-center chinese-section-header">{data[0].head[language]}</h1>      
         {paragraphs}
     </div>

@@ -25,6 +25,12 @@ div.container.full-width-container {
 	margin-bottom: 30px;
 }
 
+@media (min-width: 1200px) {
+	.limited-width {
+		width: 700px;
+	}
+}
+
 @media (max-width: 786px) {
   	div.container.main-content-container {
 		padding-left: 22px;
