@@ -25,7 +25,7 @@ div.container.full-width-container {
 	margin-bottom: 30px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
 	.limited-width {
 		width: 700px;
 	}
