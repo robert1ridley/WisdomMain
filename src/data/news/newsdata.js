@@ -1,3 +1,9 @@
+import caligraphy2021_1 from '../../images/news/2021-caligraphy/caligraphy1.jpg';
+import caligraphy2021_2 from '../../images/news/2021-caligraphy/caligraphy2.jpg';
+import caligraphy2021_3 from '../../images/news/2021-caligraphy/caligraphy3.jpg';
+import caligraphy2021_4 from '../../images/news/2021-caligraphy/caligraphy4.jpg';
+import caligraphy2021_5 from '../../images/news/2021-caligraphy/caligraphy5.jpg';
+import caligraphy2021_6 from '../../images/news/2021-caligraphy/caligraphy6.jpg';
 import energyConservationAward2020_1 from '../../images/news/2020-nanjing-energy-conservation-award/nanjing-energy-conservation-award-1.jpg';
 import energyConservationAward2020_2 from '../../images/news/2020-nanjing-energy-conservation-award/nanjing-energy-conservation-award-2.png';
 import energyConservationAward2020_3 from '../../images/news/2020-nanjing-energy-conservation-award/nanjing-energy-conservation-award-3.jpg';
@@ -128,7 +134,86 @@ const newsdata = [
         en: "Enterprise News"
       },
       articles: [
-
+        {
+          head: {
+            zh: "别样文化 | “兴化五子”莅临智道挥毫泼墨 赠送墨宝",
+            en: "别样文化 | “兴化五子”莅临智道挥毫泼墨 赠送墨宝"
+          },
+          id: "2021-caligraphy",
+          timestamp: "1612581807",
+          headImage: caligraphy2021_1,
+          text: [
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "值此新春佳节到来之际，智道公司邀请到“板桥故里、兴化五子”等五位艺术造诣高深的书画家来司为智道家人们题写春联和福字，赠送墨宝，将传统文化带入企业，给大家带来别样的年味文化。",
+                  en: "值此新春佳节到来之际，智道公司邀请到“板桥故里、兴化五子”等五位艺术造诣高深的书画家来司为智道家人们题写春联和福字，赠送墨宝，将传统文化带入企业，给大家带来别样的年味文化。"
+                }
+              ],
+              imgUrl: [
+                {
+                  image: caligraphy2021_1,
+                  caption: {
+                    zh: "",
+                    en: ""
+                  }
+                },
+                {
+                  image: caligraphy2021_2,
+                  caption: {
+                    zh: "",
+                    en: ""
+                  }
+                },
+                {
+                  image: caligraphy2021_3,
+                  caption: {
+                    zh: "书画家挥毫泼墨 倾情献墨百余副",
+                    en: "书画家挥毫泼墨 倾情献墨百余副"
+                  }
+                },
+                {
+                  image: caligraphy2021_4,
+                  caption: {
+                    zh: "笔酣墨饱    成果颇丰",
+                    en: "笔酣墨饱    成果颇丰"
+                  }
+                },
+                {
+                  image: caligraphy2021_5,
+                  caption: {
+                    zh: "收“福”字 、集“福”字  五福临门",
+                    en: "收“福”字 、集“福”字  五福临门"
+                  }
+                },
+                {
+                  image: caligraphy2021_6,
+                  caption: {
+                    zh: "收“福”字 、集“福”字  五福临门",
+                    en: "收“福”字 、集“福”字  五福临门"
+                  }
+                }
+              ]
+            },
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "江苏智道十分注重企业文化的切实推行，本次书画家赠送墨宝活动，既体现企业和社会人士之间的友谊，更是传承了文化人无私奉献的精神。我们相信，技术和创新是企业发展的永动机，而文化则是浸润企业发展的灵魂和不竭动力。",
+                  en: "江苏智道十分注重企业文化的切实推行，本次书画家赠送墨宝活动，既体现企业和社会人士之间的友谊，更是传承了文化人无私奉献的精神。我们相信，技术和创新是企业发展的永动机，而文化则是浸润企业发展的灵魂和不竭动力。"
+                }
+              ],
+              imgUrl: []
+            },
+          ]
+        },
         {
           head: {
             zh: "江苏智道 | 在南京节能环保产业协会两项评选活动中获得荣誉",
