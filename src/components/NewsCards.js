@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactPaginate from 'react-paginate';
 import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import {connect} from 'react-redux';
@@ -8,10 +9,31 @@ import { getLocationFromParams } from '../utils/index';
 import '../styles/news-cards.css';
 import { getDateFromTimestamp } from '../utils/index';
 
-const NewsCards = (props) => {
-  const baseLink = props.match.params.id
-  const { language, data, switchPage } = props
-  const MediaObjects = data.map(MediaObject => 
+class NewsCards extends React.Component {
+  state = {
+    indexRange: [0,1,2,3,4,5,6,7,8,9],
+    maxPage: 10
+  }
+  
+  handlePageClick = (data) => {
+    let maxPage = this.state.maxPage;
+    let selected = data.selected;
+    let offset = Math.ceil(selected * maxPage);
+    let indexRange = [];
+    for (let i=offset; i<(offset + maxPage); i++){
+      indexRange.push(i)
+    };
+    this.setState({
+      indexRange: indexRange
+    })
+  };
+  
+  render() {
+    const baseLink = this.props.match.params.id
+    const { language, data, switchPage } = this.props
+    const numPages = Math.ceil(data.length / this.state.maxPage);
+    const MediaObjects = data.map((MediaObject, i) => 
+      this.state.indexRange.includes(i) &&
       <SingleMedia
         image={MediaObject.headImage}
         header={MediaObject.head[language]}
@@ -24,11 +46,25 @@ const NewsCards = (props) => {
         switchPage={switchPage}
       />
     )
-  return (
-    <div className="news-main-container" style={{marginTop: 30}}>
-      {MediaObjects}
-    </div>
-  )
+    return (
+      <div className="news-main-container" style={{marginTop: 30}}>
+        {MediaObjects}
+        <ReactPaginate
+          previousLabel={'上一页'}
+          nextLabel={'下一页'}
+          breakLabel={'...'}
+          breakClassName={'break-me'}
+          pageCount={numPages}
+          marginPagesDisplayed={2}
+          pageRangeDisplayed={5}
+          onPageChange={this.handlePageClick}
+          containerClassName={'pagination'}
+          subContainerClassName={'pages pagination'}
+          activeClassName={'active'}
+        />
+      </div>
+    )
+  }
 }
 
 class SingleMedia extends React.Component {
