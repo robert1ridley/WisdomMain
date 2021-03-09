@@ -1,3 +1,7 @@
+import womensday2021_1 from '../../images/news/2021-womens-day/womens_day1.jpg';
+import womensday2021_2 from '../../images/news/2021-womens-day/womens_day2.jpg';
+import womensday2021_3 from '../../images/news/2021-womens-day/womens_day3.jpg';
+import womensday2021_4 from '../../images/news/2021-womens-day/womens_day4.jpg';
 import caligraphy2021_1 from '../../images/news/2021-caligraphy/caligraphy1.jpg';
 import caligraphy2021_2 from '../../images/news/2021-caligraphy/caligraphy2.jpg';
 import caligraphy2021_3 from '../../images/news/2021-caligraphy/caligraphy3.jpg';
@@ -134,6 +138,117 @@ const newsdata = [
         en: "Enterprise News"
       },
       articles: [
+        {
+          head: {
+            zh: "江苏智道 | 情暖女神节 致敬半边天",
+            en: "江苏智道 | 情暖女神节 致敬半边天"
+          },
+          id: "2021-womens-day",
+          timestamp: "1615210948",
+          headImage: womensday2021_1,
+          text: [
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "和谐企业文化",
+                  en: "和谐企业文化"
+                },
+                {
+                  zh: "彰显人文关怀",
+                  en: "彰显人文关怀"
+                },
+                {
+                  zh: "3月8日国际妇女节，为了让全体女性员工轻松、快乐地度过一年一度的3·8国际妇女节，公司精心举办了一次温馨而欢乐的节日",
+                  en: "3月8日国际妇女节，为了让全体女性员工轻松、快乐地度过一年一度的3·8国际妇女节，公司精心举办了一次温馨而欢乐的节日"
+                },
+              ],
+              imgUrl: [
+                {
+                  image: womensday2021_2,
+                  caption: {
+                    zh: "",
+                    en: ""
+                  }
+                },
+                {
+                  image: womensday2021_3,
+                  caption: {
+                    zh: "温馨聚餐，集体观影，促进友谊，加深感情。",
+                    en: "温馨聚餐，集体观影，促进友谊，加深感情。"
+                  }
+                }
+              ]
+            },
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "温馨聚餐，集体观影，促进友谊，加深感情。",
+                  en: "温馨聚餐，集体观影，促进友谊，加深感情。"
+                },
+                {
+                  zh: "公司董事长李来所作小诗一首送给公司全体女员工：",
+                  en: "公司董事长李来所作小诗一首送给公司全体女员工："
+                },
+                {
+                  zh: "一部《你好！李焕英》，",
+                  en: "一部《你好！李焕英》，"
+                },
+                {
+                  zh: "两代巾帼高尚情。",
+                  en: "两代巾帼高尚情。"
+                },
+                {
+                  zh: "智道优秀半边天，",
+                  en: "智道优秀半边天，"
+                },
+                {
+                  zh: "平凡岗位赛贾玲！",
+                  en: "平凡岗位赛贾玲！"
+                },
+              ],
+              imgUrl: [
+                {
+                  image: womensday2021_4,
+                  caption: {
+                    zh: "她们对工作虔诚而执着，至信而深厚循着奋斗的不同剧本，演绎出精彩的故事",
+                    en: "她们对工作虔诚而执着，至信而深厚循着奋斗的不同剧本，演绎出精彩的故事"
+                  }
+                }
+              ]
+            },
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "结束语：",
+                  en: "结束语："
+                },
+                {
+                  zh: "在智道，女性员工人数占三分之一，公司董事会和高层领导十分重视对女性员工的关怀和爱护，真正体现企业价值观中的“责任关爱”内容；公司最大限度提高女性职工的幸福感，激励大家快乐工作，幸福生活，以实现女性员工的人生价值和社会价值。",
+                  en: "在智道，女性员工人数占三分之一，公司董事会和高层领导十分重视对女性员工的关怀和爱护，真正体现企业价值观中的“责任关爱”内容；公司最大限度提高女性职工的幸福感，激励大家快乐工作，幸福生活，以实现女性员工的人生价值和社会价值。"
+                },
+                {
+                  zh: "幸运是遇见你们，祝江苏智道温柔可爱的女神们，节日快乐，一生久安！",
+                  en: "幸运是遇见你们，祝江苏智道温柔可爱的女神们，节日快乐，一生久安！"
+                }
+              ],
+              imgUrl: []
+            }
+          ]
+        },
+        
+        
         {
           head: {
             zh: "别样文化 | “兴化五子”莅临智道挥毫泼墨 赠送墨宝",
