@@ -2,6 +2,7 @@ import womensday2021_1 from '../../images/news/2021-womens-day/womens_day1.jpg';
 import womensday2021_2 from '../../images/news/2021-womens-day/womens_day2.jpg';
 import womensday2021_3 from '../../images/news/2021-womens-day/womens_day3.jpg';
 import womensday2021_4 from '../../images/news/2021-womens-day/womens_day4.jpg';
+import womensday2021_6 from '../../images/news/2021-womens-day/womens_day6.jpg';
 import caligraphy2021_1 from '../../images/news/2021-caligraphy/caligraphy1.jpg';
 import caligraphy2021_2 from '../../images/news/2021-caligraphy/caligraphy2.jpg';
 import caligraphy2021_3 from '../../images/news/2021-caligraphy/caligraphy3.jpg';
@@ -162,8 +163,8 @@ const newsdata = [
                   en: "彰显人文关怀"
                 },
                 {
-                  zh: "3月8日国际妇女节，为了让全体女性员工轻松、快乐地度过一年一度的3·8国际妇女节，公司精心举办了一次温馨而欢乐的节日",
-                  en: "3月8日国际妇女节，为了让全体女性员工轻松、快乐地度过一年一度的3·8国际妇女节，公司精心举办了一次温馨而欢乐的节日"
+                  zh: "3月8日国际妇女节，为了让全体女性员工轻松、快乐地度过一年一度的3·8国际妇女节，公司精心举办了一次温馨而欢乐的节日。",
+                  en: "3月8日国际妇女节，为了让全体女性员工轻松、快乐地度过一年一度的3·8国际妇女节，公司精心举办了一次温馨而欢乐的节日。"
                 },
               ],
               imgUrl: [
@@ -175,10 +176,10 @@ const newsdata = [
                   }
                 },
                 {
-                  image: womensday2021_3,
+                  image: womensday2021_6,
                   caption: {
-                    zh: "温馨聚餐，集体观影，促进友谊，加深感情。",
-                    en: "温馨聚餐，集体观影，促进友谊，加深感情。"
+                    zh: "",
+                    en: ""
                   }
                 }
               ]
@@ -189,10 +190,6 @@ const newsdata = [
                 en: ""
               },
               subText: [
-                {
-                  zh: "温馨聚餐，集体观影，促进友谊，加深感情。",
-                  en: "温馨聚餐，集体观影，促进友谊，加深感情。"
-                },
                 {
                   zh: "公司董事长李来所作小诗一首送给公司全体女员工：",
                   en: "公司董事长李来所作小诗一首送给公司全体女员工："
@@ -216,10 +213,10 @@ const newsdata = [
               ],
               imgUrl: [
                 {
-                  image: womensday2021_4,
+                  image: womensday2021_3,
                   caption: {
-                    zh: "她们对工作虔诚而执着，至信而深厚循着奋斗的不同剧本，演绎出精彩的故事",
-                    en: "她们对工作虔诚而执着，至信而深厚循着奋斗的不同剧本，演绎出精彩的故事"
+                    zh: "温馨聚餐，集体观影，促进友谊，加深感情。",
+                    en: "温馨聚餐，集体观影，促进友谊，加深感情。"
                   }
                 }
               ]
@@ -243,7 +240,15 @@ const newsdata = [
                   en: "幸运是遇见你们，祝江苏智道温柔可爱的女神们，节日快乐，一生久安！"
                 }
               ],
-              imgUrl: []
+              imgUrl: [
+                {
+                  image: womensday2021_4,
+                  caption: {
+                    zh: "她们对工作虔诚而执着，至信而深厚循着奋斗的不同剧本，演绎出精彩的故事",
+                    en: "她们对工作虔诚而执着，至信而深厚循着奋斗的不同剧本，演绎出精彩的故事"
+                  }
+                }
+              ]
             }
           ]
         },
