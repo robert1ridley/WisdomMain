@@ -3,6 +3,8 @@ import VOCarticle2 from '../../images/projects/VOC/article2.jpg';
 import VOCarticle3 from '../../images/projects/VOC/article3.jpg';
 import VOCarticle4 from '../../images/projects/VOC/article4.jpg';
 import VOCarticle5 from '../../images/projects/VOC/article5.jpg';
+import VOCarticle6 from '../../images/projects/VOC/article6.jpg';
+import VOCarticle7 from '../../images/projects/VOC/article7.jpg';
 
 const vocCases = [
     {
@@ -59,6 +61,28 @@ const vocCases = [
             en: "An oil and gas recovery unit is running on the loading and unloading platform of an enterprise terminal. The process uses condensation and adsorption route. The condensing component is used to recover most of the organic gas in the oil and gas; the adsorption component is used as a guarantee system for exhaust emission."
         },
         articleImage: VOCarticle5
+    },
+    {
+        articleHead: {
+            zh: "某钢铁化工能源科技有限公司煤气净化系统 VOCs 治理项目",
+            en: "某钢铁化工能源科技有限公司煤气净化系统 VOCs 治理项目"
+        },
+        articleText: {
+            zh: "本项目对机前作业区、硫铵作业区、机后作业区及油库区的逸散气进行治理，无组织排放点共计73个。逸散气内含有焦油、苯、萘、氨气、硫化氢和有机废气。根据现场槽罐实际情况及尾气排放特点和石油化工相关规范要求，对原有系统进行改造，能密闭的系统采用氮封调节压力、通过压力控制排放，收集后送煤气负压系统；对氧含量难以控制的系统，收集后的废气经多级吸收，脱除焦油、萘、苯、氨、硫化氢及重组分有机物后，送燃烧系统。收集系统增设阻火、氧含量分析及可燃气体浓度检测及伴热保温、合理的吹扫，确保改造后系统安全稳定，并最终符合超净排要求。装置规模2500m3/h,满足排放标准《挥发性有机物无组织排放控制标准》GB37822-2019的要求。",
+            en: "本项目对机前作业区、硫铵作业区、机后作业区及油库区的逸散气进行治理，无组织排放点共计73个。逸散气内含有焦油、苯、萘、氨气、硫化氢和有机废气。根据现场槽罐实际情况及尾气排放特点和石油化工相关规范要求，对原有系统进行改造，能密闭的系统采用氮封调节压力、通过压力控制排放，收集后送煤气负压系统；对氧含量难以控制的系统，收集后的废气经多级吸收，脱除焦油、萘、苯、氨、硫化氢及重组分有机物后，送燃烧系统。收集系统增设阻火、氧含量分析及可燃气体浓度检测及伴热保温、合理的吹扫，确保改造后系统安全稳定，并最终符合超净排要求。装置规模2500m3/h,满足排放标准《挥发性有机物无组织排放控制标准》GB37822-2019的要求。"
+        },
+        articleImage: VOCarticle6
+    },
+    {
+        articleHead: {
+            zh: "某钢铁企业燃料供应厂 VOCs 治理总承包项目",
+            en: "某钢铁企业燃料供应厂 VOCs 治理总承包项目"
+        },
+        articleText: {
+            zh: "本项目主要是对燃料供应厂化产区域（鼓冷、脱硫、硫铵、粗苯）无组织排放尾气进行治理，共计118个无组织排放点。焦化废气含焦油、苯、萘、氨气及硫化物及有机废气，进RTO之前必须对有害部分进行脱除。鼓冷区域采用“油洗+酸洗+碱洗”的预处理工艺技术；脱硫、硫铵及蒸氨区域采用“酸洗+碱洗”的预处理工艺技术；经预处理后的废气汇总后送RTO炉进行深度处理。根据尾气排放特点和石油化工相关规范要求，对原有系统进行改造，采用氮封调节压力、通过压力控制排放；收集系统增设阻火、氧含量分析及可燃气体浓度检测及伴热保温、合理的吹扫，确保改造后系统安全稳定，并最终符合超净排要求。装置规模25000m3/h,满足排放标准《挥发性有机物无组织排放控制标准》GB37822-2019的要求。",
+            en: "本项目主要是对燃料供应厂化产区域（鼓冷、脱硫、硫铵、粗苯）无组织排放尾气进行治理，共计118个无组织排放点。焦化废气含焦油、苯、萘、氨气及硫化物及有机废气，进RTO之前必须对有害部分进行脱除。鼓冷区域采用“油洗+酸洗+碱洗”的预处理工艺技术；脱硫、硫铵及蒸氨区域采用“酸洗+碱洗”的预处理工艺技术；经预处理后的废气汇总后送RTO炉进行深度处理。根据尾气排放特点和石油化工相关规范要求，对原有系统进行改造，采用氮封调节压力、通过压力控制排放；收集系统增设阻火、氧含量分析及可燃气体浓度检测及伴热保温、合理的吹扫，确保改造后系统安全稳定，并最终符合超净排要求。装置规模25000m3/h,满足排放标准《挥发性有机物无组织排放控制标准》GB37822-2019的要求。"
+        },
+        articleImage: VOCarticle7
     }
 ]
 
