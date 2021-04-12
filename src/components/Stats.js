@@ -34,7 +34,7 @@ const figures = [
     {
         'zh': 'SO₂年减排量超',
         'en': 'Some numbers',
-        'num': 100000,
+        'num': 1000,
         'unit': '吨'
     }
 ]
