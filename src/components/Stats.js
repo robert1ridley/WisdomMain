@@ -14,25 +14,25 @@ const subHead = {
 
 const figures = [
     {
-        'zh': '年回收热量折合燃煤',
+        'zh': '年回收热量折合标煤超',
         'en': 'Some numbers',
-        'num': 40000,
+        'num': 50000,
         'unit': '吨'
     },
     {
-        'zh': '产生年经济效益',
+        'zh': '产生年经济效益超',
         'en': 'Some numbers',
-        'num': 5000,
-        'unit': '万元'
+        'num': 1000000000,
+        'unit': '元'
     },
     {
-        'zh': 'SO2年减排量',
+        'zh': 'CO₂年减排量超',
         'en': 'Some numbers',
-        'num': 3000,
+        'num': 100000,
         'unit': '吨'
     },
     {
-        'zh': 'CO2年减排量',
+        'zh': 'SO₂年减排量超',
         'en': 'Some numbers',
         'num': 100000,
         'unit': '吨'
