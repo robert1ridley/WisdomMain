@@ -1,3 +1,5 @@
+import advancedConstructionNangang2021_1 from '../../images/news/2021-advanced-construction-nangang/advanced-construction-nangang-2021-1.jpg';
+import advancedConstructionNangang2021_2 from '../../images/news/2021-advanced-construction-nangang/advanced-construction-nangang-2021-2.jpg';
 import marchPress2021_1 from '../../images/news/2021-march-press-release/press-release-march-2021-1.jpg';
 import marchPress2021_2 from '../../images/news/2021-march-press-release/press-release-march-2021-2.jpg';
 import womensday2021_1 from '../../images/news/2021-womens-day/womens_day1.jpg';
@@ -141,6 +143,55 @@ const newsdata = [
         en: "Enterprise News"
       },
       articles: [
+        
+        {
+          head: {
+            zh: "智道荣获南钢集团“施工管理先进单位”称号",
+            en: "智道荣获南钢集团“施工管理先进单位”称号"
+          },
+          id: "2021-advanced-construction-nangang",
+          timestamp: "1619662851",
+          headImage: advancedConstructionNangang2021_1,
+          text: [
+            {
+              subHead: {
+                zh: "",
+                en: ""
+              },
+              subText: [
+                {
+                  zh: "日前，在南钢集团炼铁事业部召开的2021年第一季度安全表彰活动中，我江苏智道公司获得业主单位充分肯定，被授予“施工管理先进单位”荣誉称号。据悉，该奖项是业主单位季度奖里，给予施工单位的最高荣誉。",
+                  en: "日前，在南钢集团炼铁事业部召开的2021年第一季度安全表彰活动中，我江苏智道公司获得业主单位充分肯定，被授予“施工管理先进单位”荣誉称号。据悉，该奖项是业主单位季度奖里，给予施工单位的最高荣誉。"
+                },
+                {
+                  zh: "我公司总承包（EPC）的南钢VOCs治理项目系该厂环保工作中重要一环，项目完工后将会大大改善作业区整体环境，对倡导绿色生产具有重大意义。自开工以来，公司项目部化战略为己任，“超越客户期望，创造领先项目”，强化管理，精细施工，在保证安全、质量前提下加快施工进度，确保满足业主节点要求；目前施工进展顺利，受到了业主高度认可。",
+                  en: "我公司总承包（EPC）的南钢VOCs治理项目系该厂环保工作中重要一环，项目完工后将会大大改善作业区整体环境，对倡导绿色生产具有重大意义。自开工以来，公司项目部化战略为己任，“超越客户期望，创造领先项目”，强化管理，精细施工，在保证安全、质量前提下加快施工进度，确保满足业主节点要求；目前施工进展顺利，受到了业主高度认可。"
+                },
+                {
+                  zh: "感谢南钢集团授予我们荣誉，更加激发了我们把项目做好做优、给业主满意答卷的信心。项目经理肖博杰表示，下一步项目部将一如既往、再接再厉，与业主、监理单位三方紧密联系、齐抓共管，最终圆满完成项目交付运行。",
+                  en: "感谢南钢集团授予我们荣誉，更加激发了我们把项目做好做优、给业主满意答卷的信心。项目经理肖博杰表示，下一步项目部将一如既往、再接再厉，与业主、监理单位三方紧密联系、齐抓共管，最终圆满完成项目交付运行。"
+                }
+              ],
+              imgUrl: [
+                {
+                  image: advancedConstructionNangang2021_1,
+                  caption: {
+                    zh: "南钢集团炼铁事业部总经理万华给驻南钢项目经理肖博杰颁发荣誉证书",
+                    en: "南钢集团炼铁事业部总经理万华给驻南钢项目经理肖博杰颁发荣誉证书"
+                  }
+                },
+                {
+                  image: advancedConstructionNangang2021_2,
+                  caption: {
+                    zh: "",
+                    en: ""
+                  }
+                }
+              ]
+            }
+          ]
+        },
+
         {
           head: {
             zh: "江苏智道 | 传来喜报！",
