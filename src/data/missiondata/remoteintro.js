@@ -2,8 +2,8 @@ import remoteImg from '../../images/mission/remote.jpg';
 
 const remoteintro = {
     'head': {
-        'zh': '远程智能监控运营维护管家',
-        'en': '远程智能监控运营维护管家'
+        'zh': '远程智能优化运营维护行家',
+        'en': '远程智能优化运营维护行家'
     },
     'subHead': {
         'zh': '科学提升工艺路线，服务规范化系统化',

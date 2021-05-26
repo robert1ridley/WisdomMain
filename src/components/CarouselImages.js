@@ -25,7 +25,7 @@ const images = [
       en: "Chairman's Speech"
     },
     body: {
-      zh: "中空纤维分子筛膜工程应用先行者",
+      zh: "膜技术产业工程应用领先者",
       en: "Our success depends on the success of customers"
     },
     link: "/mission/membrane/tech"
@@ -53,7 +53,7 @@ const images = [
       en: "Chairman's Speech"
     },
     body: {
-      zh: "远程智能监控运营维护管家",
+      zh: "远程智能优化运营维护行家",
       en: "The foundation of our success is excellent employees and advanced technologies"
     },
     link: "/mission"
