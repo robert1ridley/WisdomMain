@@ -98,19 +98,12 @@ const ScrollTo = Loadable({
 	modules: ['ScrollTo']
 });
 
-const Staging = Loadable({
-	loader: () => import(/* webpackChunkName: "Stagingpage" */ '../pages/Staging'),
-	loading: () => null,
-	modules: ['Staging']
-});
-
 export default () => (
 	<div>
 		<Route component={ScrollToTop} />
 		<SiteNav />
 		<Switch>
 			<Route path="/" exact component={Home}/>
-			<Route path="/staging" exact component={Staging} />
 			<Route path="/about/:id" exact component={About}/>
 			<Route path="/innovation/:id" exact component={Innovation}/>
 			<Route path="/mission" exact component={Mission}/>
