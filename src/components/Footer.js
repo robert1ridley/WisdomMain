@@ -84,7 +84,7 @@ class Footer extends React.Component {
         {/* BEIAN PART */}
         <div style={{margin:"0 auto", padding: "20px 0", textAlign: "center"}}>
           <p style={{height:"20px", lineHeight:"20px", margin: "0px 0px 5px 5px", color:"#939393"}}>版权所有 江苏智道工程技术有限公司</p>
-          <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32010602010751" style={{display:"inline-block", textDecoration:"none", height: "20px", lineHeight:"20px"}}>
+          <a target="_blank" href="https://beian.miit.gov.cn/" style={{display:"inline-block", textDecoration:"none", height: "20px", lineHeight:"20px"}}>
             <p style={{height:"20px", lineHeight:"20px", margin: "0px 0px 0px 5px", color:"#939393"}}>
               <span>苏公网安备 32010602010751号 &nbsp;&nbsp;&nbsp;&nbsp;</span>
               <img src={beian} style={{float:"left"}}/>
